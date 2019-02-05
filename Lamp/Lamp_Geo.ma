@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: Lamp_Geo.ma
-//Last modified: Tue, Feb 05, 2019 03:39:11 PM
+//Last modified: Tue, Feb 05, 2019 03:46:31 PM
 //Codeset: 1252
 requires maya "2018";
 currentUnit -l centimeter -a degree -t film;
@@ -13,13 +13,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "5138170A-434B-7CC4-838C-398F4A2C94A1";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 46.714797888223181 15.614344497308606 -28.503029694334906 ;
-	setAttr ".r" -type "double3" -8.1383527466570946 3003.3999999996927 0 ;
+	setAttr ".t" -type "double3" 44.735053945022408 25.695824240845184 39.392627896503228 ;
+	setAttr ".r" -type "double3" -12.938352747142586 2936.5999999993155 1.4444441239283053e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "06DF156D-45FE-021C-500B-8DAF0F40291E";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 63.266954909645648;
+	setAttr ".coi" 63.266954909653684;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -1183,7 +1183,6 @@ createNode joint -n "Base_JNT_FK" -p "Skeleton";
 	setAttr ".t" -type "double3" -2.7755575615628914e-17 0 -8.8817841970012523e-16 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
-	setAttr ".dla" yes;
 	setAttr ".jot" -type "string" "xzy";
 	setAttr ".jo" -type "double3" 89.999999999999986 0 89.999999999999986 ;
 createNode joint -n "Low_JNT_FK" -p "Base_JNT_FK";
@@ -1191,7 +1190,6 @@ createNode joint -n "Low_JNT_FK" -p "Base_JNT_FK";
 	setAttr ".t" -type "double3" 2.9830322265620515 8.0538264317191287e-16 7.1082073197328926e-16 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
-	setAttr ".dla" yes;
 	setAttr ".jot" -type "string" "xzy";
 	setAttr ".jo" -type "double3" 179.99999999999937 0.79092932870351373 -42.699103380921215 ;
 createNode joint -n "Up_JNT_FK" -p "Low_JNT_FK";
@@ -1199,7 +1197,6 @@ createNode joint -n "Up_JNT_FK" -p "Low_JNT_FK";
 	setAttr ".t" -type "double3" 11.588295916995417 -3.9968028886505635e-15 2.6645352591003757e-15 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
-	setAttr ".dla" yes;
 	setAttr ".jot" -type "string" "xzy";
 	setAttr ".jo" -type "double3" 179.23865149915616 -0.076143404126942038 -74.278425901222448 ;
 createNode joint -n "Head_JNT_FK" -p "Up_JNT_FK";
@@ -1208,7 +1205,6 @@ createNode joint -n "Head_JNT_FK" -p "Up_JNT_FK";
 	setAttr ".r" -type "double3" 1.4908850069360235e-16 -4.9696166897867474e-17 1.2722606977157957e-14 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
-	setAttr ".dla" yes;
 	setAttr ".jo" -type "double3" -4.5447144628099795e-14 -4.1247818525229992e-15 -3.1805546814635176e-15 ;
 createNode transform -n "Controls" -p "_Lamp";
 	rename -uid "AEEFAF86-43D7-F8FD-FC82-E999E001606F";
