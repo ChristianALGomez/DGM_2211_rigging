@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: Arm_Rig_Test.ma
-//Last modified: Tue, Mar 05, 2019 02:59:23 PM
+//Last modified: Tue, Mar 12, 2019 03:33:41 PM
 //Codeset: 1252
 requires maya "2018";
 requires "stereoCamera" "10.0";
@@ -15,65 +15,68 @@ fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "3C878A16-7543-7D86-1DCE-3EAAE647F5BA";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 13.497784368272644 47.690125618336332 -19.378508145650535 ;
-	setAttr ".r" -type "double3" 1029.8616472621939 523.39999999978147 0 ;
+	setAttr ".t" -type "double3" 3.3418446878706938 53.452871847317773 -3.6511872176812314 ;
+	setAttr ".r" -type "double3" 1005.8616472616452 718.99999999981583 -9.9407474035526993e-17 ;
 	setAttr ".rp" -type "double3" 5.2402526762307389e-14 1.4210854715202004e-12 0 ;
 	setAttr ".rpt" -type "double3" -2.950920626336923e-13 -1.143140081763607e-13 -5.056481720975523e-13 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "52AE4400-F64B-F0CE-C35C-B9923F5AFC70";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 27.495203562703832;
+	setAttr ".coi" 27.535077294510614;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 13.949200348156481 28.347161330762056 -7.21932002386517 ;
+	setAttr ".tp" -type "double3" 5.0956443107126983 31.632795690070679 -9.3479612066431326 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "9421207D-5447-651C-A535-B39CCA85AE5B";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 9.3045943263156605 100.24344908339242 -1.5573070146288512 ;
+	setAttr ".t" -type "double3" 33.491455554962158 107.19175797742318 1.2500000000000229 ;
 	setAttr ".r" -type "double3" -89.999999999999986 0 0 ;
 createNode camera -s -n "topShape" -p "top";
 	rename -uid "0A4EFE1D-404D-844B-8A77-3880EEAFE871";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
-	setAttr ".coi" 100.1;
-	setAttr ".ow" 22.532667379337703;
+	setAttr ".coi" 102.68626076024483;
+	setAttr ".ow" 66.991511897036901;
 	setAttr ".imn" -type "string" "top";
 	setAttr ".den" -type "string" "top_depth";
 	setAttr ".man" -type "string" "top_mask";
+	setAttr ".tp" -type "double3" 33.491455554962158 4.5054972171783447 1.25 ;
 	setAttr ".hc" -type "string" "viewSet -t %camera";
 	setAttr ".o" yes;
 createNode transform -s -n "front";
 	rename -uid "3ADA92D5-7044-1D91-8FA0-AAB2D7AF317C";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 5.3897246503028624 28.167948950330793 101.54872084576074 ;
+	setAttr ".t" -type "double3" 33.491455554962158 4.5054972171783447 110.73811931333373 ;
 createNode camera -s -n "frontShape" -p "front";
 	rename -uid "7BE4A814-ED4C-261D-CFCB-A6B5B69651C3";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
-	setAttr ".coi" 100.1;
-	setAttr ".ow" 8.2263654445260244;
+	setAttr ".coi" 109.48811931333373;
+	setAttr ".ow" 66.991511897036901;
 	setAttr ".imn" -type "string" "front";
 	setAttr ".den" -type "string" "front_depth";
 	setAttr ".man" -type "string" "front_mask";
+	setAttr ".tp" -type "double3" 33.491455554962158 4.5054972171783447 1.25 ;
 	setAttr ".hc" -type "string" "viewSet -f %camera";
 	setAttr ".o" yes;
 createNode transform -s -n "side";
 	rename -uid "6BD867EF-8845-1931-095A-479A770A5EDD";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 102.29616834914005 21.509834077107307 -4.5158236470946127 ;
+	setAttr ".t" -type "double3" 104.00594893003844 4.5054972171783447 1.2500000000000158 ;
 	setAttr ".r" -type "double3" 0 89.999999999999986 0 ;
 createNode camera -s -n "sideShape" -p "side";
 	rename -uid "0C40F9A8-FF44-7310-F442-BF831B5FAA63";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
-	setAttr ".coi" 100.1;
-	setAttr ".ow" 40.267144405373124;
+	setAttr ".coi" 70.514493375076285;
+	setAttr ".ow" 22.002102752230062;
 	setAttr ".imn" -type "string" "side";
 	setAttr ".den" -type "string" "side_depth";
 	setAttr ".man" -type "string" "side_mask";
+	setAttr ".tp" -type "double3" 33.491455554962158 4.5054972171783447 1.25 ;
 	setAttr ".hc" -type "string" "viewSet -s %camera";
 	setAttr ".o" yes;
 createNode transform -n "polySurface7";
@@ -12135,6 +12138,8 @@ createNode transform -n "Arm_Main";
 	setAttr ".sp" -type "double3" 1.7315748929977417 28.549682150818931 -0.50554436445236206 ;
 createNode transform -n "GEo" -p "Arm_Main";
 	rename -uid "3EE88593-41C1-C0EF-BC6C-2DAE2A9F4280";
+	setAttr ".rp" -type "double3" 9.2136642932891846 28.422369003295898 -0.11246126890182495 ;
+	setAttr ".sp" -type "double3" 9.2136642932891846 28.422369003295898 -0.11246126890182495 ;
 createNode transform -n "polySurface10" -p "GEo";
 	rename -uid "17E66E36-46CA-F3AB-2F0B-2BA218DCF41A";
 	setAttr -l on ".tx";
@@ -13709,6 +13714,8 @@ createNode mesh -n "polySurfaceShape12Orig" -p "polySurface10";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "JNT" -p "Arm_Main";
 	rename -uid "C3C4EE10-4D2C-D063-09DB-34A8DB213F72";
+	setAttr ".rp" -type "double3" 9.5601872730936055 28.450105667114258 0.1236432891111332 ;
+	setAttr ".sp" -type "double3" 9.5601872730936055 28.450105667114258 0.1236432891111332 ;
 createNode transform -n "IK" -p "JNT";
 	rename -uid "E93359E0-4A75-692A-B3C9-5497A52E6D49";
 createNode joint -n "Shoulder_IK_JNT" -p "|Arm_Main|JNT|IK";
@@ -13769,7 +13776,7 @@ createNode joint -n "Shoulder_JNT" -p "|Arm_Main|JNT|FK";
 		 2.0301511320862975 28.568733215332031 -0.50554434716425567 1;
 	setAttr ".radi" 0.2;
 	setAttr ".liw" yes;
-createNode joint -n "Elbow_JNT" -p "Shoulder_JNT";
+createNode joint -n "Elbow_JNT" -p "|Arm_Main|JNT|FK|Shoulder_JNT";
 	rename -uid "DE80B029-46EF-0CE0-7DC2-DCBB3B5990F0";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
 	setAttr ".uoc" 1;
@@ -13782,7 +13789,7 @@ createNode joint -n "Elbow_JNT" -p "Shoulder_JNT";
 		 7.9233811714067626 28.568733215332056 -0.65246697972349166 1;
 	setAttr ".radi" 0.2;
 	setAttr ".liw" yes;
-createNode joint -n "ForArm_1_JNT" -p "Elbow_JNT";
+createNode joint -n "ForArm_1_JNT" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT";
 	rename -uid "FB7BFB5D-4561-BF81-DE5D-C0AD1A0FFE70";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
 	setAttr ".uoc" 1;
@@ -13798,7 +13805,7 @@ createNode joint -n "ForArm_1_JNT" -p "Elbow_JNT";
 		 8.8676000000000048 28.568733215332045 -0.57909799999999989 1;
 	setAttr ".radi" 0.2;
 	setAttr ".liw" yes;
-createNode joint -n "ForArm_2_JNT" -p "ForArm_1_JNT";
+createNode joint -n "ForArm_2_JNT" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT";
 	rename -uid "3EDA7CD6-4F38-BF79-F641-90896F04FE27";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
 	setAttr ".uoc" 1;
@@ -13813,7 +13820,7 @@ createNode joint -n "ForArm_2_JNT" -p "ForArm_1_JNT";
 		 9.7554700000000079 28.568733215332031 -0.51010699999999942 1;
 	setAttr ".radi" 0.2;
 	setAttr ".liw" yes;
-createNode joint -n "ForArm_3_JNT" -p "ForArm_2_JNT";
+createNode joint -n "ForArm_3_JNT" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT";
 	rename -uid "2775DB80-4BE1-D327-F848-C584AF22CB1F";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
 	setAttr ".uoc" 1;
@@ -13824,7 +13831,7 @@ createNode joint -n "ForArm_3_JNT" -p "ForArm_2_JNT";
 		 -2.4869772092896723e-16 1.0000000000000002 1.9236453180264484e-13 0 -0.077469186407170751 -1.9187165067986624e-13 0.99699474680532352 0
 		 10.71010000000001 28.568733215332017 -0.43592799999999937 1;
 	setAttr ".radi" 0.2;
-createNode joint -n "ForArm_4_JNT" -p "ForArm_3_JNT";
+createNode joint -n "ForArm_4_JNT" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT";
 	rename -uid "262BC747-4C05-B964-6F59-C388EE0EEE32";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
 	setAttr ".uoc" 1;
@@ -13835,7 +13842,7 @@ createNode joint -n "ForArm_4_JNT" -p "ForArm_3_JNT";
 		 -2.4869772092896723e-16 1.0000000000000002 1.9236453180264484e-13 0 -0.077469186407170751 -1.9187165067986624e-13 0.99699474680532352 0
 		 11.777200000000006 28.568733215332003 -0.35301499999999941 1;
 	setAttr ".radi" 0.2;
-createNode joint -n "Wrist_JNT" -p "ForArm_4_JNT";
+createNode joint -n "Wrist_JNT" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT";
 	rename -uid "8E31C234-4064-5840-45F5-4E81F8A22295";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
 	setAttr ".uoc" 1;
@@ -13846,7 +13853,7 @@ createNode joint -n "Wrist_JNT" -p "ForArm_4_JNT";
 		 -2.4869772092896723e-16 1.0000000000000002 1.9236453180264484e-13 0 -0.077469186407170751 -1.9187165067986624e-13 0.99699474680532352 0
 		 12.755503308910523 28.568733215331992 -0.27699802984988564 1;
 	setAttr ".radi" 0.2;
-createNode joint -n "Thumb_Base_JNT" -p "Wrist_JNT";
+createNode joint -n "Thumb_Base_JNT" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT";
 	rename -uid "28ACC29E-468B-5F15-DFE0-5D836DC8E7AA";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
 	setAttr ".uoc" 1;
@@ -13858,7 +13865,7 @@ createNode joint -n "Thumb_Base_JNT" -p "Wrist_JNT";
 		 14.613568305969242 28.213682988549671 -1.0900486707688066 1;
 	setAttr ".radi" 0.2;
 	setAttr ".liw" yes;
-createNode joint -n "Thumb1_JNT" -p "Thumb_Base_JNT";
+createNode joint -n "Thumb1_JNT" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT";
 	rename -uid "5B0AFC6D-43AC-B124-3B37-ABA210C2F342";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
 	setAttr ".uoc" 1;
@@ -13869,7 +13876,7 @@ createNode joint -n "Thumb1_JNT" -p "Thumb_Base_JNT";
 		 14.952244460860769 28.213682988549689 -1.1663814425761962 1;
 	setAttr ".radi" 0.2;
 	setAttr ".liw" yes;
-createNode joint -n "Thumb2_JNT" -p "Thumb1_JNT";
+createNode joint -n "Thumb2_JNT" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT";
 	rename -uid "E5DA2816-417C-3864-C8F5-509770157AC1";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
 	setAttr ".uoc" 1;
@@ -13881,7 +13888,7 @@ createNode joint -n "Thumb2_JNT" -p "Thumb1_JNT";
 		 15.449688667789891 28.221200574293949 -1.301830130119586 1;
 	setAttr ".radi" 0.2;
 	setAttr ".liw" yes;
-createNode joint -n "Thumb3_JNT" -p "Thumb2_JNT";
+createNode joint -n "Thumb3_JNT" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT";
 	rename -uid "34403AB3-4260-980C-D93F-15BA49730F99";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
 	setAttr ".uoc" 1;
@@ -13894,7 +13901,7 @@ createNode joint -n "Thumb3_JNT" -p "Thumb2_JNT";
 		 15.864232676363827 28.221200574293967 -1.3952624333791159 1;
 	setAttr ".radi" 0.2;
 	setAttr ".liw" yes;
-createNode parentConstraint -n "Thumb2_JNT_parentConstraint1" -p "Thumb2_JNT";
+createNode parentConstraint -n "Thumb2_JNT_parentConstraint1" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT";
 	rename -uid "0CC8BAD7-480E-72F6-95B4-87A14C5F9E88";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Pinky_Finger_Base1W0" -dv 1 -min 
 		0 -at "double";
@@ -13914,7 +13921,7 @@ createNode parentConstraint -n "Thumb2_JNT_parentConstraint1" -p "Thumb2_JNT";
 		-6.2616578588858829e-14 ;
 	setAttr ".rst" -type "double3" 0.51505245061889759 0.007517585744238886 -0.022760911142573725 ;
 	setAttr -k on ".w0";
-createNode scaleConstraint -n "Thumb2_JNT_scaleConstraint1" -p "Thumb2_JNT";
+createNode scaleConstraint -n "Thumb2_JNT_scaleConstraint1" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT";
 	rename -uid "A3F045EA-451C-E868-52B3-498C9FCEAA12";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Pinky_Finger_Base1W0" -dv 1 -min 
 		0 -at "double";
@@ -13931,7 +13938,7 @@ createNode scaleConstraint -n "Thumb2_JNT_scaleConstraint1" -p "Thumb2_JNT";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
 	setAttr -k on ".w0";
-createNode parentConstraint -n "Thumb1_JNT_parentConstraint1" -p "Thumb1_JNT";
+createNode parentConstraint -n "Thumb1_JNT_parentConstraint1" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT";
 	rename -uid "E9E3DB80-45AE-29A4-7C86-25828601C77A";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Pinky_Finger_BaseW0" -dv 1 -min 0 
 		-at "double";
@@ -13951,7 +13958,7 @@ createNode parentConstraint -n "Thumb1_JNT_parentConstraint1" -p "Thumb1_JNT";
 		-6.4392935428259079e-14 ;
 	setAttr ".rst" -type "double3" 0.34717175856326499 7.1054273576010019e-15 2.2204460492503131e-15 ;
 	setAttr -k on ".w0";
-createNode scaleConstraint -n "Thumb1_JNT_scaleConstraint1" -p "Thumb1_JNT";
+createNode scaleConstraint -n "Thumb1_JNT_scaleConstraint1" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT";
 	rename -uid "E4B217A9-48AD-2C3D-8BC3-EEA241813F33";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Pinky_Finger_BaseW0" -dv 1 -min 0 
 		-at "double";
@@ -13968,7 +13975,7 @@ createNode scaleConstraint -n "Thumb1_JNT_scaleConstraint1" -p "Thumb1_JNT";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
 	setAttr -k on ".w0";
-createNode parentConstraint -n "Thumb_Base_JNT_parentConstraint1" -p "Thumb_Base_JNT";
+createNode parentConstraint -n "Thumb_Base_JNT_parentConstraint1" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT";
 	rename -uid "B40DD334-4664-6526-D026-86A35E6BA848";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Pinky_Finger_Base_CNTLW0" -dv 1 -min 
 		0 -at "double";
@@ -13991,7 +13998,7 @@ createNode parentConstraint -n "Thumb_Base_JNT_parentConstraint1" -p "Thumb_Base
 	setAttr ".rst" -type "double3" 1.7894946696305798 -0.35505022678247755 -0.95455000149657843 ;
 	setAttr ".rsrr" -type "double3" 0 17.144526627892368 0 ;
 	setAttr -k on ".w0";
-createNode scaleConstraint -n "Thumb_Base_JNT_scaleConstraint1" -p "Thumb_Base_JNT";
+createNode scaleConstraint -n "Thumb_Base_JNT_scaleConstraint1" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT";
 	rename -uid "E68C3AFC-4B04-3F5A-71CE-05A905ED43B6";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Pinky_Finger_Base_CNTLW0" -dv 1 -min 
 		0 -at "double";
@@ -14008,7 +14015,7 @@ createNode scaleConstraint -n "Thumb_Base_JNT_scaleConstraint1" -p "Thumb_Base_J
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
 	setAttr -k on ".w0";
-createNode joint -n "Pointer_Finger_Base_JNT" -p "Wrist_JNT";
+createNode joint -n "Pointer_Finger_Base_JNT" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT";
 	rename -uid "ECEAA55A-49DD-64A2-8881-DEA04C79DB47";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
 	setAttr ".uoc" 1;
@@ -14020,7 +14027,7 @@ createNode joint -n "Pointer_Finger_Base_JNT" -p "Wrist_JNT";
 		 14.741112736529177 28.433553036520482 -0.6348620653152709 1;
 	setAttr ".radi" 0.2;
 	setAttr ".liw" yes;
-createNode joint -n "P_Finger1_JNT" -p "Pointer_Finger_Base_JNT";
+createNode joint -n "P_Finger1_JNT" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT";
 	rename -uid "9881808D-4FBD-D88D-CC92-B385DC09281D";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
 	setAttr ".uoc" 1;
@@ -14031,7 +14038,7 @@ createNode joint -n "P_Finger1_JNT" -p "Pointer_Finger_Base_JNT";
 		 15.223348952349685 28.413753940934253 -0.70524586356679697 1;
 	setAttr ".radi" 0.2;
 	setAttr ".liw" yes;
-createNode joint -n "P_Finger2_JNT" -p "P_Finger1_JNT";
+createNode joint -n "P_Finger2_JNT" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT";
 	rename -uid "F53E0946-4FD0-E14A-3EC9-7F80A9386F28";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
 	setAttr ".uoc" 1;
@@ -14043,7 +14050,7 @@ createNode joint -n "P_Finger2_JNT" -p "P_Finger1_JNT";
 		 15.886587810755769 28.386523448650035 -0.76771929101556313 1;
 	setAttr ".radi" 0.2;
 	setAttr ".liw" yes;
-createNode joint -n "P_Finger3_JNT" -p "P_Finger2_JNT";
+createNode joint -n "P_Finger3_JNT" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT";
 	rename -uid "8691542B-4807-9FEC-194C-B2857DED55E3";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
 	setAttr ".uoc" 1;
@@ -14056,7 +14063,7 @@ createNode joint -n "P_Finger3_JNT" -p "P_Finger2_JNT";
 		 16.447770645848312 28.363483054277253 -0.82251718844766464 1;
 	setAttr ".radi" 0.2;
 	setAttr ".liw" yes;
-createNode parentConstraint -n "P_Finger2_JNT_parentConstraint1" -p "P_Finger2_JNT";
+createNode parentConstraint -n "P_Finger2_JNT_parentConstraint1" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT";
 	rename -uid "BD28F0B0-490F-B7A8-8D7B-D097624396FB";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Ring_Finger_Base1W0" -dv 1 -min 0 
 		-at "double";
@@ -14076,7 +14083,7 @@ createNode parentConstraint -n "P_Finger2_JNT_parentConstraint1" -p "P_Finger2_J
 		0.0011027871201430006 ;
 	setAttr ".rst" -type "double3" 0.66417450365687536 1.4210854715202004e-14 0.058330445216760118 ;
 	setAttr -k on ".w0";
-createNode scaleConstraint -n "P_Finger2_JNT_scaleConstraint1" -p "P_Finger2_JNT";
+createNode scaleConstraint -n "P_Finger2_JNT_scaleConstraint1" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT";
 	rename -uid "65C0E0B1-444A-92F1-0D98-548A5C4D06E6";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Ring_Finger_Base1W0" -dv 1 -min 0 
 		-at "double";
@@ -14093,7 +14100,7 @@ createNode scaleConstraint -n "P_Finger2_JNT_scaleConstraint1" -p "P_Finger2_JNT
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
 	setAttr -k on ".w0";
-createNode parentConstraint -n "P_Finger1_JNT_parentConstraint1" -p "P_Finger1_JNT";
+createNode parentConstraint -n "P_Finger1_JNT_parentConstraint1" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT";
 	rename -uid "65C0C418-4FAA-411A-BD3F-9292EF92A086";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Ring_Finger_BaseW0" -dv 1 -min 0 
 		-at "double";
@@ -14113,7 +14120,7 @@ createNode parentConstraint -n "P_Finger1_JNT_parentConstraint1" -p "P_Finger1_J
 		-0.0041911669523815309 ;
 	setAttr ".rst" -type "double3" 0.48742036935735022 -7.1054273576010019e-15 0.017861540436558077 ;
 	setAttr -k on ".w0";
-createNode scaleConstraint -n "P_Finger1_JNT_scaleConstraint1" -p "P_Finger1_JNT";
+createNode scaleConstraint -n "P_Finger1_JNT_scaleConstraint1" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT";
 	rename -uid "EB69C939-4FAD-45E1-FED7-83B482460797";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Ring_Finger_BaseW0" -dv 1 -min 0 
 		-at "double";
@@ -14130,7 +14137,7 @@ createNode scaleConstraint -n "P_Finger1_JNT_scaleConstraint1" -p "P_Finger1_JNT
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
 	setAttr -k on ".w0";
-createNode parentConstraint -n "Pointer_Finger_Base_JNT_parentConstraint1" -p "Pointer_Finger_Base_JNT";
+createNode parentConstraint -n "Pointer_Finger_Base_JNT_parentConstraint1" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT";
 	rename -uid "84D68A1B-49B4-3C5D-8D35-998E10237FE7";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Ring_Finger_Base_CNTLW0" -dv 1 -min 
 		0 -at "double";
@@ -14153,7 +14160,7 @@ createNode parentConstraint -n "Pointer_Finger_Base_JNT_parentConstraint1" -p "P
 	setAttr ".rst" -type "double3" 1.9519187328710341 -0.13518017881158073 -0.51061211030954223 ;
 	setAttr ".rsrr" -type "double3" -0.18836279155992819 14.834937789852969 -2.3922332933105692 ;
 	setAttr -k on ".w0";
-createNode scaleConstraint -n "Pointer_Finger_Base_JNT_scaleConstraint1" -p "Pointer_Finger_Base_JNT";
+createNode scaleConstraint -n "Pointer_Finger_Base_JNT_scaleConstraint1" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT";
 	rename -uid "F7893032-4B74-4744-6EC8-5892006916C7";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Ring_Finger_Base_CNTLW0" -dv 1 -min 
 		0 -at "double";
@@ -14170,7 +14177,7 @@ createNode scaleConstraint -n "Pointer_Finger_Base_JNT_scaleConstraint1" -p "Poi
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
 	setAttr -k on ".w0";
-createNode joint -n "Mid_Finger_JNT" -p "Wrist_JNT";
+createNode joint -n "Mid_Finger_JNT" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT";
 	rename -uid "7875DC26-4487-96D9-637E-CBBFB0DBA869";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
 	setAttr ".uoc" 1;
@@ -14182,7 +14189,7 @@ createNode joint -n "Mid_Finger_JNT" -p "Wrist_JNT";
 		 14.70688646250105 28.431980050413234 -0.11755561083557708 1;
 	setAttr ".radi" 0.2;
 	setAttr ".liw" yes;
-createNode joint -n "Mid_Finger1_JNT" -p "Mid_Finger_JNT";
+createNode joint -n "Mid_Finger1_JNT" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT";
 	rename -uid "BBECAB53-4513-36A9-A6DE-B9B956DDF725";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
 	setAttr ".uoc" 1;
@@ -14193,7 +14200,7 @@ createNode joint -n "Mid_Finger1_JNT" -p "Mid_Finger_JNT";
 		 15.169370252590937 28.431980050413237 -0.13615738661028506 1;
 	setAttr ".radi" 0.2;
 	setAttr ".liw" yes;
-createNode joint -n "Mid_Finger2_JNT" -p "Mid_Finger1_JNT";
+createNode joint -n "Mid_Finger2_JNT" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT";
 	rename -uid "5FB0BB72-4110-25EE-7C02-CAA7A3E3C1D8";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
 	setAttr ".uoc" 1;
@@ -14205,7 +14212,7 @@ createNode joint -n "Mid_Finger2_JNT" -p "Mid_Finger1_JNT";
 		 16.019776389186376 28.431980050413234 -0.12690093040848552 1;
 	setAttr ".radi" 0.2;
 	setAttr ".liw" yes;
-createNode joint -n "Mid_Finger3_JNT" -p "Mid_Finger2_JNT";
+createNode joint -n "Mid_Finger3_JNT" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT";
 	rename -uid "0F3AE087-4FEB-73CF-672C-9CB83B3D487B";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
 	setAttr ".uoc" 1;
@@ -14218,7 +14225,7 @@ createNode joint -n "Mid_Finger3_JNT" -p "Mid_Finger2_JNT";
 		 16.74337818777434 28.431980050413237 -0.14178412112975597 1;
 	setAttr ".radi" 0.2;
 	setAttr ".liw" yes;
-createNode parentConstraint -n "Mid_Finger2_JNT_parentConstraint1" -p "Mid_Finger2_JNT";
+createNode parentConstraint -n "Mid_Finger2_JNT_parentConstraint1" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT";
 	rename -uid "4B65D9EE-461F-C2B2-7401-239BD7E41926";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "M_Finger_Base1W0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -14238,7 +14245,7 @@ createNode parentConstraint -n "Mid_Finger2_JNT_parentConstraint1" -p "Mid_Finge
 	setAttr ".tg[0].tor" -type "double3" 0 -1.3223149268997101 0 ;
 	setAttr ".rst" -type "double3" 0.85039327977247758 3.5527136788005009e-15 -0.010370576570164713 ;
 	setAttr -k on ".w0";
-createNode scaleConstraint -n "Mid_Finger2_JNT_scaleConstraint1" -p "Mid_Finger2_JNT";
+createNode scaleConstraint -n "Mid_Finger2_JNT_scaleConstraint1" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT";
 	rename -uid "42FB4452-4E9A-1309-5B2A-B4A63CE505F9";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "M_Finger_Base1W0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -14254,7 +14261,7 @@ createNode scaleConstraint -n "Mid_Finger2_JNT_scaleConstraint1" -p "Mid_Finger2
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
 	setAttr -k on ".w0";
-createNode parentConstraint -n "Mid_Finger1_JNT_parentConstraint1" -p "Mid_Finger1_JNT";
+createNode parentConstraint -n "Mid_Finger1_JNT_parentConstraint1" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT";
 	rename -uid "EBC3A5EB-4AC3-55AE-335A-FF810F8F387D";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "M_Finger_BaseW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -14274,7 +14281,7 @@ createNode parentConstraint -n "Mid_Finger1_JNT_parentConstraint1" -p "Mid_Finge
 	setAttr ".tg[0].tor" -type "double3" 0 -1.3223149268997101 0 ;
 	setAttr ".rst" -type "double3" 0.46193136188557915 -3.5527136788005009e-15 -0.029269422005129497 ;
 	setAttr -k on ".w0";
-createNode scaleConstraint -n "Mid_Finger1_JNT_scaleConstraint1" -p "Mid_Finger1_JNT";
+createNode scaleConstraint -n "Mid_Finger1_JNT_scaleConstraint1" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT";
 	rename -uid "F1653222-41E4-7836-14F5-348949588653";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "M_Finger_BaseW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -14290,7 +14297,7 @@ createNode scaleConstraint -n "Mid_Finger1_JNT_scaleConstraint1" -p "Mid_Finger1
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
 	setAttr -k on ".w0";
-createNode parentConstraint -n "Mid_Finger_JNT_parentConstraint1" -p "Mid_Finger_JNT";
+createNode parentConstraint -n "Mid_Finger_JNT_parentConstraint1" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT";
 	rename -uid "7A3DDFF5-44A4-04A6-EA6C-2BB929EA0DE1";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "M_Finger_Base_CNTLW0" -dv 1 -min 
 		0 -at "double";
@@ -14313,7 +14320,7 @@ createNode parentConstraint -n "Mid_Finger_JNT_parentConstraint1" -p "Mid_Finger
 	setAttr ".rst" -type "double3" 1.9578706276139908 -0.13675316491872636 0.0077911888979078636 ;
 	setAttr ".rsrr" -type "double3" 0 3.120794278296446 0 ;
 	setAttr -k on ".w0";
-createNode scaleConstraint -n "Mid_Finger_JNT_scaleConstraint1" -p "Mid_Finger_JNT";
+createNode scaleConstraint -n "Mid_Finger_JNT_scaleConstraint1" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT";
 	rename -uid "67BD5AC7-4E4F-914B-55D2-E2A9076B95B1";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "M_Finger_Base_CNTLW0" -dv 1 -min 
 		0 -at "double";
@@ -14330,7 +14337,7 @@ createNode scaleConstraint -n "Mid_Finger_JNT_scaleConstraint1" -p "Mid_Finger_J
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
 	setAttr -k on ".w0";
-createNode joint -n "Ring_Finger_JNT" -p "Wrist_JNT";
+createNode joint -n "Ring_Finger_JNT" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT";
 	rename -uid "552765E2-421B-6777-74BA-659E36AA6FCD";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
 	setAttr ".uoc" 1;
@@ -14343,7 +14350,7 @@ createNode joint -n "Ring_Finger_JNT" -p "Wrist_JNT";
 		 14.837077140808098 28.404061928754508 0.40117874741551296 1;
 	setAttr ".radi" 0.2;
 	setAttr ".liw" yes;
-createNode joint -n "Ring_FInger1_JNT" -p "Ring_Finger_JNT";
+createNode joint -n "Ring_FInger1_JNT" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT";
 	rename -uid "EBD7DF1C-40EE-8877-AFD8-EC97C7BB9E35";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
 	setAttr ".uoc" 1;
@@ -14355,7 +14362,7 @@ createNode joint -n "Ring_FInger1_JNT" -p "Ring_Finger_JNT";
 		 15.217139300115127 28.404061928754473 0.44299775833732363 1;
 	setAttr ".radi" 0.2;
 	setAttr ".liw" yes;
-createNode joint -n "Ring_FInger2_JNT" -p "Ring_FInger1_JNT";
+createNode joint -n "Ring_FInger2_JNT" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT";
 	rename -uid "813BC82E-4A14-F809-7A3E-3FA031DB836D";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
 	setAttr ".uoc" 1;
@@ -14367,7 +14374,7 @@ createNode joint -n "Ring_FInger2_JNT" -p "Ring_FInger1_JNT";
 		 15.971497817237802 28.404061928754501 0.51779832571652162 1;
 	setAttr ".radi" 0.2;
 	setAttr ".liw" yes;
-createNode joint -n "Ring_FInger3_JNT" -p "Ring_FInger2_JNT";
+createNode joint -n "Ring_FInger3_JNT" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT";
 	rename -uid "40DF8538-4CD1-DBA5-B02F-568C00A9427F";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
 	setAttr ".uoc" 1;
@@ -14380,7 +14387,7 @@ createNode joint -n "Ring_FInger3_JNT" -p "Ring_FInger2_JNT";
 		 16.449531103371665 28.404061928754533 0.56519907776913403 1;
 	setAttr ".radi" 0.2;
 	setAttr ".liw" yes;
-createNode parentConstraint -n "Ring_FInger2_JNT_parentConstraint1" -p "Ring_FInger2_JNT";
+createNode parentConstraint -n "Ring_FInger2_JNT_parentConstraint1" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT";
 	rename -uid "D557431D-49BD-A4CB-C1B3-2C8303657CCD";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "P_Finger_Base1W0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -14402,7 +14409,7 @@ createNode parentConstraint -n "Ring_FInger2_JNT_parentConstraint1" -p "Ring_FIn
 	setAttr ".rst" -type "double3" 0.75805797748969894 4.2632564145606011e-14 -6.6613381477509392e-16 ;
 	setAttr ".rsrr" -type "double3" 0 9.9392333795734899e-17 0 ;
 	setAttr -k on ".w0";
-createNode scaleConstraint -n "Ring_FInger2_JNT_scaleConstraint1" -p "Ring_FInger2_JNT";
+createNode scaleConstraint -n "Ring_FInger2_JNT_scaleConstraint1" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT";
 	rename -uid "D22B7576-44BD-17DC-93F2-7BA1AF87D1B2";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "P_Finger_Base1W0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -14418,7 +14425,7 @@ createNode scaleConstraint -n "Ring_FInger2_JNT_scaleConstraint1" -p "Ring_FInge
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
 	setAttr -k on ".w0";
-createNode parentConstraint -n "Ring_FInger1_JNT_parentConstraint1" -p "Ring_FInger1_JNT";
+createNode parentConstraint -n "Ring_FInger1_JNT_parentConstraint1" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT";
 	rename -uid "28477732-4270-1567-EBAB-8FBEC4EE0591";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "P_Finger_BaseW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -14440,7 +14447,7 @@ createNode parentConstraint -n "Ring_FInger1_JNT_parentConstraint1" -p "Ring_FIn
 	setAttr ".rst" -type "double3" 0.38235595276077383 -2.8421709430404007e-14 0 ;
 	setAttr ".rsrr" -type "double3" 0 -2.981770013872047e-16 0 ;
 	setAttr -k on ".w0";
-createNode scaleConstraint -n "Ring_FInger1_JNT_scaleConstraint1" -p "Ring_FInger1_JNT";
+createNode scaleConstraint -n "Ring_FInger1_JNT_scaleConstraint1" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT";
 	rename -uid "1A310D36-405F-75AE-2C4B-02A2648CCEAB";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "P_Finger_BaseW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -14456,7 +14463,7 @@ createNode scaleConstraint -n "Ring_FInger1_JNT_scaleConstraint1" -p "Ring_FInge
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
 	setAttr -k on ".w0";
-createNode parentConstraint -n "Ring_Finger_JNT_parentConstraint1" -p "Ring_Finger_JNT";
+createNode parentConstraint -n "Ring_Finger_JNT_parentConstraint1" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT";
 	rename -uid "EEB34C72-426A-9D4A-BDD5-958AB2DE5523";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "P_Finger_Base_CNTLW0" -dv 1 -min 
 		0 -at "double";
@@ -14479,7 +14486,7 @@ createNode parentConstraint -n "Ring_Finger_JNT_parentConstraint1" -p "Ring_Fing
 	setAttr ".rst" -type "double3" 2.1278559786643001 -0.1646712865773523 0.51488085313543586 ;
 	setAttr ".rsrr" -type "double3" 0 4.7708320221952744e-15 0 ;
 	setAttr -k on ".w0";
-createNode scaleConstraint -n "Ring_Finger_JNT_scaleConstraint1" -p "Ring_Finger_JNT";
+createNode scaleConstraint -n "Ring_Finger_JNT_scaleConstraint1" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT";
 	rename -uid "30581E53-4DE6-FECB-8239-B9B98D08F7B6";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "P_Finger_Base_CNTLW0" -dv 1 -min 
 		0 -at "double";
@@ -14496,7 +14503,7 @@ createNode scaleConstraint -n "Ring_Finger_JNT_scaleConstraint1" -p "Ring_Finger
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
 	setAttr -k on ".w0";
-createNode joint -n "Pinky_Finger_JNT" -p "Wrist_JNT";
+createNode joint -n "Pinky_Finger_JNT" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT";
 	rename -uid "E2370FF2-4673-D7F3-39E6-17BD0C407293";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
 	setAttr ".uoc" 1;
@@ -14509,7 +14516,7 @@ createNode joint -n "Pinky_Finger_JNT" -p "Wrist_JNT";
 		 13.481301213705395 28.402369293611081 0.6855134866664796 1;
 	setAttr ".radi" 0.2;
 	setAttr ".liw" yes;
-createNode joint -n "Pinky_Finger1_JNT" -p "Pinky_Finger_JNT";
+createNode joint -n "Pinky_Finger1_JNT" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT";
 	rename -uid "4487DCA3-4CC4-DE0B-C491-D6A71EB8F071";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
 	setAttr ".uoc" 1;
@@ -14521,7 +14528,7 @@ createNode joint -n "Pinky_Finger1_JNT" -p "Pinky_Finger_JNT";
 		 13.766263392427975 28.319862182206581 1.1318717974111205 1;
 	setAttr ".radi" 0.2;
 	setAttr ".liw" yes;
-createNode joint -n "Pinky_Finger2_JNT" -p "Pinky_Finger1_JNT";
+createNode joint -n "Pinky_Finger2_JNT" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT";
 	rename -uid "F3D18834-4AE7-612C-8EC2-4EB632BBF08C";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
 	setAttr ".uoc" 1;
@@ -14534,7 +14541,7 @@ createNode joint -n "Pinky_Finger2_JNT" -p "Pinky_Finger1_JNT";
 		 14.07276287362915 28.300183152636261 1.4811295050069191 1;
 	setAttr ".radi" 0.2;
 	setAttr ".liw" yes;
-createNode joint -n "Pinky_Finger3_JNT" -p "Pinky_Finger2_JNT";
+createNode joint -n "Pinky_Finger3_JNT" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT";
 	rename -uid "84262ADF-4046-16CE-E267-A79B468CBF35";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
 	setAttr ".uoc" 1;
@@ -14547,7 +14554,7 @@ createNode joint -n "Pinky_Finger3_JNT" -p "Pinky_Finger2_JNT";
 		 14.277405169466542 28.296828018168103 1.7277672069951377 1;
 	setAttr ".radi" 0.2;
 	setAttr ".liw" yes;
-createNode parentConstraint -n "Pinky_Finger2_JNT_parentConstraint1" -p "Pinky_Finger2_JNT";
+createNode parentConstraint -n "Pinky_Finger2_JNT_parentConstraint1" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT";
 	rename -uid "9ABDCA87-4E2F-19ED-3FA0-2CB81C82F5C4";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Thumb_Finger_Base1W0" -dv 1 -min 
 		0 -at "double";
@@ -14571,7 +14578,7 @@ createNode parentConstraint -n "Pinky_Finger2_JNT_parentConstraint1" -p "Pinky_F
 	setAttr ".rst" -type "double3" 0.46509154206080261 1.4210854715202004e-14 -1.7763568394002505e-15 ;
 	setAttr ".rsrr" -type "double3" -7.051609647879022e-12 8.2930478516031552e-15 8.4749948361260166e-12 ;
 	setAttr -k on ".w0";
-createNode scaleConstraint -n "Pinky_Finger2_JNT_scaleConstraint1" -p "Pinky_Finger2_JNT";
+createNode scaleConstraint -n "Pinky_Finger2_JNT_scaleConstraint1" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT";
 	rename -uid "B74FC28F-4109-0660-9971-C2B14FFBFCE8";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Thumb_Finger_Base1W0" -dv 1 -min 
 		0 -at "double";
@@ -14588,7 +14595,7 @@ createNode scaleConstraint -n "Pinky_Finger2_JNT_scaleConstraint1" -p "Pinky_Fin
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
 	setAttr -k on ".w0";
-createNode parentConstraint -n "Pinky_Finger1_JNT_parentConstraint1" -p "Pinky_Finger1_JNT";
+createNode parentConstraint -n "Pinky_Finger1_JNT_parentConstraint1" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT";
 	rename -uid "27D5B7A4-46B9-5373-75CE-738857A2CF85";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Thumb_Finger_BaseW0" -dv 1 -min 0 
 		-at "double";
@@ -14612,7 +14619,7 @@ createNode parentConstraint -n "Pinky_Finger1_JNT_parentConstraint1" -p "Pinky_F
 	setAttr ".rst" -type "double3" 0.53595392367761763 -7.1054273576010019e-15 -1.7763568394002505e-15 ;
 	setAttr ".rsrr" -type "double3" -7.2792957425320311e-12 1.7493050748575457e-14 8.282164390530997e-12 ;
 	setAttr -k on ".w0";
-createNode scaleConstraint -n "Pinky_Finger1_JNT_scaleConstraint1" -p "Pinky_Finger1_JNT";
+createNode scaleConstraint -n "Pinky_Finger1_JNT_scaleConstraint1" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT";
 	rename -uid "7CDCD945-4A66-F707-EBF9-AE9374E41D7D";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Thumb_Finger_BaseW0" -dv 1 -min 0 
 		-at "double";
@@ -14629,7 +14636,7 @@ createNode scaleConstraint -n "Pinky_Finger1_JNT_scaleConstraint1" -p "Pinky_Fin
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
 	setAttr -k on ".w0";
-createNode parentConstraint -n "Pinky_Finger_JNT_parentConstraint1" -p "Pinky_Finger_JNT";
+createNode parentConstraint -n "Pinky_Finger_JNT_parentConstraint1" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT";
 	rename -uid "CB1DBD77-428E-A4EF-0853-06BDC4F1076B";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Thumb_Base_CNTLW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -14653,7 +14660,7 @@ createNode parentConstraint -n "Pinky_Finger_JNT_parentConstraint1" -p "Pinky_Fi
 	setAttr ".rsrr" -type "double3" -5.8601720005965317e-12 -1.9331808922793177e-14 
 		9.3325425740843256e-12 ;
 	setAttr -k on ".w0";
-createNode scaleConstraint -n "Pinky_Finger_JNT_scaleConstraint1" -p "Pinky_Finger_JNT";
+createNode scaleConstraint -n "Pinky_Finger_JNT_scaleConstraint1" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT";
 	rename -uid "79261AFE-4DB5-0696-54F9-E386B9A3457D";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Thumb_Base_CNTLW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -14669,7 +14676,7 @@ createNode scaleConstraint -n "Pinky_Finger_JNT_scaleConstraint1" -p "Pinky_Fing
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
 	setAttr -k on ".w0";
-createNode parentConstraint -n "Wrist_JNT_parentConstraint1" -p "Wrist_JNT";
+createNode parentConstraint -n "Wrist_JNT_parentConstraint1" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT";
 	rename -uid "E14C92AD-4D0D-C992-F966-A8A472A34977";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Wrist_CNTLW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -14688,7 +14695,7 @@ createNode parentConstraint -n "Wrist_JNT_parentConstraint1" -p "Wrist_JNT";
 		-0.11916776128200723 ;
 	setAttr ".rst" -type "double3" 0.98125223259672012 -3.5527136788005009e-15 1.5850697954178372e-07 ;
 	setAttr -k on ".w0";
-createNode scaleConstraint -n "Wrist_JNT_scaleConstraint1" -p "Wrist_JNT";
+createNode scaleConstraint -n "Wrist_JNT_scaleConstraint1" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT";
 	rename -uid "C03FB043-4878-0B2C-253E-B993DA630D91";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Wrist_CNTLW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -14704,7 +14711,7 @@ createNode scaleConstraint -n "Wrist_JNT_scaleConstraint1" -p "Wrist_JNT";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
 	setAttr -k on ".w0";
-createNode parentConstraint -n "Elbow_JNT_parentConstraint1" -p "Elbow_JNT";
+createNode parentConstraint -n "Elbow_JNT_parentConstraint1" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT";
 	rename -uid "1C208F5E-4AA6-A4EC-780C-748D3A2E6684";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Elbow_CNTLW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -14727,7 +14734,7 @@ createNode parentConstraint -n "Elbow_JNT_parentConstraint1" -p "Elbow_JNT";
 	setAttr ".rst" -type "double3" 5.8950612003869152 9.2148511043887993e-15 2.8421709430404007e-14 ;
 	setAttr ".rsrr" -type "double3" -6.344446243581919e-15 -4.9330948352603817e-16 -7.9513867036587899e-16 ;
 	setAttr -k on ".w0";
-createNode scaleConstraint -n "Elbow_JNT_scaleConstraint1" -p "Elbow_JNT";
+createNode scaleConstraint -n "Elbow_JNT_scaleConstraint1" -p "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT";
 	rename -uid "09985684-43FA-4D63-D90B-E7B41FBA30D5";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Elbow_CNTLW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -14743,7 +14750,7 @@ createNode scaleConstraint -n "Elbow_JNT_scaleConstraint1" -p "Elbow_JNT";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
 	setAttr -k on ".w0";
-createNode parentConstraint -n "Shoulder_JNT_parentConstraint1" -p "Shoulder_JNT";
+createNode parentConstraint -n "Shoulder_JNT_parentConstraint1" -p "|Arm_Main|JNT|FK|Shoulder_JNT";
 	rename -uid "2EB734BA-42FC-ADB3-564C-7FACE7611D46";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Shoulder_CNTLW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -14765,7 +14772,7 @@ createNode parentConstraint -n "Shoulder_JNT_parentConstraint1" -p "Shoulder_JNT
 	setAttr ".rsrr" -type "double3" -6.3626623681425918e-15 -9.9392333795734924e-17 
 		-2.981770013872047e-16 ;
 	setAttr -k on ".w0";
-createNode scaleConstraint -n "Shoulder_JNT_scaleConstraint1" -p "Shoulder_JNT";
+createNode scaleConstraint -n "Shoulder_JNT_scaleConstraint1" -p "|Arm_Main|JNT|FK|Shoulder_JNT";
 	rename -uid "CDB861A6-4868-FBB8-E511-DDAF159125E6";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Shoulder_CNTLW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -14783,19 +14790,21 @@ createNode scaleConstraint -n "Shoulder_JNT_scaleConstraint1" -p "Shoulder_JNT";
 	setAttr -k on ".w0";
 createNode transform -n "CNTL" -p "Arm_Main";
 	rename -uid "26D247FA-43E4-7FEA-8731-058E0E23C768";
+	setAttr ".rp" -type "double3" 9.1196620925712732 28.568733215332035 0.05940727216462327 ;
+	setAttr ".sp" -type "double3" 9.1196620925712732 28.568733215332035 0.05940727216462327 ;
 createNode transform -n "FK" -p "CNTL";
 	rename -uid "9ADC9319-4B3A-F9F5-9564-75A1C105A35A";
 createNode transform -n "Shoulder_GP" -p "|Arm_Main|CNTL|FK";
 	rename -uid "7CE342D3-4A11-9FA4-A329-0E97924DBA2E";
 	setAttr ".t" -type "double3" 2.0301511320862975 28.568733215332031 -0.50554434716425567 ;
 	setAttr ".r" -type "double3" 0 1.428130803901452 0 ;
-createNode transform -n "Shoulder_CNTL" -p "Shoulder_GP";
+createNode transform -n "Shoulder_CNTL" -p "|Arm_Main|CNTL|FK|Shoulder_GP";
 	rename -uid "19B69037-4F3A-C095-1CCF-0B830AEB78C9";
 	setAttr ".ove" yes;
 	setAttr ".ovc" 17;
 	setAttr ".rp" -type "double3" 0 0 -3.3306690738754696e-16 ;
 	setAttr ".sp" -type "double3" 0 0 -3.3306690738754696e-16 ;
-createNode nurbsCurve -n "Shoulder_CNTLShape" -p "Shoulder_CNTL";
+createNode nurbsCurve -n "Shoulder_CNTLShape" -p "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL";
 	rename -uid "539366A1-4669-505D-775D-2382A15D3F1B";
 	setAttr -k off ".v";
 	setAttr ".cc" -type "nurbsCurve" 
@@ -14814,7 +14823,7 @@ createNode nurbsCurve -n "Shoulder_CNTLShape" -p "Shoulder_CNTL";
 		0.027619527921379117 0 -1.1078499532909365
 		0.01952995548637837 -0.78361162489122549 -0.78336821450922156
 		;
-createNode transform -n "Elbow_GP" -p "Shoulder_CNTL";
+createNode transform -n "Elbow_GP" -p "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL";
 	rename -uid "4C7F2170-4E82-A6A7-07AC-589D729084C8";
 	setAttr ".t" -type "double3" 5.8950612003869134 0 -8.7152507433074788e-15 ;
 	setAttr ".r" -type "double3" 0 -5.8712400090976056 0 ;
@@ -14824,7 +14833,7 @@ createNode transform -n "Elbow_CNTL" -p "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_
 	setAttr ".ovc" 17;
 	setAttr ".rp" -type "double3" 0.018909523722663302 0 0.24335734877868576 ;
 	setAttr ".sp" -type "double3" 0.018909523722663302 0 0.24335734877868576 ;
-createNode nurbsCurve -n "Elbow_CNTLShape" -p "Elbow_CNTL";
+createNode nurbsCurve -n "Elbow_CNTLShape" -p "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL";
 	rename -uid "72A83438-49D9-FB27-B4E2-9EA1AC480DE5";
 	setAttr -k off ".v";
 	setAttr ".cc" -type "nurbsCurve" 
@@ -14843,16 +14852,16 @@ createNode nurbsCurve -n "Elbow_CNTLShape" -p "Elbow_CNTL";
 		-0.088281664640676105 0 -1.1361466405930083
 		-0.05688609245249765 -0.97839695613671296 -0.73209927677993414
 		;
-createNode transform -n "Wrist_GP" -p "Elbow_CNTL";
+createNode transform -n "Wrist_GP" -p "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL";
 	rename -uid "8DC9795F-4E36-B1CD-6CEB-EBB50B3F89C4";
 	setAttr ".t" -type "double3" 4.8466876610808161 0 4.4408920985006262e-16 ;
-createNode transform -n "Wrist_CNTL" -p "Wrist_GP";
+createNode transform -n "Wrist_CNTL" -p "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP";
 	rename -uid "D2CDEB01-45B0-556B-CCFA-BA9BE81BE155";
 	setAttr ".ove" yes;
 	setAttr ".ovc" 17;
 	setAttr ".rp" -type "double3" 0.0092596571266359007 -0.088395635535555073 0.11916776128200812 ;
 	setAttr ".sp" -type "double3" 0.0092596571266359007 -0.088395635535555073 0.11916776128200812 ;
-createNode nurbsCurve -n "Wrist_CNTLShape" -p "Wrist_CNTL";
+createNode nurbsCurve -n "Wrist_CNTLShape" -p "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL";
 	rename -uid "C9A9AECD-4014-3A5F-92F8-6BA4FE34EB5B";
 	setAttr -k off ".v";
 	setAttr ".cc" -type "nurbsCurve" 
@@ -14871,18 +14880,18 @@ createNode nurbsCurve -n "Wrist_CNTLShape" -p "Wrist_CNTL";
 		-0.086803159557097276 -0.088395635535555073 -1.1171189229956306
 		-0.058667011970311191 -0.96521740490245866 -0.7550189366613429
 		;
-createNode transform -n "Thumb_GP" -p "Wrist_CNTL";
+createNode transform -n "Thumb_GP" -p "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL";
 	rename -uid "34514E66-4F59-E456-B222-CE92121CE1C7";
 	setAttr ".t" -type "double3" 0.79818168241486198 -0.16636392172094716 0.90339195252595517 ;
 	setAttr ".r" -type "double3" 17.160030112712569 -52.104941255132324 -14.515100742224627 ;
 	setAttr ".s" -type "double3" 0.99999999999999989 1 0.99999999999999978 ;
-createNode transform -n "Thumb_Base_CNTL" -p "Thumb_GP";
+createNode transform -n "Thumb_Base_CNTL" -p "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP";
 	rename -uid "D01A2DC8-4CE8-DEE5-BD22-1E8FB9F5C6AC";
 	setAttr ".ove" yes;
 	setAttr ".ovc" 17;
 	setAttr ".rp" -type "double3" 0.0027903761020691142 -0.017823924545513847 0.0017517448935890911 ;
 	setAttr ".sp" -type "double3" 0.0027903761020691142 -0.017823924545513847 0.0017517448935890911 ;
-createNode nurbsCurve -n "Thumb_Base_CNTLShape" -p "Thumb_Base_CNTL";
+createNode nurbsCurve -n "Thumb_Base_CNTLShape" -p "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL";
 	rename -uid "838A7B75-4B7C-D5AC-F78F-FA84E8F51E8C";
 	setAttr -k off ".v";
 	setAttr ".cc" -type "nurbsCurve" 
@@ -14901,12 +14910,12 @@ createNode nurbsCurve -n "Thumb_Base_CNTLShape" -p "Thumb_Base_CNTL";
 		-0.18346896472112825 0.33558399715615245 -0.11517831658947461
 		-0.2035405390112843 0.34367722931953182 -0.0008577888855201423
 		;
-createNode transform -n "null1" -p "Thumb_Base_CNTL";
+createNode transform -n "null1" -p "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL";
 	rename -uid "C962F110-483D-0D07-A050-609D33C72D6F";
 	setAttr ".t" -type "double3" 0.5359539236776274 -9.5923269327613525e-14 -5.3290705182007514e-15 ;
 	setAttr ".r" -type "double3" -3.8973522914629108 9.2899709404970441 5.5174986756621225 ;
 	setAttr ".s" -type "double3" 0.99999999999999933 0.99999999999999989 0.99999999999999911 ;
-createNode transform -n "Thumb_Finger_Base" -p "null1";
+createNode transform -n "Thumb_Finger_Base" -p "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL|null1";
 	rename -uid "932AD2A7-4BD5-F579-C6F3-898F11853619";
 	setAttr ".ove" yes;
 	setAttr ".ovc" 17;
@@ -14915,7 +14924,7 @@ createNode transform -n "Thumb_Finger_Base" -p "null1";
 	setAttr ".rp" -type "double3" -2.4444424440162049e-07 -1.8446757721335416e-07 -2.9678088786511136e-07 ;
 	setAttr ".sp" -type "double3" -2.4444424440162038e-07 -1.8446757721335416e-07 -2.9678088786511125e-07 ;
 	setAttr ".spt" -type "double3" -1.0587911840678759e-22 0 -1.0587911840678759e-22 ;
-createNode nurbsCurve -n "Thumb_Finger_BaseShape" -p "Thumb_Finger_Base";
+createNode nurbsCurve -n "Thumb_Finger_BaseShape" -p "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL|null1|Thumb_Finger_Base";
 	rename -uid "CB10D954-4449-DD46-CDA9-59BB864137B7";
 	setAttr -k off ".v";
 	setAttr ".cc" -type "nurbsCurve" 
@@ -14934,7 +14943,7 @@ createNode nurbsCurve -n "Thumb_Finger_BaseShape" -p "Thumb_Finger_Base";
 		-2.4444424440162038e-07 -1.8446758076606784e-07 -0.41024109897944605
 		-2.4444424617797722e-07 -0.29008423762158841 -0.29008434993489907
 		;
-createNode transform -n "null2" -p "Thumb_Finger_Base";
+createNode transform -n "null2" -p "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL|null1|Thumb_Finger_Base";
 	rename -uid "5146908D-4E52-5FC2-C7A7-09B7FD4C5544";
 	setAttr ".t" -type "double3" 0.00041394980896924949 -0.015273381285982879 -0.01231265932455905 ;
 	setAttr ".r" -type "double3" -1.6119361340109544 -1.5170042462891402 1.8825640945697799 ;
@@ -14943,7 +14952,7 @@ createNode transform -n "null2" -p "Thumb_Finger_Base";
 	setAttr ".rpt" -type "double3" -0.00041394980898425338 0.015273381285969284 0.012312659324548803 ;
 	setAttr ".sp" -type "double3" 0.46509154206081327 -3.1974423109204508e-14 8.8817841970012523e-15 ;
 	setAttr ".spt" -type "double3" -2.2204460492503121e-16 -6.3108872417680958e-30 -6.3108872417680909e-30 ;
-createNode transform -n "Thumb_Finger_Base1" -p "null2";
+createNode transform -n "Thumb_Finger_Base1" -p "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL|null1|Thumb_Finger_Base|null2";
 	rename -uid "FEBE90F3-4727-3B05-CEF9-D8B732DEF0A1";
 	setAttr ".ove" yes;
 	setAttr ".ovc" 17;
@@ -14952,7 +14961,7 @@ createNode transform -n "Thumb_Finger_Base1" -p "null2";
 	setAttr ".rp" -type "double3" 0.46509154206086323 -2.4868995751603491e-14 5.3290705182007538e-15 ;
 	setAttr ".sp" -type "double3" 0.46509154206086301 -2.4868995751603507e-14 5.3290705182007514e-15 ;
 	setAttr ".spt" -type "double3" 2.2204460492503141e-16 1.5777218104420228e-29 2.3665827156630365e-30 ;
-createNode nurbsCurve -n "Thumb_Finger_Base1Shape" -p "Thumb_Finger_Base1";
+createNode nurbsCurve -n "Thumb_Finger_Base1Shape" -p "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL|null1|Thumb_Finger_Base|null2|Thumb_Finger_Base1";
 	rename -uid "3B214E4D-42D6-BA1B-35CA-EDA1EC413E13";
 	setAttr -k off ".v";
 	setAttr ".cc" -type "nurbsCurve" 
@@ -14971,18 +14980,18 @@ createNode nurbsCurve -n "Thumb_Finger_Base1Shape" -p "Thumb_Finger_Base1";
 		0.47078694917407837 0.011424105839942911 0.31416179842204883
 		0.47852603437423014 0.23005521793946215 0.21390347018997069
 		;
-createNode transform -n "P_Finger_GP" -p "Wrist_CNTL";
+createNode transform -n "P_Finger_GP" -p "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL";
 	rename -uid "1641D73F-4770-A823-188D-E8B55BA10886";
 	setAttr ".t" -type "double3" 2.1278559786643108 -0.16467128657752639 0.51488085313540433 ;
 	setAttr ".r" -type "double3" 0 -1.8360025227130834 0 ;
 	setAttr ".s" -type "double3" 1 1.0000000000000002 1.0000000000000004 ;
-createNode transform -n "P_Finger_Base_CNTL" -p "P_Finger_GP";
+createNode transform -n "P_Finger_Base_CNTL" -p "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP";
 	rename -uid "823E3D8E-47BA-FF26-5B2E-03AAFCF3AA96";
 	setAttr ".ove" yes;
 	setAttr ".ovc" 17;
 	setAttr ".rp" -type "double3" -2.1186432797497696e-17 -0.0072671547156382098 2.9534252691215954e-14 ;
 	setAttr ".sp" -type "double3" -2.1186432797497696e-17 -0.0072671547156382098 2.9534252691215954e-14 ;
-createNode nurbsCurve -n "P_Finger_Base_CNTLShape" -p "P_Finger_Base_CNTL";
+createNode nurbsCurve -n "P_Finger_Base_CNTLShape" -p "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL";
 	rename -uid "15C0BDFA-405A-D89F-5431-9BAD8796814C";
 	setAttr -k off ".v";
 	setAttr ".cc" -type "nurbsCurve" 
@@ -15001,17 +15010,17 @@ createNode nurbsCurve -n "P_Finger_Base_CNTLShape" -p "P_Finger_Base_CNTL";
 		-0.014949569346649486 0.34352704870257605 -0.13586561425904564
 		-0.10664243903350193 0.34352704870257605 -0.085500555311801868
 		;
-createNode transform -n "null3" -p "P_Finger_Base_CNTL";
+createNode transform -n "null3" -p "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL";
 	rename -uid "F7E73A0A-4D4F-CCBA-AA1F-488541B8C8AD";
 	setAttr ".rp" -type "double3" 0.38235595276077206 -3.5527136788005009e-14 -2.2204460492503131e-16 ;
 	setAttr ".sp" -type "double3" 0.38235595276077206 -3.5527136788005009e-14 -2.2204460492503131e-16 ;
-createNode transform -n "P_Finger_Base" -p "null3";
+createNode transform -n "P_Finger_Base" -p "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL|null3";
 	rename -uid "B118F890-4804-B497-2B2B-BFB0C76C05C0";
 	setAttr ".ove" yes;
 	setAttr ".ovc" 17;
 	setAttr ".rp" -type "double3" 0.38235595276079692 1.7053025658242404e-13 2.9309887850104133e-14 ;
 	setAttr ".sp" -type "double3" 0.38235595276079692 1.7053025658242404e-13 2.9309887850104133e-14 ;
-createNode nurbsCurve -n "P_Finger_BaseShape" -p "P_Finger_Base";
+createNode nurbsCurve -n "P_Finger_BaseShape" -p "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL|null3|P_Finger_Base";
 	rename -uid "921A436E-490E-48AD-1B1D-1292F0EACE8B";
 	setAttr -k off ".v";
 	setAttr ".cc" -type "nurbsCurve" 
@@ -15030,17 +15039,17 @@ createNode nurbsCurve -n "P_Finger_BaseShape" -p "P_Finger_Base";
 		0.38091899666049067 1.7049193631430194e-13 -0.31290873534556951
 		0.38133987135799829 -0.22126222169437423 -0.22125988865535046
 		;
-createNode transform -n "null4" -p "P_Finger_Base";
+createNode transform -n "null4" -p "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL|null3|P_Finger_Base";
 	rename -uid "890F7474-4AE7-58B9-809A-829988BCA8BD";
 	setAttr ".rp" -type "double3" 1.1403700769316547 3.5527136788005009e-15 -0.0081538207747910985 ;
 	setAttr ".sp" -type "double3" 1.1403700769316547 3.5527136788005009e-15 -0.0081538207747910985 ;
-createNode transform -n "P_Finger_Base1" -p "null4";
+createNode transform -n "P_Finger_Base1" -p "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL|null3|P_Finger_Base|null4";
 	rename -uid "6C9FC6CE-44D2-D49F-DEF2-EC893AB646CD";
 	setAttr ".ove" yes;
 	setAttr ".ovc" 17;
 	setAttr ".rp" -type "double3" 1.1417538036073918 1.7763568394002505e-13 0.0044218508319748828 ;
 	setAttr ".sp" -type "double3" 1.1417538036073918 1.7763568394002505e-13 0.0044218508319748828 ;
-createNode nurbsCurve -n "P_Finger_Base1Shape" -p "P_Finger_Base1";
+createNode nurbsCurve -n "P_Finger_Base1Shape" -p "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL|null3|P_Finger_Base|null4|P_Finger_Base1";
 	rename -uid "2B027049-4076-B2A2-B45D-AE9ED0808025";
 	setAttr -k off ".v";
 	setAttr ".cc" -type "nurbsCurve" 
@@ -15059,11 +15068,11 @@ createNode nurbsCurve -n "P_Finger_Base1Shape" -p "P_Finger_Base1";
 		1.1501917847192558 1.7760911083309708e-13 -0.2170563078381961
 		1.147720357271115 -0.15672232497806601 -0.15218685704841337
 		;
-createNode transform -n "MID_Finger_GP" -p "Wrist_CNTL";
+createNode transform -n "MID_Finger_GP" -p "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL";
 	rename -uid "7BF95F12-4ACE-01D3-AF18-2EAFCED61350";
 	setAttr ".t" -type "double3" 1.9578706276140014 -0.1367531649187228 0.0077911888979069754 ;
 	setAttr ".r" -type "double3" 0 3.1207942782964446 0 ;
-createNode transform -n "M_Finger_Base_CNTL" -p "MID_Finger_GP";
+createNode transform -n "M_Finger_Base_CNTL" -p "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP";
 	rename -uid "41895CE1-4FB7-27D5-A421-43BBFE9A930E";
 	setAttr ".ove" yes;
 	setAttr ".ovc" 17;
@@ -15072,7 +15081,7 @@ createNode transform -n "M_Finger_Base_CNTL" -p "MID_Finger_GP";
 	setAttr ".rp" -type "double3" 14.706886462501048 28.428023330704143 -0.11755561083555259 ;
 	setAttr ".rpt" -type "double3" -0.0066292764445291478 0 -0.33935510946532893 ;
 	setAttr ".sp" -type "double3" 14.706886462501048 28.428023330704143 -0.11755561083555259 ;
-createNode nurbsCurve -n "M_Finger_Base_CNTLShape" -p "M_Finger_Base_CNTL";
+createNode nurbsCurve -n "M_Finger_Base_CNTLShape" -p "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL";
 	rename -uid "733F7EA3-42FB-62C0-DFB4-60974215201C";
 	setAttr -k off ".v";
 	setAttr ".cc" -type "nurbsCurve" 
@@ -15091,11 +15100,11 @@ createNode nurbsCurve -n "M_Finger_Base_CNTLShape" -p "M_Finger_Base_CNTL";
 		14.70688646250105 28.790384699040491 -0.25424121637485664
 		14.610235143933618 28.790384699040491 -0.21420692940298397
 		;
-createNode transform -n "group3" -p "M_Finger_Base_CNTL";
+createNode transform -n "group3" -p "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL";
 	rename -uid "A78C6E6F-4829-34FB-2A05-8291A4113689";
 	setAttr ".t" -type "double3" 15.169370252591051 28.431980050413308 -0.13615738661025772 ;
 	setAttr ".r" -type "double3" 0 -1.3223149268997101 0 ;
-createNode transform -n "M_Finger_Base" -p "group3";
+createNode transform -n "M_Finger_Base" -p "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL|group3";
 	rename -uid "EBD28BCB-4D1B-A46A-8B96-6385E5C7AF3E";
 	setAttr ".ove" yes;
 	setAttr ".ovc" 17;
@@ -15104,7 +15113,7 @@ createNode transform -n "M_Finger_Base" -p "group3";
 	setAttr ".rp" -type "double3" 15.193697983914818 28.431980050413308 -0.13615738661025775 ;
 	setAttr ".rpt" -type "double3" -0.0071881831848110422 0 -0.35058415946641042 ;
 	setAttr ".sp" -type "double3" 15.193697983914818 28.431980050413308 -0.13615738661025775 ;
-createNode nurbsCurve -n "M_Finger_BaseShape" -p "M_Finger_Base";
+createNode nurbsCurve -n "M_Finger_BaseShape" -p "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL|group3|M_Finger_Base";
 	rename -uid "907208F8-4C10-EBD2-7FAB-3C9D07AB1D3B";
 	setAttr -k off ".v";
 	setAttr ".cc" -type "nurbsCurve" 
@@ -15123,11 +15132,11 @@ createNode nurbsCurve -n "M_Finger_BaseShape" -p "M_Finger_Base";
 		15.193697983914818 28.431980050413308 -0.44999464975267567
 		15.193697983914818 28.210063593456276 -0.3580738435672885
 		;
-createNode transform -n "null5" -p "M_Finger_Base";
+createNode transform -n "null5" -p "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL|group3|M_Finger_Base";
 	rename -uid "14339257-409D-3921-F60F-9D9E5A94DABB";
 	setAttr ".t" -type "double3" 16.019776389186482 28.431980050413308 -0.12690093040845823 ;
 	setAttr ".r" -type "double3" 0 -1.3223149268997101 0 ;
-createNode transform -n "M_Finger_Base1" -p "null5";
+createNode transform -n "M_Finger_Base1" -p "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL|group3|M_Finger_Base|null5";
 	rename -uid "E2B0F6C1-49EE-76DA-33FC-0FA0654FFA45";
 	setAttr ".ove" yes;
 	setAttr ".ovc" 17;
@@ -15136,7 +15145,7 @@ createNode transform -n "M_Finger_Base1" -p "null5";
 	setAttr ".rp" -type "double3" 16.019776389186479 28.431980050413308 -0.12690093040845837 ;
 	setAttr ".rpt" -type "double3" -0.0071945614717958632 0 -0.36964978846771712 ;
 	setAttr ".sp" -type "double3" 16.019776389186479 28.431980050413308 -0.12690093040845837 ;
-createNode nurbsCurve -n "M_Finger_Base1Shape" -p "M_Finger_Base1";
+createNode nurbsCurve -n "M_Finger_Base1Shape" -p "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL|group3|M_Finger_Base|null5|M_Finger_Base1";
 	rename -uid "CD305A7C-4AEB-EAFB-C7AE-3CAA2607EA7F";
 	setAttr -k off ".v";
 	setAttr ".cc" -type "nurbsCurve" 
@@ -15155,17 +15164,17 @@ createNode nurbsCurve -n "M_Finger_Base1Shape" -p "M_Finger_Base1";
 		16.019776389186479 28.431980050413308 -0.44844325493226356
 		16.019776389186479 28.204615292304041 -0.35426568851772655
 		;
-createNode transform -n "Ring_Finger_GP" -p "Wrist_CNTL";
+createNode transform -n "Ring_Finger_GP" -p "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL";
 	rename -uid "FA0904B7-4650-8720-836E-828649C7538C";
 	setAttr ".t" -type "double3" 1.9519187328710448 -0.13518017881156297 -0.51061211030954401 ;
 	setAttr ".r" -type "double3" -0.18836279154856914 14.834937789853415 -2.3922332933085002 ;
-createNode transform -n "Ring_Finger_Base_CNTL" -p "Ring_Finger_GP";
+createNode transform -n "Ring_Finger_Base_CNTL" -p "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP";
 	rename -uid "00E3D1B7-4059-5EB4-3D59-A4B3A27670F6";
 	setAttr ".ove" yes;
 	setAttr ".ovc" 17;
 	setAttr ".rp" -type "double3" -9.3350996679015502e-05 0.0023116465354019828 -1.7125754847255411e-05 ;
 	setAttr ".sp" -type "double3" -9.3350996679015502e-05 0.0023116465354019828 -1.7125754847255411e-05 ;
-createNode nurbsCurve -n "Ring_Finger_Base_CNTLShape" -p "Ring_Finger_Base_CNTL";
+createNode nurbsCurve -n "Ring_Finger_Base_CNTLShape" -p "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL";
 	rename -uid "4BE5FB46-4831-7163-2398-A1AF9A5AB558";
 	setAttr -k off ".v";
 	setAttr ".cc" -type "nurbsCurve" 
@@ -15184,17 +15193,17 @@ createNode nurbsCurve -n "Ring_Finger_Base_CNTLShape" -p "Ring_Finger_Base_CNTL"
 		0.014160419079445319 0.26010256277642441 -0.13636890448577565
 		-0.088048320497170707 0.25613770526989654 -0.114417253675827
 		;
-createNode transform -n "null6" -p "Ring_Finger_Base_CNTL";
+createNode transform -n "null6" -p "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL";
 	rename -uid "7CFF9150-49F4-82BA-767A-79A18574579A";
 	setAttr ".rp" -type "double3" 0.4874203693573449 -2.1316282072803006e-14 0.017861540436560741 ;
 	setAttr ".sp" -type "double3" 0.4874203693573449 -2.1316282072803006e-14 0.017861540436560741 ;
-createNode transform -n "Ring_Finger_Base" -p "null6";
+createNode transform -n "Ring_Finger_Base" -p "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL|null6";
 	rename -uid "844E983E-4F07-4009-C689-E7A289C10B89";
 	setAttr ".ove" yes;
 	setAttr ".ovc" 17;
 	setAttr ".rp" -type "double3" 0.48665147668013198 -2.4868995751603507e-14 0.022052707388917181 ;
 	setAttr ".sp" -type "double3" 0.48665147668013198 -2.4868995751603507e-14 0.022052707388917181 ;
-createNode nurbsCurve -n "Ring_Finger_BaseShape" -p "Ring_Finger_Base";
+createNode nurbsCurve -n "Ring_Finger_BaseShape" -p "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL|null6|Ring_Finger_Base";
 	rename -uid "A11B511C-4BFF-768E-94BE-F1A1332032F8";
 	setAttr -k off ".v";
 	setAttr ".cc" -type "nurbsCurve" 
@@ -15213,17 +15222,17 @@ createNode nurbsCurve -n "Ring_Finger_BaseShape" -p "Ring_Finger_Base";
 		0.50094713759764531 -0.0014605502784554832 -0.25301780642880173
 		0.50461877084923579 -0.19563827635550268 -0.17100978991448376
 		;
-createNode transform -n "null7" -p "Ring_Finger_Base";
+createNode transform -n "null7" -p "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL|null6|Ring_Finger_Base";
 	rename -uid "06180BCD-49BC-111D-7159-9AA1D5748CDF";
 	setAttr ".rp" -type "double3" 1.1515948730142149 -1.7763568394002505e-14 0.076191985653319527 ;
 	setAttr ".sp" -type "double3" 1.1515948730142149 -1.7763568394002505e-14 0.076191985653319527 ;
-createNode transform -n "Ring_Finger_Base1" -p "null7";
+createNode transform -n "Ring_Finger_Base1" -p "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL|null6|Ring_Finger_Base|null7";
 	rename -uid "0798BC53-4E11-AB2F-A0D4-FBB100F97923";
 	setAttr ".ove" yes;
 	setAttr ".ovc" 17;
 	setAttr ".rp" -type "double3" 1.1517971853894728 -2.1316282072803006e-14 0.07508919853315299 ;
 	setAttr ".sp" -type "double3" 1.1517971853894728 -2.1316282072803006e-14 0.07508919853315299 ;
-createNode nurbsCurve -n "Ring_Finger_Base1Shape" -p "Ring_Finger_Base1";
+createNode nurbsCurve -n "Ring_Finger_Base1Shape" -p "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL|null6|Ring_Finger_Base|null7|Ring_Finger_Base1";
 	rename -uid "C2EDE0BE-4B58-04BA-9857-E6A4DF585C58";
 	setAttr -k off ".v";
 	setAttr ".cc" -type "nurbsCurve" 
@@ -15242,17 +15251,17 @@ createNode nurbsCurve -n "Ring_Finger_Base1Shape" -p "Ring_Finger_Base1";
 		1.1719157751045888 -0.001081535941711557 -0.18056196854537448
 		1.1733397727952184 -0.18194530404056763 -0.10434120542947717
 		;
-createNode transform -n "Pinky_Finger_GP" -p "Wrist_CNTL";
+createNode transform -n "Pinky_Finger_GP" -p "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL";
 	rename -uid "622785AF-419E-1566-9A6F-D5A4BC6A7F17";
 	setAttr ".t" -type "double3" 1.7894946696305816 -0.35505022678245624 -0.95455000149657687 ;
 	setAttr ".r" -type "double3" 0 17.144526627892358 0 ;
-createNode transform -n "Pinky_Finger_Base_CNTL" -p "Pinky_Finger_GP";
+createNode transform -n "Pinky_Finger_Base_CNTL" -p "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP";
 	rename -uid "8D5096C5-49E5-14E0-8425-82AA299D825D";
 	setAttr ".ove" yes;
 	setAttr ".ovc" 17;
 	setAttr ".rp" -type "double3" 1.0712314039148959e-14 -0.0015423165502390646 8.4552464851874477e-16 ;
 	setAttr ".sp" -type "double3" 1.0712314039148959e-14 -0.0015423165502390646 8.4552464851874477e-16 ;
-createNode nurbsCurve -n "Pinky_Finger_Base_CNTLShape" -p "Pinky_Finger_Base_CNTL";
+createNode nurbsCurve -n "Pinky_Finger_Base_CNTLShape" -p "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL";
 	rename -uid "C4EB7404-4850-4F03-BB93-F4B9F1DD0BDA";
 	setAttr -k off ".v";
 	setAttr ".cc" -type "nurbsCurve" 
@@ -15271,17 +15280,17 @@ createNode nurbsCurve -n "Pinky_Finger_Base_CNTLShape" -p "Pinky_Finger_Base_CNT
 		0.030053110253460247 0.32325021274069243 -0.13334078642988256
 		-0.073035416237345885 0.32325021274069243 -0.11553693234928053
 		;
-createNode transform -n "null8" -p "Pinky_Finger_Base_CNTL";
+createNode transform -n "null8" -p "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL";
 	rename -uid "D405599A-4F4C-8075-C059-C7B262F7DC2C";
 	setAttr ".rp" -type "double3" 0.34717175856326676 3.5527136788005009e-15 2.6645352591003757e-15 ;
 	setAttr ".sp" -type "double3" 0.34717175856326676 3.5527136788005009e-15 2.6645352591003757e-15 ;
-createNode transform -n "Pinky_Finger_Base" -p "null8";
+createNode transform -n "Pinky_Finger_Base" -p "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL|null8";
 	rename -uid "012F9472-477D-6FD5-3D11-6D8D7A21FEB3";
 	setAttr ".ove" yes;
 	setAttr ".ovc" 17;
 	setAttr ".rp" -type "double3" 0.34717175856326854 0.031844278906490331 2.2204460492503131e-15 ;
 	setAttr ".sp" -type "double3" 0.34717175856326854 0.031844278906490331 2.2204460492503131e-15 ;
-createNode nurbsCurve -n "Pinky_Finger_BaseShape" -p "Pinky_Finger_Base";
+createNode nurbsCurve -n "Pinky_Finger_BaseShape" -p "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL|null8|Pinky_Finger_Base";
 	rename -uid "7B9CABF4-4B87-B845-BC8C-C2A3308F0ADD";
 	setAttr -k off ".v";
 	setAttr ".cc" -type "nurbsCurve" 
@@ -15300,18 +15309,18 @@ createNode nurbsCurve -n "Pinky_Finger_BaseShape" -p "Pinky_Finger_Base";
 		0.32238019361327019 0.031844278906483225 -0.27580327202817356
 		0.3296414748708969 -0.16396438606281549 -0.1950223639245583
 		;
-createNode transform -n "null9" -p "Pinky_Finger_Base";
+createNode transform -n "null9" -p "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL|null8|Pinky_Finger_Base";
 	rename -uid "053799E7-4735-D9B8-6E29-BDBEEF51F996";
 	setAttr ".rp" -type "double3" 0.86222420918216613 0.0075175857442459915 -0.022760911142570173 ;
 	setAttr ".sp" -type "double3" 0.86222420918216613 0.0075175857442459915 -0.022760911142570173 ;
-createNode transform -n "Pinky_Finger_Base1" -p "null9";
+createNode transform -n "Pinky_Finger_Base1" -p "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL|null8|Pinky_Finger_Base|null9";
 	rename -uid "CEA172E3-4B3B-05FF-43E7-F5B7FEFE49E7";
 	setAttr ".ove" yes;
 	setAttr ".ovc" 17;
 	setAttr ".t" -type "double3" 0 3.5527136788005009e-15 0 ;
 	setAttr ".rp" -type "double3" 0.86222420918216613 0.039361864650725664 -0.022760911142571949 ;
 	setAttr ".sp" -type "double3" 0.86222420918216613 0.039361864650725664 -0.022760911142571949 ;
-createNode nurbsCurve -n "Pinky_Finger_Base1Shape" -p "Pinky_Finger_Base1";
+createNode nurbsCurve -n "Pinky_Finger_Base1Shape" -p "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL|null8|Pinky_Finger_Base|null9|Pinky_Finger_Base1";
 	rename -uid "5B7456C4-4B2B-91E8-1B61-B7BB00F46E4B";
 	setAttr -k off ".v";
 	setAttr ".cc" -type "nurbsCurve" 
@@ -15515,19 +15524,3032 @@ createNode poleVectorConstraint -n "ikHandle1_poleVectorConstraint1" -p "ikHandl
 	setAttr ".erp" yes;
 	setAttr ".rst" -type "double3" 5.8418026539023655 3.5527136788005009e-15 -4.260313353167839 ;
 	setAttr -k on ".w0";
+createNode transform -n "FK_IK_TEST";
+	rename -uid "F17DE426-483E-D8FE-1FA6-07B36FE193F1";
+createNode transform -n "JNT1" -p "FK_IK_TEST";
+	rename -uid "9A1CA42F-43D8-C3E9-DFEB-9D8013A0A661";
+	setAttr ".t" -type "double3" 0 0 -6.7816133809045702 ;
+	setAttr ".rp" -type "double3" 9.5601872730936055 28.450105667114258 0.1236432891111332 ;
+	setAttr ".sp" -type "double3" 9.5601872730936055 28.450105667114258 0.1236432891111332 ;
+createNode transform -n "FK" -p "JNT1";
+	rename -uid "448710C3-495A-EC50-0239-5CA03ECDA911";
+	setAttr ".rp" -type "double3" 2.0301511287689209 28.344772667457889 -0.50554415464840829 ;
+	setAttr ".sp" -type "double3" 2.0301511287689209 28.344772667457889 -0.50554415464840829 ;
+createNode joint -n "Shoulder_JNT" -p "|FK_IK_TEST|JNT1|FK";
+	rename -uid "3325781F-4DE2-16E4-C414-448D6E3A31E5";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
+	setAttr ".mxrl" -type "double3" 360 360 360 ;
+	setAttr ".dla" yes;
+	setAttr ".jo" -type "double3" -89.999999999991829 1.4281308039014529 -1.988464345242846e-16 ;
+	setAttr ".bps" -type "matrix" 0.99968937369703126 -1.7347234759768071e-18 -0.024923003776378728 0
+		 -0.024923003776378724 1.4332979247910771e-13 -0.99968937369703115 0 3.570060913560269e-15 1 1.4321877017664519e-13 0
+		 2.0301511320862975 28.568733215332031 -0.50554434716425567 1;
+	setAttr ".radi" 0.2;
+	setAttr ".liw" yes;
+createNode joint -n "Elbow_JNT" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT";
+	rename -uid "876C1C84-4CD5-72C8-2843-C3ACFC315DE8";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 1;
+	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
+	setAttr ".mxrl" -type "double3" 360 360 360 ;
+	setAttr ".jo" -type "double3" 0 0 -5.871277694749379 ;
+	setAttr ".bps" -type "matrix" 0.9969946958506255 -1.4663486297229569e-14 0.077469842169186634 0
+		 0.077469842169186634 1.4257773874179764e-13 -0.99699469585062539 0 3.570060913560269e-15 1 1.4321877017664519e-13 0
+		 7.9233811714067626 28.568733215332056 -0.65246697972349166 1;
+	setAttr ".radi" 0.2;
+	setAttr ".liw" yes;
+createNode joint -n "ForArm_1_JNT" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT";
+	rename -uid "D8B6BAEA-4720-E95E-1A06-A087CE84A796";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 2;
+	setAttr ".t" -type "double3" 0.94706504710904582 3.5527136788005727e-15 -4.7732178069041344e-16 ;
+	setAttr ".r" -type "double3" -9.6001404981295476e-26 2.0663982047776305e-15 3.1850602273818436e-23 ;
+	setAttr ".jo" -type "double3" 90.000000000002828 -3.0332133116374176e-21 3.7685651760919556e-05 ;
+	setAttr ".bps" -type "matrix" 0.99699474680532352 -1.466339246538974e-14 0.077469186407170751 0
+		 -2.4869772092896723e-16 1.0000000000000002 1.9236453180264484e-13 0 -0.077469186407170751 -1.9187165067986624e-13 0.99699474680532352 0
+		 8.8676000000000048 28.568733215332045 -0.57909799999999989 1;
+	setAttr ".radi" 0.2;
+	setAttr ".liw" yes;
+createNode joint -n "ForArm_2_JNT" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT";
+	rename -uid "AE2C6ED3-4C4E-B6F5-5637-D2ACE5CADE96";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 3;
+	setAttr ".t" -type "double3" 0.89054640248546346 0 1.0980415114936172e-06 ;
+	setAttr ".r" -type "double3" 3.7876429411960917e-26 -4.6438010881710442e-15 2.5112716693509967e-23 ;
+	setAttr ".bps" -type "matrix" 0.99699474680532352 -1.466339246538974e-14 0.077469186407170751 0
+		 -2.4869772092896723e-16 1.0000000000000002 1.9236453180264484e-13 0 -0.077469186407170751 -1.9187165067986624e-13 0.99699474680532352 0
+		 9.7554700000000079 28.568733215332031 -0.51010699999999942 1;
+	setAttr ".radi" 0.2;
+	setAttr ".liw" yes;
+createNode joint -n "ForArm_3_JNT" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT";
+	rename -uid "A760DDF3-41F5-3011-12C5-8182F63E98FA";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 4;
+	setAttr ".t" -type "double3" 0.9575076819212649 0 1.6639033946219688e-06 ;
+	setAttr ".r" -type "double3" 2.4914902897598148e-26 6.1170011880183368e-15 1.7402977636345891e-23 ;
+	setAttr ".bps" -type "matrix" 0.99699474680532352 -1.466339246538974e-14 0.077469186407170751 0
+		 -2.4869772092896723e-16 1.0000000000000002 1.9236453180264484e-13 0 -0.077469186407170751 -1.9187165067986624e-13 0.99699474680532352 0
+		 10.71010000000001 28.568733215332017 -0.43592799999999937 1;
+	setAttr ".radi" 0.2;
+createNode joint -n "ForArm_4_JNT" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT";
+	rename -uid "0F53B784-4EF5-7F09-1DAE-2CBE1787778C";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 5;
+	setAttr ".t" -type "double3" 1.0703162969685351 0 -3.5433732219480873e-06 ;
+	setAttr ".r" -type "double3" -1.8269335309776458e-29 -4.6697822215115596e-15 8.4313053431032042e-24 ;
+	setAttr ".bps" -type "matrix" 0.99699474680532352 -1.466339246538974e-14 0.077469186407170751 0
+		 -2.4869772092896723e-16 1.0000000000000002 1.9236453180264484e-13 0 -0.077469186407170751 -1.9187165067986624e-13 0.99699474680532352 0
+		 11.777200000000006 28.568733215332003 -0.35301499999999941 1;
+	setAttr ".radi" 0.2;
+createNode joint -n "Wrist_JNT" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT";
+	rename -uid "C0FC334C-46D1-8690-C511-1F9DC5C8EE46";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 6;
+	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
+	setAttr ".mxrl" -type "double3" 360 360 360 ;
+	setAttr ".bps" -type "matrix" 0.99699474680532352 -1.466339246538974e-14 0.077469186407170751 0
+		 -2.4869772092896723e-16 1.0000000000000002 1.9236453180264484e-13 0 -0.077469186407170751 -1.9187165067986624e-13 0.99699474680532352 0
+		 12.755503308910523 28.568733215331992 -0.27699802984988564 1;
+	setAttr ".radi" 0.2;
+createNode joint -n "Thumb_Base_JNT" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT";
+	rename -uid "8A7CC026-42E3-A061-4220-CB991E6F96AF";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 7;
+	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
+	setAttr ".mxrl" -type "double3" 360 360 360 ;
+	setAttr ".bps" -type "matrix" 0.97552910493959832 4.2548691076311698e-14 -0.21987033773509826 0
+		 -2.4869772092896723e-16 1.0000000000000002 1.9236453180264484e-13 0 0.21987033773509826 -1.8766820269002219e-13 0.97552910493959832 0
+		 14.613568305969242 28.213682988549671 -1.0900486707688066 1;
+	setAttr ".radi" 0.2;
+	setAttr ".liw" yes;
+createNode joint -n "Thumb1_JNT" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT";
+	rename -uid "DB88468C-4CC7-87AD-4B84-E88D58FB9F72";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
+	setAttr ".mxrl" -type "double3" 360 360 360 ;
+	setAttr ".bps" -type "matrix" 0.97552910493959832 4.2548691076311698e-14 -0.21987033773509826 0
+		 -2.4869772092896723e-16 1.0000000000000002 1.9236453180264484e-13 0 0.21987033773509826 -1.8766820269002219e-13 0.97552910493959832 0
+		 14.952244460860769 28.213682988549689 -1.1663814425761962 1;
+	setAttr ".radi" 0.2;
+	setAttr ".liw" yes;
+createNode joint -n "Thumb2_JNT" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT";
+	rename -uid "37C727CF-4F62-3180-8F5C-F3BD2C05D349";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 1;
+	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
+	setAttr ".mxrl" -type "double3" 360 360 360 ;
+	setAttr ".bps" -type "matrix" 0.97552910493959832 4.2548691076311698e-14 -0.21987033773509826 0
+		 -2.4869772092896723e-16 1.0000000000000002 1.9236453180264484e-13 0 0.21987033773509826 -1.8766820269002219e-13 0.97552910493959832 0
+		 15.449688667789891 28.221200574293949 -1.301830130119586 1;
+	setAttr ".radi" 0.2;
+	setAttr ".liw" yes;
+createNode joint -n "Thumb3_JNT" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT";
+	rename -uid "11BD3BE2-4F69-FD6E-2848-43B6D08EF412";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 2;
+	setAttr ".t" -type "double3" 0.42494273771524504 -6.1020645366161081e-31 -1.7763568394002505e-15 ;
+	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
+	setAttr ".mxrl" -type "double3" 360 360 360 ;
+	setAttr ".bps" -type "matrix" 0.97552910493959832 4.2548691076311698e-14 -0.21987033773509826 0
+		 -2.4869772092896723e-16 1.0000000000000002 1.9236453180264484e-13 0 0.21987033773509826 -1.8766820269002219e-13 0.97552910493959832 0
+		 15.864232676363827 28.221200574293967 -1.3952624333791159 1;
+	setAttr ".radi" 0.2;
+	setAttr ".liw" yes;
+createNode parentConstraint -n "Thumb2_JNT_parentConstraint1" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT";
+	rename -uid "ED382C26-47BE-B57C-03B1-7DADF715D008";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Pinky_Finger_Base1W0" -dv 1 -min 
+		0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tpm" -type "matrix" 0.97552910493959843 0 -0.21987033773509815 0
+		 0 1 0 0 0.21987033773509815 0 0.97552910493959843 0 14.613568305969235 28.213682988549575 -1.0900486707687382 1;
+	setAttr ".tg[0].tt" -type "double3" 0 3.5527136788005009e-15 0 ;
+	setAttr ".tg[0].trp" -type "double3" 0.86222420918216613 0.039361864650725664 -0.022760911142571949 ;
+	setAttr ".tg[0].tot" -type "double3" 1.4210854715202004e-14 -0.031844278906351775 
+		-6.2616578588858829e-14 ;
+	setAttr ".cpim" -type "matrix" 0.97552910493959832 -2.5968328538774058e-16 0.21987033773509826 0
+		 4.2403249286647406e-14 0.99999999999999978 -1.8695001545591105e-13 0 -0.21987033773509826 1.9176501874234477e-13 0.97552910493959832 0
+		 -14.842802337449948 -28.213682988549458 -2.1497159948074205 1;
+	setAttr ".rst" -type "double3" 0.51505245061889759 0.007517585744238886 -0.022760911142573725 ;
+createNode scaleConstraint -n "Thumb2_JNT_scaleConstraint1" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT";
+	rename -uid "166DC288-4447-B908-A2E3-5EA207706B11";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Pinky_Finger_Base1W0" -dv 1 -min 
+		0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tpm" -type "matrix" 0.97552910493959843 0 -0.21987033773509815 0
+		 0 1 0 0 0.21987033773509815 0 0.97552910493959843 0 14.613568305969235 28.213682988549575 -1.0900486707687382 1;
+	setAttr ".tsc" yes;
+	setAttr ".cpim" -type "matrix" 0.97552910493959832 -2.5968328538774058e-16 0.21987033773509826 0
+		 4.2403249286647406e-14 0.99999999999999978 -1.8695001545591105e-13 0 -0.21987033773509826 1.9176501874234477e-13 0.97552910493959832 0
+		 -14.842802337449948 -28.213682988549458 -2.1497159948074205 1;
+createNode parentConstraint -n "Thumb2_JNT_parentConstraint2" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT";
+	rename -uid "64C1112B-467E-3D8E-D8B2-C0B8D07455BC";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Pinky_Finger_Base1W0" -dv 1 -min 
+		0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 1.7763568394002505e-14 -0.031844278906309142 
+		-6.8389738316909643e-14 ;
+	setAttr ".rst" -type "double3" 0.51505245061889582 0.007517585744238886 -0.022760911142575502 ;
+	setAttr -k on ".w0";
+createNode scaleConstraint -n "Thumb2_JNT_scaleConstraint2" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT";
+	rename -uid "C3B4CA2C-4121-269A-FF77-FD985FCB93DF";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Pinky_Finger_Base1W0" -dv 1 -min 
+		0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr -k on ".w0";
+createNode parentConstraint -n "Thumb1_JNT_parentConstraint1" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT";
+	rename -uid "D8BECE2C-4365-43EE-9636-0E94C1FE447E";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Pinky_Finger_BaseW0" -dv 1 -min 0 
+		-at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tpm" -type "matrix" 0.97552910493959843 0 -0.21987033773509815 0
+		 0 1 0 0 0.21987033773509815 0 0.97552910493959843 0 14.613568305969235 28.213682988549575 -1.0900486707687382 1;
+	setAttr ".tg[0].trp" -type "double3" 0.34717175856326854 0.031844278906490331 2.2204460492503131e-15 ;
+	setAttr ".tg[0].tot" -type "double3" 1.5987211554602254e-14 -0.031844278906376644 
+		-6.4392935428259079e-14 ;
+	setAttr ".cpim" -type "matrix" 0.97552910493959832 -2.5968328538774058e-16 0.21987033773509826 0
+		 4.2403249286647406e-14 0.99999999999999978 -1.8695001545591105e-13 0 -0.21987033773509826 1.9176501874234477e-13 0.97552910493959832 0
+		 -14.495630578886685 -28.213682988549454 -2.1497159948074178 1;
+	setAttr ".rst" -type "double3" 0.34717175856326499 7.1054273576010019e-15 2.2204460492503131e-15 ;
+createNode scaleConstraint -n "Thumb1_JNT_scaleConstraint1" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT";
+	rename -uid "0B419D17-41BC-DE42-72E8-1193A993CC88";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Pinky_Finger_BaseW0" -dv 1 -min 0 
+		-at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tpm" -type "matrix" 0.97552910493959843 0 -0.21987033773509815 0
+		 0 1 0 0 0.21987033773509815 0 0.97552910493959843 0 14.613568305969235 28.213682988549575 -1.0900486707687382 1;
+	setAttr ".tsc" yes;
+	setAttr ".cpim" -type "matrix" 0.97552910493959832 -2.5968328538774058e-16 0.21987033773509826 0
+		 4.2403249286647406e-14 0.99999999999999978 -1.8695001545591105e-13 0 -0.21987033773509826 1.9176501874234477e-13 0.97552910493959832 0
+		 -14.495630578886685 -28.213682988549454 -2.1497159948074178 1;
+createNode parentConstraint -n "Thumb1_JNT_parentConstraint2" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT";
+	rename -uid "467F5D69-40D8-0931-A954-70B4A020FB79";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Pinky_Finger_BaseW0" -dv 1 -min 0 
+		-at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 2.1316282072803006e-14 -0.031844278906334011 
+		-6.8389738316909643e-14 ;
+	setAttr ".rst" -type "double3" 0.34717175856326143 7.1054273576010019e-15 5.3290705182007514e-15 ;
+	setAttr -k on ".w0";
+createNode scaleConstraint -n "Thumb1_JNT_scaleConstraint2" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT";
+	rename -uid "5DAB6F81-40D2-7C12-65C0-53BD2FA8A3B9";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Pinky_Finger_BaseW0" -dv 1 -min 0 
+		-at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr -k on ".w0";
+createNode parentConstraint -n "Thumb_Base_JNT_parentConstraint1" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT";
+	rename -uid "8A4B13F8-47B6-1596-26C5-DF981E4AC15C";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Pinky_Finger_Base_CNTLW0" -dv 1 -min 
+		0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tpm" -type "matrix" 0.97552910493959843 0 -0.21987033773509815 0
+		 0 1 0 0 0.21987033773509815 0 0.97552910493959843 0 14.613568305969235 28.213682988549575 -1.0900486707687382 1;
+	setAttr ".tg[0].trp" -type "double3" 1.0712314039148959e-14 -0.0015423165502390646 
+		8.4552464851874477e-16 ;
+	setAttr ".tg[0].tot" -type "double3" 1.2434497875801753e-14 0.0015423165503278824 
+		-6.5725203057809267e-14 ;
+	setAttr ".tg[0].tor" -type "double3" 0 3.1805546814635168e-15 0 ;
+	setAttr ".cpim" -type "matrix" 0.9969947468053233 -2.5968328538775e-16 -0.077469186407170737 0
+		 -1.4590662035020683e-14 0.99999999999999978 -1.9114250288831824e-13 0 0.077469186407170737 1.9176501874234477e-13 0.9969947468053233 0
+		 -12.695710979832434 -28.568733215331921 1.2643240441964934 1;
+	setAttr ".lr" -type "double3" 0 17.144526627892372 0 ;
+	setAttr ".rst" -type "double3" 1.7894946696305798 -0.35505022678247755 -0.95455000149657843 ;
+	setAttr ".rsrr" -type "double3" 0 17.144526627892368 0 ;
+createNode scaleConstraint -n "Thumb_Base_JNT_scaleConstraint1" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT";
+	rename -uid "BAE415D8-4B84-3E88-C603-87820F1C6A56";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Pinky_Finger_Base_CNTLW0" -dv 1 -min 
+		0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tpm" -type "matrix" 0.97552910493959843 0 -0.21987033773509815 0
+		 0 1 0 0 0.21987033773509815 0 0.97552910493959843 0 14.613568305969235 28.213682988549575 -1.0900486707687382 1;
+	setAttr ".tsc" yes;
+	setAttr ".cpim" -type "matrix" 0.9969947468053233 -2.5968328538775e-16 -0.077469186407170737 0
+		 -1.4590662035020683e-14 0.99999999999999978 -1.9114250288831824e-13 0 0.077469186407170737 1.9176501874234477e-13 0.9969947468053233 0
+		 -12.695710979832434 -28.568733215331921 1.2643240441964934 1;
+createNode parentConstraint -n "Thumb_Base_JNT_parentConstraint2" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT";
+	rename -uid "A362FE2B-432C-EBBA-2E0D-2295C119DB51";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Pinky_Finger_Base_CNTLW0" -dv 1 -min 
+		0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 1.5987211554602254e-14 0.0015423165503669622 
+		-7.1942451995710144e-14 ;
+	setAttr ".tg[0].tor" -type "double3" 0 -3.1805546814635168e-15 0 ;
+	setAttr ".lr" -type "double3" 0 17.144526627892379 0 ;
+	setAttr ".rst" -type "double3" 1.7894946696305833 -0.355050226782474 -0.9545500014965782 ;
+	setAttr ".rsrr" -type "double3" 0 17.144526627892375 0 ;
+	setAttr -k on ".w0";
+createNode scaleConstraint -n "Thumb_Base_JNT_scaleConstraint2" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT";
+	rename -uid "60CDB1BA-4B55-FBE2-AA6A-85853ACF37C9";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Pinky_Finger_Base_CNTLW0" -dv 1 -min 
+		0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr -k on ".w0";
+createNode joint -n "Pointer_Finger_Base_JNT" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT";
+	rename -uid "57F14D2D-4C9B-12C3-170C-6DB980A3A40D";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 7;
+	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
+	setAttr ".mxrl" -type "double3" 360 360 360 ;
+	setAttr ".bps" -type "matrix" 0.98275728466189716 -0.040348909473686176 -0.18044413248498611 0
+		 0.041022280557504641 0.9991582319622162 -3.903127820947816e-18 0 0.18029224038165462 -0.0074022298277547022 0.98358523527538821 0
+		 14.741112736529177 28.433553036520482 -0.6348620653152709 1;
+	setAttr ".radi" 0.2;
+	setAttr ".liw" yes;
+createNode joint -n "P_Finger1_JNT" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT";
+	rename -uid "617BBA92-4B50-BC5C-2240-85A1EA9D95E7";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
+	setAttr ".mxrl" -type "double3" 360 360 360 ;
+	setAttr ".bps" -type "matrix" 0.98275728466189716 -0.040348909473686176 -0.18044413248498611 0
+		 0.041022280557504641 0.9991582319622162 -3.903127820947816e-18 0 0.18029224038165462 -0.0074022298277547022 0.98358523527538821 0
+		 15.223348952349685 28.413753940934253 -0.70524586356679697 1;
+	setAttr ".radi" 0.2;
+	setAttr ".liw" yes;
+createNode joint -n "P_Finger2_JNT" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT";
+	rename -uid "0295EFAD-4FB3-50AA-CB48-34B70FC844C8";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 1;
+	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
+	setAttr ".mxrl" -type "double3" 360 360 360 ;
+	setAttr ".bps" -type "matrix" 0.98275728466189716 -0.040348909473686176 -0.18044413248498611 0
+		 0.041022280557504641 0.9991582319622162 -3.903127820947816e-18 0 0.18029224038165462 -0.0074022298277547022 0.98358523527538821 0
+		 15.886587810755769 28.386523448650035 -0.76771929101556313 1;
+	setAttr ".radi" 0.2;
+	setAttr ".liw" yes;
+createNode joint -n "P_Finger3_JNT" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT";
+	rename -uid "BCC66977-4B70-54F2-BAA9-E595AB172420";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 2;
+	setAttr ".t" -type "double3" 0.56232413306533591 -2.0921164728630879e-19 0.047449058058682603 ;
+	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
+	setAttr ".mxrl" -type "double3" 360 360 360 ;
+	setAttr ".bps" -type "matrix" 0.98275728466189716 -0.040348909473686176 -0.18044413248498611 0
+		 0.041022280557504641 0.9991582319622162 -3.903127820947816e-18 0 0.18029224038165462 -0.0074022298277547022 0.98358523527538821 0
+		 16.447770645848312 28.363483054277253 -0.82251718844766464 1;
+	setAttr ".radi" 0.2;
+	setAttr ".liw" yes;
+createNode parentConstraint -n "P_Finger2_JNT_parentConstraint1" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT";
+	rename -uid "DCBA8CE3-4967-5F5C-0039-B7B48D7363FC";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Ring_Finger_Base1W0" -dv 1 -min 0 
+		-at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tpm" -type "matrix" 0.98275728466189716 -0.040348909473686176 -0.18044413248498609 0
+		 0.041022280557504627 0.99915823196221598 -4.3368086899420177e-18 0 0.18029224038165453 -0.0074022298277546285 0.98358523527538821 0
+		 14.741112736529178 28.433553036520468 -0.63486206531524758 1;
+	setAttr ".tg[0].trp" -type "double3" 1.1517971853894728 -2.1316282072803006e-14 
+		0.07508919853315299 ;
+	setAttr ".tg[0].tot" -type "double3" -0.00020231237523837819 3.5527136788005009e-14 
+		0.0011027871201430006 ;
+	setAttr ".cpim" -type "matrix" 0.98275728466189716 0.041022280557504641 0.18029224038165451 0
+		 -0.040348909473686169 0.99915823196221587 -0.0074022298277546302 0 -0.18044413248498611 6.418476861114185e-17 0.98358523527538833 0
+		 -13.941650572341299 -29.01433264278139 -1.8406571331474315 1;
+	setAttr ".rst" -type "double3" 0.66417450365687536 1.4210854715202004e-14 0.058330445216760118 ;
+createNode scaleConstraint -n "P_Finger2_JNT_scaleConstraint1" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT";
+	rename -uid "6F94BDF7-432B-324C-0A5D-0CB3EB2E0AEC";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Ring_Finger_Base1W0" -dv 1 -min 0 
+		-at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tpm" -type "matrix" 0.98275728466189716 -0.040348909473686176 -0.18044413248498609 0
+		 0.041022280557504627 0.99915823196221598 -4.3368086899420177e-18 0 0.18029224038165453 -0.0074022298277546285 0.98358523527538821 0
+		 14.741112736529178 28.433553036520468 -0.63486206531524758 1;
+	setAttr ".tsc" yes;
+	setAttr ".cpim" -type "matrix" 0.98275728466189716 0.041022280557504641 0.18029224038165451 0
+		 -0.040348909473686169 0.99915823196221587 -0.0074022298277546302 0 -0.18044413248498611 6.418476861114185e-17 0.98358523527538833 0
+		 -13.941650572341299 -29.01433264278139 -1.8406571331474315 1;
+createNode parentConstraint -n "P_Finger2_JNT_parentConstraint2" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT";
+	rename -uid "69FD548A-4101-69B4-9BF2-B2812F577A6E";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Ring_Finger_Base1W0" -dv 1 -min 0 
+		-at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" -0.00020231237524193091 8.1712414612411521e-14 
+		0.0011027871201321204 ;
+	setAttr ".rst" -type "double3" 0.66417450365687181 1.4210854715202004e-14 0.05833044521675923 ;
+	setAttr -k on ".w0";
+createNode scaleConstraint -n "P_Finger2_JNT_scaleConstraint2" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT";
+	rename -uid "A79E3910-45DC-6E4F-8942-B08C11BE874A";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Ring_Finger_Base1W0" -dv 1 -min 0 
+		-at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr -k on ".w0";
+createNode parentConstraint -n "P_Finger1_JNT_parentConstraint1" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT";
+	rename -uid "9E06532B-4A67-DE73-0DBF-AFB372DDEC2A";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Ring_Finger_BaseW0" -dv 1 -min 0 
+		-at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tpm" -type "matrix" 0.98275728466189716 -0.040348909473686176 -0.18044413248498609 0
+		 0.041022280557504627 0.99915823196221598 -4.3368086899420177e-18 0 0.18029224038165453 -0.0074022298277546285 0.98358523527538821 0
+		 14.741112736529178 28.433553036520468 -0.63486206531524758 1;
+	setAttr ".tg[0].trp" -type "double3" 0.48665147668013198 -2.4868995751603507e-14 
+		0.022052707388917181 ;
+	setAttr ".tg[0].tot" -type "double3" 0.00076889267722535237 2.8421709430404007e-14 
+		-0.0041911669523815309 ;
+	setAttr ".cpim" -type "matrix" 0.98275728466189716 0.041022280557504641 0.18029224038165451 0
+		 -0.040348909473686169 0.99915823196221587 -0.0074022298277546302 0 -0.18044413248498611 6.418476861114185e-17 0.98358523527538833 0
+		 -13.454230202983942 -29.014332642781397 -1.8227955927108725 1;
+	setAttr ".rst" -type "double3" 0.48742036935735022 -7.1054273576010019e-15 0.017861540436558077 ;
+createNode scaleConstraint -n "P_Finger1_JNT_scaleConstraint1" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT";
+	rename -uid "177487C2-46F7-93D1-B5D5-F4AD2A42032E";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Ring_Finger_BaseW0" -dv 1 -min 0 
+		-at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tpm" -type "matrix" 0.98275728466189716 -0.040348909473686176 -0.18044413248498609 0
+		 0.041022280557504627 0.99915823196221598 -4.3368086899420177e-18 0 0.18029224038165453 -0.0074022298277546285 0.98358523527538821 0
+		 14.741112736529178 28.433553036520468 -0.63486206531524758 1;
+	setAttr ".tsc" yes;
+	setAttr ".cpim" -type "matrix" 0.98275728466189716 0.041022280557504641 0.18029224038165451 0
+		 -0.040348909473686169 0.99915823196221587 -0.0074022298277546302 0 -0.18044413248498611 6.418476861114185e-17 0.98358523527538833 0
+		 -13.454230202983942 -29.014332642781397 -1.8227955927108725 1;
+createNode parentConstraint -n "P_Finger1_JNT_parentConstraint2" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT";
+	rename -uid "74C890B2-487B-98D2-7A9D-65B7533FECA0";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Ring_Finger_BaseW0" -dv 1 -min 0 
+		-at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 0.00076889267722357602 7.460698725481052e-14 
+		-0.0041911669523910788 ;
+	setAttr ".rst" -type "double3" 0.48742036935735911 -3.5527136788005009e-15 0.017861540436557632 ;
+	setAttr -k on ".w0";
+createNode scaleConstraint -n "P_Finger1_JNT_scaleConstraint2" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT";
+	rename -uid "D21A3544-4C15-329E-D00F-4AAC3AC39224";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Ring_Finger_BaseW0" -dv 1 -min 0 
+		-at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr -k on ".w0";
+createNode parentConstraint -n "Pointer_Finger_Base_JNT_parentConstraint1" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT";
+	rename -uid "AEFEEB37-436C-B3D9-5BD4-E4B981AE08EF";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Ring_Finger_Base_CNTLW0" -dv 1 -min 
+		0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tpm" -type "matrix" 0.98275728466189716 -0.040348909473686176 -0.18044413248498609 0
+		 0.041022280557504627 0.99915823196221598 -4.3368086899420177e-18 0 0.18029224038165453 -0.0074022298277546285 0.98358523527538821 0
+		 14.741112736529178 28.433553036520468 -0.63486206531524758 1;
+	setAttr ".tg[0].trp" -type "double3" -9.3350996679015502e-05 0.0023116465354019828 
+		-1.7125754847255411e-05 ;
+	setAttr ".tg[0].tot" -type "double3" 9.3350996683838616e-05 -0.0023116465353965054 
+		1.7125754824265371e-05 ;
+	setAttr ".tg[0].tor" -type "double3" -4.9696166897867462e-17 0 -2.2984477190263689e-16 ;
+	setAttr ".cpim" -type "matrix" 0.9969947468053233 -2.5968328538775e-16 -0.077469186407170737 0
+		 -1.4590662035020683e-14 0.99999999999999978 -1.9114250288831824e-13 0 0.077469186407170737 1.9176501874234477e-13 0.9969947468053233 0
+		 -12.695710979832434 -28.568733215331921 1.2643240441964934 1;
+	setAttr ".lr" -type "double3" -0.18836279155988889 14.834937789852969 -2.392233293310563 ;
+	setAttr ".rst" -type "double3" 1.9519187328710341 -0.13518017881158073 -0.51061211030954223 ;
+	setAttr ".rsrr" -type "double3" -0.18836279155992819 14.834937789852969 -2.3922332933105692 ;
+createNode scaleConstraint -n "Pointer_Finger_Base_JNT_scaleConstraint1" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT";
+	rename -uid "53003767-4ABB-EC54-3FFA-83B11E743CD6";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Ring_Finger_Base_CNTLW0" -dv 1 -min 
+		0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tpm" -type "matrix" 0.98275728466189716 -0.040348909473686176 -0.18044413248498609 0
+		 0.041022280557504627 0.99915823196221598 -4.3368086899420177e-18 0 0.18029224038165453 -0.0074022298277546285 0.98358523527538821 0
+		 14.741112736529178 28.433553036520468 -0.63486206531524758 1;
+	setAttr ".tsc" yes;
+	setAttr ".cpim" -type "matrix" 0.9969947468053233 -2.5968328538775e-16 -0.077469186407170737 0
+		 -1.4590662035020683e-14 0.99999999999999978 -1.9114250288831824e-13 0 0.077469186407170737 1.9176501874234477e-13 0.9969947468053233 0
+		 -12.695710979832434 -28.568733215331921 1.2643240441964934 1;
+createNode parentConstraint -n "Pointer_Finger_Base_JNT_parentConstraint2" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT";
+	rename -uid "8C6437F9-4630-4C6B-2B67-B78ABA78A87A";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Ring_Finger_Base_CNTLW0" -dv 1 -min 
+		0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 9.3350996676733189e-05 -0.0023116465353538729 
+		1.7125754816937899e-05 ;
+	setAttr ".tg[0].tor" -type "double3" 3.9756933518293969e-16 -4.7708320221952744e-15 
+		4.3484146035634006e-17 ;
+	setAttr ".lr" -type "double3" -0.18836279155988916 14.834937789852972 -2.392233293310563 ;
+	setAttr ".rst" -type "double3" 1.9519187328710306 -0.13518017881157363 -0.51061211030954112 ;
+	setAttr ".rsrr" -type "double3" -0.18836279155988905 14.834937789852972 -2.392233293310563 ;
+	setAttr -k on ".w0";
+createNode scaleConstraint -n "Pointer_Finger_Base_JNT_scaleConstraint2" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT";
+	rename -uid "91EE7355-4026-ECED-DD51-C3BB9F5FE2DC";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Ring_Finger_Base_CNTLW0" -dv 1 -min 
+		0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr -k on ".w0";
+createNode joint -n "Mid_Finger_JNT" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT";
+	rename -uid "7D3EF349-49F6-C689-F67E-B2BA629B322D";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 7;
+	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
+	setAttr ".mxrl" -type "double3" 360 360 360 ;
+	setAttr ".bps" -type "matrix" 0.99973369748750285 -4.1959220860057568e-15 0.023076700543327465 0
+		 -2.4869772092896723e-16 1.0000000000000002 1.9236453180264484e-13 0 -0.023076700543327465 -1.9238539354914354e-13 0.99973369748750285 0
+		 14.70688646250105 28.431980050413234 -0.11755561083557708 1;
+	setAttr ".radi" 0.2;
+	setAttr ".liw" yes;
+createNode joint -n "Mid_Finger1_JNT" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT";
+	rename -uid "5C2EFC92-4F0E-B959-8139-8E92671C8C1A";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
+	setAttr ".mxrl" -type "double3" 360 360 360 ;
+	setAttr ".bps" -type "matrix" 0.99973369748750307 -4.1959220860057576e-15 0.023076700543327468 0
+		 -2.4869772092896723e-16 1.0000000000000002 1.9236453180264484e-13 0 -0.023076700543327468 -1.9238539354914359e-13 0.99973369748750307 0
+		 15.169370252590937 28.431980050413237 -0.13615738661028506 1;
+	setAttr ".radi" 0.2;
+	setAttr ".liw" yes;
+createNode joint -n "Mid_Finger2_JNT" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT";
+	rename -uid "E166F22B-4009-F6EF-908A-CF9146054CB8";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 1;
+	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
+	setAttr ".mxrl" -type "double3" 360 360 360 ;
+	setAttr ".bps" -type "matrix" 0.99973369748750307 -4.1959220860057576e-15 0.023076700543327468 0
+		 -2.4869772092896723e-16 1.0000000000000002 1.9236453180264484e-13 0 -0.023076700543327468 -1.9238539354914359e-13 0.99973369748750307 0
+		 16.019776389186376 28.431980050413234 -0.12690093040848552 1;
+	setAttr ".radi" 0.2;
+	setAttr ".liw" yes;
+createNode joint -n "Mid_Finger3_JNT" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT";
+	rename -uid "7FE4DCF9-4831-A6EE-86AA-D6A5997ACF6F";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 2;
+	setAttr ".t" -type "double3" 0.72306564667554685 0 -0.031577569308814946 ;
+	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
+	setAttr ".mxrl" -type "double3" 360 360 360 ;
+	setAttr ".bps" -type "matrix" 0.99973369748750285 -4.1959220860057568e-15 0.023076700543327465 0
+		 -2.4869772092896723e-16 1.0000000000000002 1.9236453180264484e-13 0 -0.023076700543327465 -1.9238539354914354e-13 0.99973369748750285 0
+		 16.74337818777434 28.431980050413237 -0.14178412112975597 1;
+	setAttr ".radi" 0.2;
+	setAttr ".liw" yes;
+createNode parentConstraint -n "Mid_Finger2_JNT_parentConstraint1" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT";
+	rename -uid "1DADA29E-4757-96A0-50DE-DF8B06FDFF71";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "M_Finger_Base1W0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tpm" -type "matrix" 0.99973369748750296 0 0.023076700543327371 0
+		 0 1 0 0 -0.023076700543327371 0 0.99973369748750296 0 16.019776389186369 28.431980050413308 -0.12690093040846118 1;
+	setAttr ".tg[0].tt" -type "double3" -16.012581827714687 -28.431980050413308 0.49655071887617563 ;
+	setAttr ".tg[0].trp" -type "double3" 16.019776389186479 28.431980050413308 -0.12690093040845837 ;
+	setAttr ".tg[0].trt" -type "double3" -0.0071945614717958632 0 -0.36964978846771712 ;
+	setAttr ".tg[0].tot" -type "double3" 1.0658141036401503e-14 -7.1054273576010019e-14 
+		-2.4424906541753444e-14 ;
+	setAttr ".tg[0].tr" -type "double3" 0 1.3223149268997101 0 ;
+	setAttr ".tg[0].tor" -type "double3" 0 -1.3223149268997101 0 ;
+	setAttr ".cpim" -type "matrix" 0.9997336974875024 -2.5968328538774748e-16 -0.023076700543327444 0
+		 -4.1629952022973453e-15 0.99999999999999978 -1.9165336756753471e-13 0 0.023076700543327444 1.9176501874234477e-13 0.9997336974875024 0
+		 -15.162188547941978 -28.431980050413202 0.48618014231148521 1;
+	setAttr ".rst" -type "double3" 0.85039327977247758 3.5527136788005009e-15 -0.010370576570164713 ;
+createNode scaleConstraint -n "Mid_Finger2_JNT_scaleConstraint1" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT";
+	rename -uid "CA22021B-48EB-616A-2535-7AB557171143";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "M_Finger_Base1W0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tpm" -type "matrix" 0.99973369748750296 0 0.023076700543327371 0
+		 0 1 0 0 -0.023076700543327371 0 0.99973369748750296 0 16.019776389186369 28.431980050413308 -0.12690093040846118 1;
+	setAttr ".tsc" yes;
+	setAttr ".cpim" -type "matrix" 0.9997336974875024 -2.5968328538774748e-16 -0.023076700543327444 0
+		 -4.1629952022973453e-15 0.99999999999999978 -1.9165336756753471e-13 0 0.023076700543327444 1.9176501874234477e-13 0.9997336974875024 0
+		 -15.162188547941978 -28.431980050413202 0.48618014231148521 1;
+createNode parentConstraint -n "Mid_Finger2_JNT_parentConstraint2" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT";
+	rename -uid "E64EB118-4B27-643A-AF6B-7A91B4E3540E";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "M_Finger_Base1W0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 1.0658141036401503e-14 -4.2632564145606011e-14 
+		-3.1974423109204508e-14 ;
+	setAttr ".tg[0].tor" -type "double3" 0 -1.3223149268997101 0 ;
+	setAttr ".rst" -type "double3" 0.85039327977248469 3.5527136788005009e-15 -0.010370576570164047 ;
+	setAttr -k on ".w0";
+createNode scaleConstraint -n "Mid_Finger2_JNT_scaleConstraint2" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT";
+	rename -uid "60CFD510-43B3-968F-CCEC-BFB19F917EFF";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "M_Finger_Base1W0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr -k on ".w0";
+createNode parentConstraint -n "Mid_Finger1_JNT_parentConstraint1" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT";
+	rename -uid "EE6EAA0D-467B-6FE8-1ED9-6D91084A2392";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "M_Finger_BaseW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tpm" -type "matrix" 0.99973369748750296 0 0.023076700543327375 0
+		 0 1 0 0 -0.023076700543327375 0 0.99973369748750296 0 15.169370252590939 28.431980050413308 -0.13615738661026058 1;
+	setAttr ".tg[0].tt" -type "double3" -15.162188547942215 -28.431980050413308 0.48618014230601103 ;
+	setAttr ".tg[0].trp" -type "double3" 15.193697983914818 28.431980050413308 -0.13615738661025775 ;
+	setAttr ".tg[0].trt" -type "double3" -0.0071881831848110422 0 -0.35058415946641042 ;
+	setAttr ".tg[0].tot" -type "double3" -0.02432773132376731 -7.460698725481052e-14 
+		-2.4397150966137815e-14 ;
+	setAttr ".tg[0].tr" -type "double3" 0 1.3223149268997101 0 ;
+	setAttr ".tg[0].tor" -type "double3" 0 -1.3223149268997101 0 ;
+	setAttr ".cpim" -type "matrix" 0.99973369748750263 -2.5968328538774763e-16 -0.023076700543327451 0
+		 -4.1629952022973476e-15 0.99999999999999978 -1.9165336756753478e-13 0 0.023076700543327451 1.9176501874234477e-13 0.99973369748750263 0
+		 -14.700257186056513 -28.431980050413205 0.45691072030635593 1;
+	setAttr ".rst" -type "double3" 0.46193136188557915 -3.5527136788005009e-15 -0.029269422005129497 ;
+createNode scaleConstraint -n "Mid_Finger1_JNT_scaleConstraint1" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT";
+	rename -uid "42D4277B-4F68-F4E8-7E6B-A3B44723D00D";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "M_Finger_BaseW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tpm" -type "matrix" 0.99973369748750296 0 0.023076700543327375 0
+		 0 1 0 0 -0.023076700543327375 0 0.99973369748750296 0 15.169370252590939 28.431980050413308 -0.13615738661026058 1;
+	setAttr ".tsc" yes;
+	setAttr ".cpim" -type "matrix" 0.99973369748750263 -2.5968328538774763e-16 -0.023076700543327451 0
+		 -4.1629952022973476e-15 0.99999999999999978 -1.9165336756753478e-13 0 0.023076700543327451 1.9176501874234477e-13 0.99973369748750263 0
+		 -14.700257186056513 -28.431980050413205 0.45691072030635593 1;
+createNode parentConstraint -n "Mid_Finger1_JNT_parentConstraint2" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT";
+	rename -uid "EE5AB1B8-4510-21C3-DADD-D88444BDC09B";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "M_Finger_BaseW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" -0.024327731323770863 -4.9737991503207013e-14 
+		-3.2862601528904634e-14 ;
+	setAttr ".tg[0].tor" -type "double3" 0 -1.3223149268997101 0 ;
+	setAttr ".rst" -type "double3" 0.46193136188547079 -2.1316282072803006e-14 -0.029269422005131496 ;
+	setAttr -k on ".w0";
+createNode scaleConstraint -n "Mid_Finger1_JNT_scaleConstraint2" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT";
+	rename -uid "E69E926F-404F-ECD5-9788-CBBA39323A02";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "M_Finger_BaseW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr -k on ".w0";
+createNode parentConstraint -n "Mid_Finger_JNT_parentConstraint1" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT";
+	rename -uid "7D9C5FA9-4215-0DC0-E2C9-E0A359BB02F9";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "M_Finger_Base_CNTLW0" -dv 1 -min 
+		0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tpm" -type "matrix" 0.99973369748750285 0 0.023076700543327375 0
+		 0 1 0 0 -0.023076700543327375 0 0.99973369748750285 0 14.70688646250105 28.431980050413308 -0.11755561083555263 1;
+	setAttr ".tg[0].tt" -type "double3" -14.700257186056634 -28.431980050413308 0.45691072030088148 ;
+	setAttr ".tg[0].trp" -type "double3" 14.706886462501048 28.428023330704143 -0.11755561083555259 ;
+	setAttr ".tg[0].trt" -type "double3" -0.0066292764445291478 0 -0.33935510946532893 ;
+	setAttr ".tg[0].tot" -type "double3" 1.1546319456101628e-13 0.0039567197090839556 
+		-2.1843638009499955e-14 ;
+	setAttr ".tg[0].tr" -type "double3" 0 1.3223149268997101 0 ;
+	setAttr ".tg[0].tor" -type "double3" 0 -1.3223149268997165 0 ;
+	setAttr ".cpim" -type "matrix" 0.9969947468053233 -2.5968328538775e-16 -0.077469186407170737 0
+		 -1.4590662035020683e-14 0.99999999999999978 -1.9114250288831824e-13 0 0.077469186407170737 1.9176501874234477e-13 0.9969947468053233 0
+		 -12.695710979832434 -28.568733215331921 1.2643240441964934 1;
+	setAttr ".lr" -type "double3" 0 3.1207942782964473 0 ;
+	setAttr ".rst" -type "double3" 1.9578706276139908 -0.13675316491872636 0.0077911888979078636 ;
+	setAttr ".rsrr" -type "double3" 0 3.120794278296446 0 ;
+createNode scaleConstraint -n "Mid_Finger_JNT_scaleConstraint1" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT";
+	rename -uid "F7ECC91D-4296-A235-629D-C2B26562E36C";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "M_Finger_Base_CNTLW0" -dv 1 -min 
+		0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tpm" -type "matrix" 0.99973369748750285 0 0.023076700543327375 0
+		 0 1 0 0 -0.023076700543327375 0 0.99973369748750285 0 14.70688646250105 28.431980050413308 -0.11755561083555263 1;
+	setAttr ".tsc" yes;
+	setAttr ".cpim" -type "matrix" 0.9969947468053233 -2.5968328538775e-16 -0.077469186407170737 0
+		 -1.4590662035020683e-14 0.99999999999999978 -1.9114250288831824e-13 0 0.077469186407170737 1.9176501874234477e-13 0.9969947468053233 0
+		 -12.695710979832434 -28.568733215331921 1.2643240441964934 1;
+createNode parentConstraint -n "Mid_Finger_JNT_parentConstraint2" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT";
+	rename -uid "20838F3A-461C-394C-844F-198858AA8AEB";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "M_Finger_Base_CNTLW0" -dv 1 -min 
+		0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 1.1191048088221578e-13 0.0039567197091230355 
+		-2.8421709430404007e-14 ;
+	setAttr ".tg[0].tor" -type "double3" 0 -1.3223149268997185 0 ;
+	setAttr ".lr" -type "double3" 0 3.1207942782964517 0 ;
+	setAttr ".rst" -type "double3" 1.9578706276139908 -0.1367531649187228 0.007791188897909862 ;
+	setAttr ".rsrr" -type "double3" 0 3.1207942782964486 0 ;
+	setAttr -k on ".w0";
+createNode scaleConstraint -n "Mid_Finger_JNT_scaleConstraint2" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT";
+	rename -uid "87CCDEE3-4B2B-2FE9-5A40-B5927634D6DA";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "M_Finger_Base_CNTLW0" -dv 1 -min 
+		0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr -k on ".w0";
+createNode joint -n "Ring_Finger_JNT" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT";
+	rename -uid "21759696-46D3-28A3-B2CB-FB97C935526C";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 7;
+	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
+	setAttr ".mxrl" -type "double3" 360 360 360 ;
+	setAttr ".jo" -type "double3" 0 -1.8360025227130834 0 ;
+	setAttr ".bps" -type "matrix" 0.99400089514185963 -2.0803203122377246e-14 0.10937193633278089 0
+		 -2.4869772092896728e-16 1.0000000000000004 1.9236453180264489e-13 0 -0.10937193633278094 -1.9130335112867158e-13 0.99400089514186007 0
+		 14.837077140808098 28.404061928754508 0.40117874741551296 1;
+	setAttr ".radi" 0.2;
+	setAttr ".liw" yes;
+createNode joint -n "Ring_FInger1_JNT" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT";
+	rename -uid "86DD2928-4D92-4648-2556-19A67FDD3AED";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
+	setAttr ".mxrl" -type "double3" 360 360 360 ;
+	setAttr ".jo" -type "double3" 0 0.61629656318188408 0 ;
+	setAttr ".bps" -type "matrix" 0.99511981869873134 -1.8744303177300082e-14 0.098673939989260578 0
+		 -2.4869772092896728e-16 1.0000000000000004 1.9236453180264489e-13 0 -0.098673939989260634 -1.9151604766078522e-13 0.99511981869873178 0
+		 15.217139300115127 28.404061928754473 0.44299775833732363 1;
+	setAttr ".radi" 0.2;
+	setAttr ".liw" yes;
+createNode joint -n "Ring_FInger2_JNT" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT";
+	rename -uid "51ED432F-426C-61E5-D3DB-A7AAC61F47C1";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 1;
+	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
+	setAttr ".mxrl" -type "double3" 360 360 360 ;
+	setAttr ".bps" -type "matrix" 0.99511981869873134 -1.8744303177300082e-14 0.098673939989260578 0
+		 -2.4869772092896728e-16 1.0000000000000004 1.9236453180264489e-13 0 -0.098673939989260634 -1.9151604766078522e-13 0.99511981869873178 0
+		 15.971497817237802 28.404061928754501 0.51779832571652162 1;
+	setAttr ".radi" 0.2;
+	setAttr ".liw" yes;
+createNode joint -n "Ring_FInger3_JNT" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT";
+	rename -uid "1D106638-4B7F-B51E-A631-84AF8848020C";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 2;
+	setAttr ".t" -type "double3" 0.48037761599297291 4.2632564145606011e-14 -6.2616578588858829e-14 ;
+	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
+	setAttr ".mxrl" -type "double3" 360 360 360 ;
+	setAttr ".bps" -type "matrix" 0.99511981869873134 -1.8744303177300082e-14 0.098673939989260578 0
+		 -2.4869772092896723e-16 1.0000000000000002 1.9236453180264484e-13 0 -0.098673939989260592 -1.9151604766078515e-13 0.99511981869873134 0
+		 16.449531103371665 28.404061928754533 0.56519907776913403 1;
+	setAttr ".radi" 0.2;
+	setAttr ".liw" yes;
+createNode parentConstraint -n "Ring_FInger2_JNT_parentConstraint1" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT";
+	rename -uid "B673672A-4F30-B264-AC0A-778B2294D290";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "P_Finger_Base1W0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tpm" -type "matrix" 0.99400089514185963 0 0.10937193633278081 0 0 1.0000000000000002 0 0
+		 -0.10937193633278083 0 0.99400089514186007 0 14.837077140808102 28.404061928754505 0.40117874741551229 1;
+	setAttr ".tg[0].trp" -type "double3" 1.1417538036073918 1.7763568394002505e-13 0.0044218508319748828 ;
+	setAttr ".tg[0].tot" -type "double3" -0.0013837266757423805 -1.8118839761882555e-13 
+		-0.012575671606765093 ;
+	setAttr ".tg[0].tor" -type "double3" 0 0.61629656318187942 0 ;
+	setAttr ".cpim" -type "matrix" 0.99511981869873112 -2.5968328538774033e-16 -0.098673939989260509 0
+		 -1.8656068384154477e-14 0.99999999999999956 -1.9078861323851761e-13 0 0.098673939989260565 1.9176501874234472e-13 0.99511981869873067 0
+		 -15.186589235664927 -28.404061928754544 1.0606992411526155 1;
+	setAttr ".lr" -type "double3" 0 9.9392333795734899e-17 0 ;
+	setAttr ".rst" -type "double3" 0.75805797748969894 4.2632564145606011e-14 -6.6613381477509392e-16 ;
+	setAttr ".rsrr" -type "double3" 0 9.9392333795734899e-17 0 ;
+createNode scaleConstraint -n "Ring_FInger2_JNT_scaleConstraint1" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT";
+	rename -uid "07D3A569-4EF4-B578-0A51-C0800485B8CF";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "P_Finger_Base1W0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tpm" -type "matrix" 0.99400089514185963 0 0.10937193633278081 0 0 1.0000000000000002 0 0
+		 -0.10937193633278083 0 0.99400089514186007 0 14.837077140808102 28.404061928754505 0.40117874741551229 1;
+	setAttr ".tsc" yes;
+	setAttr ".cpim" -type "matrix" 0.99511981869873112 -2.5968328538774033e-16 -0.098673939989260509 0
+		 -1.8656068384154477e-14 0.99999999999999956 -1.9078861323851761e-13 0 0.098673939989260565 1.9176501874234472e-13 0.99511981869873067 0
+		 -15.186589235664927 -28.404061928754544 1.0606992411526155 1;
+createNode parentConstraint -n "Ring_FInger2_JNT_parentConstraint2" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT";
+	rename -uid "B70653F0-4834-54F2-F65D-FC9604D6BCEE";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "P_Finger_Base1W0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" -0.0013837266757441569 -1.3855583347321954e-13 
+		-0.012575671606773753 ;
+	setAttr ".tg[0].tor" -type "double3" 0 0.61629656318187465 0 ;
+	setAttr ".lr" -type "double3" 0 3.2799470152592518e-15 0 ;
+	setAttr ".rst" -type "double3" 0.75805797748969894 4.2632564145606011e-14 -2.6645352591003757e-15 ;
+	setAttr ".rsrr" -type "double3" 0 9.9392333795734899e-17 0 ;
+	setAttr -k on ".w0";
+createNode scaleConstraint -n "Ring_FInger2_JNT_scaleConstraint2" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT";
+	rename -uid "0F8AC670-495D-778A-F8B6-2BAC596030F0";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "P_Finger_Base1W0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr -k on ".w0";
+createNode parentConstraint -n "Ring_FInger1_JNT_parentConstraint1" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT";
+	rename -uid "4B772E4B-45A8-C81B-246F-F08CB52C7E0E";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "P_Finger_BaseW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tpm" -type "matrix" 0.99400089514185963 0 0.10937193633278081 0 0 1.0000000000000002 0 0
+		 -0.10937193633278083 0 0.99400089514186007 0 14.837077140808102 28.404061928754505 0.40117874741551229 1;
+	setAttr ".tg[0].trp" -type "double3" 0.38235595276079692 1.7053025658242404e-13 
+		2.9309887850104133e-14 ;
+	setAttr ".tg[0].tot" -type "double3" -2.6645352591003757e-14 -2.0250467969162855e-13 
+		-2.886579864025407e-14 ;
+	setAttr ".tg[0].tor" -type "double3" 0 0.61629656318188375 0 ;
+	setAttr ".cpim" -type "matrix" 0.99400089514185941 -2.5968328538774349e-16 -0.10937193633278081 0
+		 -2.0707149005786629e-14 0.99999999999999956 -1.9057690785896137e-13 0 0.10937193633278086 1.9176501874234469e-13 0.99400089514185896 0
+		 -14.791945655671876 -28.404061928754569 1.2239878223715248 1;
+	setAttr ".lr" -type "double3" 0 -2.981770013872047e-16 0 ;
+	setAttr ".rst" -type "double3" 0.38235595276077383 -2.8421709430404007e-14 0 ;
+	setAttr ".cjo" -type "double3" 0 0.61629656318188408 2.9655881629952132e-12 ;
+	setAttr ".rsrr" -type "double3" 0 -2.981770013872047e-16 0 ;
+createNode scaleConstraint -n "Ring_FInger1_JNT_scaleConstraint1" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT";
+	rename -uid "89C45AC5-42B1-0C61-FD8F-6A95B534B57A";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "P_Finger_BaseW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tpm" -type "matrix" 0.99400089514185963 0 0.10937193633278081 0 0 1.0000000000000002 0 0
+		 -0.10937193633278083 0 0.99400089514186007 0 14.837077140808102 28.404061928754505 0.40117874741551229 1;
+	setAttr ".tsc" yes;
+	setAttr ".cpim" -type "matrix" 0.99400089514185941 -2.5968328538774349e-16 -0.10937193633278081 0
+		 -2.0707149005786629e-14 0.99999999999999956 -1.9057690785896137e-13 0 0.10937193633278086 1.9176501874234469e-13 0.99400089514185896 0
+		 -14.791945655671876 -28.404061928754569 1.2239878223715248 1;
+createNode parentConstraint -n "Ring_FInger1_JNT_parentConstraint2" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT";
+	rename -uid "5E829A5A-4CD4-B1D0-CEAF-78A0EE602E0F";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "P_Finger_BaseW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" -2.8421709430404007e-14 -1.6342482922482304e-13 
+		-3.6415315207705135e-14 ;
+	setAttr ".tg[0].tor" -type "double3" 0 0.61629656318188375 0 ;
+	setAttr ".lr" -type "double3" 0 -2.981770013872047e-16 0 ;
+	setAttr ".rst" -type "double3" 0.38235595276077206 -2.4868995751603507e-14 0 ;
+	setAttr ".rsrr" -type "double3" 0 -2.981770013872047e-16 0 ;
+	setAttr -k on ".w0";
+createNode scaleConstraint -n "Ring_FInger1_JNT_scaleConstraint2" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT";
+	rename -uid "C3F2DE9C-441F-456F-7B85-138E3E1626DB";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "P_Finger_BaseW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr -k on ".w0";
+createNode parentConstraint -n "Ring_Finger_JNT_parentConstraint1" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT";
+	rename -uid "0E9E2F6B-4CDE-C1C9-7213-87BA600CAA40";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "P_Finger_Base_CNTLW0" -dv 1 -min 
+		0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tpm" -type "matrix" 0.99400089514185963 0 0.10937193633278081 0 0 1.0000000000000002 0 0
+		 -0.10937193633278083 0 0.99400089514186007 0 14.837077140808102 28.404061928754505 0.40117874741551229 1;
+	setAttr ".tg[0].trp" -type "double3" -2.1186432797497696e-17 -0.0072671547156382098 
+		2.9534252691215954e-14 ;
+	setAttr ".tg[0].tot" -type "double3" -3.5527136788005009e-15 0.0072671547156346605 
+		-2.8421709430404007e-14 ;
+	setAttr ".tg[0].tor" -type "double3" 0 -4.3732626870123352e-15 0 ;
+	setAttr ".cpim" -type "matrix" 0.9969947468053233 -2.5968328538775e-16 -0.077469186407170737 0
+		 -1.4590662035020683e-14 0.99999999999999978 -1.9114250288831824e-13 0 0.077469186407170737 1.9176501874234477e-13 0.9969947468053233 0
+		 -12.695710979832434 -28.568733215331921 1.2643240441964934 1;
+	setAttr ".lr" -type "double3" 0 4.7708320221952744e-15 0 ;
+	setAttr ".rst" -type "double3" 2.1278559786643001 -0.1646712865773523 0.51488085313543586 ;
+	setAttr ".cjo" -type "double3" 0 -1.8360025227130818 0 ;
+	setAttr ".rsrr" -type "double3" 0 4.7708320221952744e-15 0 ;
+createNode scaleConstraint -n "Ring_Finger_JNT_scaleConstraint1" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT";
+	rename -uid "0D5374DF-49BD-71BF-0F8D-A58F84720589";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "P_Finger_Base_CNTLW0" -dv 1 -min 
+		0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tpm" -type "matrix" 0.99400089514185963 0 0.10937193633278081 0 0 1.0000000000000002 0 0
+		 -0.10937193633278083 0 0.99400089514186007 0 14.837077140808102 28.404061928754505 0.40117874741551229 1;
+	setAttr ".tsc" yes;
+	setAttr ".cpim" -type "matrix" 0.9969947468053233 -2.5968328538775e-16 -0.077469186407170737 0
+		 -1.4590662035020683e-14 0.99999999999999978 -1.9114250288831824e-13 0 0.077469186407170737 1.9176501874234477e-13 0.9969947468053233 0
+		 -12.695710979832434 -28.568733215331921 1.2643240441964934 1;
+createNode parentConstraint -n "Ring_Finger_JNT_parentConstraint2" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT";
+	rename -uid "E8522416-4278-6DAD-261B-3CB4A9E3EFFC";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "P_Finger_Base_CNTLW0" -dv 1 -min 
+		0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" -1.7763568394002505e-15 0.0072671547156772931 
+		-3.3750779948604759e-14 ;
+	setAttr ".tg[0].tor" -type "double3" 0 -8.3489560388417319e-15 0 ;
+	setAttr ".lr" -type "double3" 0 1.1927080055488186e-14 0 ;
+	setAttr ".rst" -type "double3" 2.1278559786643036 -0.1646712865773452 0.51488085313543763 ;
+	setAttr ".rsrr" -type "double3" 0 8.7465253740246687e-15 0 ;
+	setAttr -k on ".w0";
+createNode scaleConstraint -n "Ring_Finger_JNT_scaleConstraint2" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT";
+	rename -uid "0BDD8848-471A-4CDF-EEB6-DD88D7E34078";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "P_Finger_Base_CNTLW0" -dv 1 -min 
+		0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr -k on ".w0";
+createNode joint -n "Pinky_Finger_JNT" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT";
+	rename -uid "66220125-483E-8E60-0FA2-058825FABACB";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 7;
+	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
+	setAttr ".mxrl" -type "double3" 360 360 360 ;
+	setAttr ".jo" -type "double3" 17.160030112712576 -52.104941255132324 -14.515100742224627 ;
+	setAttr ".bps" -type "matrix" 0.53169156178055887 -0.15394441156124633 0.83282963520783237 0
+		 1.4431164596651058e-14 0.98334184193478646 0.18176584360187686 0 -0.84693806333837041 -0.096643365263030731 0.52283455970248016 0
+		 13.481301213705395 28.402369293611081 0.6855134866664796 1;
+	setAttr ".radi" 0.2;
+	setAttr ".liw" yes;
+createNode joint -n "Pinky_Finger1_JNT" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT";
+	rename -uid "A1C674BA-4F3D-F260-1AE5-1EA94DC1F33D";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
+	setAttr ".mxrl" -type "double3" 360 360 360 ;
+	setAttr ".jo" -type "double3" 162.3125383686247 9.9392333795734887e-17 -3.9566459813785699 ;
+	setAttr ".bps" -type "matrix" 0.65900893368881064 -0.04231216393028768 0.75094400996470589 0
+		 7.7021722333370235e-15 0.99841637347187862 0.056256067968377399 0 -0.75213511107934317 -0.037073251365359883 0.65796530965915223 0
+		 13.766263392427975 28.319862182206581 1.1318717974111205 1;
+	setAttr ".radi" 0.2;
+	setAttr ".liw" yes;
+createNode joint -n "Pinky_Finger2_JNT" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT";
+	rename -uid "11A6BE81-4397-A511-BB90-C1A3153DB32F";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 1;
+	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
+	setAttr ".mxrl" -type "double3" 360 360 360 ;
+	setAttr ".jo" -type "double3" -1.6119361340109628 -1.5170042462891369 1.8825640945697828 ;
+	setAttr ".bps" -type "matrix" 0.63851064647264744 -0.010468457019110127 0.76954178947521756 0
+		 -6.5711325270001453e-15 0.99990748531723994 0.013602235351341262 0 -0.76961298997683292 -0.00868517208766309 0.63845157486275017 0
+		 14.07276287362915 28.300183152636261 1.4811295050069191 1;
+	setAttr ".radi" 0.2;
+	setAttr ".liw" yes;
+createNode joint -n "Pinky_Finger3_JNT" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT";
+	rename -uid "35888599-471D-7B1F-8EB7-9382DC97E9FD";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 2;
+	setAttr ".t" -type "double3" 0.32049942623182304 0 1.7763568394002505e-15 ;
+	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
+	setAttr ".mxrl" -type "double3" 360 360 360 ;
+	setAttr ".bps" -type "matrix" 0.63851064647264777 -0.010468457019110132 0.7695417894752179 0
+		 -6.5711325270001484e-15 0.99990748531724039 0.013602235351341268 0 -0.76961298997683358 -0.008685172087663097 0.63845157486275073 0
+		 14.277405169466542 28.296828018168103 1.7277672069951377 1;
+	setAttr ".radi" 0.2;
+	setAttr ".liw" yes;
+createNode parentConstraint -n "Pinky_Finger2_JNT_parentConstraint1" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT";
+	rename -uid "0D86225E-440B-028F-E582-298CDEB1E5B5";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Thumb_Finger_Base1W0" -dv 1 -min 
+		0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tpm" -type "matrix" 0.6385106464726471 -0.010468457019110106 0.76954178947521723 0
+		 -6.5190908227208411e-15 0.99990748531724027 0.013602235351341318 0 -0.76961298997683247 -0.0086851720876629686 0.63845157486274973 0
+		 13.775796972438945 28.30505194345432 1.1232221274596543 1;
+	setAttr ".tg[0].tt" -type "double3" 3.5527136788005009e-15 -3.5527136788005009e-15 
+		-1.7763568394002505e-15 ;
+	setAttr ".tg[0].trp" -type "double3" 0.46509154206086323 -2.4868995751603491e-14 
+		5.3290705182007538e-15 ;
+	setAttr ".tg[0].tot" -type "double3" -5.6843418860808015e-14 -1.0658141036401503e-14 
+		3.5527136788005009e-15 ;
+	setAttr ".tg[0].tor" -type "double3" 7.0516872981397935e-12 -9.3428793767990787e-15 
+		-8.4746811290724729e-12 ;
+	setAttr ".tg[0].ts" -type "double3" 1.0000000000000004 0.99999999999999944 1.0000000000000004 ;
+	setAttr ".cpim" -type "matrix" 0.65900893368881119 8.0144224590128535e-15 -0.75213511107934405 0
+		 -0.04231216393028768 0.99841637347187806 -0.037073251365359473 0 0.75094400996470678 0.056256067968377128 0.65796530965915268 0
+		 -8.7237882543004623 -28.338688753948841 10.659267037446535 1;
+	setAttr ".lr" -type "double3" 2.2440925364818272e-14 9.9671874734535406e-15 6.3983814881004533e-16 ;
+	setAttr ".rst" -type "double3" 0.46509154206080261 1.4210854715202004e-14 -1.7763568394002505e-15 ;
+	setAttr ".cjo" -type "double3" -1.6119361340109633 -1.5170042462891378 1.8825640945697828 ;
+	setAttr ".rsrr" -type "double3" -7.051609647879022e-12 8.2930478516031552e-15 8.4749948361260166e-12 ;
+createNode scaleConstraint -n "Pinky_Finger2_JNT_scaleConstraint1" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT";
+	rename -uid "05D7026D-47D8-79D9-5D77-4EAEA28F3A90";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Thumb_Finger_Base1W0" -dv 1 -min 
+		0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].ts" -type "double3" 1.0000000000000004 0.99999999999999944 1.0000000000000004 ;
+	setAttr ".tg[0].tpm" -type "matrix" 0.6385106464726471 -0.010468457019110106 0.76954178947521723 0
+		 -6.5190908227208411e-15 0.99990748531724027 0.013602235351341318 0 -0.76961298997683247 -0.0086851720876629686 0.63845157486274973 0
+		 13.775796972438945 28.30505194345432 1.1232221274596543 1;
+	setAttr ".tsc" yes;
+	setAttr ".cpim" -type "matrix" 0.65900893368881119 8.0144224590128535e-15 -0.75213511107934405 0
+		 -0.04231216393028768 0.99841637347187806 -0.037073251365359473 0 0.75094400996470678 0.056256067968377128 0.65796530965915268 0
+		 -8.7237882543004623 -28.338688753948841 10.659267037446535 1;
+createNode parentConstraint -n "Pinky_Finger2_JNT_parentConstraint2" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT";
+	rename -uid "07829CB4-4D82-6DB6-3D6B-5D93F3B1DA58";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Thumb_Finger_Base1W0" -dv 1 -min 
+		0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" -6.8389738316909643e-14 2.8421709430404007e-14 
+		-1.7763568394002505e-15 ;
+	setAttr ".tg[0].tor" -type "double3" -1.8486974086006675e-14 -1.987846675914697e-16 
+		-1.8884543421189622e-15 ;
+	setAttr ".lr" -type "double3" 1.2340179442826711e-14 1.8946663629811959e-16 6.3362612794781002e-16 ;
+	setAttr ".rst" -type "double3" 0.46509154206079817 -4.6185277824406512e-14 -8.8817841970012523e-15 ;
+	setAttr ".rsrr" -type "double3" 1.7312902143044573e-14 -9.6286323364618328e-17 9.628632336461818e-16 ;
+	setAttr -k on ".w0";
+createNode scaleConstraint -n "Pinky_Finger2_JNT_scaleConstraint2" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT";
+	rename -uid "2FCDD251-464D-1BEC-2EC8-368F5B6C9F36";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Thumb_Finger_Base1W0" -dv 1 -min 
+		0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr -k on ".w0";
+createNode parentConstraint -n "Pinky_Finger1_JNT_parentConstraint1" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT";
+	rename -uid "6BEBA935-4A5C-35EF-42C0-7BB7A3DC7EFB";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Thumb_Finger_BaseW0" -dv 1 -min 0 
+		-at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tpm" -type "matrix" 0.65900893368881031 -0.042312163930287611 0.75094400996470556 0
+		 7.8478890053190753e-15 0.99841637347187839 0.056256067968377288 0 -0.75213511107934272 -0.037073251365359605 0.6579653096591519 0
+		 13.766263392427975 28.319862182206581 1.1318717974111212 1;
+	setAttr ".tg[0].tt" -type "double3" 3.5527136788005009e-15 3.5527136788005009e-15 
+		1.7763568394002505e-15 ;
+	setAttr ".tg[0].trp" -type "double3" -2.4444424440162049e-07 -1.8446757721335416e-07 
+		-2.9678088786511136e-07 ;
+	setAttr ".tg[0].tot" -type "double3" 2.444442408489067e-07 1.8446757721335416e-07 
+		2.9678088786511125e-07 ;
+	setAttr ".tg[0].tor" -type "double3" 7.2794945271996214e-12 -1.7493050748049341e-14 
+		-8.2807728978578556e-12 ;
+	setAttr ".tg[0].ts" -type "double3" 1.0000000000000004 1 1.0000000000000004 ;
+	setAttr ".cpim" -type "matrix" 0.53169156178055932 1.4460654895742667e-14 -0.84693806333837085 0
+		 -0.15394441156124575 0.98334184193478613 -0.096643365263030384 0 0.83282963520783293 0.18176584360187623 0.52283455970248049 0
+		 -3.3664240163295123 -28.053841073696123 13.804317549223427 1;
+	setAttr ".lr" -type "double3" -166.35993960322497 -5.9952234691732817 -11.825526491059088 ;
+	setAttr ".rst" -type "double3" 0.53595392367761763 -7.1054273576010019e-15 -1.7763568394002505e-15 ;
+	setAttr ".cjo" -type "double3" 162.3125383686247 0 -3.9566459813785735 ;
+	setAttr ".rsrr" -type "double3" -7.2792957425320311e-12 1.7493050748575457e-14 8.282164390530997e-12 ;
+createNode scaleConstraint -n "Pinky_Finger1_JNT_scaleConstraint1" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT";
+	rename -uid "ACD3B828-4281-AC5D-F7C9-5483D153C94D";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Thumb_Finger_BaseW0" -dv 1 -min 0 
+		-at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].ts" -type "double3" 1.0000000000000004 1 1.0000000000000004 ;
+	setAttr ".tg[0].tpm" -type "matrix" 0.65900893368881031 -0.042312163930287611 0.75094400996470556 0
+		 7.8478890053190753e-15 0.99841637347187839 0.056256067968377288 0 -0.75213511107934272 -0.037073251365359605 0.6579653096591519 0
+		 13.766263392427975 28.319862182206581 1.1318717974111212 1;
+	setAttr ".tsc" yes;
+	setAttr ".cpim" -type "matrix" 0.53169156178055932 1.4460654895742667e-14 -0.84693806333837085 0
+		 -0.15394441156124575 0.98334184193478613 -0.096643365263030384 0 0.83282963520783293 0.18176584360187623 0.52283455970248049 0
+		 -3.3664240163295123 -28.053841073696123 13.804317549223427 1;
+createNode parentConstraint -n "Pinky_Finger1_JNT_parentConstraint2" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT";
+	rename -uid "E7D9CE92-4F2C-E168-4B88-298849EBBB0A";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Thumb_Finger_BaseW0" -dv 1 -min 0 
+		-at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 2.4444423374347934e-07 1.8446761274049095e-07 
+		2.9678088608875441e-07 ;
+	setAttr ".tg[0].tor" -type "double3" -7.1562480332929135e-15 -1.5902773407317578e-14 
+		-4.969616689786743e-16 ;
+	setAttr ".lr" -type "double3" -166.35993960322497 -5.9952234691733288 -11.82552649105909 ;
+	setAttr ".rst" -type "double3" 0.53595392367762651 -1.0658141036401503e-14 0 ;
+	setAttr ".rsrr" -type "double3" -166.35993960322497 -5.9952234691733004 -11.82552649105909 ;
+	setAttr -k on ".w0";
+createNode scaleConstraint -n "Pinky_Finger1_JNT_scaleConstraint2" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT";
+	rename -uid "0502BDC5-4A5A-12D9-667C-DABE68723D0A";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Thumb_Finger_BaseW0" -dv 1 -min 0 
+		-at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr -k on ".w0";
+createNode parentConstraint -n "Pinky_Finger_JNT_parentConstraint1" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT";
+	rename -uid "7BD89062-4D4D-67A2-34C5-DD8F9F879319";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Thumb_Base_CNTLW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tpm" -type "matrix" 0.53169156178055854 -0.1539444115610861 0.83282963520786235 0
+		 1.4509227153070015e-14 0.98334184193482121 0.18176584360168765 0 -0.84693806333837074 -0.096643365262929964 0.52283455970249848 0
+		 13.481301213705395 28.402369293611084 0.68551348666648049 1;
+	setAttr ".tg[0].trp" -type "double3" 0.0027903761020691142 -0.017823924545513847 
+		0.0017517448935890911 ;
+	setAttr ".tg[0].tot" -type "double3" -0.002790376102067782 0.017823924545503189 
+		-0.0017517448935890911 ;
+	setAttr ".tg[0].tor" -type "double3" 5.8601720005965301e-12 2.2263882770244621e-14 
+		-9.3333377127546914e-12 ;
+	setAttr ".cpim" -type "matrix" 0.9969947468053233 -2.5968328538775e-16 -0.077469186407170737 0
+		 -1.4590662035020683e-14 0.99999999999999978 -1.9114250288831824e-13 0 0.077469186407170737 1.9176501874234477e-13 0.9969947468053233 0
+		 -12.695710979832434 -28.568733215331921 1.2643240441964934 1;
+	setAttr ".lr" -type "double3" -5.8418838111781176e-12 -2.5692918285723114e-14 9.30471272062152e-12 ;
+	setAttr ".rst" -type "double3" 0.79818168241485488 -0.16636392172072689 0.90339195252598548 ;
+	setAttr ".cjo" -type "double3" 17.160030112712555 -52.104941255132303 -14.51510074222462 ;
+	setAttr ".rsrr" -type "double3" -5.8601720005965317e-12 -1.9331808922793177e-14 
+		9.3325425740843256e-12 ;
+createNode scaleConstraint -n "Pinky_Finger_JNT_scaleConstraint1" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT";
+	rename -uid "2BD6C3FD-4BAA-3A10-5BE7-E692A78CE2B7";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Thumb_Base_CNTLW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tpm" -type "matrix" 0.53169156178055854 -0.1539444115610861 0.83282963520786235 0
+		 1.4509227153070015e-14 0.98334184193482121 0.18176584360168765 0 -0.84693806333837074 -0.096643365262929964 0.52283455970249848 0
+		 13.481301213705395 28.402369293611084 0.68551348666648049 1;
+	setAttr ".tsc" yes;
+	setAttr ".cpim" -type "matrix" 0.9969947468053233 -2.5968328538775e-16 -0.077469186407170737 0
+		 -1.4590662035020683e-14 0.99999999999999978 -1.9114250288831824e-13 0 0.077469186407170737 1.9176501874234477e-13 0.9969947468053233 0
+		 -12.695710979832434 -28.568733215331921 1.2643240441964934 1;
+createNode parentConstraint -n "Pinky_Finger_JNT_parentConstraint2" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT";
+	rename -uid "51A67841-461C-7246-541B-5E9EBDCC1E61";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Thumb_Base_CNTLW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" -0.0027903761020802165 0.017823924545538716 
+		-0.0017517448935926438 ;
+	setAttr ".tg[0].tor" -type "double3" 5.8490400592114077e-12 2.5444437451708134e-14 
+		-9.3078932753029817e-12 ;
+	setAttr ".lr" -type "double3" -5.8454619351947623e-12 -1.9530593590387181e-14 9.3063029979622516e-12 ;
+	setAttr ".rst" -type "double3" 0.7981816824148531 -0.16636392172072334 0.90339195252598703 ;
+	setAttr ".rsrr" -type "double3" -5.8458595045299452e-12 -1.9629985924182922e-14 
+		9.3055078592918858e-12 ;
+	setAttr -k on ".w0";
+createNode scaleConstraint -n "Pinky_Finger_JNT_scaleConstraint2" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT";
+	rename -uid "3E613180-4737-2850-B70E-2395057838F3";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Thumb_Base_CNTLW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr -k on ".w0";
+createNode parentConstraint -n "Wrist_JNT_parentConstraint1" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT";
+	rename -uid "FAC8374E-46A6-86BF-6860-5C99B099B280";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Wrist_CNTLW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tpm" -type "matrix" 0.99699474680532352 0 0.077469186407170626 0
+		 0 1 0 0 -0.077469186407170626 0 0.99699474680532352 0 12.755503308910514 28.568733215332031 -0.27699802984988708 1;
+	setAttr ".tg[0].trp" -type "double3" 0.0092596571266359007 -0.088395635535555073 
+		0.11916776128200812 ;
+	setAttr ".tg[0].tot" -type "double3" -0.0092596571266287953 0.088395635535508887 
+		-0.11916776128200723 ;
+	setAttr ".cpim" -type "matrix" 0.9969947468053233 -2.5968328538775e-16 -0.077469186407170737 0
+		 -1.4590662035020683e-14 0.99999999999999978 -1.9114250288831824e-13 0 0.077469186407170737 1.9176501874234477e-13 0.9969947468053233 0
+		 -11.714458747235714 -28.568733215331918 1.2643242027034729 1;
+	setAttr ".rst" -type "double3" 0.98125223259672012 -3.5527136788005009e-15 1.5850697954178372e-07 ;
+createNode scaleConstraint -n "Wrist_JNT_scaleConstraint1" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT";
+	rename -uid "441F4E32-4EAA-EBDA-BA44-2583A0ED7F50";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Wrist_CNTLW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tpm" -type "matrix" 0.99699474680532352 0 0.077469186407170626 0
+		 0 1 0 0 -0.077469186407170626 0 0.99699474680532352 0 12.755503308910514 28.568733215332031 -0.27699802984988708 1;
+	setAttr ".tsc" yes;
+	setAttr ".cpim" -type "matrix" 0.9969947468053233 -2.5968328538775e-16 -0.077469186407170737 0
+		 -1.4590662035020683e-14 0.99999999999999978 -1.9114250288831824e-13 0 0.077469186407170737 1.9176501874234477e-13 0.9969947468053233 0
+		 -11.714458747235714 -28.568733215331918 1.2643242027034729 1;
+createNode parentConstraint -n "Wrist_JNT_parentConstraint2" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT";
+	rename -uid "A59B46A4-40F5-149C-7D05-0DB2183960B9";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Wrist_CNTLW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" -0.0092596571266270189 0.088395635535544415 
+		-0.11916776128201612 ;
+	setAttr ".rst" -type "double3" 0.98125223259671834 7.1054273576010019e-15 1.5850697820951609e-07 ;
+	setAttr -k on ".w0";
+createNode scaleConstraint -n "Wrist_JNT_scaleConstraint2" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT";
+	rename -uid "EADD511D-4DF8-571B-E521-14BFF556CCE9";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Wrist_CNTLW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr -k on ".w0";
+createNode parentConstraint -n "Elbow_JNT_parentConstraint1" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT";
+	rename -uid "6DB591C4-4070-D92F-F487-2EA10E7E7D41";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Elbow_CNTLW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tpm" -type "matrix" 0.99699474680532352 0 0.077469186407170626 0
+		 0 1 0 0 -0.077469186407170626 0 0.99699474680532352 0 7.9233811714067599 28.568733215332031 -0.6524669797234911 1;
+	setAttr ".tg[0].trp" -type "double3" 0.018909523722663302 0 0.24335734877868576 ;
+	setAttr ".tg[0].tot" -type "double3" -0.018909523722661525 2.8421709430404007e-14 
+		-0.24335734877868642 ;
+	setAttr ".tg[0].tor" -type "double3" -89.999999999991829 -3.7685651768075819e-05 
+		-5.376372960381975e-18 ;
+	setAttr ".cpim" -type "matrix" 0.99968937369703137 -0.024923003776378738 3.5590752728936423e-15 0
+		 -3.9727719810263945e-18 1.4259702976345097e-13 1 0 -0.024923003776378738 -0.99968937369703148 1.4261925711043427e-13 0
+		 -2.0421201974191714 -0.45478984746517681 -28.568733215331971 1;
+	setAttr ".lr" -type "double3" 4.4579452916071645e-14 1.27695075217415e-16 -1.590277340731758e-15 ;
+	setAttr ".rst" -type "double3" 5.8950612003869152 9.2148511043887993e-15 2.8421709430404007e-14 ;
+	setAttr ".cjo" -type "double3" -1.0913921372526911e-11 -8.401558777791688e-13 -5.8712776947493728 ;
+	setAttr ".rsrr" -type "double3" -6.344446243581919e-15 -4.9330948352603817e-16 -7.9513867036587899e-16 ;
+createNode scaleConstraint -n "Elbow_JNT_scaleConstraint1" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT";
+	rename -uid "7530949F-4BC4-6C72-7529-D4A79A21D995";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Elbow_CNTLW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tpm" -type "matrix" 0.99699474680532352 0 0.077469186407170626 0
+		 0 1 0 0 -0.077469186407170626 0 0.99699474680532352 0 7.9233811714067599 28.568733215332031 -0.6524669797234911 1;
+	setAttr ".tsc" yes;
+	setAttr ".cpim" -type "matrix" 0.99968937369703137 -0.024923003776378738 3.5590752728936423e-15 0
+		 -3.9727719810263945e-18 1.4259702976345097e-13 1 0 -0.024923003776378738 -0.99968937369703148 1.4261925711043427e-13 0
+		 -2.0421201974191714 -0.45478984746517681 -28.568733215331971 1;
+createNode parentConstraint -n "Elbow_JNT_parentConstraint2" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT";
+	rename -uid "AA500717-45A0-57F6-E55E-A5A24CB310D4";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Elbow_CNTLW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" -0.018909523722660637 5.6843418860808015e-14 
+		-0.24335734877869175 ;
+	setAttr ".tg[0].tor" -type "double3" -89.999999999991871 -3.768565177125638e-05 
+		-5.3470853259614508e-18 ;
+	setAttr ".lr" -type "double3" 8.4227034248550481e-18 -1.6959351132552031e-16 -1.590277340731758e-15 ;
+	setAttr ".rst" -type "double3" 5.8950612003869161 1.4210854715202004e-14 5.3290705182007514e-14 ;
+	setAttr ".rsrr" -type "double3" 8.4228587682932312e-18 -1.6959654055832914e-16 -1.590277340731758e-15 ;
+	setAttr -k on ".w0";
+createNode scaleConstraint -n "Elbow_JNT_scaleConstraint2" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT";
+	rename -uid "AC685C49-4628-E850-7354-4FAF673BD910";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Elbow_CNTLW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr -k on ".w0";
+createNode parentConstraint -n "Shoulder_JNT_parentConstraint1" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT";
+	rename -uid "AD8BB366-4116-D627-C660-1DB9218DE037";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Shoulder_CNTLW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tpm" -type "matrix" 0.99968937369703126 0 -0.024923003776378717 0
+		 0 1 0 0 0.024923003776378717 0 0.99968937369703126 0 2.0301511320862975 28.568733215332031 -0.50554434716425567 1;
+	setAttr ".tg[0].trp" -type "double3" 0 0 -3.3306690738754696e-16 ;
+	setAttr ".tg[0].tot" -type "double3" 0 0 3.3306690738754696e-16 ;
+	setAttr ".tg[0].tor" -type "double3" -89.9999999999918 3.975693351829396e-16 -9.9392333795734899e-17 ;
+	setAttr ".cpim" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1;
+	setAttr ".lr" -type "double3" 1.9083328088781101e-14 -2.9817700138720455e-16 -7.9513867036587919e-16 ;
+	setAttr ".rst" -type "double3" 2.0301511320862975 28.568733215332031 -0.50554434716425567 ;
+	setAttr ".cjo" -type "double3" -89.999999999991815 1.4281308039014529 -9.9423217262142299e-17 ;
+	setAttr ".rsrr" -type "double3" -6.3626623681425918e-15 -9.9392333795734924e-17 
+		-2.981770013872047e-16 ;
+createNode scaleConstraint -n "Shoulder_JNT_scaleConstraint1" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT";
+	rename -uid "ABC8E2B4-4EDB-B685-AC4E-E1B2BF72F2E5";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Shoulder_CNTLW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tpm" -type "matrix" 0.99968937369703126 0 -0.024923003776378717 0
+		 0 1 0 0 0.024923003776378717 0 0.99968937369703126 0 2.0301511320862975 28.568733215332031 -0.50554434716425567 1;
+	setAttr ".cpim" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1;
+createNode parentConstraint -n "Shoulder_JNT_parentConstraint2" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT";
+	rename -uid "58690738-4908-4F63-627E-57BDAC294F35";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Shoulder_CNTLW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 4.4408920985006262e-16 3.5527136788005009e-15 
+		0 ;
+	setAttr ".tg[0].tor" -type "double3" -89.999999999991829 7.9513867036587919e-16 
+		-1.987846675914698e-16 ;
+	setAttr ".lr" -type "double3" -1.5530052155583566e-18 -1.987846675914698e-16 -6.9574633657014429e-16 ;
+	setAttr ".rst" -type "double3" 2.0301511320862979 28.568733215332035 -0.505544347164256 ;
+	setAttr ".rsrr" -type "double3" -1.5530052155583566e-18 -1.987846675914698e-16 -6.9574633657014429e-16 ;
+	setAttr -k on ".w0";
+createNode scaleConstraint -n "Shoulder_JNT_scaleConstraint2" -p "|FK_IK_TEST|JNT1|FK|Shoulder_JNT";
+	rename -uid "B4BBA7F7-47AC-3C95-B911-0F9F2C9AC5E5";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Shoulder_CNTLW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr -k on ".w0";
+createNode transform -n "IK1" -p "JNT1";
+	rename -uid "ED0A45FE-425B-A8ED-C2ED-10AE7D3DE688";
+	setAttr ".rp" -type "double3" 2.0301511287689209 28.450105667114258 -0.50554415464840807 ;
+	setAttr ".sp" -type "double3" 2.0301511287689209 28.450105667114258 -0.50554415464840807 ;
+createNode joint -n "Shoulder_IK_JNT2" -p "IK1";
+	rename -uid "A1F46F1E-4C73-4A75-CEF9-4880BAE690CC";
+	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
+	setAttr ".mxrl" -type "double3" 360 360 360 ;
+	setAttr ".jo" -type "double3" 1.4033418597069752e-14 0 90.000000000000014 ;
+	setAttr ".radi" 0.58413852589408277;
+createNode joint -n "Elbow_IK_JNT2" -p "Shoulder_IK_JNT2";
+	rename -uid "64342759-481C-4D0E-F79F-B6A2D9B75F04";
+	setAttr ".t" -type "double3" 5.8675038094367196 0 -0.12388904989229133 ;
+	setAttr ".r" -type "double3" -4.0718050760091791e-28 5.8299801140925059e-13 -2.2223224245535801e-27 ;
+	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
+	setAttr ".mxrl" -type "double3" 360 360 360 ;
+	setAttr ".jo" -type "double3" 0 -9.3662988471870374 0 ;
+	setAttr ".radi" 0.53707125547759815;
+createNode joint -n "Arm_IK_JNT2" -p "Elbow_IK_JNT2";
+	rename -uid "8CEFE39D-4D50-0FF0-5328-5D889EC139A3";
+	setAttr ".t" -type "double3" 5.0441567110884442 1.7763568394002505e-15 -0.4579800827459124 ;
+	setAttr ".r" -type "double3" 1.1678599220998851e-14 1.4312496066585827e-14 -2.385416011097636e-15 ;
+	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
+	setAttr ".mxrl" -type "double3" 360 360 360 ;
+	setAttr ".radi" 0.53707125547759815;
+createNode ikEffector -n "effector2" -p "Elbow_IK_JNT2";
+	rename -uid "EC41555D-4A1D-657B-F302-DB9170BAD7A1";
+	setAttr ".v" no;
+	setAttr ".hd" yes;
+createNode parentConstraint -n "Shoulder_IK_JNT2_parentConstraint1" -p "Shoulder_IK_JNT2";
+	rename -uid "D7C8B762-4392-CF99-A6F3-1B96A519C810";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "IK_Shoulder_CNTL_TESTW0" -dv 1 -min 
+		0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" -4.4408920985006262e-16 1.0658141036401503e-14 
+		0.027223619914342301 ;
+	setAttr ".tg[0].tor" -type "double3" 0 0 2.3536104642830022e-13 ;
+	setAttr ".lr" -type "double3" 0 0 -90.000000000000014 ;
+	setAttr ".rst" -type "double3" 2.0304745674244375 28.450105667114268 -0.50554415464841007 ;
+	setAttr ".rsrr" -type "double3" 0 0 -90.000000000000014 ;
+	setAttr -k on ".w0";
+createNode scaleConstraint -n "Shoulder_IK_JNT2_scaleConstraint1" -p "Shoulder_IK_JNT2";
+	rename -uid "31B07AE2-4FCF-059F-25DF-8CBFF8AB7794";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "IK_Shoulder_CNTL_TESTW0" -dv 1 -min 
+		0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr -k on ".w0";
+createNode transform -n "CNTL1" -p "FK_IK_TEST";
+	rename -uid "BD1FA3E5-4677-955B-9967-E8934E74A0A5";
+	setAttr ".t" -type "double3" 0 0 -6.7816133809045702 ;
+	setAttr ".rp" -type "double3" 9.1196620925712732 28.568733215332035 0.05940727216462327 ;
+	setAttr ".sp" -type "double3" 9.1196620925712732 28.568733215332035 0.05940727216462327 ;
+createNode transform -n "FK" -p "CNTL1";
+	rename -uid "99CBDC07-437A-4B85-BFF4-BFBC2AD0E98D";
+createNode transform -n "Shoulder_GP" -p "|FK_IK_TEST|CNTL1|FK";
+	rename -uid "DA8D95C0-4838-9BE1-D792-E5ABC8B317D5";
+	setAttr ".t" -type "double3" 2.0301511320862975 28.568733215332031 -0.50554434716425567 ;
+	setAttr ".r" -type "double3" 0 1.428130803901452 0 ;
+createNode transform -n "Shoulder_CNTL" -p "|FK_IK_TEST|CNTL1|FK|Shoulder_GP";
+	rename -uid "CB733A7B-41ED-D524-3A50-78B210B2E0E3";
+	setAttr ".rp" -type "double3" 0 0 -3.3306690738754696e-16 ;
+	setAttr ".sp" -type "double3" 0 0 -3.3306690738754696e-16 ;
+createNode nurbsCurve -n "Shoulder_CNTLShape" -p "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL";
+	rename -uid "0FA2737B-44B5-4EE0-AE44-858392E21912";
+	setAttr -k off ".v";
+	setAttr ".cc" -type "nurbsCurve" 
+		3 8 2 no 3
+		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
+		11
+		0.01952995548637837 0.78361162489122549 -0.78336821450922156
+		0.027619527921379117 0 -1.1078499532909365
+		0.01952995548637837 -0.78361162489122549 -0.78336821450922156
+		-4.4408920985006262e-16 -1.108194187554389 -3.8857805861880479e-16
+		-0.01952995548637837 -0.78361162489122549 0.78336821450922089
+		-0.027619527921379117 0 1.1078499532909365
+		-0.01952995548637837 0.78361162489122549 0.78336821450922089
+		4.4408920985006262e-16 1.108194187554389 -1.1102230246251565e-16
+		0.01952995548637837 0.78361162489122549 -0.78336821450922156
+		0.027619527921379117 0 -1.1078499532909365
+		0.01952995548637837 -0.78361162489122549 -0.78336821450922156
+		;
+createNode transform -n "Elbow_GP" -p "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL";
+	rename -uid "8A206335-4912-277B-56D8-21B981B34D05";
+	setAttr ".t" -type "double3" 5.8950612003869134 0 -8.7152507433074788e-15 ;
+	setAttr ".r" -type "double3" 0 -5.8712400090976056 0 ;
+createNode transform -n "Elbow_CNTL" -p "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP";
+	rename -uid "0AAEFE2F-4A89-87DC-BE99-10B6A63F876F";
+	setAttr ".rp" -type "double3" 0.018909523722663302 0 0.24335734877868576 ;
+	setAttr ".sp" -type "double3" 0.018909523722663302 0 0.24335734877868576 ;
+createNode nurbsCurve -n "Elbow_CNTLShape" -p "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL";
+	rename -uid "4A7C5B0E-4A85-C458-E615-7CBE60326848";
+	setAttr -k off ".v";
+	setAttr ".cc" -type "nurbsCurve" 
+		3 8 2 no 3
+		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
+		11
+		-0.05688609245249765 0.97839695613671296 -0.73209927677993458
+		-0.088281664640676105 0 -1.1361466405930083
+		-0.05688609245249765 -0.97839695613671296 -0.73209927677993414
+		0.018909523722665078 -1.38366224475309 0.24335734877868553
+		0.094705139897828694 -0.97839695613671296 1.2188139743373059
+		0.12610071208600626 0 1.6228613381503805
+		0.094705139897828694 0.97839695613671296 1.2188139743373057
+		0.018909523722665078 1.3836622447530971 0.24335734877868576
+		-0.05688609245249765 0.97839695613671296 -0.73209927677993458
+		-0.088281664640676105 0 -1.1361466405930083
+		-0.05688609245249765 -0.97839695613671296 -0.73209927677993414
+		;
+createNode transform -n "Wrist_GP" -p "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL";
+	rename -uid "AD4ACD10-4D06-7628-B489-92A53713E13F";
+	setAttr ".t" -type "double3" 4.8466876610808161 0 4.4408920985006262e-16 ;
+createNode transform -n "Wrist_CNTL" -p "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP";
+	rename -uid "437E0095-499D-553A-58C5-A09E784EDA40";
+	setAttr ".rp" -type "double3" 0.0092596571266359007 -0.088395635535555073 0.11916776128200812 ;
+	setAttr ".sp" -type "double3" 0.0092596571266359007 -0.088395635535555073 0.11916776128200812 ;
+createNode nurbsCurve -n "Wrist_CNTLShape" -p "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL";
+	rename -uid "BB4A572A-45E8-EF84-0CE8-64B7B4E65A86";
+	setAttr -k off ".v";
+	setAttr ".cc" -type "nurbsCurve" 
+		3 8 2 no 3
+		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
+		11
+		-0.058667011970311191 0.78842613383134852 -0.7550189366613429
+		-0.086803159557097276 -0.088395635535555073 -1.1171189229956306
+		-0.058667011970311191 -0.96521740490245866 -0.7550189366613429
+		0.0092596571266391689 -1.3284088735582036 0.11916776128200768
+		0.077186326223587537 -0.96521740490245866 0.99335445922535837
+		0.10532247381037363 -0.088395635535555073 1.3554544455596467
+		0.077186326223587537 0.78842613383134852 0.99335445922535814
+		0.0092596571266391689 1.1516176024870934 0.11916776128200793
+		-0.058667011970311191 0.78842613383134852 -0.7550189366613429
+		-0.086803159557097276 -0.088395635535555073 -1.1171189229956306
+		-0.058667011970311191 -0.96521740490245866 -0.7550189366613429
+		;
+createNode transform -n "Thumb_GP" -p "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL";
+	rename -uid "A8FF7C16-42AF-7CD7-EE1D-3095A72B0F36";
+	setAttr ".t" -type "double3" 0.79818168241486198 -0.16636392172094716 0.90339195252595517 ;
+	setAttr ".r" -type "double3" 17.160030112712569 -52.104941255132324 -14.515100742224627 ;
+	setAttr ".s" -type "double3" 0.99999999999999989 1 0.99999999999999978 ;
+createNode transform -n "Thumb_Base_CNTL" -p "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP";
+	rename -uid "8C5B61DC-448A-44CD-B6FB-449601157EF3";
+	setAttr ".rp" -type "double3" 0.0027903761020691142 -0.017823924545513847 0.0017517448935890911 ;
+	setAttr ".sp" -type "double3" 0.0027903761020691142 -0.017823924545513847 0.0017517448935890911 ;
+createNode nurbsCurve -n "Thumb_Base_CNTLShape" -p "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL";
+	rename -uid "76BBF743-4FA0-48FC-CCC0-E681DFF8C9CD";
+	setAttr -k off ".v";
+	setAttr ".cc" -type "nurbsCurve" 
+		3 8 2 no 3
+		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
+		11
+		-0.089232921939856422 0.34367722931953099 -0.18293980557785064
+		-0.18346896472112825 0.33558399715615245 -0.11517831658947461
+		-0.2035405390112843 0.34367722931953182 -0.0008577888855201423
+		-0.13768998880933078 0.36321602017179133 0.093054362862682663
+		-0.024491673333840055 0.38275481102405046 0.11154567383267991
+		0.069744369447432661 0.39084804318742905 0.043784184844300349
+		0.089815943737587819 0.38275481102404962 -0.070536342859650575
+		0.023965393535634313 0.36321602017179011 -0.16444849460785516
+		-0.089232921939856422 0.34367722931953099 -0.18293980557785064
+		-0.18346896472112825 0.33558399715615245 -0.11517831658947461
+		-0.2035405390112843 0.34367722931953182 -0.0008577888855201423
+		;
+createNode transform -n "null1" -p "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL";
+	rename -uid "1D012120-4BBC-55B9-D0DC-4488750049A6";
+	setAttr ".t" -type "double3" 0.5359539236776274 -9.5923269327613525e-14 -5.3290705182007514e-15 ;
+	setAttr ".r" -type "double3" -3.8973522914629108 9.2899709404970441 5.5174986756621225 ;
+	setAttr ".s" -type "double3" 0.99999999999999933 0.99999999999999989 0.99999999999999911 ;
+createNode transform -n "Thumb_Finger_Base" -p "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL|null1";
+	rename -uid "FB48C803-4D40-CD52-B156-0E9E9A2E0DDC";
+	setAttr ".t" -type "double3" 3.5527136788005009e-15 3.5527136788005009e-15 1.7763568394002505e-15 ;
+	setAttr ".s" -type "double3" 1.0000000000000004 1 1.0000000000000004 ;
+	setAttr ".rp" -type "double3" -2.4444424440162049e-07 -1.8446757721335416e-07 -2.9678088786511136e-07 ;
+	setAttr ".sp" -type "double3" -2.4444424440162038e-07 -1.8446757721335416e-07 -2.9678088786511125e-07 ;
+	setAttr ".spt" -type "double3" -1.0587911840678759e-22 0 -1.0587911840678759e-22 ;
+createNode nurbsCurve -n "Thumb_Finger_BaseShape" -p "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL|null1|Thumb_Finger_Base";
+	rename -uid "99BC6AF2-4009-08D2-18ED-8E9591F2B9EC";
+	setAttr -k off ".v";
+	setAttr ".cc" -type "nurbsCurve" 
+		3 8 2 no 3
+		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
+		11
+		-2.4444424617797722e-07 0.29008386868641267 -0.29008434993489907
+		-2.4444424440162038e-07 -1.8446758076606784e-07 -0.41024109897944605
+		-2.4444424617797722e-07 -0.29008423762158841 -0.29008434993489907
+		-2.4444424440162038e-07 -0.41024098666613185 -2.9678089141782493e-07
+		-2.4444424617797722e-07 -0.29008423762158841 0.29008375637311623
+		-2.4444424440162038e-07 -1.8446758076606784e-07 0.41024050541766854
+		-2.4444424617797722e-07 0.29008386868641978 0.29008375637311801
+		-2.4444424617797722e-07 0.41024061773096321 -2.9678089141782493e-07
+		-2.4444424617797722e-07 0.29008386868641267 -0.29008434993489907
+		-2.4444424440162038e-07 -1.8446758076606784e-07 -0.41024109897944605
+		-2.4444424617797722e-07 -0.29008423762158841 -0.29008434993489907
+		;
+createNode transform -n "null2" -p "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL|null1|Thumb_Finger_Base";
+	rename -uid "BC8001D7-4EB6-2FD2-0C72-2CB608C169ED";
+	setAttr ".t" -type "double3" 0.00041394980896924949 -0.015273381285982879 -0.01231265932455905 ;
+	setAttr ".r" -type "double3" -1.6119361340109544 -1.5170042462891402 1.8825640945697799 ;
+	setAttr ".s" -type "double3" 0.99999999999999956 1.0000000000000002 0.99999999999999944 ;
+	setAttr ".rp" -type "double3" 0.46509154206081305 -3.1974423109204515e-14 8.8817841970012444e-15 ;
+	setAttr ".rpt" -type "double3" -0.00041394980898425338 0.015273381285969284 0.012312659324548803 ;
+	setAttr ".sp" -type "double3" 0.46509154206081327 -3.1974423109204508e-14 8.8817841970012523e-15 ;
+	setAttr ".spt" -type "double3" -2.2204460492503121e-16 -6.3108872417680958e-30 -6.3108872417680909e-30 ;
+createNode transform -n "Thumb_Finger_Base1" -p "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL|null1|Thumb_Finger_Base|null2";
+	rename -uid "388B7F0C-47A0-0C46-1243-818D4F53E0F0";
+	setAttr ".t" -type "double3" 3.5527136788005009e-15 -3.5527136788005009e-15 -1.7763568394002505e-15 ;
+	setAttr ".s" -type "double3" 1.0000000000000004 0.99999999999999944 1.0000000000000004 ;
+	setAttr ".rp" -type "double3" 0.46509154206086323 -2.4868995751603491e-14 5.3290705182007538e-15 ;
+	setAttr ".sp" -type "double3" 0.46509154206086301 -2.4868995751603507e-14 5.3290705182007514e-15 ;
+	setAttr ".spt" -type "double3" 2.2204460492503141e-16 1.5777218104420228e-29 2.3665827156630365e-30 ;
+createNode nurbsCurve -n "Thumb_Finger_Base1Shape" -p "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL|null1|Thumb_Finger_Base|null2|Thumb_Finger_Base1";
+	rename -uid "4A3F78D9-4633-17BE-CEA4-8A89BB26779E";
+	setAttr -k off ".v";
+	setAttr ".cc" -type "nurbsCurve" 
+		3 8 2 no 3
+		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
+		11
+		0.45971157173024402 -0.2138990925226345 0.23038840591800813
+		0.47078694917407837 0.011424105839942911 0.31416179842204883
+		0.47852603437423014 0.23005521793946215 0.21390347018997069
+		0.47839537618081351 0.31392310346474162 -0.011656609840720478
+		0.47047151239149976 0.21389909252263095 -0.23038840591801701
+		0.45939613494766895 -0.011424105839950016 -0.31416179842205949
+		0.45165704974751542 -0.23005521793946926 -0.21390347018998312
+		0.45178770794092848 -0.31392310346475227 0.011656609840713372
+		0.45971157173024402 -0.2138990925226345 0.23038840591800813
+		0.47078694917407837 0.011424105839942911 0.31416179842204883
+		0.47852603437423014 0.23005521793946215 0.21390347018997069
+		;
+createNode transform -n "P_Finger_GP" -p "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL";
+	rename -uid "5EAD8374-48B3-4BC5-2207-FBB88EB3A0AF";
+	setAttr ".t" -type "double3" 2.1278559786643108 -0.16467128657752639 0.51488085313540433 ;
+	setAttr ".r" -type "double3" 0 -1.8360025227130834 0 ;
+	setAttr ".s" -type "double3" 1 1.0000000000000002 1.0000000000000004 ;
+createNode transform -n "P_Finger_Base_CNTL" -p "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP";
+	rename -uid "35B7D170-432B-8971-0111-7585F7B97250";
+	setAttr ".rp" -type "double3" -2.1186432797497696e-17 -0.0072671547156382098 2.9534252691215954e-14 ;
+	setAttr ".sp" -type "double3" -2.1186432797497696e-17 -0.0072671547156382098 2.9534252691215954e-14 ;
+createNode nurbsCurve -n "P_Finger_Base_CNTLShape" -p "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL";
+	rename -uid "2A54E3D0-47D3-BAB9-AD9E-CC91D5A31162";
+	setAttr -k off ".v";
+	setAttr ".cc" -type "nurbsCurve" 
+		3 8 2 no 3
+		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
+		11
+		0.085500555311837104 0.34352704870257605 -0.1066424390334749
+		-0.014949569346649486 0.34352704870257605 -0.13586561425904564
+		-0.10664243903350193 0.34352704870257605 -0.085500555311801868
+		-0.13586561425907287 0.34352704870257605 0.014949569346682089
+		-0.085500555311828222 0.34352704870257605 0.1066424390335341
+		0.014949569346654815 0.34352704870257605 0.13586561425910548
+		0.10664243903351081 0.34352704870257605 0.085500555311861071
+		0.1358656142590782 0.34352704870257605 -0.014949569346622664
+		0.085500555311837104 0.34352704870257605 -0.1066424390334749
+		-0.014949569346649486 0.34352704870257605 -0.13586561425904564
+		-0.10664243903350193 0.34352704870257605 -0.085500555311801868
+		;
+createNode transform -n "null3" -p "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL";
+	rename -uid "79D66175-4D62-CF28-8A62-978C335CB87C";
+	setAttr ".rp" -type "double3" 0.38235595276077206 -3.5527136788005009e-14 -2.2204460492503131e-16 ;
+	setAttr ".sp" -type "double3" 0.38235595276077206 -3.5527136788005009e-14 -2.2204460492503131e-16 ;
+createNode transform -n "P_Finger_Base" -p "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL|null3";
+	rename -uid "4FFF8DA9-44FB-8BA0-489C-689D2A0954F4";
+	setAttr ".rp" -type "double3" 0.38235595276079692 1.7053025658242404e-13 2.9309887850104133e-14 ;
+	setAttr ".sp" -type "double3" 0.38235595276079692 1.7053025658242404e-13 2.9309887850104133e-14 ;
+createNode nurbsCurve -n "P_Finger_BaseShape" -p "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL|null3|P_Finger_Base";
+	rename -uid "A2FD5544-43EE-C1ED-1EF5-D0A5E643FCA1";
+	setAttr -k off ".v";
+	setAttr ".cc" -type "nurbsCurve" 
+		3 8 2 no 3
+		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
+		11
+		0.38133987135799829 0.22126222169472234 -0.22125988865535029
+		0.38091899666049067 1.7049193631430194e-13 -0.31290873534556951
+		0.38133987135799829 -0.22126222169437423 -0.22125988865535046
+		0.38235595276079737 -0.31291203476106227 2.9079004301118346e-14
+		0.38337203416358584 -0.22126222169437418 0.22125988865540858
+		0.38379290886109696 1.7056857685053519e-13 0.31290873534562769
+		0.38337203416358584 0.2212622216947224 0.22125988865540863
+		0.38235595276079737 0.31291203476140333 2.9224394716504171e-14
+		0.38133987135799829 0.22126222169472234 -0.22125988865535029
+		0.38091899666049067 1.7049193631430194e-13 -0.31290873534556951
+		0.38133987135799829 -0.22126222169437423 -0.22125988865535046
+		;
+createNode transform -n "null4" -p "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL|null3|P_Finger_Base";
+	rename -uid "0BE70984-4BFE-2B5E-CB00-33ACBEA04536";
+	setAttr ".rp" -type "double3" 1.1403700769316547 3.5527136788005009e-15 -0.0081538207747910985 ;
+	setAttr ".sp" -type "double3" 1.1403700769316547 3.5527136788005009e-15 -0.0081538207747910985 ;
+createNode transform -n "P_Finger_Base1" -p "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL|null3|P_Finger_Base|null4";
+	rename -uid "4BB5B621-4F38-CF71-B097-53BA9A271BA7";
+	setAttr ".rp" -type "double3" 1.1417538036073918 1.7763568394002505e-13 0.0044218508319748828 ;
+	setAttr ".sp" -type "double3" 1.1417538036073918 1.7763568394002505e-13 0.0044218508319748828 ;
+createNode nurbsCurve -n "P_Finger_Base1Shape" -p "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL|null3|P_Finger_Base|null4|P_Finger_Base1";
+	rename -uid "AAD5A66E-4E5B-891C-3FEB-DAAE90C4A2DD";
+	setAttr -k off ".v";
+	setAttr ".cc" -type "nurbsCurve" 
+		3 8 2 no 3
+		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
+		11
+		1.147720357271115 0.15672232497842123 -0.15218685704841339
+		1.1501917847192558 1.7760911083309708e-13 -0.2170563078381961
+		1.147720357271115 -0.15672232497806601 -0.15218685704841337
+		1.1417538036073933 -0.22163883751069935 0.0044218508319741247
+		1.1357872499436716 -0.15672232497806596 0.16103055871236163
+		1.1333158224955309 1.7766334203138767e-13 0.22590000950214456
+		1.1357872499436716 0.15672232497842128 0.1610305587123616
+		1.1417538036073933 0.22163883751105462 0.0044218508319740692
+		1.147720357271115 0.15672232497842123 -0.15218685704841339
+		1.1501917847192558 1.7760911083309708e-13 -0.2170563078381961
+		1.147720357271115 -0.15672232497806601 -0.15218685704841337
+		;
+createNode transform -n "MID_Finger_GP" -p "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL";
+	rename -uid "1C914FE1-499F-342C-33E0-A699D2777E8F";
+	setAttr ".t" -type "double3" 1.9578706276140014 -0.1367531649187228 0.0077911888979069754 ;
+	setAttr ".r" -type "double3" 0 3.1207942782964446 0 ;
+createNode transform -n "M_Finger_Base_CNTL" -p "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP";
+	rename -uid "FEB8DF25-4903-73F5-BD46-DAB9E1B9DFD3";
+	setAttr ".t" -type "double3" -14.700257186056634 -28.431980050413308 0.45691072030088148 ;
+	setAttr ".r" -type "double3" 0 1.3223149268997101 0 ;
+	setAttr ".rp" -type "double3" 14.706886462501048 28.428023330704143 -0.11755561083555259 ;
+	setAttr ".rpt" -type "double3" -0.0066292764445291478 0 -0.33935510946532893 ;
+	setAttr ".sp" -type "double3" 14.706886462501048 28.428023330704143 -0.11755561083555259 ;
+createNode nurbsCurve -n "M_Finger_Base_CNTLShape" -p "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL";
+	rename -uid "DCC540F5-4C1A-6CA0-3327-1C97E8FCFE5F";
+	setAttr -k off ".v";
+	setAttr ".cc" -type "nurbsCurve" 
+		3 8 2 no 3
+		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
+		11
+		14.803537781068481 28.790384699040491 -0.21420692940298403
+		14.70688646250105 28.790384699040491 -0.25424121637485664
+		14.610235143933618 28.790384699040491 -0.21420692940298397
+		14.570200856961746 28.790384699040491 -0.11755561083555249
+		14.610235143933618 28.790384699040491 -0.020904292268120982
+		14.70688646250105 28.790384699040491 0.019129994703751735
+		14.803537781068481 28.790384699040491 -0.020904292268120982
+		14.843572068040354 28.790384699040491 -0.11755561083555247
+		14.803537781068481 28.790384699040491 -0.21420692940298403
+		14.70688646250105 28.790384699040491 -0.25424121637485664
+		14.610235143933618 28.790384699040491 -0.21420692940298397
+		;
+createNode transform -n "group3" -p "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL";
+	rename -uid "27EA1E5C-4B3A-FC40-D1EA-0C955EBD9097";
+	setAttr ".t" -type "double3" 15.169370252591051 28.431980050413308 -0.13615738661025772 ;
+	setAttr ".r" -type "double3" 0 -1.3223149268997101 0 ;
+createNode transform -n "M_Finger_Base" -p "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL|group3";
+	rename -uid "F97A8951-401D-C0C1-8A2D-9CBA1AAF9FD7";
+	setAttr ".t" -type "double3" -15.162188547942215 -28.431980050413308 0.48618014230601103 ;
+	setAttr ".r" -type "double3" 0 1.3223149268997101 0 ;
+	setAttr ".rp" -type "double3" 15.193697983914818 28.431980050413308 -0.13615738661025775 ;
+	setAttr ".rpt" -type "double3" -0.0071881831848110422 0 -0.35058415946641042 ;
+	setAttr ".sp" -type "double3" 15.193697983914818 28.431980050413308 -0.13615738661025775 ;
+createNode nurbsCurve -n "M_Finger_BaseShape" -p "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL|group3|M_Finger_Base";
+	rename -uid "A4BC2E3A-4230-7614-5043-45B5F023570B";
+	setAttr -k off ".v";
+	setAttr ".cc" -type "nurbsCurve" 
+		3 8 2 no 3
+		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
+		11
+		15.193697983914818 28.653896507370334 -0.3580738435672885
+		15.193697983914818 28.431980050413308 -0.44999464975267567
+		15.193697983914818 28.210063593456276 -0.3580738435672885
+		15.193697983914818 28.118142787270891 -0.13615738661025775
+		15.193697983914818 28.210063593456276 0.085759070346772923
+		15.193697983914818 28.431980050413308 0.17767987653216033
+		15.193697983914818 28.653896507370334 0.085759070346772923
+		15.193697983914818 28.745817313555726 -0.13615738661025772
+		15.193697983914818 28.653896507370334 -0.3580738435672885
+		15.193697983914818 28.431980050413308 -0.44999464975267567
+		15.193697983914818 28.210063593456276 -0.3580738435672885
+		;
+createNode transform -n "null5" -p "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL|group3|M_Finger_Base";
+	rename -uid "F9BBFF3D-42BF-3B58-2836-C4AE6413B422";
+	setAttr ".t" -type "double3" 16.019776389186482 28.431980050413308 -0.12690093040845823 ;
+	setAttr ".r" -type "double3" 0 -1.3223149268997101 0 ;
+createNode transform -n "M_Finger_Base1" -p "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL|group3|M_Finger_Base|null5";
+	rename -uid "AAE64657-4F08-04FF-CE46-22935FB905D4";
+	setAttr ".t" -type "double3" -16.012581827714687 -28.431980050413308 0.49655071887617563 ;
+	setAttr ".r" -type "double3" 0 1.3223149268997101 0 ;
+	setAttr ".rp" -type "double3" 16.019776389186479 28.431980050413308 -0.12690093040845837 ;
+	setAttr ".rpt" -type "double3" -0.0071945614717958632 0 -0.36964978846771712 ;
+	setAttr ".sp" -type "double3" 16.019776389186479 28.431980050413308 -0.12690093040845837 ;
+createNode nurbsCurve -n "M_Finger_Base1Shape" -p "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL|group3|M_Finger_Base|null5|M_Finger_Base1";
+	rename -uid "B1B7A6FF-4566-B0E4-60E2-2A90E2873F26";
+	setAttr -k off ".v";
+	setAttr ".cc" -type "nurbsCurve" 
+		3 8 2 no 3
+		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
+		11
+		16.019776389186479 28.659344808522576 -0.35426568851772655
+		16.019776389186479 28.431980050413308 -0.44844325493226356
+		16.019776389186479 28.204615292304041 -0.35426568851772655
+		16.019776389186479 28.110437725889504 -0.12690093040845837
+		16.019776389186479 28.204615292304041 0.10046382770080978
+		16.019776389186479 28.431980050413308 0.19464139411534689
+		16.019776389186479 28.659344808522576 0.10046382770080978
+		16.019776389186479 28.753522374937113 -0.12690093040845835
+		16.019776389186479 28.659344808522576 -0.35426568851772655
+		16.019776389186479 28.431980050413308 -0.44844325493226356
+		16.019776389186479 28.204615292304041 -0.35426568851772655
+		;
+createNode transform -n "Ring_Finger_GP" -p "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL";
+	rename -uid "155C2781-47F9-274F-7C07-35843E293121";
+	setAttr ".t" -type "double3" 1.9519187328710448 -0.13518017881156297 -0.51061211030954401 ;
+	setAttr ".r" -type "double3" -0.18836279154856914 14.834937789853415 -2.3922332933085002 ;
+createNode transform -n "Ring_Finger_Base_CNTL" -p "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP";
+	rename -uid "482D1779-4FF9-FD0D-B905-C3B5E8D42DB1";
+	setAttr ".rp" -type "double3" -9.3350996679015502e-05 0.0023116465354019828 -1.7125754847255411e-05 ;
+	setAttr ".sp" -type "double3" -9.3350996679015502e-05 0.0023116465354019828 -1.7125754847255411e-05 ;
+createNode nurbsCurve -n "Ring_Finger_Base_CNTLShape" -p "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL";
+	rename -uid "BB2DB247-443C-FE79-8E0B-BC89BFA9D0E7";
+	setAttr -k off ".v";
+	setAttr ".cc" -type "nurbsCurve" 
+		3 8 2 no 3
+		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
+		11
+		0.10192125429147225 0.26406742028294872 -0.079566288155100473
+		0.014160419079445319 0.26010256277642441 -0.13636890448577565
+		-0.088048320497170707 0.25613770526989654 -0.114417253675827
+		-0.14483247098745444 0.25449540751781896 -0.026570315053244364
+		-0.12292864716203056 0.25613770526989654 0.075712366149820465
+		-0.035167811950005401 0.26010256277642441 0.1325149824804952
+		0.067040927626612401 0.26406742028294872 0.11056333167054699
+		0.12382507811689258 0.26570971803502985 0.022716393047963912
+		0.10192125429147225 0.26406742028294872 -0.079566288155100473
+		0.014160419079445319 0.26010256277642441 -0.13636890448577565
+		-0.088048320497170707 0.25613770526989654 -0.114417253675827
+		;
+createNode transform -n "null6" -p "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL";
+	rename -uid "B9EC4624-4510-55FA-BB83-4D8CB1B4EC9E";
+	setAttr ".rp" -type "double3" 0.4874203693573449 -2.1316282072803006e-14 0.017861540436560741 ;
+	setAttr ".sp" -type "double3" 0.4874203693573449 -2.1316282072803006e-14 0.017861540436560741 ;
+createNode transform -n "Ring_Finger_Base" -p "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL|null6";
+	rename -uid "26BAAE14-473C-8926-B92A-AFB7883C896F";
+	setAttr ".rp" -type "double3" 0.48665147668013198 -2.4868995751603507e-14 0.022052707388917181 ;
+	setAttr ".sp" -type "double3" 0.48665147668013198 -2.4868995751603507e-14 0.022052707388917181 ;
+createNode nurbsCurve -n "Ring_Finger_BaseShape" -p "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL|null6|Ring_Finger_Base";
+	rename -uid "D3F02C53-435E-750E-97EA-C38F82443752";
+	setAttr -k off ".v";
+	setAttr ".cc" -type "nurbsCurve" 
+		3 8 2 no 3
+		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
+		11
+		0.48890130006366306 0.19357274634316468 -0.17389324655763524
+		0.50094713759764531 -0.0014605502784554832 -0.25301780642880173
+		0.50461877084923579 -0.19563827635550268 -0.17100978991448376
+		0.49776540685570403 -0.27521375346280408 0.024091619134546161
+		0.48440165329659202 -0.19357274634321442 0.21799866133546916
+		0.47235581576260438 0.0014605502784057452 0.29712322120663476
+		0.46868418251101929 0.19563827635545294 0.21511520469231768
+		0.47553754650454572 0.27521375346276145 0.020013795643286425
+		0.48890130006366306 0.19357274634316468 -0.17389324655763524
+		0.50094713759764531 -0.0014605502784554832 -0.25301780642880173
+		0.50461877084923579 -0.19563827635550268 -0.17100978991448376
+		;
+createNode transform -n "null7" -p "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL|null6|Ring_Finger_Base";
+	rename -uid "EFBE3670-4D79-6624-CD79-769816E60C6B";
+	setAttr ".rp" -type "double3" 1.1515948730142149 -1.7763568394002505e-14 0.076191985653319527 ;
+	setAttr ".sp" -type "double3" 1.1515948730142149 -1.7763568394002505e-14 0.076191985653319527 ;
+createNode transform -n "Ring_Finger_Base1" -p "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL|null6|Ring_Finger_Base|null7";
+	rename -uid "E1BEBAFC-4B18-4853-8B7B-CBBE188D7243";
+	setAttr ".rp" -type "double3" 1.1517971853894728 -2.1316282072803006e-14 0.07508919853315299 ;
+	setAttr ".sp" -type "double3" 1.1517971853894728 -2.1316282072803006e-14 0.07508919853315299 ;
+createNode nurbsCurve -n "Ring_Finger_Base1Shape" -p "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL|null6|Ring_Finger_Base|null7|Ring_Finger_Base1";
+	rename -uid "22117935-4BF6-E206-07DE-6F926FC762C0";
+	setAttr -k off ".v";
+	setAttr ".cc" -type "nurbsCurve" 
+		3 8 2 no 3
+		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
+		11
+		1.1587065804146643 0.18041578124358892 -0.1070257452231797
+		1.1719157751045888 -0.001081535941711557 -0.18056196854537448
+		1.1733397727952184 -0.18194530404056763 -0.10434120542947717
+		1.1621444149521611 -0.25622798064257069 0.076987454825645313
+		1.1448877903642689 -0.18041578124364577 0.25720414228948729
+		1.1316785956743391 0.0010815359416547236 0.33074036561168119
+		1.1302545979837149 0.18194530404051079 0.25451960249578476
+		1.1414499558267668 0.2562279806425245 0.073190942240661166
+		1.1587065804146643 0.18041578124358892 -0.1070257452231797
+		1.1719157751045888 -0.001081535941711557 -0.18056196854537448
+		1.1733397727952184 -0.18194530404056763 -0.10434120542947717
+		;
+createNode transform -n "Pinky_Finger_GP" -p "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL";
+	rename -uid "19685848-4DCA-9BFB-5692-1A9F2F68481E";
+	setAttr ".t" -type "double3" 1.7894946696305816 -0.35505022678245624 -0.95455000149657687 ;
+	setAttr ".r" -type "double3" 0 17.144526627892358 0 ;
+createNode transform -n "Pinky_Finger_Base_CNTL" -p "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP";
+	rename -uid "F1F2F7CA-4BAC-4CE7-9D4F-22B3856E853A";
+	setAttr ".rp" -type "double3" 1.0712314039148959e-14 -0.0015423165502390646 8.4552464851874477e-16 ;
+	setAttr ".sp" -type "double3" 1.0712314039148959e-14 -0.0015423165502390646 8.4552464851874477e-16 ;
+createNode nurbsCurve -n "Pinky_Finger_Base_CNTLShape" -p "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL";
+	rename -uid "D85BC830-4234-542E-6DE8-498557532FC0";
+	setAttr -k off ".v";
+	setAttr ".cc" -type "nurbsCurve" 
+		3 8 2 no 3
+		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
+		11
+		0.11553693234929163 0.32325021274069243 -0.07303541623735299
+		0.030053110253460247 0.32325021274069243 -0.13334078642988256
+		-0.073035416237345885 0.32325021274069243 -0.11553693234928053
+		-0.13334078642987635 0.32325021274069243 -0.030053110253451809
+		-0.11553693234927387 0.32325021274069243 0.073035416237356543
+		-0.030053110253446036 0.32325021274069243 0.13334078642988612
+		0.073035416237363648 0.32325021274069243 0.11553693234928364
+		0.13334078642989233 0.32325021274069243 0.030053110253454474
+		0.11553693234929163 0.32325021274069243 -0.07303541623735299
+		0.030053110253460247 0.32325021274069243 -0.13334078642988256
+		-0.073035416237345885 0.32325021274069243 -0.11553693234928053
+		;
+createNode transform -n "null8" -p "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL";
+	rename -uid "96E5CD62-468F-60CE-6CE9-349572618E08";
+	setAttr ".rp" -type "double3" 0.34717175856326676 3.5527136788005009e-15 2.6645352591003757e-15 ;
+	setAttr ".sp" -type "double3" 0.34717175856326676 3.5527136788005009e-15 2.6645352591003757e-15 ;
+createNode transform -n "Pinky_Finger_Base" -p "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL|null8";
+	rename -uid "8AC24B57-491C-BBB3-1232-51A7D9D6A3C9";
+	setAttr ".rp" -type "double3" 0.34717175856326854 0.031844278906490331 2.2204460492503131e-15 ;
+	setAttr ".sp" -type "double3" 0.34717175856326854 0.031844278906490331 2.2204460492503131e-15 ;
+createNode nurbsCurve -n "Pinky_Finger_BaseShape" -p "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL|null8|Pinky_Finger_Base";
+	rename -uid "BBDC4E4D-4DE5-37E4-2480-A3B69F378CCC";
+	setAttr -k off ".v";
+	setAttr ".cc" -type "nurbsCurve" 
+		3 8 2 no 3
+		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
+		11
+		0.3296414748708969 0.22765294387578194 -0.1950223639245583
+		0.32238019361327019 0.031844278906483225 -0.27580327202817356
+		0.3296414748708969 -0.16396438606281549 -0.1950223639245583
+		0.34717175856326321 -0.24507099072326355 3.9968028886505635e-15
+		0.36470204225562597 -0.16396438606281549 0.19502236392456629
+		0.37196332351325267 0.031844278906483225 0.27580327202818156
+		0.36470204225562597 0.22765294387578194 0.19502236392456629
+		0.34717175856326321 0.30875954853623711 3.9968028886505635e-15
+		0.3296414748708969 0.22765294387578194 -0.1950223639245583
+		0.32238019361327019 0.031844278906483225 -0.27580327202817356
+		0.3296414748708969 -0.16396438606281549 -0.1950223639245583
+		;
+createNode transform -n "null9" -p "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL|null8|Pinky_Finger_Base";
+	rename -uid "ED984E9B-4108-84DA-3D50-9B9BA00F2137";
+	setAttr ".rp" -type "double3" 0.86222420918216613 0.0075175857442459915 -0.022760911142570173 ;
+	setAttr ".sp" -type "double3" 0.86222420918216613 0.0075175857442459915 -0.022760911142570173 ;
+createNode transform -n "Pinky_Finger_Base1" -p "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL|null8|Pinky_Finger_Base|null9";
+	rename -uid "A2C0EBBB-4D35-D7D5-9529-709F34158192";
+	setAttr ".t" -type "double3" 0 3.5527136788005009e-15 0 ;
+	setAttr ".rp" -type "double3" 0.86222420918216613 0.039361864650725664 -0.022760911142571949 ;
+	setAttr ".sp" -type "double3" 0.86222420918216613 0.039361864650725664 -0.022760911142571949 ;
+createNode nurbsCurve -n "Pinky_Finger_Base1Shape" -p "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL|null8|Pinky_Finger_Base|null9|Pinky_Finger_Base1";
+	rename -uid "DB1E6E30-4FD8-E614-67FE-208AD763C85F";
+	setAttr -k off ".v";
+	setAttr ".cc" -type "nurbsCurve" 
+		3 8 2 no 3
+		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
+		11
+		0.84804897261610179 0.19608418962896224 -0.17884085801238125
+		0.84217739738059194 0.039361864650718559 -0.24349128882032867
+		0.84804897261610179 -0.11736046032752512 -0.17884085801238125
+		0.86222420918216081 -0.18227697286015854 -0.022760911142571061
+		0.87639944574821982 -0.11736046032752512 0.13331903572724002
+		0.88227102098372789 0.039361864650718559 0.19796946653518654
+		0.87639944574821982 0.19608418962896224 0.13331903572724002
+		0.86222420918216081 0.26100070216159565 -0.022760911142571061
+		0.84804897261610179 0.19608418962896224 -0.17884085801238125
+		0.84217739738059194 0.039361864650718559 -0.24349128882032867
+		0.84804897261610179 -0.11736046032752512 -0.17884085801238125
+		;
+createNode transform -n "Elbow_GP" -p "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP";
+	rename -uid "54FAD0B7-41EE-C811-802D-6CB2CE7E39BC";
+	setAttr ".t" -type "double3" 8.8817841970012523e-16 2.1316282072803006e-14 -6.6613381477509392e-16 ;
+	setAttr ".r" -type "double3" -89.9999999999918 -3.7685651769666093e-05 3.0332133116380728e-21 ;
+	setAttr ".s" -type "double3" 1 0.99999999999999989 0.99999999999999978 ;
+createNode transform -n "IK" -p "CNTL1";
+	rename -uid "A0101AC8-403F-489F-4F2F-559781D56335";
+	setAttr ".t" -type "double3" 0 0 6.7816133809045702 ;
+createNode transform -n "IK_CNTL_TEST_GP" -p "|FK_IK_TEST|CNTL1|IK";
+	rename -uid "CA403187-46E2-8954-5493-49822A5CC9D5";
+	setAttr ".t" -type "double3" 12.879536638957408 28.450105667114258 -6.9534975938362908 ;
+	setAttr ".r" -type "double3" 180 -6.9343489012695319 0 ;
+createNode transform -n "IK_CNTL_TEST" -p "IK_CNTL_TEST_GP";
+	rename -uid "975F6ECF-4DE7-9855-8CEB-1ABE70EF01B7";
+	setAttr ".ove" yes;
+	setAttr ".ovc" 17;
+	setAttr ".t" -type "double3" 0 2.1724910460578349e-16 0 ;
+	setAttr ".rp" -type "double3" 1.2057190801328943e-08 -1.4210854715202004e-14 -1.8390528389033989e-07 ;
+	setAttr ".sp" -type "double3" 1.2057190801328943e-08 -1.4210854715202004e-14 -1.8390528389033989e-07 ;
+createNode nurbsCurve -n "IK_CNTL_TESTShape" -p "IK_CNTL_TEST";
+	rename -uid "1570ACDD-47A8-EFCE-8D1F-D3ACBC1D0118";
+	setAttr -k off ".v";
+	setAttr ".cc" -type "nurbsCurve" 
+		3 8 2 no 3
+		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
+		11
+		3.4408941435028879 -1.0658141036401503e-14 -1.6636554708181954
+		1.2057178366831067e-08 -1.0658141036401503e-14 -2.3527640537712244
+		-3.4408941193885312 -1.0658141036401503e-14 -1.6636554708181954
+		-4.8661591353233433 -1.0658141036401503e-14 -1.8390528211398305e-07
+		-3.4408941193885312 -1.0658141036401503e-14 1.6636551030076294
+		1.2057178366831067e-08 -1.0658141036401503e-14 2.3527636859606602
+		3.4408941435028879 -1.0658141036401503e-14 1.6636551030076294
+		4.8661591594377072 -1.0658141036401503e-14 -1.8390528211398305e-07
+		3.4408941435028879 -1.0658141036401503e-14 -1.6636554708181954
+		1.2057178366831067e-08 -1.0658141036401503e-14 -2.3527640537712244
+		-3.4408941193885312 -1.0658141036401503e-14 -1.6636554708181954
+		;
+createNode ikHandle -n "ikHandle2" -p "IK_CNTL_TEST";
+	rename -uid "564A890E-4AC8-F409-9429-60AFACF55638";
+	setAttr ".v" no;
+	setAttr ".t" -type "double3" 0.058687268977317686 -3.5527136788005009e-14 0.096298659047915791 ;
+	setAttr ".r" -type "double3" -180 -6.9343489012695327 -8.8928626294183914e-32 ;
+	setAttr ".s" -type "double3" 0.99999999999999989 1 1 ;
+	setAttr ".roc" yes;
+createNode poleVectorConstraint -n "ikHandle2_poleVectorConstraint1" -p "ikHandle2";
+	rename -uid "285F7790-4395-C3EE-330B-7A8852994695";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "PV_CNTL_TESTW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".rst" -type "double3" 6.6960938922732085 0 -7.299503108183381 ;
+	setAttr -k on ".w0";
+createNode transform -n "PVGRP" -p "|FK_IK_TEST|CNTL1|IK";
+	rename -uid "6C918DC8-4564-54BC-EF83-CE99999BD170";
+	setAttr ".t" -type "double3" 7.8722772213268053 28.450105667114258 -7.5624886040886592 ;
+	setAttr ".r" -type "double3" 180 -6.934348901269531 1.150353491650555e-15 ;
+createNode transform -n "PV_CNTL_TEST" -p "PVGRP";
+	rename -uid "88002F31-45A2-CD6C-E3BB-07833DF9864E";
+	setAttr ".ove" yes;
+	setAttr ".ovc" 17;
+	setAttr ".rp" -type "double3" 4.4035151525179117e-08 -7.1054273576010019e-15 7.0759314837359568 ;
+	setAttr ".sp" -type "double3" 4.4035151525179117e-08 -7.1054273576010019e-15 7.0759314837359568 ;
+createNode nurbsCurve -n "PV_CNTL_TESTShape" -p "PV_CNTL_TEST";
+	rename -uid "C5231853-4022-B62B-A4AD-27937BDC2D60";
+	setAttr -k off ".v";
+	setAttr ".tw" yes;
+createNode transform -n "IK_Shoulder_CNTL_TEST" -p "|FK_IK_TEST|CNTL1|IK";
+	rename -uid "C21587CC-4B3F-FEAA-217D-9F887C7B8E13";
+	setAttr ".ove" yes;
+	setAttr ".ovc" 17;
+	setAttr ".rp" -type "double3" 2.030474567424438 28.450105667114258 -7.3143811554673226 ;
+	setAttr ".sp" -type "double3" 2.030474567424438 28.450105667114258 -7.3143811554673226 ;
+createNode nurbsCurve -n "IK_Shoulder_CNTL_TESTShape" -p "IK_Shoulder_CNTL_TEST";
+	rename -uid "D9EA6317-4BEC-C0E6-8542-079E14FE0BD7";
+	setAttr -k off ".v";
+	setAttr ".tw" yes;
+createNode joint -n "joint2";
+	rename -uid "8A8C8C55-48D6-62C5-E6B4-7E941095556B";
+	setAttr ".t" -type "double3" 2.0301511287689209 28.568733215332031 -7.2871575355529785 ;
+	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
+	setAttr ".mxrl" -type "double3" 360 360 360 ;
+	setAttr ".dla" yes;
+	setAttr ".jo" -type "double3" -90.000000000004178 1.4281303354600938 9.9423217241876881e-17 ;
+	setAttr ".radi" 0.58695187281167494;
+createNode joint -n "joint3" -p "joint2";
+	rename -uid "7282725C-4C22-9CB8-084F-5687D2962D6B";
+	setAttr ".t" -type "double3" 5.8950613597285786 -1.0647914735069427e-14 -1.3465844514163731e-14 ;
+	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
+	setAttr ".mxrl" -type "double3" 360 360 360 ;
+	setAttr ".dla" yes;
+	setAttr ".jo" -type "double3" 0 0 -5.8712367875888427 ;
+	setAttr ".radi" 0.52549549359686154;
+createNode joint -n "joint4" -p "joint3";
+	rename -uid "ECC364AB-472D-5958-2E79-978AA31E8EDE";
+	setAttr ".t" -type "double3" 4.8466878319464595 1.6815326325738699e-16 -1.103227743340128e-15 ;
+	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
+	setAttr ".mxrl" -type "double3" 360 360 360 ;
+	setAttr ".dla" yes;
+	setAttr ".radi" 0.52549549359686154;
+createNode orientConstraint -n "joint4_orientConstraint1" -p "joint4";
+	rename -uid "6EB6ED46-4B8B-4454-010F-D689F9F468E5";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Arm_IK_JNT2W0" -dv 1 -min 0 -at "double";
+	addAttr -dcb 0 -ci true -k true -sn "w1" -ln "Wrist_JNTW1" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr -s 2 ".tg";
+	setAttr ".lr" -type "double3" 134.99999952567248 -1.0197746482442198 -2.461589999108285 ;
+	setAttr ".o" -type "double3" -90.000000000009635 2.4615975740628535 -1.9896826894058758e-16 ;
+	setAttr ".rsrr" -type "double3" -4.7043633989693788e-14 -4.124781852522999e-13 1.9878466759163916e-16 ;
+	setAttr -k on ".w0";
+	setAttr -k on ".w1";
+createNode orientConstraint -n "joint3_orientConstraint1" -p "joint3";
+	rename -uid "01E7A506-47A2-B3FF-9001-C9895054474C";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Elbow_IK_JNT2W0" -dv 1 -min 0 -at "double";
+	addAttr -dcb 0 -ci true -k true -sn "w1" -ln "Elbow_JNTW1" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr -s 2 ".tg";
+	setAttr ".lr" -type "double3" 44.870823853093306 3.8529801609440768 0.99977834021794576 ;
+	setAttr ".o" -type "double3" -44.956163076518337 2.4612145443874498 1.0207186180697585 ;
+	setAttr -k on ".w0";
+	setAttr -k on ".w1";
+createNode orientConstraint -n "joint2_orientConstraint1" -p "joint2";
+	rename -uid "ED3BD2FF-4E3F-21A7-F78C-5EB267A230ED";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Shoulder_IK_JNT2W0" -dv 1 -min 0 
+		-at "double";
+	addAttr -dcb 0 -ci true -k true -sn "w1" -ln "Shoulder_JNTW1" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr -s 2 ".tg";
+	setAttr ".lr" -type "double3" 1.2329749459800648e-11 3.975189321284295e-16 4.6844135923687254e-07 ;
+	setAttr ".o" -type "double3" -44.996313600570922 0.71405555552841038 0.29580138560306879 ;
+	setAttr ".rsrr" -type "double3" 6.3595563577114753e-15 -2.981770013872047e-16 -9.9392333795734924e-17 ;
+	setAttr -k on ".w0";
+	setAttr -k on ".w1";
+createNode transform -n "FK_IK";
+	rename -uid "B351BF24-4F7B-CA44-FC39-3FAB8E774799";
+	addAttr -ci true -sn "ik" -ln "ik" -min 0 -max 1 -at "double";
+	addAttr -ci true -sn "fk" -ln "fk" -min 0 -max 1 -at "double";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".rp" -type "double3" 5.095644474029541 31.632796287536621 -9.34796142578125 ;
+	setAttr ".sp" -type "double3" 5.095644474029541 31.632796287536621 -9.34796142578125 ;
+	setAttr -k on ".ik";
+createNode mesh -n "FK_IKShape" -p "FK_IK";
+	rename -uid "14BB6E40-4CFF-9EDA-8A1E-65A3614D2D1F";
+	setAttr -k off ".v";
+	setAttr ".iog[0].og[0].gcl" -type "componentList" 1 "f[0:49]";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr -s 228 ".uvst[0].uvsp[0:227]" -type "float2" 0.095638424 0.0019920331
+		 0.11417732 0.0019920331 0.020413332 0.31857917 0.0018744312 0.31857917 0.061021101
+		 0.85749185 0.079560004 0.85749185 0.18964115 0.0019920331 0.18964115 0.31857917 0.055248
+		 0.92587203 0.0367091 0.92587203 0.19645065 0.31857917 0.19645065 0.0019920331 0.079560004
+		 0.92587203 0.061021101 0.92587203 0.12126097 0.31857917 0.12126097 0.0019920331 0.0367091
+		 0.85749185 0.055248 0.85749185 0.26483086 0.0019920331 0.26483086 0.31857917 0.27164036
+		 0.0019920331 0.29017925 0.0019920331 0.38394326 0.31857917 0.36540434 0.31857917
+		 0.39084354 0.0019920331 0.53826332 0.0019920331 0.53826332 0.029978625 0.42827782
+		 0.029978625 0.42827782 0.11839484 0.5206157 0.11839484 0.5206157 0.14602491 0.42827782
+		 0.14602491 0.42827782 0.26581463 0.39084354 0.26581463 0.23427601 0.85749185 0.27171028
+		 0.85749185 0.27171028 0.92587203 0.23427601 0.92587203 0.64247674 0.70355451 0.64247674
+		 0.82334423 0.57409656 0.82334423 0.57409656 0.70355451 0.42578995 0.94982976 0.42578995
+		 0.85749185 0.49417013 0.85749185 0.49417013 0.94982976 0.20087285 0.85749185 0.22850293
+		 0.85749185 0.22850293 0.92587203 0.20087285 0.92587203 0.42001688 0.85749185 0.42001688
+		 0.94982976 0.35163671 0.94982976 0.35163671 0.85749185 0.34586361 0.85749185 0.34586361
+		 0.94590813 0.2774834 0.94590813 0.2774834 0.85749185 0.49994326 0.96747738 0.49994326
+		 0.85749185 0.56832343 0.85749185 0.56832343 0.96747738 0.16711316 0.85749185 0.19509974
+		 0.85749185 0.19509974 0.92587203 0.16711316 0.92587203 0.77832139 0.53714889 0.77832139
+		 0.68456864 0.70994121 0.68456864 0.70994121 0.53714889 0.54489064 0.26581463 0.54489064
+		 0.0019920322 0.61327082 0.0019920322 0.61327082 0.26581463 0.62008029 0.0019920322
+		 0.65751463 0.0019920322 0.65751463 0.12178175 0.74985248 0.12178175 0.74985248 0.14941183
+		 0.65751463 0.14941183 0.65751463 0.23782805 0.7675001 0.23782805 0.7675001 0.26581463
+		 0.62008029 0.26581463 0.74132335 0.26957047 0.7764402 0.26957047 0.7764402 0.39934266
+		 0.88321716 0.26957047 0.9208436 0.26957047 0.81750375 0.39544883 0.93909001 0.53339309
+		 0.89177358 0.53339309 0.7764402 0.39969921 0.7764402 0.53339309 0.74132335 0.53339309
+		 0.12622313 0.85749185 0.16134006 0.85749185 0.16134006 0.92587203 0.12622313 0.92587203
+		 0.93909001 0.68530804 0.93909001 0.81900191 0.87070978 0.81900191 0.87070978 0.68530804
+		 0.55956179 0.69979864 0.55956179 0.58446538 0.62794197 0.58446538 0.62794197 0.69979864
+		 0.55956179 0.53714889 0.62794197 0.53714889 0.73555022 0.26957047 0.73555022 0.40751469
+		 0.66717005 0.40751469 0.66717005 0.26957047 0.73555022 0.53339309 0.66717005 0.53339309
+		 0.85351104 0.53714889 0.85351104 0.5747754 0.78513086 0.5747754 0.78513086 0.53714889
+		 0.85351104 0.68155229 0.78513086 0.68155229 0.79078335 0.68832451 0.79078335 0.8180967
+		 0.72240317 0.8180967 0.72240317 0.68832451 0.12045004 0.92587203 0.085333116 0.92587203
+		 0.085333116 0.85749185 0.12045004 0.85749185 0.59301668 0.53339309 0.59301668 0.26957047
+		 0.66139692 0.26957047 0.66139692 0.53339309 0.38947693 0.26957047 0.42459387 0.26957047
+		 0.42459387 0.40326434 0.53992712 0.26957047 0.58724362 0.26957047 0.46565735 0.40751469
+		 0.5689972 0.53339309 0.5313707 0.53339309 0.42459387 0.40362087 0.42459387 0.53339309
+		 0.38947693 0.53339309 0.34626958 0.32233498 0.38370386 0.32233498 0.38370386 0.58615762
+		 0.34626958 0.58615762 0.0018744322 0.9296279 0.039308716 0.9296279 0.039308716 0.99800807
+		 0.0018744322 0.99800807 0.34049648 0.32233498 0.34049648 0.58615762 0.2721163 0.58615762
+		 0.2721163 0.32233498 0.083505578 0.99800807 0.046071295 0.99800807 0.046071295 0.9296279
+		 0.083505578 0.9296279 0.197963 0.58615762 0.197963 0.32233498 0.26634321 0.32233498
+		 0.26634321 0.58615762 0.15475562 0.32233498 0.1921899 0.32233498 0.1921899 0.58615762
+		 0.15475562 0.58615762 0.0018744322 0.58991343 0.036991324 0.58991343 0.036991324
+		 0.71968561 0.14376822 0.58991343 0.18139464 0.58991343 0.07805486 0.71579182 0.19964108
+		 0.85373604 0.1523246 0.85373604 0.036991324 0.72004217 0.036991324 0.85373604 0.0018744322
+		 0.85373604 0.090084769 0.9296279 0.12520166 0.9296279 0.12520166 0.99800807 0.090084769
+		 0.99800807 0.86493665 0.68530804 0.86493665 0.81900191 0.79655647 0.81900191 0.79655647
+		 0.68530804 0.63475144 0.6997987 0.63475144 0.58446538 0.70313168 0.58446538 0.70313168
+		 0.6997987 0.63475144 0.53714889 0.70313168 0.53714889 0.27400032 0.58991343 0.27400032
+		 0.72785771 0.20562011 0.72785771 0.20562011 0.58991343 0.27400032 0.85373604 0.20562011
+		 0.85373604 0.9287008 0.53714889 0.9287008 0.57477534 0.86032057 0.57477534 0.86032057
+		 0.53714889 0.9287008 0.68155217 0.86032057 0.68155217 0.71663004 0.70355451 0.71663004
+		 0.8333267 0.64824986 0.8333267 0.64824986 0.70355451 0.16738123 0.99800807 0.13226435
+		 0.99800807 0.13226435 0.9296279 0.16738123 0.9296279 0.28080982 0.85373604 0.28080982
+		 0.58991343 0.34919 0.58991343 0.34919 0.85373604 0.35599953 0.58991343 0.39111641
+		 0.58991343 0.39111641 0.7236073 0.50644964 0.58991343 0.55376613 0.58991343 0.43217993
+		 0.72785771 0.53551972 0.85373604 0.49789327 0.85373604 0.39111641 0.72396386 0.39111641
+		 0.85373604 0.35599953 0.85373604;
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".ccls" -type "string" "colorSet1";
+	setAttr ".clst[0].clsn" -type "string" "colorSet1";
+	setAttr -s 240 ".clst[0].clsp";
+	setAttr ".clst[0].clsp[0:124]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+		 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+		 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+		 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+		 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+		 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+		 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+		 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+		 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+		 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+		 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+		 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+		 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr ".clst[0].clsp[125:239]" 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+		 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+		 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+		 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+		 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+		 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+		 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+		 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+		 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+		 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+		 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+		 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr -s 80 ".vt[0:79]"  4.90913343 30.97892952 -9.48919106 4.98571205 30.97892952 -9.48919106
+		 5.37302542 32.28666306 -9.48919106 5.29644632 32.28666306 -9.48919106 4.90913343 30.97892952 -9.2067318
+		 4.98571205 30.97892952 -9.2067318 5.37302542 32.28666306 -9.2067318 5.29644632 32.28666306 -9.2067318
+		 3.62686062 31.19688416 -9.48919106 3.78149104 31.19688416 -9.48919106 3.78149104 31.69170189 -9.48919106
+		 4.16291332 31.69170189 -9.48919106 4.16291332 31.80583382 -9.48919106 3.78149104 31.80583382 -9.48919106
+		 3.78149104 32.17105865 -9.48919106 4.23581076 32.17105865 -9.48919106 4.23581076 32.28666306 -9.48919106
+		 3.62686062 32.28666306 -9.48919106 3.62686062 31.19688416 -9.2067318 3.78149104 31.19688416 -9.2067318
+		 3.78149104 31.69170189 -9.2067318 4.16291332 31.69170189 -9.2067318 4.16291332 31.80583382 -9.2067318
+		 3.78149104 31.80583382 -9.2067318 3.78149104 32.17105865 -9.2067318 4.23581076 32.17105865 -9.2067318
+		 4.23581076 32.28666306 -9.2067318 3.62686062 32.28666306 -9.2067318 4.19435787 31.19688416 -9.48919106
+		 4.3394165 31.19688416 -9.48919106 4.3394165 31.74913597 -9.48919106 4.81582594 31.19688416 -9.48919106
+		 5.011277199 31.19688416 -9.48919106 4.50903845 31.76669312 -9.48919106 4.93590641 32.28666306 -9.48919106
+		 4.78048182 32.28666306 -9.48919106 4.3394165 31.75060844 -9.48919106 4.3394165 32.28666306 -9.48919106
+		 4.19435787 32.28666306 -9.48919106 4.19435787 31.19688416 -9.2067318 4.3394165 31.19688416 -9.2067318
+		 4.3394165 31.74913597 -9.2067318 4.81582594 31.19688416 -9.2067318 5.011277199 31.19688416 -9.2067318
+		 4.50903845 31.76669312 -9.2067318 4.93590641 32.28666306 -9.2067318 4.78048182 32.28666306 -9.2067318
+		 4.3394165 31.75060844 -9.2067318 4.3394165 32.28666306 -9.2067318 4.19435787 32.28666306 -9.2067318
+		 5.4431119 31.19688416 -9.48919106 5.59774256 31.19688416 -9.48919106 5.59774256 32.28666306 -9.48919106
+		 5.4431119 32.28666306 -9.48919106 5.4431119 31.19688416 -9.2067318 5.59774256 31.19688416 -9.2067318
+		 5.59774256 32.28666306 -9.2067318 5.4431119 32.28666306 -9.2067318 5.74750948 31.19688416 -9.48919106
+		 5.89256763 31.19688416 -9.48919106 5.89256763 31.74913597 -9.48919106 6.36897707 31.19688416 -9.48919106
+		 6.56442833 31.19688416 -9.48919106 6.062189579 31.76669312 -9.48919106 6.48905754 32.28666306 -9.48919106
+		 6.33363295 32.28666306 -9.48919106 5.89256763 31.75060844 -9.48919106 5.89256763 32.28666306 -9.48919106
+		 5.74750948 32.28666306 -9.48919106 5.74750948 31.19688416 -9.2067318 5.89256763 31.19688416 -9.2067318
+		 5.89256763 31.74913597 -9.2067318 6.36897707 31.19688416 -9.2067318 6.56442833 31.19688416 -9.2067318
+		 6.062189579 31.76669312 -9.2067318 6.48905754 32.28666306 -9.2067318 6.33363295 32.28666306 -9.2067318
+		 5.89256763 31.75060844 -9.2067318 5.89256763 32.28666306 -9.2067318 5.74750948 32.28666306 -9.2067318;
+	setAttr -s 120 ".ed[0:119]"  3 2 0 2 1 0 1 0 0 0 3 0 1 5 0 5 4 0 4 0 0
+		 2 6 0 6 5 0 3 7 0 7 6 0 4 7 0 17 16 0 16 15 0 15 14 0 14 13 0 13 12 0 12 11 0 11 10 0
+		 10 9 0 9 8 0 8 17 0 9 19 0 19 18 0 18 8 0 10 20 0 20 19 0 11 21 0 21 20 0 12 22 0
+		 22 21 0 13 23 0 23 22 0 14 24 0 24 23 0 15 25 0 25 24 0 16 26 0 26 25 0 17 27 0 27 26 0
+		 18 27 0 38 37 0 37 36 0 36 35 0 35 34 0 34 33 0 33 32 0 32 31 0 31 30 0 30 29 0 29 28 0
+		 28 38 0 29 40 0 40 39 0 39 28 0 30 41 0 41 40 0 31 42 0 42 41 0 32 43 0 43 42 0 33 44 0
+		 44 43 0 34 45 0 45 44 0 35 46 0 46 45 0 36 47 0 47 46 0 37 48 0 48 47 0 38 49 0 49 48 0
+		 39 49 0 53 52 0 52 51 0 51 50 0 50 53 0 51 55 0 55 54 0 54 50 0 52 56 0 56 55 0 53 57 0
+		 57 56 0 54 57 0 68 67 0 67 66 0 66 65 0 65 64 0 64 63 0 63 62 0 62 61 0 61 60 0 60 59 0
+		 59 58 0 58 68 0 59 70 0 70 69 0 69 58 0 60 71 0 71 70 0 61 72 0 72 71 0 62 73 0 73 72 0
+		 63 74 0 74 73 0 64 75 0 75 74 0 65 76 0 76 75 0 66 77 0 77 76 0 67 78 0 78 77 0 68 79 0
+		 79 78 0 69 79 0;
+	setAttr -s 50 -ch 240 ".fc[0:49]" -type "polyFaces" 
+		f 4 0 1 2 3
+		mu 0 4 0 1 2 3
+		mc 0 4 0 1 2 3
+		f 4 -3 4 5 6
+		mu 0 4 4 5 12 13
+		mc 0 4 4 5 12 13
+		f 4 -2 7 8 -5
+		mu 0 4 6 7 14 15
+		mc 0 4 6 7 14 15
+		f 4 -1 9 10 -8
+		mu 0 4 8 9 16 17
+		mc 0 4 8 9 16 17
+		f 4 -4 -7 11 -10
+		mu 0 4 10 11 18 19
+		mc 0 4 10 11 18 19
+		f 4 -6 -9 -11 -12
+		mu 0 4 20 21 22 23
+		mc 0 4 20 21 22 23
+		f 10 12 13 14 15 16 17 18 19 20 21
+		mu 0 10 24 25 26 27 28 29 30 31 32 33
+		mc 0 10 24 25 26 27 28 29 30 31 32 33
+		f 4 -21 22 23 24
+		mu 0 4 34 35 36 37
+		mc 0 4 34 35 54 55
+		f 4 -20 25 26 -23
+		mu 0 4 38 39 40 41
+		mc 0 4 36 37 56 57
+		f 4 -19 27 28 -26
+		mu 0 4 42 43 44 45
+		mc 0 4 38 39 58 59
+		f 4 -18 29 30 -28
+		mu 0 4 46 47 48 49
+		mc 0 4 40 41 60 61
+		f 4 -17 31 32 -30
+		mu 0 4 50 51 52 53
+		mc 0 4 42 43 62 63
+		f 4 -16 33 34 -32
+		mu 0 4 54 55 56 57
+		mc 0 4 44 45 64 65
+		f 4 -15 35 36 -34
+		mu 0 4 58 59 60 61
+		mc 0 4 46 47 66 67
+		f 4 -14 37 38 -36
+		mu 0 4 62 63 64 65
+		mc 0 4 48 49 68 69
+		f 4 -13 39 40 -38
+		mu 0 4 66 67 68 69
+		mc 0 4 50 51 70 71
+		f 4 -22 -25 41 -40
+		mu 0 4 70 71 72 73
+		mc 0 4 52 53 72 73
+		f 10 -24 -27 -29 -31 -33 -35 -37 -39 -41 -42
+		mu 0 10 74 75 76 77 78 79 80 81 82 83
+		mc 0 10 74 75 76 77 78 79 80 81 82 83
+		f 11 42 43 44 45 46 47 48 49 50 51 52
+		mu 0 11 84 85 86 87 88 89 90 91 92 93 94
+		mc 0 11 84 85 86 87 88 89 90 91 92 93 94
+		f 4 -52 53 54 55
+		mu 0 4 95 96 97 98
+		mc 0 4 95 96 117 118
+		f 4 -51 56 57 -54
+		mu 0 4 99 100 101 102
+		mc 0 4 97 98 119 120
+		f 4 -50 58 59 -57
+		mu 0 4 103 104 105 106
+		mc 0 4 99 100 121 122
+		f 4 -49 60 61 -59
+		mu 0 4 104 107 108 105
+		mc 0 4 101 102 123 124
+		f 4 -48 62 63 -61
+		mu 0 4 109 110 111 112
+		mc 0 4 103 104 125 126
+		f 4 -47 64 65 -63
+		mu 0 4 110 113 114 111
+		mc 0 4 105 106 127 128
+		f 4 -46 66 67 -65
+		mu 0 4 115 116 117 118
+		mc 0 4 107 108 129 130
+		f 4 -45 68 69 -67
+		mu 0 4 116 119 120 117
+		mc 0 4 109 110 131 132
+		f 4 -44 70 71 -69
+		mu 0 4 121 122 123 124
+		mc 0 4 111 112 133 134
+		f 4 -43 72 73 -71
+		mu 0 4 125 126 127 128
+		mc 0 4 113 114 135 136
+		f 4 -53 -56 74 -73
+		mu 0 4 129 130 131 132
+		mc 0 4 115 116 137 138
+		f 11 -55 -58 -60 -62 -64 -66 -68 -70 -72 -74 -75
+		mu 0 11 133 134 135 136 137 138 139 140 141 142 143
+		mc 0 11 139 140 141 142 143 144 145 146 147 148 149
+		f 4 75 76 77 78
+		mu 0 4 144 145 146 147
+		mc 0 4 150 151 152 153
+		f 4 -78 79 80 81
+		mu 0 4 148 149 150 151
+		mc 0 4 154 155 162 163
+		f 4 -77 82 83 -80
+		mu 0 4 152 153 154 155
+		mc 0 4 156 157 164 165
+		f 4 -76 84 85 -83
+		mu 0 4 156 157 158 159
+		mc 0 4 158 159 166 167
+		f 4 -79 -82 86 -85
+		mu 0 4 160 161 162 163
+		mc 0 4 160 161 168 169
+		f 4 -81 -84 -86 -87
+		mu 0 4 164 165 166 167
+		mc 0 4 170 171 172 173
+		f 11 87 88 89 90 91 92 93 94 95 96 97
+		mu 0 11 168 169 170 171 172 173 174 175 176 177 178
+		mc 0 11 174 175 176 177 178 179 180 181 182 183 184
+		f 4 -97 98 99 100
+		mu 0 4 179 180 181 182
+		mc 0 4 185 186 207 208
+		f 4 -96 101 102 -99
+		mu 0 4 183 184 185 186
+		mc 0 4 187 188 209 210
+		f 4 -95 103 104 -102
+		mu 0 4 187 188 189 190
+		mc 0 4 189 190 211 212
+		f 4 -94 105 106 -104
+		mu 0 4 188 191 192 189
+		mc 0 4 191 192 213 214
+		f 4 -93 107 108 -106
+		mu 0 4 193 194 195 196
+		mc 0 4 193 194 215 216
+		f 4 -92 109 110 -108
+		mu 0 4 194 197 198 195
+		mc 0 4 195 196 217 218
+		f 4 -91 111 112 -110
+		mu 0 4 199 200 201 202
+		mc 0 4 197 198 219 220
+		f 4 -90 113 114 -112
+		mu 0 4 200 203 204 201
+		mc 0 4 199 200 221 222
+		f 4 -89 115 116 -114
+		mu 0 4 205 206 207 208
+		mc 0 4 201 202 223 224
+		f 4 -88 117 118 -116
+		mu 0 4 209 210 211 212
+		mc 0 4 203 204 225 226
+		f 4 -98 -101 119 -118
+		mu 0 4 213 214 215 216
+		mc 0 4 205 206 227 228
+		f 11 -100 -103 -105 -107 -109 -111 -113 -115 -117 -119 -120
+		mu 0 11 217 218 219 220 221 222 223 224 225 226 227
+		mc 0 11 229 230 231 232 233 234 235 236 237 238 239;
+	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
+	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
+	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
+	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "48396CFC-4036-3ED5-F68D-9ABB7AA70FBD";
-	setAttr -s 10 ".lnk";
-	setAttr -s 10 ".slnk";
+	rename -uid "413F076B-4733-7343-4A86-F4AE44A7F371";
+	setAttr -s 11 ".lnk";
+	setAttr -s 11 ".slnk";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "64997BCF-42D8-15AA-9428-BFA633152894";
-	setAttr ".cdl" 6;
-	setAttr -s 8 ".dli[1:7]"  4 5 3 2 1 6 7;
-	setAttr -s 7 ".dli";
+	rename -uid "1E4ECFC8-4AEF-6BF5-B467-D294C3B8B327";
+	setAttr ".cdl" 10;
+	setAttr -s 12 ".dli[1:11]"  8 5 3 2 1 6 7 4 
+		9 10 11;
+	setAttr -s 12 ".dli";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "0E4CE148-1B45-D696-6DD4-9A9B271B3DB0";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "D90D3B91-4AE4-6D6C-1929-CE88D9F04A5A";
+	rename -uid "44B93822-43C5-9A3B-61B1-0C95D53A8F0D";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "B3A67BB4-494B-B80C-08E1-968CEDE11A15";
 	setAttr ".g" yes;
@@ -15623,17 +18645,17 @@ createNode script -n "GenericMesh_V10_1:uiConfigurationScriptNode";
 		"// Maya Mel UI Configuration File.\n//\n//  This script is machine generated.  Edit at your own risk.\n//\n//\n\nglobal string $gMainPane;\nif (`paneLayout -exists $gMainPane`) {\n\n\tglobal int $gUseScenePanelConfig;\n\tint    $useSceneConfig = $gUseScenePanelConfig;\n\tint    $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\tint    $nVisPanes = `paneLayout -q -nvp $gMainPane`;\n\tint    $nPanes = 0;\n\tstring $editorName;\n\tstring $panelName;\n\tstring $itemFilterName;\n\tstring $panelConfig;\n\n\t//\n\t//  get current state of the UI\n\t//\n\tsceneUIReplacement -update $gMainPane;\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Top View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Top View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"top\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"wireframe\" \n            -activeOnly 0\n"
 		+ "            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 1\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 1\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n"
 		+ "            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n"
-		+ "            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n"
+		+ "            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 456\n            -height 335\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n"
 		+ "\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"side\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"wireframe\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 1\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 1\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 1\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n"
 		+ "            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n"
-		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n"
+		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 456\n            -height 335\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n"
 		+ "\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"wireframe\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 1\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 1\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 1\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n"
 		+ "            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n"
-		+ "            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n"
+		+ "            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 456\n            -height 335\n"
 		+ "            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 1\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 1\n            -backfaceCulling 0\n"
 		+ "            -xray 1\n            -jointXray 1\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n"
 		+ "            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n"
-		+ "            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1119\n            -height 714\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 1\n            -showReferenceMembers 1\n            -showAttributes 0\n"
+		+ "            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 919\n            -height 714\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 1\n            -showReferenceMembers 1\n            -showAttributes 0\n"
 		+ "            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n"
 		+ "            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n"
 		+ "\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n"
@@ -15659,8 +18681,8 @@ createNode script -n "GenericMesh_V10_1:uiConfigurationScriptNode";
 		+ "                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n            stereoCameraView -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"nodeEditorPanel\" (localizedPanelLabel(\"Node Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n"
 		+ "                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -highlightConnections 0\n                -copyConnectionsOnPaste 0\n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -activeTab -1\n                -editorMode \"default\" \n"
 		+ "                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
-		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 1\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 1\\n    -backfaceCulling 0\\n    -xray 1\\n    -jointXray 1\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1119\\n    -height 714\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
-		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 1\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 1\\n    -backfaceCulling 0\\n    -xray 1\\n    -jointXray 1\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1119\\n    -height 714\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 1\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 1\\n    -backfaceCulling 0\\n    -xray 1\\n    -jointXray 1\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 919\\n    -height 714\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 1\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 1\\n    -backfaceCulling 0\\n    -xray 1\\n    -jointXray 1\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 919\\n    -height 714\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 5 -size 12 -divisions 5 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
 	setAttr ".st" 3;
 createNode script -n "GenericMesh_V10_1:sceneConfigurationScriptNode";
@@ -15695,15 +18717,17 @@ createNode groupId -n "groupId12";
 	rename -uid "1916A5A9-B449-D8A6-5B71-F7AD09C4EF0E";
 	setAttr ".ihi" 0;
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "8143D229-48C7-FE65-ABBE-218F70E3D622";
+	rename -uid "120FD486-410D-2D6A-11EB-FE8B22E91DD2";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "9B88672F-48BB-0E78-724B-33A21F03E954";
+	rename -uid "2B716BA4-4FE3-BE95-4FFF-A5A9406D5624";
 createNode displayLayer -n "Arm";
 	rename -uid "5CB9C894-41AB-D16A-E5FA-AC9FA56F5F1E";
 	setAttr ".dt" 2;
+	setAttr ".v" no;
 	setAttr ".do" 3;
 createNode displayLayer -n "IK_Lyer";
 	rename -uid "EA588121-49A9-4853-BA92-A084E97F120E";
+	setAttr ".v" no;
 	setAttr ".c" 4;
 	setAttr ".do" 4;
 createNode groupId -n "groupId27";
@@ -15751,11 +18775,13 @@ createNode groupId -n "groupId45";
 createNode displayLayer -n "Rig_Lyer";
 	rename -uid "B8E7DDBD-47CF-C349-19D2-58AE83EFAA89";
 	setAttr ".dt" 2;
+	setAttr ".v" no;
 	setAttr ".do" 5;
 createNode ikRPsolver -n "ikRPsolver";
 	rename -uid "0A0866AF-462B-88C4-7724-78BAAF3079C7";
 createNode displayLayer -n "FK_CNTL_Layer";
 	rename -uid "9BB3BCA7-4A80-F49A-3C51-9BA9053F79DB";
+	setAttr ".v" no;
 	setAttr ".do" 6;
 createNode dagPose -n "bindPose1";
 	rename -uid "0FA2B78F-4BB1-FECD-5E98-C8A3C9D77AA4";
@@ -17125,6 +20151,60 @@ createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -104.76190059904084 -334.52379623102826 ;
 	setAttr ".tgi[0].vh" -type "double2" 103.57142445586994 348.8095099490792 ;
+createNode displayLayer -n "IK_TEST";
+	rename -uid "7BC3921E-4305-B983-053C-85A2D0716463";
+	setAttr ".do" 7;
+createNode displayLayer -n "FK_TEST";
+	rename -uid "68EDBE82-49B0-D983-7054-1E97CAA3C219";
+	setAttr ".do" 8;
+createNode displayLayer -n "FK_CNTL_TEST";
+	rename -uid "5454E4E8-477B-6FC2-E1E0-83BB03307D0E";
+	setAttr ".do" 10;
+createNode makeNurbCircle -n "makeNurbCircle1";
+	rename -uid "9D620D31-4035-25E1-FF11-9AB1C6D4000F";
+	setAttr ".nr" -type "double3" 0 1 0 ;
+createNode transformGeometry -n "transformGeometry1";
+	rename -uid "0EAD2088-4F87-536C-23E6-9695B10E59E7";
+	setAttr ".txf" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 7.8722772213268053 28.450105667114258 -7.5624886040886592 1;
+createNode transformGeometry -n "transformGeometry2";
+	rename -uid "925CF276-4918-B25F-4D76-87934463A131";
+	setAttr ".txf" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 -7.872277177291652 -28.450105667114258 7.5624885609087995 1;
+createNode transformGeometry -n "transformGeometry3";
+	rename -uid "371BC323-4941-B7B8-D2AD-DF9099DCF823";
+	setAttr ".txf" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 -1.8873791418627661e-15 -8.6655168954233006e-16 7.0759315269158192 1;
+createNode makeNurbCircle -n "makeNurbCircle2";
+	rename -uid "F85C657D-4357-5EBF-AB26-1FB98ADF15CD";
+	setAttr ".nr" -type "double3" 0 1 0 ;
+createNode transformGeometry -n "transformGeometry4";
+	rename -uid "E2058A1F-41EB-E426-91B7-C480F178E951";
+	setAttr ".txf" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 2.0304745674244362 28.450105667114258 -7.3143811554673226 1;
+createNode transformGeometry -n "transformGeometry5";
+	rename -uid "8313ECCE-4DA2-C693-AFD4-8AB8980161A1";
+	setAttr ".txf" -type "matrix" -4.4408920985006262e-16 -1 0 0 1 -4.4408920985006262e-16 0 0
+		 0 0 1 0 -26.41963109968982 30.480580234538706 0 1;
+createNode displayLayer -n "IK_CNTL_TEST_LYER";
+	rename -uid "95B402F5-48C1-D753-1291-6FAE1E957F32";
+	setAttr ".do" 11;
+createNode displayLayer -n "layer1";
+	rename -uid "6CF11CC6-451E-074A-3DD4-92AC081D2CDC";
+	setAttr ".v" no;
+	setAttr ".do" 9;
+createNode blinn -n "typeBlinn";
+	rename -uid "ADD5338E-4E68-7F73-34E5-1FAE61AECE5A";
+	setAttr ".c" -type "float3" 1 1 1 ;
+createNode shadingEngine -n "typeBlinnSG";
+	rename -uid "DC8E3042-4D0E-2AE3-4F2F-5EB2895AB1D7";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "materialInfo1";
+	rename -uid "55B24A5C-4A8D-5AC1-1512-F295001F73C9";
+createNode groupId -n "groupId53";
+	rename -uid "49B7BB2C-4C72-48B4-CADC-C5A2B4371BF8";
+	setAttr ".ihi" 0;
+createNode expression -n "FK_IK_switch_1_0";
+	rename -uid "33AE0ABE-4F97-2222-04E3-2CAF83575F66";
+	setAttr -k on ".nds";
+	setAttr ".ixp" -type "string" ".O[0]= 1- .I[0];";
 select -ne :time1;
 	setAttr -k on ".cch";
 	setAttr -cb on ".ihi";
@@ -17141,7 +20221,7 @@ select -ne :renderPartition;
 	setAttr -cb on ".ihi";
 	setAttr -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -s 10 ".st";
+	setAttr -s 11 ".st";
 	setAttr -cb on ".an";
 	setAttr -cb on ".pt";
 select -ne :renderGlobalsList1;
@@ -17154,7 +20234,7 @@ select -ne :defaultShaderList1;
 	setAttr -cb on ".ihi";
 	setAttr -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -s 12 ".s";
+	setAttr -s 13 ".s";
 select -ne :postProcessList1;
 	setAttr -k on ".cch";
 	setAttr -cb on ".ihi";
@@ -17357,622 +20437,1042 @@ connectAttr "Shoulder_IK_CNTL.ro" "joint1_parentConstraint1.tg[0].tro";
 connectAttr "Shoulder_IK_CNTL.s" "joint1_parentConstraint1.tg[0].ts";
 connectAttr "Shoulder_IK_CNTL.pm" "joint1_parentConstraint1.tg[0].tpm";
 connectAttr "joint1_parentConstraint1.w0" "joint1_parentConstraint1.tg[0].tw";
-connectAttr "Shoulder_JNT_scaleConstraint1.csx" "Shoulder_JNT.sx";
-connectAttr "Shoulder_JNT_scaleConstraint1.csy" "Shoulder_JNT.sy";
-connectAttr "Shoulder_JNT_scaleConstraint1.csz" "Shoulder_JNT.sz";
-connectAttr "Shoulder_JNT_parentConstraint1.ctx" "Shoulder_JNT.tx";
-connectAttr "Shoulder_JNT_parentConstraint1.cty" "Shoulder_JNT.ty";
-connectAttr "Shoulder_JNT_parentConstraint1.ctz" "Shoulder_JNT.tz";
-connectAttr "Shoulder_JNT_parentConstraint1.crx" "Shoulder_JNT.rx";
-connectAttr "Shoulder_JNT_parentConstraint1.cry" "Shoulder_JNT.ry";
-connectAttr "Shoulder_JNT_parentConstraint1.crz" "Shoulder_JNT.rz";
-connectAttr "Rig_Lyer.di" "Shoulder_JNT.do";
-connectAttr "Elbow_JNT_parentConstraint1.crx" "Elbow_JNT.rx";
-connectAttr "Elbow_JNT_parentConstraint1.cry" "Elbow_JNT.ry";
-connectAttr "Elbow_JNT_parentConstraint1.crz" "Elbow_JNT.rz";
-connectAttr "Shoulder_JNT.s" "Elbow_JNT.is";
-connectAttr "Elbow_JNT_scaleConstraint1.csx" "Elbow_JNT.sx";
-connectAttr "Elbow_JNT_scaleConstraint1.csy" "Elbow_JNT.sy";
-connectAttr "Elbow_JNT_scaleConstraint1.csz" "Elbow_JNT.sz";
-connectAttr "Elbow_JNT_parentConstraint1.ctx" "Elbow_JNT.tx";
-connectAttr "Elbow_JNT_parentConstraint1.cty" "Elbow_JNT.ty";
-connectAttr "Elbow_JNT_parentConstraint1.ctz" "Elbow_JNT.tz";
-connectAttr "Elbow_JNT.s" "ForArm_1_JNT.is";
-connectAttr "ForArm_1_JNT.s" "ForArm_2_JNT.is";
-connectAttr "ForArm_2_JNT.s" "ForArm_3_JNT.is";
-connectAttr "ForArm_3_JNT.s" "ForArm_4_JNT.is";
-connectAttr "ForArm_4_JNT.s" "Wrist_JNT.is";
-connectAttr "Wrist_JNT_scaleConstraint1.csx" "Wrist_JNT.sx";
-connectAttr "Wrist_JNT_scaleConstraint1.csy" "Wrist_JNT.sy";
-connectAttr "Wrist_JNT_scaleConstraint1.csz" "Wrist_JNT.sz";
-connectAttr "Wrist_JNT_parentConstraint1.crx" "Wrist_JNT.rx";
-connectAttr "Wrist_JNT_parentConstraint1.cry" "Wrist_JNT.ry";
-connectAttr "Wrist_JNT_parentConstraint1.crz" "Wrist_JNT.rz";
-connectAttr "Wrist_JNT_parentConstraint1.ctx" "Wrist_JNT.tx";
-connectAttr "Wrist_JNT_parentConstraint1.cty" "Wrist_JNT.ty";
-connectAttr "Wrist_JNT_parentConstraint1.ctz" "Wrist_JNT.tz";
-connectAttr "Thumb_Base_JNT_parentConstraint1.crx" "Thumb_Base_JNT.rx";
-connectAttr "Thumb_Base_JNT_parentConstraint1.cry" "Thumb_Base_JNT.ry";
-connectAttr "Thumb_Base_JNT_parentConstraint1.crz" "Thumb_Base_JNT.rz";
-connectAttr "Wrist_JNT.s" "Thumb_Base_JNT.is";
-connectAttr "Thumb_Base_JNT_scaleConstraint1.csx" "Thumb_Base_JNT.sx";
-connectAttr "Thumb_Base_JNT_scaleConstraint1.csy" "Thumb_Base_JNT.sy";
-connectAttr "Thumb_Base_JNT_scaleConstraint1.csz" "Thumb_Base_JNT.sz";
-connectAttr "Thumb_Base_JNT_parentConstraint1.ctx" "Thumb_Base_JNT.tx";
-connectAttr "Thumb_Base_JNT_parentConstraint1.cty" "Thumb_Base_JNT.ty";
-connectAttr "Thumb_Base_JNT_parentConstraint1.ctz" "Thumb_Base_JNT.tz";
-connectAttr "Thumb1_JNT_parentConstraint1.crx" "Thumb1_JNT.rx";
-connectAttr "Thumb1_JNT_parentConstraint1.cry" "Thumb1_JNT.ry";
-connectAttr "Thumb1_JNT_parentConstraint1.crz" "Thumb1_JNT.rz";
-connectAttr "Thumb_Base_JNT.s" "Thumb1_JNT.is";
-connectAttr "Thumb1_JNT_scaleConstraint1.csx" "Thumb1_JNT.sx";
-connectAttr "Thumb1_JNT_scaleConstraint1.csy" "Thumb1_JNT.sy";
-connectAttr "Thumb1_JNT_scaleConstraint1.csz" "Thumb1_JNT.sz";
-connectAttr "Thumb1_JNT_parentConstraint1.ctx" "Thumb1_JNT.tx";
-connectAttr "Thumb1_JNT_parentConstraint1.cty" "Thumb1_JNT.ty";
-connectAttr "Thumb1_JNT_parentConstraint1.ctz" "Thumb1_JNT.tz";
-connectAttr "Thumb2_JNT_parentConstraint1.crx" "Thumb2_JNT.rx";
-connectAttr "Thumb2_JNT_parentConstraint1.cry" "Thumb2_JNT.ry";
-connectAttr "Thumb2_JNT_parentConstraint1.crz" "Thumb2_JNT.rz";
-connectAttr "Thumb1_JNT.s" "Thumb2_JNT.is";
-connectAttr "Thumb2_JNT_scaleConstraint1.csx" "Thumb2_JNT.sx";
-connectAttr "Thumb2_JNT_scaleConstraint1.csy" "Thumb2_JNT.sy";
-connectAttr "Thumb2_JNT_scaleConstraint1.csz" "Thumb2_JNT.sz";
-connectAttr "Thumb2_JNT_parentConstraint1.ctx" "Thumb2_JNT.tx";
-connectAttr "Thumb2_JNT_parentConstraint1.cty" "Thumb2_JNT.ty";
-connectAttr "Thumb2_JNT_parentConstraint1.ctz" "Thumb2_JNT.tz";
-connectAttr "Thumb2_JNT.s" "Thumb3_JNT.is";
-connectAttr "Thumb2_JNT.ro" "Thumb2_JNT_parentConstraint1.cro";
-connectAttr "Thumb2_JNT.pim" "Thumb2_JNT_parentConstraint1.cpim";
-connectAttr "Thumb2_JNT.rp" "Thumb2_JNT_parentConstraint1.crp";
-connectAttr "Thumb2_JNT.rpt" "Thumb2_JNT_parentConstraint1.crt";
-connectAttr "Thumb2_JNT.jo" "Thumb2_JNT_parentConstraint1.cjo";
-connectAttr "Pinky_Finger_Base1.t" "Thumb2_JNT_parentConstraint1.tg[0].tt";
-connectAttr "Pinky_Finger_Base1.rp" "Thumb2_JNT_parentConstraint1.tg[0].trp";
-connectAttr "Pinky_Finger_Base1.rpt" "Thumb2_JNT_parentConstraint1.tg[0].trt";
-connectAttr "Pinky_Finger_Base1.r" "Thumb2_JNT_parentConstraint1.tg[0].tr";
-connectAttr "Pinky_Finger_Base1.ro" "Thumb2_JNT_parentConstraint1.tg[0].tro";
-connectAttr "Pinky_Finger_Base1.s" "Thumb2_JNT_parentConstraint1.tg[0].ts";
-connectAttr "Pinky_Finger_Base1.pm" "Thumb2_JNT_parentConstraint1.tg[0].tpm";
-connectAttr "Thumb2_JNT_parentConstraint1.w0" "Thumb2_JNT_parentConstraint1.tg[0].tw"
-		;
-connectAttr "Thumb2_JNT.ssc" "Thumb2_JNT_scaleConstraint1.tsc";
-connectAttr "Thumb2_JNT.pim" "Thumb2_JNT_scaleConstraint1.cpim";
-connectAttr "Pinky_Finger_Base1.s" "Thumb2_JNT_scaleConstraint1.tg[0].ts";
-connectAttr "Pinky_Finger_Base1.pm" "Thumb2_JNT_scaleConstraint1.tg[0].tpm";
-connectAttr "Thumb2_JNT_scaleConstraint1.w0" "Thumb2_JNT_scaleConstraint1.tg[0].tw"
-		;
-connectAttr "Thumb1_JNT.ro" "Thumb1_JNT_parentConstraint1.cro";
-connectAttr "Thumb1_JNT.pim" "Thumb1_JNT_parentConstraint1.cpim";
-connectAttr "Thumb1_JNT.rp" "Thumb1_JNT_parentConstraint1.crp";
-connectAttr "Thumb1_JNT.rpt" "Thumb1_JNT_parentConstraint1.crt";
-connectAttr "Thumb1_JNT.jo" "Thumb1_JNT_parentConstraint1.cjo";
-connectAttr "Pinky_Finger_Base.t" "Thumb1_JNT_parentConstraint1.tg[0].tt";
-connectAttr "Pinky_Finger_Base.rp" "Thumb1_JNT_parentConstraint1.tg[0].trp";
-connectAttr "Pinky_Finger_Base.rpt" "Thumb1_JNT_parentConstraint1.tg[0].trt";
-connectAttr "Pinky_Finger_Base.r" "Thumb1_JNT_parentConstraint1.tg[0].tr";
-connectAttr "Pinky_Finger_Base.ro" "Thumb1_JNT_parentConstraint1.tg[0].tro";
-connectAttr "Pinky_Finger_Base.s" "Thumb1_JNT_parentConstraint1.tg[0].ts";
-connectAttr "Pinky_Finger_Base.pm" "Thumb1_JNT_parentConstraint1.tg[0].tpm";
-connectAttr "Thumb1_JNT_parentConstraint1.w0" "Thumb1_JNT_parentConstraint1.tg[0].tw"
-		;
-connectAttr "Thumb1_JNT.ssc" "Thumb1_JNT_scaleConstraint1.tsc";
-connectAttr "Thumb1_JNT.pim" "Thumb1_JNT_scaleConstraint1.cpim";
-connectAttr "Pinky_Finger_Base.s" "Thumb1_JNT_scaleConstraint1.tg[0].ts";
-connectAttr "Pinky_Finger_Base.pm" "Thumb1_JNT_scaleConstraint1.tg[0].tpm";
-connectAttr "Thumb1_JNT_scaleConstraint1.w0" "Thumb1_JNT_scaleConstraint1.tg[0].tw"
-		;
-connectAttr "Thumb_Base_JNT.ro" "Thumb_Base_JNT_parentConstraint1.cro";
-connectAttr "Thumb_Base_JNT.pim" "Thumb_Base_JNT_parentConstraint1.cpim";
-connectAttr "Thumb_Base_JNT.rp" "Thumb_Base_JNT_parentConstraint1.crp";
-connectAttr "Thumb_Base_JNT.rpt" "Thumb_Base_JNT_parentConstraint1.crt";
-connectAttr "Thumb_Base_JNT.jo" "Thumb_Base_JNT_parentConstraint1.cjo";
-connectAttr "Pinky_Finger_Base_CNTL.t" "Thumb_Base_JNT_parentConstraint1.tg[0].tt"
-		;
-connectAttr "Pinky_Finger_Base_CNTL.rp" "Thumb_Base_JNT_parentConstraint1.tg[0].trp"
-		;
-connectAttr "Pinky_Finger_Base_CNTL.rpt" "Thumb_Base_JNT_parentConstraint1.tg[0].trt"
-		;
-connectAttr "Pinky_Finger_Base_CNTL.r" "Thumb_Base_JNT_parentConstraint1.tg[0].tr"
-		;
-connectAttr "Pinky_Finger_Base_CNTL.ro" "Thumb_Base_JNT_parentConstraint1.tg[0].tro"
-		;
-connectAttr "Pinky_Finger_Base_CNTL.s" "Thumb_Base_JNT_parentConstraint1.tg[0].ts"
-		;
-connectAttr "Pinky_Finger_Base_CNTL.pm" "Thumb_Base_JNT_parentConstraint1.tg[0].tpm"
-		;
-connectAttr "Thumb_Base_JNT_parentConstraint1.w0" "Thumb_Base_JNT_parentConstraint1.tg[0].tw"
-		;
-connectAttr "Thumb_Base_JNT.ssc" "Thumb_Base_JNT_scaleConstraint1.tsc";
-connectAttr "Thumb_Base_JNT.pim" "Thumb_Base_JNT_scaleConstraint1.cpim";
-connectAttr "Pinky_Finger_Base_CNTL.s" "Thumb_Base_JNT_scaleConstraint1.tg[0].ts"
-		;
-connectAttr "Pinky_Finger_Base_CNTL.pm" "Thumb_Base_JNT_scaleConstraint1.tg[0].tpm"
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Shoulder_JNT_scaleConstraint1.csx" "|Arm_Main|JNT|FK|Shoulder_JNT.sx"
 		;
-connectAttr "Thumb_Base_JNT_scaleConstraint1.w0" "Thumb_Base_JNT_scaleConstraint1.tg[0].tw"
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Shoulder_JNT_scaleConstraint1.csy" "|Arm_Main|JNT|FK|Shoulder_JNT.sy"
 		;
-connectAttr "Pointer_Finger_Base_JNT_parentConstraint1.crx" "Pointer_Finger_Base_JNT.rx"
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Shoulder_JNT_scaleConstraint1.csz" "|Arm_Main|JNT|FK|Shoulder_JNT.sz"
 		;
-connectAttr "Pointer_Finger_Base_JNT_parentConstraint1.cry" "Pointer_Finger_Base_JNT.ry"
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Shoulder_JNT_parentConstraint1.ctx" "|Arm_Main|JNT|FK|Shoulder_JNT.tx"
 		;
-connectAttr "Pointer_Finger_Base_JNT_parentConstraint1.crz" "Pointer_Finger_Base_JNT.rz"
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Shoulder_JNT_parentConstraint1.cty" "|Arm_Main|JNT|FK|Shoulder_JNT.ty"
 		;
-connectAttr "Wrist_JNT.s" "Pointer_Finger_Base_JNT.is";
-connectAttr "Pointer_Finger_Base_JNT_scaleConstraint1.csx" "Pointer_Finger_Base_JNT.sx"
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Shoulder_JNT_parentConstraint1.ctz" "|Arm_Main|JNT|FK|Shoulder_JNT.tz"
 		;
-connectAttr "Pointer_Finger_Base_JNT_scaleConstraint1.csy" "Pointer_Finger_Base_JNT.sy"
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Shoulder_JNT_parentConstraint1.crx" "|Arm_Main|JNT|FK|Shoulder_JNT.rx"
 		;
-connectAttr "Pointer_Finger_Base_JNT_scaleConstraint1.csz" "Pointer_Finger_Base_JNT.sz"
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Shoulder_JNT_parentConstraint1.cry" "|Arm_Main|JNT|FK|Shoulder_JNT.ry"
 		;
-connectAttr "Pointer_Finger_Base_JNT_parentConstraint1.ctx" "Pointer_Finger_Base_JNT.tx"
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Shoulder_JNT_parentConstraint1.crz" "|Arm_Main|JNT|FK|Shoulder_JNT.rz"
 		;
-connectAttr "Pointer_Finger_Base_JNT_parentConstraint1.cty" "Pointer_Finger_Base_JNT.ty"
+connectAttr "Rig_Lyer.di" "|Arm_Main|JNT|FK|Shoulder_JNT.do";
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|Elbow_JNT_parentConstraint1.crx" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT.rx"
 		;
-connectAttr "Pointer_Finger_Base_JNT_parentConstraint1.ctz" "Pointer_Finger_Base_JNT.tz"
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|Elbow_JNT_parentConstraint1.cry" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT.ry"
 		;
-connectAttr "P_Finger1_JNT_parentConstraint1.crx" "P_Finger1_JNT.rx";
-connectAttr "P_Finger1_JNT_parentConstraint1.cry" "P_Finger1_JNT.ry";
-connectAttr "P_Finger1_JNT_parentConstraint1.crz" "P_Finger1_JNT.rz";
-connectAttr "Pointer_Finger_Base_JNT.s" "P_Finger1_JNT.is";
-connectAttr "P_Finger1_JNT_scaleConstraint1.csx" "P_Finger1_JNT.sx";
-connectAttr "P_Finger1_JNT_scaleConstraint1.csy" "P_Finger1_JNT.sy";
-connectAttr "P_Finger1_JNT_scaleConstraint1.csz" "P_Finger1_JNT.sz";
-connectAttr "P_Finger1_JNT_parentConstraint1.ctx" "P_Finger1_JNT.tx";
-connectAttr "P_Finger1_JNT_parentConstraint1.cty" "P_Finger1_JNT.ty";
-connectAttr "P_Finger1_JNT_parentConstraint1.ctz" "P_Finger1_JNT.tz";
-connectAttr "P_Finger2_JNT_parentConstraint1.crx" "P_Finger2_JNT.rx";
-connectAttr "P_Finger2_JNT_parentConstraint1.cry" "P_Finger2_JNT.ry";
-connectAttr "P_Finger2_JNT_parentConstraint1.crz" "P_Finger2_JNT.rz";
-connectAttr "P_Finger1_JNT.s" "P_Finger2_JNT.is";
-connectAttr "P_Finger2_JNT_scaleConstraint1.csx" "P_Finger2_JNT.sx";
-connectAttr "P_Finger2_JNT_scaleConstraint1.csy" "P_Finger2_JNT.sy";
-connectAttr "P_Finger2_JNT_scaleConstraint1.csz" "P_Finger2_JNT.sz";
-connectAttr "P_Finger2_JNT_parentConstraint1.ctx" "P_Finger2_JNT.tx";
-connectAttr "P_Finger2_JNT_parentConstraint1.cty" "P_Finger2_JNT.ty";
-connectAttr "P_Finger2_JNT_parentConstraint1.ctz" "P_Finger2_JNT.tz";
-connectAttr "P_Finger2_JNT.s" "P_Finger3_JNT.is";
-connectAttr "P_Finger2_JNT.ro" "P_Finger2_JNT_parentConstraint1.cro";
-connectAttr "P_Finger2_JNT.pim" "P_Finger2_JNT_parentConstraint1.cpim";
-connectAttr "P_Finger2_JNT.rp" "P_Finger2_JNT_parentConstraint1.crp";
-connectAttr "P_Finger2_JNT.rpt" "P_Finger2_JNT_parentConstraint1.crt";
-connectAttr "P_Finger2_JNT.jo" "P_Finger2_JNT_parentConstraint1.cjo";
-connectAttr "Ring_Finger_Base1.t" "P_Finger2_JNT_parentConstraint1.tg[0].tt";
-connectAttr "Ring_Finger_Base1.rp" "P_Finger2_JNT_parentConstraint1.tg[0].trp";
-connectAttr "Ring_Finger_Base1.rpt" "P_Finger2_JNT_parentConstraint1.tg[0].trt";
-connectAttr "Ring_Finger_Base1.r" "P_Finger2_JNT_parentConstraint1.tg[0].tr";
-connectAttr "Ring_Finger_Base1.ro" "P_Finger2_JNT_parentConstraint1.tg[0].tro";
-connectAttr "Ring_Finger_Base1.s" "P_Finger2_JNT_parentConstraint1.tg[0].ts";
-connectAttr "Ring_Finger_Base1.pm" "P_Finger2_JNT_parentConstraint1.tg[0].tpm";
-connectAttr "P_Finger2_JNT_parentConstraint1.w0" "P_Finger2_JNT_parentConstraint1.tg[0].tw"
-		;
-connectAttr "P_Finger2_JNT.ssc" "P_Finger2_JNT_scaleConstraint1.tsc";
-connectAttr "P_Finger2_JNT.pim" "P_Finger2_JNT_scaleConstraint1.cpim";
-connectAttr "Ring_Finger_Base1.s" "P_Finger2_JNT_scaleConstraint1.tg[0].ts";
-connectAttr "Ring_Finger_Base1.pm" "P_Finger2_JNT_scaleConstraint1.tg[0].tpm";
-connectAttr "P_Finger2_JNT_scaleConstraint1.w0" "P_Finger2_JNT_scaleConstraint1.tg[0].tw"
-		;
-connectAttr "P_Finger1_JNT.ro" "P_Finger1_JNT_parentConstraint1.cro";
-connectAttr "P_Finger1_JNT.pim" "P_Finger1_JNT_parentConstraint1.cpim";
-connectAttr "P_Finger1_JNT.rp" "P_Finger1_JNT_parentConstraint1.crp";
-connectAttr "P_Finger1_JNT.rpt" "P_Finger1_JNT_parentConstraint1.crt";
-connectAttr "P_Finger1_JNT.jo" "P_Finger1_JNT_parentConstraint1.cjo";
-connectAttr "Ring_Finger_Base.t" "P_Finger1_JNT_parentConstraint1.tg[0].tt";
-connectAttr "Ring_Finger_Base.rp" "P_Finger1_JNT_parentConstraint1.tg[0].trp";
-connectAttr "Ring_Finger_Base.rpt" "P_Finger1_JNT_parentConstraint1.tg[0].trt";
-connectAttr "Ring_Finger_Base.r" "P_Finger1_JNT_parentConstraint1.tg[0].tr";
-connectAttr "Ring_Finger_Base.ro" "P_Finger1_JNT_parentConstraint1.tg[0].tro";
-connectAttr "Ring_Finger_Base.s" "P_Finger1_JNT_parentConstraint1.tg[0].ts";
-connectAttr "Ring_Finger_Base.pm" "P_Finger1_JNT_parentConstraint1.tg[0].tpm";
-connectAttr "P_Finger1_JNT_parentConstraint1.w0" "P_Finger1_JNT_parentConstraint1.tg[0].tw"
-		;
-connectAttr "P_Finger1_JNT.ssc" "P_Finger1_JNT_scaleConstraint1.tsc";
-connectAttr "P_Finger1_JNT.pim" "P_Finger1_JNT_scaleConstraint1.cpim";
-connectAttr "Ring_Finger_Base.s" "P_Finger1_JNT_scaleConstraint1.tg[0].ts";
-connectAttr "Ring_Finger_Base.pm" "P_Finger1_JNT_scaleConstraint1.tg[0].tpm";
-connectAttr "P_Finger1_JNT_scaleConstraint1.w0" "P_Finger1_JNT_scaleConstraint1.tg[0].tw"
-		;
-connectAttr "Pointer_Finger_Base_JNT.ro" "Pointer_Finger_Base_JNT_parentConstraint1.cro"
-		;
-connectAttr "Pointer_Finger_Base_JNT.pim" "Pointer_Finger_Base_JNT_parentConstraint1.cpim"
-		;
-connectAttr "Pointer_Finger_Base_JNT.rp" "Pointer_Finger_Base_JNT_parentConstraint1.crp"
-		;
-connectAttr "Pointer_Finger_Base_JNT.rpt" "Pointer_Finger_Base_JNT_parentConstraint1.crt"
-		;
-connectAttr "Pointer_Finger_Base_JNT.jo" "Pointer_Finger_Base_JNT_parentConstraint1.cjo"
-		;
-connectAttr "Ring_Finger_Base_CNTL.t" "Pointer_Finger_Base_JNT_parentConstraint1.tg[0].tt"
-		;
-connectAttr "Ring_Finger_Base_CNTL.rp" "Pointer_Finger_Base_JNT_parentConstraint1.tg[0].trp"
-		;
-connectAttr "Ring_Finger_Base_CNTL.rpt" "Pointer_Finger_Base_JNT_parentConstraint1.tg[0].trt"
-		;
-connectAttr "Ring_Finger_Base_CNTL.r" "Pointer_Finger_Base_JNT_parentConstraint1.tg[0].tr"
-		;
-connectAttr "Ring_Finger_Base_CNTL.ro" "Pointer_Finger_Base_JNT_parentConstraint1.tg[0].tro"
-		;
-connectAttr "Ring_Finger_Base_CNTL.s" "Pointer_Finger_Base_JNT_parentConstraint1.tg[0].ts"
-		;
-connectAttr "Ring_Finger_Base_CNTL.pm" "Pointer_Finger_Base_JNT_parentConstraint1.tg[0].tpm"
-		;
-connectAttr "Pointer_Finger_Base_JNT_parentConstraint1.w0" "Pointer_Finger_Base_JNT_parentConstraint1.tg[0].tw"
-		;
-connectAttr "Pointer_Finger_Base_JNT.ssc" "Pointer_Finger_Base_JNT_scaleConstraint1.tsc"
-		;
-connectAttr "Pointer_Finger_Base_JNT.pim" "Pointer_Finger_Base_JNT_scaleConstraint1.cpim"
-		;
-connectAttr "Ring_Finger_Base_CNTL.s" "Pointer_Finger_Base_JNT_scaleConstraint1.tg[0].ts"
-		;
-connectAttr "Ring_Finger_Base_CNTL.pm" "Pointer_Finger_Base_JNT_scaleConstraint1.tg[0].tpm"
-		;
-connectAttr "Pointer_Finger_Base_JNT_scaleConstraint1.w0" "Pointer_Finger_Base_JNT_scaleConstraint1.tg[0].tw"
-		;
-connectAttr "Mid_Finger_JNT_parentConstraint1.crx" "Mid_Finger_JNT.rx";
-connectAttr "Mid_Finger_JNT_parentConstraint1.cry" "Mid_Finger_JNT.ry";
-connectAttr "Mid_Finger_JNT_parentConstraint1.crz" "Mid_Finger_JNT.rz";
-connectAttr "Wrist_JNT.s" "Mid_Finger_JNT.is";
-connectAttr "Mid_Finger_JNT_scaleConstraint1.csx" "Mid_Finger_JNT.sx";
-connectAttr "Mid_Finger_JNT_scaleConstraint1.csy" "Mid_Finger_JNT.sy";
-connectAttr "Mid_Finger_JNT_scaleConstraint1.csz" "Mid_Finger_JNT.sz";
-connectAttr "Mid_Finger_JNT_parentConstraint1.ctx" "Mid_Finger_JNT.tx";
-connectAttr "Mid_Finger_JNT_parentConstraint1.cty" "Mid_Finger_JNT.ty";
-connectAttr "Mid_Finger_JNT_parentConstraint1.ctz" "Mid_Finger_JNT.tz";
-connectAttr "Mid_Finger1_JNT_parentConstraint1.crx" "Mid_Finger1_JNT.rx";
-connectAttr "Mid_Finger1_JNT_parentConstraint1.cry" "Mid_Finger1_JNT.ry";
-connectAttr "Mid_Finger1_JNT_parentConstraint1.crz" "Mid_Finger1_JNT.rz";
-connectAttr "Mid_Finger_JNT.s" "Mid_Finger1_JNT.is";
-connectAttr "Mid_Finger1_JNT_scaleConstraint1.csx" "Mid_Finger1_JNT.sx";
-connectAttr "Mid_Finger1_JNT_scaleConstraint1.csy" "Mid_Finger1_JNT.sy";
-connectAttr "Mid_Finger1_JNT_scaleConstraint1.csz" "Mid_Finger1_JNT.sz";
-connectAttr "Mid_Finger1_JNT_parentConstraint1.ctx" "Mid_Finger1_JNT.tx";
-connectAttr "Mid_Finger1_JNT_parentConstraint1.cty" "Mid_Finger1_JNT.ty";
-connectAttr "Mid_Finger1_JNT_parentConstraint1.ctz" "Mid_Finger1_JNT.tz";
-connectAttr "Mid_Finger2_JNT_parentConstraint1.crx" "Mid_Finger2_JNT.rx";
-connectAttr "Mid_Finger2_JNT_parentConstraint1.cry" "Mid_Finger2_JNT.ry";
-connectAttr "Mid_Finger2_JNT_parentConstraint1.crz" "Mid_Finger2_JNT.rz";
-connectAttr "Mid_Finger1_JNT.s" "Mid_Finger2_JNT.is";
-connectAttr "Mid_Finger2_JNT_scaleConstraint1.csx" "Mid_Finger2_JNT.sx";
-connectAttr "Mid_Finger2_JNT_scaleConstraint1.csy" "Mid_Finger2_JNT.sy";
-connectAttr "Mid_Finger2_JNT_scaleConstraint1.csz" "Mid_Finger2_JNT.sz";
-connectAttr "Mid_Finger2_JNT_parentConstraint1.ctx" "Mid_Finger2_JNT.tx";
-connectAttr "Mid_Finger2_JNT_parentConstraint1.cty" "Mid_Finger2_JNT.ty";
-connectAttr "Mid_Finger2_JNT_parentConstraint1.ctz" "Mid_Finger2_JNT.tz";
-connectAttr "Mid_Finger2_JNT.s" "Mid_Finger3_JNT.is";
-connectAttr "Mid_Finger2_JNT.ro" "Mid_Finger2_JNT_parentConstraint1.cro";
-connectAttr "Mid_Finger2_JNT.pim" "Mid_Finger2_JNT_parentConstraint1.cpim";
-connectAttr "Mid_Finger2_JNT.rp" "Mid_Finger2_JNT_parentConstraint1.crp";
-connectAttr "Mid_Finger2_JNT.rpt" "Mid_Finger2_JNT_parentConstraint1.crt";
-connectAttr "Mid_Finger2_JNT.jo" "Mid_Finger2_JNT_parentConstraint1.cjo";
-connectAttr "M_Finger_Base1.t" "Mid_Finger2_JNT_parentConstraint1.tg[0].tt";
-connectAttr "M_Finger_Base1.rp" "Mid_Finger2_JNT_parentConstraint1.tg[0].trp";
-connectAttr "M_Finger_Base1.rpt" "Mid_Finger2_JNT_parentConstraint1.tg[0].trt";
-connectAttr "M_Finger_Base1.r" "Mid_Finger2_JNT_parentConstraint1.tg[0].tr";
-connectAttr "M_Finger_Base1.ro" "Mid_Finger2_JNT_parentConstraint1.tg[0].tro";
-connectAttr "M_Finger_Base1.s" "Mid_Finger2_JNT_parentConstraint1.tg[0].ts";
-connectAttr "M_Finger_Base1.pm" "Mid_Finger2_JNT_parentConstraint1.tg[0].tpm";
-connectAttr "Mid_Finger2_JNT_parentConstraint1.w0" "Mid_Finger2_JNT_parentConstraint1.tg[0].tw"
-		;
-connectAttr "Mid_Finger2_JNT.ssc" "Mid_Finger2_JNT_scaleConstraint1.tsc";
-connectAttr "Mid_Finger2_JNT.pim" "Mid_Finger2_JNT_scaleConstraint1.cpim";
-connectAttr "M_Finger_Base1.s" "Mid_Finger2_JNT_scaleConstraint1.tg[0].ts";
-connectAttr "M_Finger_Base1.pm" "Mid_Finger2_JNT_scaleConstraint1.tg[0].tpm";
-connectAttr "Mid_Finger2_JNT_scaleConstraint1.w0" "Mid_Finger2_JNT_scaleConstraint1.tg[0].tw"
-		;
-connectAttr "Mid_Finger1_JNT.ro" "Mid_Finger1_JNT_parentConstraint1.cro";
-connectAttr "Mid_Finger1_JNT.pim" "Mid_Finger1_JNT_parentConstraint1.cpim";
-connectAttr "Mid_Finger1_JNT.rp" "Mid_Finger1_JNT_parentConstraint1.crp";
-connectAttr "Mid_Finger1_JNT.rpt" "Mid_Finger1_JNT_parentConstraint1.crt";
-connectAttr "Mid_Finger1_JNT.jo" "Mid_Finger1_JNT_parentConstraint1.cjo";
-connectAttr "M_Finger_Base.t" "Mid_Finger1_JNT_parentConstraint1.tg[0].tt";
-connectAttr "M_Finger_Base.rp" "Mid_Finger1_JNT_parentConstraint1.tg[0].trp";
-connectAttr "M_Finger_Base.rpt" "Mid_Finger1_JNT_parentConstraint1.tg[0].trt";
-connectAttr "M_Finger_Base.r" "Mid_Finger1_JNT_parentConstraint1.tg[0].tr";
-connectAttr "M_Finger_Base.ro" "Mid_Finger1_JNT_parentConstraint1.tg[0].tro";
-connectAttr "M_Finger_Base.s" "Mid_Finger1_JNT_parentConstraint1.tg[0].ts";
-connectAttr "M_Finger_Base.pm" "Mid_Finger1_JNT_parentConstraint1.tg[0].tpm";
-connectAttr "Mid_Finger1_JNT_parentConstraint1.w0" "Mid_Finger1_JNT_parentConstraint1.tg[0].tw"
-		;
-connectAttr "Mid_Finger1_JNT.ssc" "Mid_Finger1_JNT_scaleConstraint1.tsc";
-connectAttr "Mid_Finger1_JNT.pim" "Mid_Finger1_JNT_scaleConstraint1.cpim";
-connectAttr "M_Finger_Base.s" "Mid_Finger1_JNT_scaleConstraint1.tg[0].ts";
-connectAttr "M_Finger_Base.pm" "Mid_Finger1_JNT_scaleConstraint1.tg[0].tpm";
-connectAttr "Mid_Finger1_JNT_scaleConstraint1.w0" "Mid_Finger1_JNT_scaleConstraint1.tg[0].tw"
-		;
-connectAttr "Mid_Finger_JNT.ro" "Mid_Finger_JNT_parentConstraint1.cro";
-connectAttr "Mid_Finger_JNT.pim" "Mid_Finger_JNT_parentConstraint1.cpim";
-connectAttr "Mid_Finger_JNT.rp" "Mid_Finger_JNT_parentConstraint1.crp";
-connectAttr "Mid_Finger_JNT.rpt" "Mid_Finger_JNT_parentConstraint1.crt";
-connectAttr "Mid_Finger_JNT.jo" "Mid_Finger_JNT_parentConstraint1.cjo";
-connectAttr "M_Finger_Base_CNTL.t" "Mid_Finger_JNT_parentConstraint1.tg[0].tt";
-connectAttr "M_Finger_Base_CNTL.rp" "Mid_Finger_JNT_parentConstraint1.tg[0].trp"
-		;
-connectAttr "M_Finger_Base_CNTL.rpt" "Mid_Finger_JNT_parentConstraint1.tg[0].trt"
-		;
-connectAttr "M_Finger_Base_CNTL.r" "Mid_Finger_JNT_parentConstraint1.tg[0].tr";
-connectAttr "M_Finger_Base_CNTL.ro" "Mid_Finger_JNT_parentConstraint1.tg[0].tro"
-		;
-connectAttr "M_Finger_Base_CNTL.s" "Mid_Finger_JNT_parentConstraint1.tg[0].ts";
-connectAttr "M_Finger_Base_CNTL.pm" "Mid_Finger_JNT_parentConstraint1.tg[0].tpm"
-		;
-connectAttr "Mid_Finger_JNT_parentConstraint1.w0" "Mid_Finger_JNT_parentConstraint1.tg[0].tw"
-		;
-connectAttr "Mid_Finger_JNT.ssc" "Mid_Finger_JNT_scaleConstraint1.tsc";
-connectAttr "Mid_Finger_JNT.pim" "Mid_Finger_JNT_scaleConstraint1.cpim";
-connectAttr "M_Finger_Base_CNTL.s" "Mid_Finger_JNT_scaleConstraint1.tg[0].ts";
-connectAttr "M_Finger_Base_CNTL.pm" "Mid_Finger_JNT_scaleConstraint1.tg[0].tpm";
-connectAttr "Mid_Finger_JNT_scaleConstraint1.w0" "Mid_Finger_JNT_scaleConstraint1.tg[0].tw"
-		;
-connectAttr "Ring_Finger_JNT_parentConstraint1.crx" "Ring_Finger_JNT.rx";
-connectAttr "Ring_Finger_JNT_parentConstraint1.cry" "Ring_Finger_JNT.ry";
-connectAttr "Ring_Finger_JNT_parentConstraint1.crz" "Ring_Finger_JNT.rz";
-connectAttr "Wrist_JNT.s" "Ring_Finger_JNT.is";
-connectAttr "Ring_Finger_JNT_scaleConstraint1.csx" "Ring_Finger_JNT.sx";
-connectAttr "Ring_Finger_JNT_scaleConstraint1.csy" "Ring_Finger_JNT.sy";
-connectAttr "Ring_Finger_JNT_scaleConstraint1.csz" "Ring_Finger_JNT.sz";
-connectAttr "Ring_Finger_JNT_parentConstraint1.ctx" "Ring_Finger_JNT.tx";
-connectAttr "Ring_Finger_JNT_parentConstraint1.cty" "Ring_Finger_JNT.ty";
-connectAttr "Ring_Finger_JNT_parentConstraint1.ctz" "Ring_Finger_JNT.tz";
-connectAttr "Ring_FInger1_JNT_parentConstraint1.crx" "Ring_FInger1_JNT.rx";
-connectAttr "Ring_FInger1_JNT_parentConstraint1.cry" "Ring_FInger1_JNT.ry";
-connectAttr "Ring_FInger1_JNT_parentConstraint1.crz" "Ring_FInger1_JNT.rz";
-connectAttr "Ring_Finger_JNT.s" "Ring_FInger1_JNT.is";
-connectAttr "Ring_FInger1_JNT_scaleConstraint1.csx" "Ring_FInger1_JNT.sx";
-connectAttr "Ring_FInger1_JNT_scaleConstraint1.csy" "Ring_FInger1_JNT.sy";
-connectAttr "Ring_FInger1_JNT_scaleConstraint1.csz" "Ring_FInger1_JNT.sz";
-connectAttr "Ring_FInger1_JNT_parentConstraint1.ctx" "Ring_FInger1_JNT.tx";
-connectAttr "Ring_FInger1_JNT_parentConstraint1.cty" "Ring_FInger1_JNT.ty";
-connectAttr "Ring_FInger1_JNT_parentConstraint1.ctz" "Ring_FInger1_JNT.tz";
-connectAttr "Ring_FInger2_JNT_parentConstraint1.crx" "Ring_FInger2_JNT.rx";
-connectAttr "Ring_FInger2_JNT_parentConstraint1.cry" "Ring_FInger2_JNT.ry";
-connectAttr "Ring_FInger2_JNT_parentConstraint1.crz" "Ring_FInger2_JNT.rz";
-connectAttr "Ring_FInger1_JNT.s" "Ring_FInger2_JNT.is";
-connectAttr "Ring_FInger2_JNT_scaleConstraint1.csx" "Ring_FInger2_JNT.sx";
-connectAttr "Ring_FInger2_JNT_scaleConstraint1.csy" "Ring_FInger2_JNT.sy";
-connectAttr "Ring_FInger2_JNT_scaleConstraint1.csz" "Ring_FInger2_JNT.sz";
-connectAttr "Ring_FInger2_JNT_parentConstraint1.ctx" "Ring_FInger2_JNT.tx";
-connectAttr "Ring_FInger2_JNT_parentConstraint1.cty" "Ring_FInger2_JNT.ty";
-connectAttr "Ring_FInger2_JNT_parentConstraint1.ctz" "Ring_FInger2_JNT.tz";
-connectAttr "Ring_FInger2_JNT.s" "Ring_FInger3_JNT.is";
-connectAttr "Ring_FInger2_JNT.ro" "Ring_FInger2_JNT_parentConstraint1.cro";
-connectAttr "Ring_FInger2_JNT.pim" "Ring_FInger2_JNT_parentConstraint1.cpim";
-connectAttr "Ring_FInger2_JNT.rp" "Ring_FInger2_JNT_parentConstraint1.crp";
-connectAttr "Ring_FInger2_JNT.rpt" "Ring_FInger2_JNT_parentConstraint1.crt";
-connectAttr "Ring_FInger2_JNT.jo" "Ring_FInger2_JNT_parentConstraint1.cjo";
-connectAttr "P_Finger_Base1.t" "Ring_FInger2_JNT_parentConstraint1.tg[0].tt";
-connectAttr "P_Finger_Base1.rp" "Ring_FInger2_JNT_parentConstraint1.tg[0].trp";
-connectAttr "P_Finger_Base1.rpt" "Ring_FInger2_JNT_parentConstraint1.tg[0].trt";
-connectAttr "P_Finger_Base1.r" "Ring_FInger2_JNT_parentConstraint1.tg[0].tr";
-connectAttr "P_Finger_Base1.ro" "Ring_FInger2_JNT_parentConstraint1.tg[0].tro";
-connectAttr "P_Finger_Base1.s" "Ring_FInger2_JNT_parentConstraint1.tg[0].ts";
-connectAttr "P_Finger_Base1.pm" "Ring_FInger2_JNT_parentConstraint1.tg[0].tpm";
-connectAttr "Ring_FInger2_JNT_parentConstraint1.w0" "Ring_FInger2_JNT_parentConstraint1.tg[0].tw"
-		;
-connectAttr "Ring_FInger2_JNT.ssc" "Ring_FInger2_JNT_scaleConstraint1.tsc";
-connectAttr "Ring_FInger2_JNT.pim" "Ring_FInger2_JNT_scaleConstraint1.cpim";
-connectAttr "P_Finger_Base1.s" "Ring_FInger2_JNT_scaleConstraint1.tg[0].ts";
-connectAttr "P_Finger_Base1.pm" "Ring_FInger2_JNT_scaleConstraint1.tg[0].tpm";
-connectAttr "Ring_FInger2_JNT_scaleConstraint1.w0" "Ring_FInger2_JNT_scaleConstraint1.tg[0].tw"
-		;
-connectAttr "Ring_FInger1_JNT.ro" "Ring_FInger1_JNT_parentConstraint1.cro";
-connectAttr "Ring_FInger1_JNT.pim" "Ring_FInger1_JNT_parentConstraint1.cpim";
-connectAttr "Ring_FInger1_JNT.rp" "Ring_FInger1_JNT_parentConstraint1.crp";
-connectAttr "Ring_FInger1_JNT.rpt" "Ring_FInger1_JNT_parentConstraint1.crt";
-connectAttr "Ring_FInger1_JNT.jo" "Ring_FInger1_JNT_parentConstraint1.cjo";
-connectAttr "P_Finger_Base.t" "Ring_FInger1_JNT_parentConstraint1.tg[0].tt";
-connectAttr "P_Finger_Base.rp" "Ring_FInger1_JNT_parentConstraint1.tg[0].trp";
-connectAttr "P_Finger_Base.rpt" "Ring_FInger1_JNT_parentConstraint1.tg[0].trt";
-connectAttr "P_Finger_Base.r" "Ring_FInger1_JNT_parentConstraint1.tg[0].tr";
-connectAttr "P_Finger_Base.ro" "Ring_FInger1_JNT_parentConstraint1.tg[0].tro";
-connectAttr "P_Finger_Base.s" "Ring_FInger1_JNT_parentConstraint1.tg[0].ts";
-connectAttr "P_Finger_Base.pm" "Ring_FInger1_JNT_parentConstraint1.tg[0].tpm";
-connectAttr "Ring_FInger1_JNT_parentConstraint1.w0" "Ring_FInger1_JNT_parentConstraint1.tg[0].tw"
-		;
-connectAttr "Ring_FInger1_JNT.ssc" "Ring_FInger1_JNT_scaleConstraint1.tsc";
-connectAttr "Ring_FInger1_JNT.pim" "Ring_FInger1_JNT_scaleConstraint1.cpim";
-connectAttr "P_Finger_Base.s" "Ring_FInger1_JNT_scaleConstraint1.tg[0].ts";
-connectAttr "P_Finger_Base.pm" "Ring_FInger1_JNT_scaleConstraint1.tg[0].tpm";
-connectAttr "Ring_FInger1_JNT_scaleConstraint1.w0" "Ring_FInger1_JNT_scaleConstraint1.tg[0].tw"
-		;
-connectAttr "Ring_Finger_JNT.ro" "Ring_Finger_JNT_parentConstraint1.cro";
-connectAttr "Ring_Finger_JNT.pim" "Ring_Finger_JNT_parentConstraint1.cpim";
-connectAttr "Ring_Finger_JNT.rp" "Ring_Finger_JNT_parentConstraint1.crp";
-connectAttr "Ring_Finger_JNT.rpt" "Ring_Finger_JNT_parentConstraint1.crt";
-connectAttr "Ring_Finger_JNT.jo" "Ring_Finger_JNT_parentConstraint1.cjo";
-connectAttr "P_Finger_Base_CNTL.t" "Ring_Finger_JNT_parentConstraint1.tg[0].tt";
-connectAttr "P_Finger_Base_CNTL.rp" "Ring_Finger_JNT_parentConstraint1.tg[0].trp"
-		;
-connectAttr "P_Finger_Base_CNTL.rpt" "Ring_Finger_JNT_parentConstraint1.tg[0].trt"
-		;
-connectAttr "P_Finger_Base_CNTL.r" "Ring_Finger_JNT_parentConstraint1.tg[0].tr";
-connectAttr "P_Finger_Base_CNTL.ro" "Ring_Finger_JNT_parentConstraint1.tg[0].tro"
-		;
-connectAttr "P_Finger_Base_CNTL.s" "Ring_Finger_JNT_parentConstraint1.tg[0].ts";
-connectAttr "P_Finger_Base_CNTL.pm" "Ring_Finger_JNT_parentConstraint1.tg[0].tpm"
-		;
-connectAttr "Ring_Finger_JNT_parentConstraint1.w0" "Ring_Finger_JNT_parentConstraint1.tg[0].tw"
-		;
-connectAttr "Ring_Finger_JNT.ssc" "Ring_Finger_JNT_scaleConstraint1.tsc";
-connectAttr "Ring_Finger_JNT.pim" "Ring_Finger_JNT_scaleConstraint1.cpim";
-connectAttr "P_Finger_Base_CNTL.s" "Ring_Finger_JNT_scaleConstraint1.tg[0].ts";
-connectAttr "P_Finger_Base_CNTL.pm" "Ring_Finger_JNT_scaleConstraint1.tg[0].tpm"
-		;
-connectAttr "Ring_Finger_JNT_scaleConstraint1.w0" "Ring_Finger_JNT_scaleConstraint1.tg[0].tw"
-		;
-connectAttr "Wrist_JNT.s" "Pinky_Finger_JNT.is";
-connectAttr "Pinky_Finger_JNT_scaleConstraint1.csx" "Pinky_Finger_JNT.sx";
-connectAttr "Pinky_Finger_JNT_scaleConstraint1.csy" "Pinky_Finger_JNT.sy";
-connectAttr "Pinky_Finger_JNT_scaleConstraint1.csz" "Pinky_Finger_JNT.sz";
-connectAttr "Pinky_Finger_JNT_parentConstraint1.crx" "Pinky_Finger_JNT.rx";
-connectAttr "Pinky_Finger_JNT_parentConstraint1.cry" "Pinky_Finger_JNT.ry";
-connectAttr "Pinky_Finger_JNT_parentConstraint1.crz" "Pinky_Finger_JNT.rz";
-connectAttr "Pinky_Finger_JNT_parentConstraint1.ctx" "Pinky_Finger_JNT.tx";
-connectAttr "Pinky_Finger_JNT_parentConstraint1.cty" "Pinky_Finger_JNT.ty";
-connectAttr "Pinky_Finger_JNT_parentConstraint1.ctz" "Pinky_Finger_JNT.tz";
-connectAttr "Pinky_Finger1_JNT_parentConstraint1.ctx" "Pinky_Finger1_JNT.tx";
-connectAttr "Pinky_Finger1_JNT_parentConstraint1.cty" "Pinky_Finger1_JNT.ty";
-connectAttr "Pinky_Finger1_JNT_parentConstraint1.ctz" "Pinky_Finger1_JNT.tz";
-connectAttr "Pinky_Finger1_JNT_parentConstraint1.crx" "Pinky_Finger1_JNT.rx";
-connectAttr "Pinky_Finger1_JNT_parentConstraint1.cry" "Pinky_Finger1_JNT.ry";
-connectAttr "Pinky_Finger1_JNT_parentConstraint1.crz" "Pinky_Finger1_JNT.rz";
-connectAttr "Pinky_Finger_JNT.s" "Pinky_Finger1_JNT.is";
-connectAttr "Pinky_Finger1_JNT_scaleConstraint1.csx" "Pinky_Finger1_JNT.sx";
-connectAttr "Pinky_Finger1_JNT_scaleConstraint1.csy" "Pinky_Finger1_JNT.sy";
-connectAttr "Pinky_Finger1_JNT_scaleConstraint1.csz" "Pinky_Finger1_JNT.sz";
-connectAttr "Pinky_Finger2_JNT_parentConstraint1.crx" "Pinky_Finger2_JNT.rx";
-connectAttr "Pinky_Finger2_JNT_parentConstraint1.cry" "Pinky_Finger2_JNT.ry";
-connectAttr "Pinky_Finger2_JNT_parentConstraint1.crz" "Pinky_Finger2_JNT.rz";
-connectAttr "Pinky_Finger1_JNT.s" "Pinky_Finger2_JNT.is";
-connectAttr "Pinky_Finger2_JNT_scaleConstraint1.csx" "Pinky_Finger2_JNT.sx";
-connectAttr "Pinky_Finger2_JNT_scaleConstraint1.csy" "Pinky_Finger2_JNT.sy";
-connectAttr "Pinky_Finger2_JNT_scaleConstraint1.csz" "Pinky_Finger2_JNT.sz";
-connectAttr "Pinky_Finger2_JNT_parentConstraint1.ctx" "Pinky_Finger2_JNT.tx";
-connectAttr "Pinky_Finger2_JNT_parentConstraint1.cty" "Pinky_Finger2_JNT.ty";
-connectAttr "Pinky_Finger2_JNT_parentConstraint1.ctz" "Pinky_Finger2_JNT.tz";
-connectAttr "Pinky_Finger2_JNT.s" "Pinky_Finger3_JNT.is";
-connectAttr "Pinky_Finger2_JNT.ro" "Pinky_Finger2_JNT_parentConstraint1.cro";
-connectAttr "Pinky_Finger2_JNT.pim" "Pinky_Finger2_JNT_parentConstraint1.cpim";
-connectAttr "Pinky_Finger2_JNT.rp" "Pinky_Finger2_JNT_parentConstraint1.crp";
-connectAttr "Pinky_Finger2_JNT.rpt" "Pinky_Finger2_JNT_parentConstraint1.crt";
-connectAttr "Pinky_Finger2_JNT.jo" "Pinky_Finger2_JNT_parentConstraint1.cjo";
-connectAttr "Thumb_Finger_Base1.t" "Pinky_Finger2_JNT_parentConstraint1.tg[0].tt"
-		;
-connectAttr "Thumb_Finger_Base1.rp" "Pinky_Finger2_JNT_parentConstraint1.tg[0].trp"
-		;
-connectAttr "Thumb_Finger_Base1.rpt" "Pinky_Finger2_JNT_parentConstraint1.tg[0].trt"
-		;
-connectAttr "Thumb_Finger_Base1.r" "Pinky_Finger2_JNT_parentConstraint1.tg[0].tr"
-		;
-connectAttr "Thumb_Finger_Base1.ro" "Pinky_Finger2_JNT_parentConstraint1.tg[0].tro"
-		;
-connectAttr "Thumb_Finger_Base1.s" "Pinky_Finger2_JNT_parentConstraint1.tg[0].ts"
-		;
-connectAttr "Thumb_Finger_Base1.pm" "Pinky_Finger2_JNT_parentConstraint1.tg[0].tpm"
-		;
-connectAttr "Pinky_Finger2_JNT_parentConstraint1.w0" "Pinky_Finger2_JNT_parentConstraint1.tg[0].tw"
-		;
-connectAttr "Pinky_Finger2_JNT.ssc" "Pinky_Finger2_JNT_scaleConstraint1.tsc";
-connectAttr "Pinky_Finger2_JNT.pim" "Pinky_Finger2_JNT_scaleConstraint1.cpim";
-connectAttr "Thumb_Finger_Base1.s" "Pinky_Finger2_JNT_scaleConstraint1.tg[0].ts"
-		;
-connectAttr "Thumb_Finger_Base1.pm" "Pinky_Finger2_JNT_scaleConstraint1.tg[0].tpm"
-		;
-connectAttr "Pinky_Finger2_JNT_scaleConstraint1.w0" "Pinky_Finger2_JNT_scaleConstraint1.tg[0].tw"
-		;
-connectAttr "Pinky_Finger1_JNT.ro" "Pinky_Finger1_JNT_parentConstraint1.cro";
-connectAttr "Pinky_Finger1_JNT.pim" "Pinky_Finger1_JNT_parentConstraint1.cpim";
-connectAttr "Pinky_Finger1_JNT.rp" "Pinky_Finger1_JNT_parentConstraint1.crp";
-connectAttr "Pinky_Finger1_JNT.rpt" "Pinky_Finger1_JNT_parentConstraint1.crt";
-connectAttr "Pinky_Finger1_JNT.jo" "Pinky_Finger1_JNT_parentConstraint1.cjo";
-connectAttr "Thumb_Finger_Base.t" "Pinky_Finger1_JNT_parentConstraint1.tg[0].tt"
-		;
-connectAttr "Thumb_Finger_Base.rp" "Pinky_Finger1_JNT_parentConstraint1.tg[0].trp"
-		;
-connectAttr "Thumb_Finger_Base.rpt" "Pinky_Finger1_JNT_parentConstraint1.tg[0].trt"
-		;
-connectAttr "Thumb_Finger_Base.r" "Pinky_Finger1_JNT_parentConstraint1.tg[0].tr"
-		;
-connectAttr "Thumb_Finger_Base.ro" "Pinky_Finger1_JNT_parentConstraint1.tg[0].tro"
-		;
-connectAttr "Thumb_Finger_Base.s" "Pinky_Finger1_JNT_parentConstraint1.tg[0].ts"
-		;
-connectAttr "Thumb_Finger_Base.pm" "Pinky_Finger1_JNT_parentConstraint1.tg[0].tpm"
-		;
-connectAttr "Pinky_Finger1_JNT_parentConstraint1.w0" "Pinky_Finger1_JNT_parentConstraint1.tg[0].tw"
-		;
-connectAttr "Pinky_Finger1_JNT.ssc" "Pinky_Finger1_JNT_scaleConstraint1.tsc";
-connectAttr "Pinky_Finger1_JNT.pim" "Pinky_Finger1_JNT_scaleConstraint1.cpim";
-connectAttr "Thumb_Finger_Base.s" "Pinky_Finger1_JNT_scaleConstraint1.tg[0].ts";
-connectAttr "Thumb_Finger_Base.pm" "Pinky_Finger1_JNT_scaleConstraint1.tg[0].tpm"
-		;
-connectAttr "Pinky_Finger1_JNT_scaleConstraint1.w0" "Pinky_Finger1_JNT_scaleConstraint1.tg[0].tw"
-		;
-connectAttr "Pinky_Finger_JNT.ro" "Pinky_Finger_JNT_parentConstraint1.cro";
-connectAttr "Pinky_Finger_JNT.pim" "Pinky_Finger_JNT_parentConstraint1.cpim";
-connectAttr "Pinky_Finger_JNT.rp" "Pinky_Finger_JNT_parentConstraint1.crp";
-connectAttr "Pinky_Finger_JNT.rpt" "Pinky_Finger_JNT_parentConstraint1.crt";
-connectAttr "Pinky_Finger_JNT.jo" "Pinky_Finger_JNT_parentConstraint1.cjo";
-connectAttr "Thumb_Base_CNTL.t" "Pinky_Finger_JNT_parentConstraint1.tg[0].tt";
-connectAttr "Thumb_Base_CNTL.rp" "Pinky_Finger_JNT_parentConstraint1.tg[0].trp";
-connectAttr "Thumb_Base_CNTL.rpt" "Pinky_Finger_JNT_parentConstraint1.tg[0].trt"
-		;
-connectAttr "Thumb_Base_CNTL.r" "Pinky_Finger_JNT_parentConstraint1.tg[0].tr";
-connectAttr "Thumb_Base_CNTL.ro" "Pinky_Finger_JNT_parentConstraint1.tg[0].tro";
-connectAttr "Thumb_Base_CNTL.s" "Pinky_Finger_JNT_parentConstraint1.tg[0].ts";
-connectAttr "Thumb_Base_CNTL.pm" "Pinky_Finger_JNT_parentConstraint1.tg[0].tpm";
-connectAttr "Pinky_Finger_JNT_parentConstraint1.w0" "Pinky_Finger_JNT_parentConstraint1.tg[0].tw"
-		;
-connectAttr "Pinky_Finger_JNT.ssc" "Pinky_Finger_JNT_scaleConstraint1.tsc";
-connectAttr "Pinky_Finger_JNT.pim" "Pinky_Finger_JNT_scaleConstraint1.cpim";
-connectAttr "Thumb_Base_CNTL.s" "Pinky_Finger_JNT_scaleConstraint1.tg[0].ts";
-connectAttr "Thumb_Base_CNTL.pm" "Pinky_Finger_JNT_scaleConstraint1.tg[0].tpm";
-connectAttr "Pinky_Finger_JNT_scaleConstraint1.w0" "Pinky_Finger_JNT_scaleConstraint1.tg[0].tw"
-		;
-connectAttr "Wrist_JNT.ro" "Wrist_JNT_parentConstraint1.cro";
-connectAttr "Wrist_JNT.pim" "Wrist_JNT_parentConstraint1.cpim";
-connectAttr "Wrist_JNT.rp" "Wrist_JNT_parentConstraint1.crp";
-connectAttr "Wrist_JNT.rpt" "Wrist_JNT_parentConstraint1.crt";
-connectAttr "Wrist_JNT.jo" "Wrist_JNT_parentConstraint1.cjo";
-connectAttr "Wrist_CNTL.t" "Wrist_JNT_parentConstraint1.tg[0].tt";
-connectAttr "Wrist_CNTL.rp" "Wrist_JNT_parentConstraint1.tg[0].trp";
-connectAttr "Wrist_CNTL.rpt" "Wrist_JNT_parentConstraint1.tg[0].trt";
-connectAttr "Wrist_CNTL.r" "Wrist_JNT_parentConstraint1.tg[0].tr";
-connectAttr "Wrist_CNTL.ro" "Wrist_JNT_parentConstraint1.tg[0].tro";
-connectAttr "Wrist_CNTL.s" "Wrist_JNT_parentConstraint1.tg[0].ts";
-connectAttr "Wrist_CNTL.pm" "Wrist_JNT_parentConstraint1.tg[0].tpm";
-connectAttr "Wrist_JNT_parentConstraint1.w0" "Wrist_JNT_parentConstraint1.tg[0].tw"
-		;
-connectAttr "Wrist_JNT.ssc" "Wrist_JNT_scaleConstraint1.tsc";
-connectAttr "Wrist_JNT.pim" "Wrist_JNT_scaleConstraint1.cpim";
-connectAttr "Wrist_CNTL.s" "Wrist_JNT_scaleConstraint1.tg[0].ts";
-connectAttr "Wrist_CNTL.pm" "Wrist_JNT_scaleConstraint1.tg[0].tpm";
-connectAttr "Wrist_JNT_scaleConstraint1.w0" "Wrist_JNT_scaleConstraint1.tg[0].tw"
-		;
-connectAttr "Elbow_JNT.ro" "Elbow_JNT_parentConstraint1.cro";
-connectAttr "Elbow_JNT.pim" "Elbow_JNT_parentConstraint1.cpim";
-connectAttr "Elbow_JNT.rp" "Elbow_JNT_parentConstraint1.crp";
-connectAttr "Elbow_JNT.rpt" "Elbow_JNT_parentConstraint1.crt";
-connectAttr "Elbow_JNT.jo" "Elbow_JNT_parentConstraint1.cjo";
-connectAttr "Elbow_CNTL.t" "Elbow_JNT_parentConstraint1.tg[0].tt";
-connectAttr "Elbow_CNTL.rp" "Elbow_JNT_parentConstraint1.tg[0].trp";
-connectAttr "Elbow_CNTL.rpt" "Elbow_JNT_parentConstraint1.tg[0].trt";
-connectAttr "Elbow_CNTL.r" "Elbow_JNT_parentConstraint1.tg[0].tr";
-connectAttr "Elbow_CNTL.ro" "Elbow_JNT_parentConstraint1.tg[0].tro";
-connectAttr "Elbow_CNTL.s" "Elbow_JNT_parentConstraint1.tg[0].ts";
-connectAttr "Elbow_CNTL.pm" "Elbow_JNT_parentConstraint1.tg[0].tpm";
-connectAttr "Elbow_JNT_parentConstraint1.w0" "Elbow_JNT_parentConstraint1.tg[0].tw"
-		;
-connectAttr "Elbow_JNT.ssc" "Elbow_JNT_scaleConstraint1.tsc";
-connectAttr "Elbow_JNT.pim" "Elbow_JNT_scaleConstraint1.cpim";
-connectAttr "Elbow_CNTL.s" "Elbow_JNT_scaleConstraint1.tg[0].ts";
-connectAttr "Elbow_CNTL.pm" "Elbow_JNT_scaleConstraint1.tg[0].tpm";
-connectAttr "Elbow_JNT_scaleConstraint1.w0" "Elbow_JNT_scaleConstraint1.tg[0].tw"
-		;
-connectAttr "Shoulder_JNT.ro" "Shoulder_JNT_parentConstraint1.cro";
-connectAttr "Shoulder_JNT.pim" "Shoulder_JNT_parentConstraint1.cpim";
-connectAttr "Shoulder_JNT.rp" "Shoulder_JNT_parentConstraint1.crp";
-connectAttr "Shoulder_JNT.rpt" "Shoulder_JNT_parentConstraint1.crt";
-connectAttr "Shoulder_JNT.jo" "Shoulder_JNT_parentConstraint1.cjo";
-connectAttr "Shoulder_CNTL.t" "Shoulder_JNT_parentConstraint1.tg[0].tt";
-connectAttr "Shoulder_CNTL.rp" "Shoulder_JNT_parentConstraint1.tg[0].trp";
-connectAttr "Shoulder_CNTL.rpt" "Shoulder_JNT_parentConstraint1.tg[0].trt";
-connectAttr "Shoulder_CNTL.r" "Shoulder_JNT_parentConstraint1.tg[0].tr";
-connectAttr "Shoulder_CNTL.ro" "Shoulder_JNT_parentConstraint1.tg[0].tro";
-connectAttr "Shoulder_CNTL.s" "Shoulder_JNT_parentConstraint1.tg[0].ts";
-connectAttr "Shoulder_CNTL.pm" "Shoulder_JNT_parentConstraint1.tg[0].tpm";
-connectAttr "Shoulder_JNT_parentConstraint1.w0" "Shoulder_JNT_parentConstraint1.tg[0].tw"
-		;
-connectAttr "Shoulder_JNT.pim" "Shoulder_JNT_scaleConstraint1.cpim";
-connectAttr "Shoulder_CNTL.s" "Shoulder_JNT_scaleConstraint1.tg[0].ts";
-connectAttr "Shoulder_CNTL.pm" "Shoulder_JNT_scaleConstraint1.tg[0].tpm";
-connectAttr "Shoulder_JNT_scaleConstraint1.w0" "Shoulder_JNT_scaleConstraint1.tg[0].tw"
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|Elbow_JNT_parentConstraint1.crz" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT.rz"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT.is"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|Elbow_JNT_scaleConstraint1.csx" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT.sx"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|Elbow_JNT_scaleConstraint1.csy" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT.sy"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|Elbow_JNT_scaleConstraint1.csz" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT.sz"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|Elbow_JNT_parentConstraint1.ctx" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT.tx"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|Elbow_JNT_parentConstraint1.cty" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT.ty"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|Elbow_JNT_parentConstraint1.ctz" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT.tz"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT.is"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT.is"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT.is"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT.is"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.is"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Wrist_JNT_scaleConstraint1.csx" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.sx"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Wrist_JNT_scaleConstraint1.csy" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.sy"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Wrist_JNT_scaleConstraint1.csz" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.sz"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Wrist_JNT_parentConstraint1.crx" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.rx"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Wrist_JNT_parentConstraint1.cry" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.ry"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Wrist_JNT_parentConstraint1.crz" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.rz"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Wrist_JNT_parentConstraint1.ctx" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.tx"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Wrist_JNT_parentConstraint1.cty" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.ty"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Wrist_JNT_parentConstraint1.ctz" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.tz"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb_Base_JNT_parentConstraint1.crx" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT.rx"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb_Base_JNT_parentConstraint1.cry" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT.ry"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb_Base_JNT_parentConstraint1.crz" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT.rz"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT.is"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb_Base_JNT_scaleConstraint1.csx" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT.sx"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb_Base_JNT_scaleConstraint1.csy" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT.sy"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb_Base_JNT_scaleConstraint1.csz" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT.sz"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb_Base_JNT_parentConstraint1.ctx" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT.tx"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb_Base_JNT_parentConstraint1.cty" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT.ty"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb_Base_JNT_parentConstraint1.ctz" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT.tz"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb1_JNT_parentConstraint1.crx" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT.rx"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb1_JNT_parentConstraint1.cry" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT.ry"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb1_JNT_parentConstraint1.crz" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT.rz"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT.is"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb1_JNT_scaleConstraint1.csx" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT.sx"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb1_JNT_scaleConstraint1.csy" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT.sy"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb1_JNT_scaleConstraint1.csz" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT.sz"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb1_JNT_parentConstraint1.ctx" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT.tx"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb1_JNT_parentConstraint1.cty" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT.ty"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb1_JNT_parentConstraint1.ctz" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT.tz"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT|Thumb2_JNT_parentConstraint1.crx" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT.rx"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT|Thumb2_JNT_parentConstraint1.cry" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT.ry"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT|Thumb2_JNT_parentConstraint1.crz" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT.rz"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT.is"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT|Thumb2_JNT_scaleConstraint1.csx" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT.sx"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT|Thumb2_JNT_scaleConstraint1.csy" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT.sy"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT|Thumb2_JNT_scaleConstraint1.csz" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT.sz"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT|Thumb2_JNT_parentConstraint1.ctx" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT.tx"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT|Thumb2_JNT_parentConstraint1.cty" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT.ty"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT|Thumb2_JNT_parentConstraint1.ctz" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT.tz"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT|Thumb3_JNT.is"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT.ro" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT|Thumb2_JNT_parentConstraint1.cro"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT.pim" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT|Thumb2_JNT_parentConstraint1.cpim"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT.rp" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT|Thumb2_JNT_parentConstraint1.crp"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT.rpt" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT|Thumb2_JNT_parentConstraint1.crt"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT.jo" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT|Thumb2_JNT_parentConstraint1.cjo"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL|null8|Pinky_Finger_Base|null9|Pinky_Finger_Base1.t" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT|Thumb2_JNT_parentConstraint1.tg[0].tt"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL|null8|Pinky_Finger_Base|null9|Pinky_Finger_Base1.rp" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT|Thumb2_JNT_parentConstraint1.tg[0].trp"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL|null8|Pinky_Finger_Base|null9|Pinky_Finger_Base1.rpt" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT|Thumb2_JNT_parentConstraint1.tg[0].trt"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL|null8|Pinky_Finger_Base|null9|Pinky_Finger_Base1.r" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT|Thumb2_JNT_parentConstraint1.tg[0].tr"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL|null8|Pinky_Finger_Base|null9|Pinky_Finger_Base1.ro" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT|Thumb2_JNT_parentConstraint1.tg[0].tro"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL|null8|Pinky_Finger_Base|null9|Pinky_Finger_Base1.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT|Thumb2_JNT_parentConstraint1.tg[0].ts"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL|null8|Pinky_Finger_Base|null9|Pinky_Finger_Base1.pm" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT|Thumb2_JNT_parentConstraint1.tg[0].tpm"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT|Thumb2_JNT_parentConstraint1.w0" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT|Thumb2_JNT_parentConstraint1.tg[0].tw"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT.ssc" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT|Thumb2_JNT_scaleConstraint1.tsc"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT.pim" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT|Thumb2_JNT_scaleConstraint1.cpim"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL|null8|Pinky_Finger_Base|null9|Pinky_Finger_Base1.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT|Thumb2_JNT_scaleConstraint1.tg[0].ts"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL|null8|Pinky_Finger_Base|null9|Pinky_Finger_Base1.pm" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT|Thumb2_JNT_scaleConstraint1.tg[0].tpm"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT|Thumb2_JNT_scaleConstraint1.w0" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT|Thumb2_JNT_scaleConstraint1.tg[0].tw"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT.ro" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb1_JNT_parentConstraint1.cro"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT.pim" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb1_JNT_parentConstraint1.cpim"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT.rp" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb1_JNT_parentConstraint1.crp"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT.rpt" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb1_JNT_parentConstraint1.crt"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT.jo" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb1_JNT_parentConstraint1.cjo"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL|null8|Pinky_Finger_Base.t" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb1_JNT_parentConstraint1.tg[0].tt"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL|null8|Pinky_Finger_Base.rp" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb1_JNT_parentConstraint1.tg[0].trp"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL|null8|Pinky_Finger_Base.rpt" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb1_JNT_parentConstraint1.tg[0].trt"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL|null8|Pinky_Finger_Base.r" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb1_JNT_parentConstraint1.tg[0].tr"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL|null8|Pinky_Finger_Base.ro" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb1_JNT_parentConstraint1.tg[0].tro"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL|null8|Pinky_Finger_Base.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb1_JNT_parentConstraint1.tg[0].ts"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL|null8|Pinky_Finger_Base.pm" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb1_JNT_parentConstraint1.tg[0].tpm"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb1_JNT_parentConstraint1.w0" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb1_JNT_parentConstraint1.tg[0].tw"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT.ssc" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb1_JNT_scaleConstraint1.tsc"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT.pim" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb1_JNT_scaleConstraint1.cpim"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL|null8|Pinky_Finger_Base.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb1_JNT_scaleConstraint1.tg[0].ts"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL|null8|Pinky_Finger_Base.pm" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb1_JNT_scaleConstraint1.tg[0].tpm"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb1_JNT_scaleConstraint1.w0" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb1_JNT_scaleConstraint1.tg[0].tw"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT.ro" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb_Base_JNT_parentConstraint1.cro"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT.pim" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb_Base_JNT_parentConstraint1.cpim"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT.rp" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb_Base_JNT_parentConstraint1.crp"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT.rpt" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb_Base_JNT_parentConstraint1.crt"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT.jo" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb_Base_JNT_parentConstraint1.cjo"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL.t" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb_Base_JNT_parentConstraint1.tg[0].tt"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL.rp" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb_Base_JNT_parentConstraint1.tg[0].trp"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL.rpt" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb_Base_JNT_parentConstraint1.tg[0].trt"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL.r" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb_Base_JNT_parentConstraint1.tg[0].tr"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL.ro" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb_Base_JNT_parentConstraint1.tg[0].tro"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb_Base_JNT_parentConstraint1.tg[0].ts"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL.pm" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb_Base_JNT_parentConstraint1.tg[0].tpm"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb_Base_JNT_parentConstraint1.w0" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb_Base_JNT_parentConstraint1.tg[0].tw"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT.ssc" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb_Base_JNT_scaleConstraint1.tsc"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT.pim" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb_Base_JNT_scaleConstraint1.cpim"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb_Base_JNT_scaleConstraint1.tg[0].ts"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL.pm" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb_Base_JNT_scaleConstraint1.tg[0].tpm"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb_Base_JNT_scaleConstraint1.w0" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb_Base_JNT_scaleConstraint1.tg[0].tw"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|Pointer_Finger_Base_JNT_parentConstraint1.crx" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT.rx"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|Pointer_Finger_Base_JNT_parentConstraint1.cry" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT.ry"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|Pointer_Finger_Base_JNT_parentConstraint1.crz" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT.rz"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT.is"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|Pointer_Finger_Base_JNT_scaleConstraint1.csx" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT.sx"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|Pointer_Finger_Base_JNT_scaleConstraint1.csy" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT.sy"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|Pointer_Finger_Base_JNT_scaleConstraint1.csz" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT.sz"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|Pointer_Finger_Base_JNT_parentConstraint1.ctx" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT.tx"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|Pointer_Finger_Base_JNT_parentConstraint1.cty" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT.ty"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|Pointer_Finger_Base_JNT_parentConstraint1.ctz" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT.tz"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger1_JNT_parentConstraint1.crx" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT.rx"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger1_JNT_parentConstraint1.cry" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT.ry"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger1_JNT_parentConstraint1.crz" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT.rz"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT.is"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger1_JNT_scaleConstraint1.csx" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT.sx"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger1_JNT_scaleConstraint1.csy" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT.sy"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger1_JNT_scaleConstraint1.csz" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT.sz"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger1_JNT_parentConstraint1.ctx" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT.tx"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger1_JNT_parentConstraint1.cty" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT.ty"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger1_JNT_parentConstraint1.ctz" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT.tz"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT|P_Finger2_JNT_parentConstraint1.crx" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT.rx"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT|P_Finger2_JNT_parentConstraint1.cry" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT.ry"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT|P_Finger2_JNT_parentConstraint1.crz" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT.rz"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT.is"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT|P_Finger2_JNT_scaleConstraint1.csx" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT.sx"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT|P_Finger2_JNT_scaleConstraint1.csy" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT.sy"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT|P_Finger2_JNT_scaleConstraint1.csz" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT.sz"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT|P_Finger2_JNT_parentConstraint1.ctx" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT.tx"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT|P_Finger2_JNT_parentConstraint1.cty" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT.ty"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT|P_Finger2_JNT_parentConstraint1.ctz" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT.tz"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT|P_Finger3_JNT.is"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT.ro" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT|P_Finger2_JNT_parentConstraint1.cro"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT.pim" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT|P_Finger2_JNT_parentConstraint1.cpim"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT.rp" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT|P_Finger2_JNT_parentConstraint1.crp"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT.rpt" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT|P_Finger2_JNT_parentConstraint1.crt"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT.jo" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT|P_Finger2_JNT_parentConstraint1.cjo"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL|null6|Ring_Finger_Base|null7|Ring_Finger_Base1.t" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT|P_Finger2_JNT_parentConstraint1.tg[0].tt"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL|null6|Ring_Finger_Base|null7|Ring_Finger_Base1.rp" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT|P_Finger2_JNT_parentConstraint1.tg[0].trp"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL|null6|Ring_Finger_Base|null7|Ring_Finger_Base1.rpt" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT|P_Finger2_JNT_parentConstraint1.tg[0].trt"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL|null6|Ring_Finger_Base|null7|Ring_Finger_Base1.r" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT|P_Finger2_JNT_parentConstraint1.tg[0].tr"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL|null6|Ring_Finger_Base|null7|Ring_Finger_Base1.ro" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT|P_Finger2_JNT_parentConstraint1.tg[0].tro"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL|null6|Ring_Finger_Base|null7|Ring_Finger_Base1.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT|P_Finger2_JNT_parentConstraint1.tg[0].ts"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL|null6|Ring_Finger_Base|null7|Ring_Finger_Base1.pm" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT|P_Finger2_JNT_parentConstraint1.tg[0].tpm"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT|P_Finger2_JNT_parentConstraint1.w0" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT|P_Finger2_JNT_parentConstraint1.tg[0].tw"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT.ssc" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT|P_Finger2_JNT_scaleConstraint1.tsc"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT.pim" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT|P_Finger2_JNT_scaleConstraint1.cpim"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL|null6|Ring_Finger_Base|null7|Ring_Finger_Base1.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT|P_Finger2_JNT_scaleConstraint1.tg[0].ts"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL|null6|Ring_Finger_Base|null7|Ring_Finger_Base1.pm" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT|P_Finger2_JNT_scaleConstraint1.tg[0].tpm"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT|P_Finger2_JNT_scaleConstraint1.w0" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT|P_Finger2_JNT_scaleConstraint1.tg[0].tw"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT.ro" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger1_JNT_parentConstraint1.cro"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT.pim" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger1_JNT_parentConstraint1.cpim"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT.rp" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger1_JNT_parentConstraint1.crp"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT.rpt" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger1_JNT_parentConstraint1.crt"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT.jo" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger1_JNT_parentConstraint1.cjo"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL|null6|Ring_Finger_Base.t" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger1_JNT_parentConstraint1.tg[0].tt"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL|null6|Ring_Finger_Base.rp" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger1_JNT_parentConstraint1.tg[0].trp"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL|null6|Ring_Finger_Base.rpt" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger1_JNT_parentConstraint1.tg[0].trt"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL|null6|Ring_Finger_Base.r" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger1_JNT_parentConstraint1.tg[0].tr"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL|null6|Ring_Finger_Base.ro" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger1_JNT_parentConstraint1.tg[0].tro"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL|null6|Ring_Finger_Base.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger1_JNT_parentConstraint1.tg[0].ts"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL|null6|Ring_Finger_Base.pm" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger1_JNT_parentConstraint1.tg[0].tpm"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger1_JNT_parentConstraint1.w0" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger1_JNT_parentConstraint1.tg[0].tw"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT.ssc" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger1_JNT_scaleConstraint1.tsc"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT.pim" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger1_JNT_scaleConstraint1.cpim"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL|null6|Ring_Finger_Base.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger1_JNT_scaleConstraint1.tg[0].ts"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL|null6|Ring_Finger_Base.pm" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger1_JNT_scaleConstraint1.tg[0].tpm"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger1_JNT_scaleConstraint1.w0" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger1_JNT_scaleConstraint1.tg[0].tw"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT.ro" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|Pointer_Finger_Base_JNT_parentConstraint1.cro"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT.pim" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|Pointer_Finger_Base_JNT_parentConstraint1.cpim"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT.rp" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|Pointer_Finger_Base_JNT_parentConstraint1.crp"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT.rpt" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|Pointer_Finger_Base_JNT_parentConstraint1.crt"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT.jo" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|Pointer_Finger_Base_JNT_parentConstraint1.cjo"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL.t" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|Pointer_Finger_Base_JNT_parentConstraint1.tg[0].tt"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL.rp" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|Pointer_Finger_Base_JNT_parentConstraint1.tg[0].trp"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL.rpt" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|Pointer_Finger_Base_JNT_parentConstraint1.tg[0].trt"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL.r" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|Pointer_Finger_Base_JNT_parentConstraint1.tg[0].tr"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL.ro" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|Pointer_Finger_Base_JNT_parentConstraint1.tg[0].tro"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|Pointer_Finger_Base_JNT_parentConstraint1.tg[0].ts"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL.pm" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|Pointer_Finger_Base_JNT_parentConstraint1.tg[0].tpm"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|Pointer_Finger_Base_JNT_parentConstraint1.w0" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|Pointer_Finger_Base_JNT_parentConstraint1.tg[0].tw"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT.ssc" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|Pointer_Finger_Base_JNT_scaleConstraint1.tsc"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT.pim" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|Pointer_Finger_Base_JNT_scaleConstraint1.cpim"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|Pointer_Finger_Base_JNT_scaleConstraint1.tg[0].ts"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL.pm" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|Pointer_Finger_Base_JNT_scaleConstraint1.tg[0].tpm"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|Pointer_Finger_Base_JNT_scaleConstraint1.w0" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|Pointer_Finger_Base_JNT_scaleConstraint1.tg[0].tw"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger_JNT_parentConstraint1.crx" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT.rx"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger_JNT_parentConstraint1.cry" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT.ry"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger_JNT_parentConstraint1.crz" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT.rz"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT.is"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger_JNT_scaleConstraint1.csx" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT.sx"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger_JNT_scaleConstraint1.csy" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT.sy"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger_JNT_scaleConstraint1.csz" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT.sz"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger_JNT_parentConstraint1.ctx" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT.tx"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger_JNT_parentConstraint1.cty" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT.ty"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger_JNT_parentConstraint1.ctz" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT.tz"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger1_JNT_parentConstraint1.crx" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT.rx"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger1_JNT_parentConstraint1.cry" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT.ry"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger1_JNT_parentConstraint1.crz" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT.rz"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT.is"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger1_JNT_scaleConstraint1.csx" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT.sx"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger1_JNT_scaleConstraint1.csy" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT.sy"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger1_JNT_scaleConstraint1.csz" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT.sz"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger1_JNT_parentConstraint1.ctx" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT.tx"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger1_JNT_parentConstraint1.cty" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT.ty"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger1_JNT_parentConstraint1.ctz" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT.tz"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT|Mid_Finger2_JNT_parentConstraint1.crx" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT.rx"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT|Mid_Finger2_JNT_parentConstraint1.cry" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT.ry"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT|Mid_Finger2_JNT_parentConstraint1.crz" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT.rz"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT.is"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT|Mid_Finger2_JNT_scaleConstraint1.csx" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT.sx"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT|Mid_Finger2_JNT_scaleConstraint1.csy" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT.sy"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT|Mid_Finger2_JNT_scaleConstraint1.csz" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT.sz"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT|Mid_Finger2_JNT_parentConstraint1.ctx" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT.tx"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT|Mid_Finger2_JNT_parentConstraint1.cty" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT.ty"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT|Mid_Finger2_JNT_parentConstraint1.ctz" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT.tz"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT|Mid_Finger3_JNT.is"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT.ro" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT|Mid_Finger2_JNT_parentConstraint1.cro"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT.pim" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT|Mid_Finger2_JNT_parentConstraint1.cpim"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT.rp" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT|Mid_Finger2_JNT_parentConstraint1.crp"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT.rpt" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT|Mid_Finger2_JNT_parentConstraint1.crt"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT.jo" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT|Mid_Finger2_JNT_parentConstraint1.cjo"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL|group3|M_Finger_Base|null5|M_Finger_Base1.t" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT|Mid_Finger2_JNT_parentConstraint1.tg[0].tt"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL|group3|M_Finger_Base|null5|M_Finger_Base1.rp" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT|Mid_Finger2_JNT_parentConstraint1.tg[0].trp"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL|group3|M_Finger_Base|null5|M_Finger_Base1.rpt" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT|Mid_Finger2_JNT_parentConstraint1.tg[0].trt"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL|group3|M_Finger_Base|null5|M_Finger_Base1.r" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT|Mid_Finger2_JNT_parentConstraint1.tg[0].tr"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL|group3|M_Finger_Base|null5|M_Finger_Base1.ro" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT|Mid_Finger2_JNT_parentConstraint1.tg[0].tro"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL|group3|M_Finger_Base|null5|M_Finger_Base1.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT|Mid_Finger2_JNT_parentConstraint1.tg[0].ts"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL|group3|M_Finger_Base|null5|M_Finger_Base1.pm" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT|Mid_Finger2_JNT_parentConstraint1.tg[0].tpm"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT|Mid_Finger2_JNT_parentConstraint1.w0" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT|Mid_Finger2_JNT_parentConstraint1.tg[0].tw"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT.ssc" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT|Mid_Finger2_JNT_scaleConstraint1.tsc"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT.pim" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT|Mid_Finger2_JNT_scaleConstraint1.cpim"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL|group3|M_Finger_Base|null5|M_Finger_Base1.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT|Mid_Finger2_JNT_scaleConstraint1.tg[0].ts"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL|group3|M_Finger_Base|null5|M_Finger_Base1.pm" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT|Mid_Finger2_JNT_scaleConstraint1.tg[0].tpm"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT|Mid_Finger2_JNT_scaleConstraint1.w0" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT|Mid_Finger2_JNT_scaleConstraint1.tg[0].tw"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT.ro" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger1_JNT_parentConstraint1.cro"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT.pim" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger1_JNT_parentConstraint1.cpim"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT.rp" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger1_JNT_parentConstraint1.crp"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT.rpt" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger1_JNT_parentConstraint1.crt"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT.jo" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger1_JNT_parentConstraint1.cjo"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL|group3|M_Finger_Base.t" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger1_JNT_parentConstraint1.tg[0].tt"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL|group3|M_Finger_Base.rp" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger1_JNT_parentConstraint1.tg[0].trp"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL|group3|M_Finger_Base.rpt" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger1_JNT_parentConstraint1.tg[0].trt"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL|group3|M_Finger_Base.r" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger1_JNT_parentConstraint1.tg[0].tr"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL|group3|M_Finger_Base.ro" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger1_JNT_parentConstraint1.tg[0].tro"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL|group3|M_Finger_Base.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger1_JNT_parentConstraint1.tg[0].ts"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL|group3|M_Finger_Base.pm" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger1_JNT_parentConstraint1.tg[0].tpm"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger1_JNT_parentConstraint1.w0" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger1_JNT_parentConstraint1.tg[0].tw"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT.ssc" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger1_JNT_scaleConstraint1.tsc"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT.pim" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger1_JNT_scaleConstraint1.cpim"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL|group3|M_Finger_Base.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger1_JNT_scaleConstraint1.tg[0].ts"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL|group3|M_Finger_Base.pm" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger1_JNT_scaleConstraint1.tg[0].tpm"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger1_JNT_scaleConstraint1.w0" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger1_JNT_scaleConstraint1.tg[0].tw"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT.ro" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger_JNT_parentConstraint1.cro"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT.pim" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger_JNT_parentConstraint1.cpim"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT.rp" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger_JNT_parentConstraint1.crp"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT.rpt" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger_JNT_parentConstraint1.crt"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT.jo" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger_JNT_parentConstraint1.cjo"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL.t" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger_JNT_parentConstraint1.tg[0].tt"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL.rp" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger_JNT_parentConstraint1.tg[0].trp"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL.rpt" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger_JNT_parentConstraint1.tg[0].trt"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL.r" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger_JNT_parentConstraint1.tg[0].tr"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL.ro" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger_JNT_parentConstraint1.tg[0].tro"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger_JNT_parentConstraint1.tg[0].ts"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL.pm" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger_JNT_parentConstraint1.tg[0].tpm"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger_JNT_parentConstraint1.w0" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger_JNT_parentConstraint1.tg[0].tw"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT.ssc" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger_JNT_scaleConstraint1.tsc"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT.pim" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger_JNT_scaleConstraint1.cpim"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger_JNT_scaleConstraint1.tg[0].ts"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL.pm" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger_JNT_scaleConstraint1.tg[0].tpm"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger_JNT_scaleConstraint1.w0" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger_JNT_scaleConstraint1.tg[0].tw"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_Finger_JNT_parentConstraint1.crx" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT.rx"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_Finger_JNT_parentConstraint1.cry" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT.ry"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_Finger_JNT_parentConstraint1.crz" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT.rz"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT.is"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_Finger_JNT_scaleConstraint1.csx" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT.sx"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_Finger_JNT_scaleConstraint1.csy" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT.sy"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_Finger_JNT_scaleConstraint1.csz" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT.sz"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_Finger_JNT_parentConstraint1.ctx" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT.tx"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_Finger_JNT_parentConstraint1.cty" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT.ty"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_Finger_JNT_parentConstraint1.ctz" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT.tz"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger1_JNT_parentConstraint1.crx" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT.rx"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger1_JNT_parentConstraint1.cry" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT.ry"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger1_JNT_parentConstraint1.crz" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT.rz"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT.is"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger1_JNT_scaleConstraint1.csx" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT.sx"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger1_JNT_scaleConstraint1.csy" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT.sy"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger1_JNT_scaleConstraint1.csz" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT.sz"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger1_JNT_parentConstraint1.ctx" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT.tx"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger1_JNT_parentConstraint1.cty" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT.ty"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger1_JNT_parentConstraint1.ctz" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT.tz"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT|Ring_FInger2_JNT_parentConstraint1.crx" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT.rx"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT|Ring_FInger2_JNT_parentConstraint1.cry" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT.ry"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT|Ring_FInger2_JNT_parentConstraint1.crz" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT.rz"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT.is"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT|Ring_FInger2_JNT_scaleConstraint1.csx" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT.sx"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT|Ring_FInger2_JNT_scaleConstraint1.csy" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT.sy"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT|Ring_FInger2_JNT_scaleConstraint1.csz" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT.sz"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT|Ring_FInger2_JNT_parentConstraint1.ctx" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT.tx"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT|Ring_FInger2_JNT_parentConstraint1.cty" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT.ty"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT|Ring_FInger2_JNT_parentConstraint1.ctz" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT.tz"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT|Ring_FInger3_JNT.is"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT.ro" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT|Ring_FInger2_JNT_parentConstraint1.cro"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT.pim" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT|Ring_FInger2_JNT_parentConstraint1.cpim"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT.rp" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT|Ring_FInger2_JNT_parentConstraint1.crp"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT.rpt" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT|Ring_FInger2_JNT_parentConstraint1.crt"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT.jo" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT|Ring_FInger2_JNT_parentConstraint1.cjo"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL|null3|P_Finger_Base|null4|P_Finger_Base1.t" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT|Ring_FInger2_JNT_parentConstraint1.tg[0].tt"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL|null3|P_Finger_Base|null4|P_Finger_Base1.rp" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT|Ring_FInger2_JNT_parentConstraint1.tg[0].trp"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL|null3|P_Finger_Base|null4|P_Finger_Base1.rpt" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT|Ring_FInger2_JNT_parentConstraint1.tg[0].trt"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL|null3|P_Finger_Base|null4|P_Finger_Base1.r" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT|Ring_FInger2_JNT_parentConstraint1.tg[0].tr"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL|null3|P_Finger_Base|null4|P_Finger_Base1.ro" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT|Ring_FInger2_JNT_parentConstraint1.tg[0].tro"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL|null3|P_Finger_Base|null4|P_Finger_Base1.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT|Ring_FInger2_JNT_parentConstraint1.tg[0].ts"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL|null3|P_Finger_Base|null4|P_Finger_Base1.pm" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT|Ring_FInger2_JNT_parentConstraint1.tg[0].tpm"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT|Ring_FInger2_JNT_parentConstraint1.w0" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT|Ring_FInger2_JNT_parentConstraint1.tg[0].tw"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT.ssc" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT|Ring_FInger2_JNT_scaleConstraint1.tsc"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT.pim" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT|Ring_FInger2_JNT_scaleConstraint1.cpim"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL|null3|P_Finger_Base|null4|P_Finger_Base1.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT|Ring_FInger2_JNT_scaleConstraint1.tg[0].ts"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL|null3|P_Finger_Base|null4|P_Finger_Base1.pm" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT|Ring_FInger2_JNT_scaleConstraint1.tg[0].tpm"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT|Ring_FInger2_JNT_scaleConstraint1.w0" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT|Ring_FInger2_JNT_scaleConstraint1.tg[0].tw"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT.ro" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger1_JNT_parentConstraint1.cro"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT.pim" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger1_JNT_parentConstraint1.cpim"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT.rp" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger1_JNT_parentConstraint1.crp"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT.rpt" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger1_JNT_parentConstraint1.crt"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT.jo" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger1_JNT_parentConstraint1.cjo"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL|null3|P_Finger_Base.t" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger1_JNT_parentConstraint1.tg[0].tt"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL|null3|P_Finger_Base.rp" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger1_JNT_parentConstraint1.tg[0].trp"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL|null3|P_Finger_Base.rpt" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger1_JNT_parentConstraint1.tg[0].trt"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL|null3|P_Finger_Base.r" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger1_JNT_parentConstraint1.tg[0].tr"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL|null3|P_Finger_Base.ro" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger1_JNT_parentConstraint1.tg[0].tro"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL|null3|P_Finger_Base.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger1_JNT_parentConstraint1.tg[0].ts"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL|null3|P_Finger_Base.pm" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger1_JNT_parentConstraint1.tg[0].tpm"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger1_JNT_parentConstraint1.w0" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger1_JNT_parentConstraint1.tg[0].tw"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT.ssc" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger1_JNT_scaleConstraint1.tsc"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT.pim" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger1_JNT_scaleConstraint1.cpim"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL|null3|P_Finger_Base.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger1_JNT_scaleConstraint1.tg[0].ts"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL|null3|P_Finger_Base.pm" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger1_JNT_scaleConstraint1.tg[0].tpm"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger1_JNT_scaleConstraint1.w0" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger1_JNT_scaleConstraint1.tg[0].tw"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT.ro" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_Finger_JNT_parentConstraint1.cro"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT.pim" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_Finger_JNT_parentConstraint1.cpim"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT.rp" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_Finger_JNT_parentConstraint1.crp"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT.rpt" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_Finger_JNT_parentConstraint1.crt"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT.jo" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_Finger_JNT_parentConstraint1.cjo"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL.t" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_Finger_JNT_parentConstraint1.tg[0].tt"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL.rp" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_Finger_JNT_parentConstraint1.tg[0].trp"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL.rpt" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_Finger_JNT_parentConstraint1.tg[0].trt"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL.r" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_Finger_JNT_parentConstraint1.tg[0].tr"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL.ro" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_Finger_JNT_parentConstraint1.tg[0].tro"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_Finger_JNT_parentConstraint1.tg[0].ts"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL.pm" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_Finger_JNT_parentConstraint1.tg[0].tpm"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_Finger_JNT_parentConstraint1.w0" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_Finger_JNT_parentConstraint1.tg[0].tw"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT.ssc" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_Finger_JNT_scaleConstraint1.tsc"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT.pim" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_Finger_JNT_scaleConstraint1.cpim"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_Finger_JNT_scaleConstraint1.tg[0].ts"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL.pm" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_Finger_JNT_scaleConstraint1.tg[0].tpm"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_Finger_JNT_scaleConstraint1.w0" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_Finger_JNT_scaleConstraint1.tg[0].tw"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT.is"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger_JNT_scaleConstraint1.csx" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT.sx"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger_JNT_scaleConstraint1.csy" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT.sy"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger_JNT_scaleConstraint1.csz" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT.sz"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger_JNT_parentConstraint1.crx" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT.rx"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger_JNT_parentConstraint1.cry" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT.ry"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger_JNT_parentConstraint1.crz" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT.rz"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger_JNT_parentConstraint1.ctx" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT.tx"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger_JNT_parentConstraint1.cty" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT.ty"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger_JNT_parentConstraint1.ctz" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT.tz"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger1_JNT_parentConstraint1.ctx" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT.tx"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger1_JNT_parentConstraint1.cty" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT.ty"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger1_JNT_parentConstraint1.ctz" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT.tz"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger1_JNT_parentConstraint1.crx" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT.rx"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger1_JNT_parentConstraint1.cry" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT.ry"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger1_JNT_parentConstraint1.crz" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT.rz"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT.is"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger1_JNT_scaleConstraint1.csx" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT.sx"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger1_JNT_scaleConstraint1.csy" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT.sy"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger1_JNT_scaleConstraint1.csz" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT.sz"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT|Pinky_Finger2_JNT_parentConstraint1.crx" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT.rx"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT|Pinky_Finger2_JNT_parentConstraint1.cry" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT.ry"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT|Pinky_Finger2_JNT_parentConstraint1.crz" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT.rz"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT.is"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT|Pinky_Finger2_JNT_scaleConstraint1.csx" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT.sx"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT|Pinky_Finger2_JNT_scaleConstraint1.csy" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT.sy"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT|Pinky_Finger2_JNT_scaleConstraint1.csz" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT.sz"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT|Pinky_Finger2_JNT_parentConstraint1.ctx" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT.tx"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT|Pinky_Finger2_JNT_parentConstraint1.cty" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT.ty"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT|Pinky_Finger2_JNT_parentConstraint1.ctz" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT.tz"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT|Pinky_Finger3_JNT.is"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT.ro" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT|Pinky_Finger2_JNT_parentConstraint1.cro"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT.pim" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT|Pinky_Finger2_JNT_parentConstraint1.cpim"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT.rp" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT|Pinky_Finger2_JNT_parentConstraint1.crp"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT.rpt" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT|Pinky_Finger2_JNT_parentConstraint1.crt"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT.jo" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT|Pinky_Finger2_JNT_parentConstraint1.cjo"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL|null1|Thumb_Finger_Base|null2|Thumb_Finger_Base1.t" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT|Pinky_Finger2_JNT_parentConstraint1.tg[0].tt"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL|null1|Thumb_Finger_Base|null2|Thumb_Finger_Base1.rp" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT|Pinky_Finger2_JNT_parentConstraint1.tg[0].trp"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL|null1|Thumb_Finger_Base|null2|Thumb_Finger_Base1.rpt" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT|Pinky_Finger2_JNT_parentConstraint1.tg[0].trt"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL|null1|Thumb_Finger_Base|null2|Thumb_Finger_Base1.r" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT|Pinky_Finger2_JNT_parentConstraint1.tg[0].tr"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL|null1|Thumb_Finger_Base|null2|Thumb_Finger_Base1.ro" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT|Pinky_Finger2_JNT_parentConstraint1.tg[0].tro"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL|null1|Thumb_Finger_Base|null2|Thumb_Finger_Base1.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT|Pinky_Finger2_JNT_parentConstraint1.tg[0].ts"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL|null1|Thumb_Finger_Base|null2|Thumb_Finger_Base1.pm" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT|Pinky_Finger2_JNT_parentConstraint1.tg[0].tpm"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT|Pinky_Finger2_JNT_parentConstraint1.w0" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT|Pinky_Finger2_JNT_parentConstraint1.tg[0].tw"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT.ssc" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT|Pinky_Finger2_JNT_scaleConstraint1.tsc"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT.pim" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT|Pinky_Finger2_JNT_scaleConstraint1.cpim"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL|null1|Thumb_Finger_Base|null2|Thumb_Finger_Base1.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT|Pinky_Finger2_JNT_scaleConstraint1.tg[0].ts"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL|null1|Thumb_Finger_Base|null2|Thumb_Finger_Base1.pm" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT|Pinky_Finger2_JNT_scaleConstraint1.tg[0].tpm"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT|Pinky_Finger2_JNT_scaleConstraint1.w0" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT|Pinky_Finger2_JNT_scaleConstraint1.tg[0].tw"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT.ro" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger1_JNT_parentConstraint1.cro"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT.pim" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger1_JNT_parentConstraint1.cpim"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT.rp" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger1_JNT_parentConstraint1.crp"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT.rpt" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger1_JNT_parentConstraint1.crt"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT.jo" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger1_JNT_parentConstraint1.cjo"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL|null1|Thumb_Finger_Base.t" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger1_JNT_parentConstraint1.tg[0].tt"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL|null1|Thumb_Finger_Base.rp" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger1_JNT_parentConstraint1.tg[0].trp"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL|null1|Thumb_Finger_Base.rpt" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger1_JNT_parentConstraint1.tg[0].trt"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL|null1|Thumb_Finger_Base.r" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger1_JNT_parentConstraint1.tg[0].tr"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL|null1|Thumb_Finger_Base.ro" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger1_JNT_parentConstraint1.tg[0].tro"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL|null1|Thumb_Finger_Base.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger1_JNT_parentConstraint1.tg[0].ts"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL|null1|Thumb_Finger_Base.pm" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger1_JNT_parentConstraint1.tg[0].tpm"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger1_JNT_parentConstraint1.w0" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger1_JNT_parentConstraint1.tg[0].tw"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT.ssc" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger1_JNT_scaleConstraint1.tsc"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT.pim" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger1_JNT_scaleConstraint1.cpim"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL|null1|Thumb_Finger_Base.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger1_JNT_scaleConstraint1.tg[0].ts"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL|null1|Thumb_Finger_Base.pm" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger1_JNT_scaleConstraint1.tg[0].tpm"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger1_JNT_scaleConstraint1.w0" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger1_JNT_scaleConstraint1.tg[0].tw"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT.ro" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger_JNT_parentConstraint1.cro"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT.pim" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger_JNT_parentConstraint1.cpim"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT.rp" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger_JNT_parentConstraint1.crp"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT.rpt" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger_JNT_parentConstraint1.crt"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT.jo" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger_JNT_parentConstraint1.cjo"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL.t" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger_JNT_parentConstraint1.tg[0].tt"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL.rp" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger_JNT_parentConstraint1.tg[0].trp"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL.rpt" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger_JNT_parentConstraint1.tg[0].trt"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL.r" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger_JNT_parentConstraint1.tg[0].tr"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL.ro" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger_JNT_parentConstraint1.tg[0].tro"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger_JNT_parentConstraint1.tg[0].ts"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL.pm" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger_JNT_parentConstraint1.tg[0].tpm"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger_JNT_parentConstraint1.w0" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger_JNT_parentConstraint1.tg[0].tw"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT.ssc" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger_JNT_scaleConstraint1.tsc"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT.pim" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger_JNT_scaleConstraint1.cpim"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger_JNT_scaleConstraint1.tg[0].ts"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL.pm" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger_JNT_scaleConstraint1.tg[0].tpm"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger_JNT_scaleConstraint1.w0" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger_JNT_scaleConstraint1.tg[0].tw"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.ro" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Wrist_JNT_parentConstraint1.cro"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.pim" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Wrist_JNT_parentConstraint1.cpim"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.rp" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Wrist_JNT_parentConstraint1.crp"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.rpt" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Wrist_JNT_parentConstraint1.crt"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.jo" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Wrist_JNT_parentConstraint1.cjo"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL.t" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Wrist_JNT_parentConstraint1.tg[0].tt"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL.rp" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Wrist_JNT_parentConstraint1.tg[0].trp"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL.rpt" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Wrist_JNT_parentConstraint1.tg[0].trt"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL.r" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Wrist_JNT_parentConstraint1.tg[0].tr"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL.ro" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Wrist_JNT_parentConstraint1.tg[0].tro"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Wrist_JNT_parentConstraint1.tg[0].ts"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL.pm" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Wrist_JNT_parentConstraint1.tg[0].tpm"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Wrist_JNT_parentConstraint1.w0" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Wrist_JNT_parentConstraint1.tg[0].tw"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.ssc" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Wrist_JNT_scaleConstraint1.tsc"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.pim" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Wrist_JNT_scaleConstraint1.cpim"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Wrist_JNT_scaleConstraint1.tg[0].ts"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL.pm" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Wrist_JNT_scaleConstraint1.tg[0].tpm"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Wrist_JNT_scaleConstraint1.w0" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Wrist_JNT_scaleConstraint1.tg[0].tw"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT.ro" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|Elbow_JNT_parentConstraint1.cro"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT.pim" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|Elbow_JNT_parentConstraint1.cpim"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT.rp" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|Elbow_JNT_parentConstraint1.crp"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT.rpt" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|Elbow_JNT_parentConstraint1.crt"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT.jo" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|Elbow_JNT_parentConstraint1.cjo"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL.t" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|Elbow_JNT_parentConstraint1.tg[0].tt"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL.rp" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|Elbow_JNT_parentConstraint1.tg[0].trp"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL.rpt" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|Elbow_JNT_parentConstraint1.tg[0].trt"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL.r" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|Elbow_JNT_parentConstraint1.tg[0].tr"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL.ro" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|Elbow_JNT_parentConstraint1.tg[0].tro"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|Elbow_JNT_parentConstraint1.tg[0].ts"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL.pm" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|Elbow_JNT_parentConstraint1.tg[0].tpm"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|Elbow_JNT_parentConstraint1.w0" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|Elbow_JNT_parentConstraint1.tg[0].tw"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT.ssc" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|Elbow_JNT_scaleConstraint1.tsc"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT.pim" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|Elbow_JNT_scaleConstraint1.cpim"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|Elbow_JNT_scaleConstraint1.tg[0].ts"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL.pm" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|Elbow_JNT_scaleConstraint1.tg[0].tpm"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|Elbow_JNT_scaleConstraint1.w0" "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|Elbow_JNT_scaleConstraint1.tg[0].tw"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT.ro" "|Arm_Main|JNT|FK|Shoulder_JNT|Shoulder_JNT_parentConstraint1.cro"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT.pim" "|Arm_Main|JNT|FK|Shoulder_JNT|Shoulder_JNT_parentConstraint1.cpim"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT.rp" "|Arm_Main|JNT|FK|Shoulder_JNT|Shoulder_JNT_parentConstraint1.crp"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT.rpt" "|Arm_Main|JNT|FK|Shoulder_JNT|Shoulder_JNT_parentConstraint1.crt"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT.jo" "|Arm_Main|JNT|FK|Shoulder_JNT|Shoulder_JNT_parentConstraint1.cjo"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL.t" "|Arm_Main|JNT|FK|Shoulder_JNT|Shoulder_JNT_parentConstraint1.tg[0].tt"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL.rp" "|Arm_Main|JNT|FK|Shoulder_JNT|Shoulder_JNT_parentConstraint1.tg[0].trp"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL.rpt" "|Arm_Main|JNT|FK|Shoulder_JNT|Shoulder_JNT_parentConstraint1.tg[0].trt"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL.r" "|Arm_Main|JNT|FK|Shoulder_JNT|Shoulder_JNT_parentConstraint1.tg[0].tr"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL.ro" "|Arm_Main|JNT|FK|Shoulder_JNT|Shoulder_JNT_parentConstraint1.tg[0].tro"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Shoulder_JNT_parentConstraint1.tg[0].ts"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL.pm" "|Arm_Main|JNT|FK|Shoulder_JNT|Shoulder_JNT_parentConstraint1.tg[0].tpm"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Shoulder_JNT_parentConstraint1.w0" "|Arm_Main|JNT|FK|Shoulder_JNT|Shoulder_JNT_parentConstraint1.tg[0].tw"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT.pim" "|Arm_Main|JNT|FK|Shoulder_JNT|Shoulder_JNT_scaleConstraint1.cpim"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL.s" "|Arm_Main|JNT|FK|Shoulder_JNT|Shoulder_JNT_scaleConstraint1.tg[0].ts"
+		;
+connectAttr "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL.pm" "|Arm_Main|JNT|FK|Shoulder_JNT|Shoulder_JNT_scaleConstraint1.tg[0].tpm"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Shoulder_JNT_scaleConstraint1.w0" "|Arm_Main|JNT|FK|Shoulder_JNT|Shoulder_JNT_scaleConstraint1.tg[0].tw"
 		;
 connectAttr "FK_CNTL_Layer.di" "|Arm_Main|CNTL|FK.do";
-connectAttr "Elbow_CNTL_rotateX.o" "Elbow_CNTL.rx";
-connectAttr "Elbow_CNTL_rotateY.o" "Elbow_CNTL.ry";
-connectAttr "Elbow_CNTL_rotateZ.o" "Elbow_CNTL.rz";
-connectAttr "Wrist_CNTL_rotateX.o" "Wrist_CNTL.rx";
-connectAttr "Wrist_CNTL_rotateY.o" "Wrist_CNTL.ry";
-connectAttr "Wrist_CNTL_rotateZ.o" "Wrist_CNTL.rz";
+connectAttr "Elbow_CNTL_rotateX.o" "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL.rx"
+		;
+connectAttr "Elbow_CNTL_rotateY.o" "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL.ry"
+		;
+connectAttr "Elbow_CNTL_rotateZ.o" "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL.rz"
+		;
+connectAttr "Wrist_CNTL_rotateX.o" "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL.rx"
+		;
+connectAttr "Wrist_CNTL_rotateY.o" "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL.ry"
+		;
+connectAttr "Wrist_CNTL_rotateZ.o" "|Arm_Main|CNTL|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL.rz"
+		;
 connectAttr "IK_Lyer.di" "Shoulder_IK_CNTL.do";
 connectAttr "IK_Lyer.di" "topnurbsCube1.do";
 connectAttr "IK_Lyer.di" "elbow_CNTL.do";
@@ -18011,6 +21511,1326 @@ connectAttr "elbow_CNTL.rpt" "ikHandle1_poleVectorConstraint1.tg[0].trt";
 connectAttr "elbow_CNTL.pm" "ikHandle1_poleVectorConstraint1.tg[0].tpm";
 connectAttr "ikHandle1_poleVectorConstraint1.w0" "ikHandle1_poleVectorConstraint1.tg[0].tw"
 		;
+connectAttr "Shoulder_JNT_scaleConstraint2.csx" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT.sx"
+		;
+connectAttr "Shoulder_JNT_scaleConstraint2.csy" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT.sy"
+		;
+connectAttr "Shoulder_JNT_scaleConstraint2.csz" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT.sz"
+		;
+connectAttr "Shoulder_JNT_parentConstraint2.ctx" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT.tx"
+		;
+connectAttr "Shoulder_JNT_parentConstraint2.cty" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT.ty"
+		;
+connectAttr "Shoulder_JNT_parentConstraint2.ctz" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT.tz"
+		;
+connectAttr "Shoulder_JNT_parentConstraint2.crx" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT.rx"
+		;
+connectAttr "Shoulder_JNT_parentConstraint2.cry" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT.ry"
+		;
+connectAttr "Shoulder_JNT_parentConstraint2.crz" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT.rz"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT.do";
+connectAttr "Elbow_JNT_parentConstraint2.crx" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT.rx"
+		;
+connectAttr "Elbow_JNT_parentConstraint2.cry" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT.ry"
+		;
+connectAttr "Elbow_JNT_parentConstraint2.crz" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT.rz"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT.s" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT.is"
+		;
+connectAttr "Elbow_JNT_scaleConstraint2.csx" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT.sx"
+		;
+connectAttr "Elbow_JNT_scaleConstraint2.csy" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT.sy"
+		;
+connectAttr "Elbow_JNT_scaleConstraint2.csz" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT.sz"
+		;
+connectAttr "Elbow_JNT_parentConstraint2.ctx" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT.tx"
+		;
+connectAttr "Elbow_JNT_parentConstraint2.cty" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT.ty"
+		;
+connectAttr "Elbow_JNT_parentConstraint2.ctz" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT.tz"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT.do";
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT.s" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT.is"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT.do"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT.s" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT.is"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT.do"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT.s" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT.is"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT.do"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT.s" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT.is"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT.do"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT.s" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.is"
+		;
+connectAttr "Wrist_JNT_scaleConstraint2.csx" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.sx"
+		;
+connectAttr "Wrist_JNT_scaleConstraint2.csy" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.sy"
+		;
+connectAttr "Wrist_JNT_scaleConstraint2.csz" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.sz"
+		;
+connectAttr "Wrist_JNT_parentConstraint2.crx" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.rx"
+		;
+connectAttr "Wrist_JNT_parentConstraint2.cry" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.ry"
+		;
+connectAttr "Wrist_JNT_parentConstraint2.crz" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.rz"
+		;
+connectAttr "Wrist_JNT_parentConstraint2.ctx" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.tx"
+		;
+connectAttr "Wrist_JNT_parentConstraint2.cty" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.ty"
+		;
+connectAttr "Wrist_JNT_parentConstraint2.ctz" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.tz"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.do"
+		;
+connectAttr "Thumb_Base_JNT_parentConstraint2.crx" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT.rx"
+		;
+connectAttr "Thumb_Base_JNT_parentConstraint2.cry" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT.ry"
+		;
+connectAttr "Thumb_Base_JNT_parentConstraint2.crz" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT.rz"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.s" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT.is"
+		;
+connectAttr "Thumb_Base_JNT_scaleConstraint2.csx" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT.sx"
+		;
+connectAttr "Thumb_Base_JNT_scaleConstraint2.csy" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT.sy"
+		;
+connectAttr "Thumb_Base_JNT_scaleConstraint2.csz" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT.sz"
+		;
+connectAttr "Thumb_Base_JNT_parentConstraint2.ctx" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT.tx"
+		;
+connectAttr "Thumb_Base_JNT_parentConstraint2.cty" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT.ty"
+		;
+connectAttr "Thumb_Base_JNT_parentConstraint2.ctz" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT.tz"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT.do"
+		;
+connectAttr "Thumb1_JNT_parentConstraint2.crx" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT.rx"
+		;
+connectAttr "Thumb1_JNT_parentConstraint2.cry" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT.ry"
+		;
+connectAttr "Thumb1_JNT_parentConstraint2.crz" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT.rz"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT.s" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT.is"
+		;
+connectAttr "Thumb1_JNT_scaleConstraint2.csx" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT.sx"
+		;
+connectAttr "Thumb1_JNT_scaleConstraint2.csy" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT.sy"
+		;
+connectAttr "Thumb1_JNT_scaleConstraint2.csz" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT.sz"
+		;
+connectAttr "Thumb1_JNT_parentConstraint2.ctx" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT.tx"
+		;
+connectAttr "Thumb1_JNT_parentConstraint2.cty" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT.ty"
+		;
+connectAttr "Thumb1_JNT_parentConstraint2.ctz" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT.tz"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT.do"
+		;
+connectAttr "Thumb2_JNT_parentConstraint2.crx" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT.rx"
+		;
+connectAttr "Thumb2_JNT_parentConstraint2.cry" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT.ry"
+		;
+connectAttr "Thumb2_JNT_parentConstraint2.crz" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT.rz"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT.s" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT.is"
+		;
+connectAttr "Thumb2_JNT_scaleConstraint2.csx" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT.sx"
+		;
+connectAttr "Thumb2_JNT_scaleConstraint2.csy" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT.sy"
+		;
+connectAttr "Thumb2_JNT_scaleConstraint2.csz" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT.sz"
+		;
+connectAttr "Thumb2_JNT_parentConstraint2.ctx" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT.tx"
+		;
+connectAttr "Thumb2_JNT_parentConstraint2.cty" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT.ty"
+		;
+connectAttr "Thumb2_JNT_parentConstraint2.ctz" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT.tz"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT.do"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT.s" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT|Thumb3_JNT.is"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT|Thumb3_JNT.do"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT|Thumb2_JNT_parentConstraint1.do"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT|Thumb2_JNT_scaleConstraint1.do"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT.ro" "Thumb2_JNT_parentConstraint2.cro"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT.pim" "Thumb2_JNT_parentConstraint2.cpim"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT.rp" "Thumb2_JNT_parentConstraint2.crp"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT.rpt" "Thumb2_JNT_parentConstraint2.crt"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT.jo" "Thumb2_JNT_parentConstraint2.cjo"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL|null8|Pinky_Finger_Base|null9|Pinky_Finger_Base1.t" "Thumb2_JNT_parentConstraint2.tg[0].tt"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL|null8|Pinky_Finger_Base|null9|Pinky_Finger_Base1.rp" "Thumb2_JNT_parentConstraint2.tg[0].trp"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL|null8|Pinky_Finger_Base|null9|Pinky_Finger_Base1.rpt" "Thumb2_JNT_parentConstraint2.tg[0].trt"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL|null8|Pinky_Finger_Base|null9|Pinky_Finger_Base1.r" "Thumb2_JNT_parentConstraint2.tg[0].tr"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL|null8|Pinky_Finger_Base|null9|Pinky_Finger_Base1.ro" "Thumb2_JNT_parentConstraint2.tg[0].tro"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL|null8|Pinky_Finger_Base|null9|Pinky_Finger_Base1.s" "Thumb2_JNT_parentConstraint2.tg[0].ts"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL|null8|Pinky_Finger_Base|null9|Pinky_Finger_Base1.pm" "Thumb2_JNT_parentConstraint2.tg[0].tpm"
+		;
+connectAttr "Thumb2_JNT_parentConstraint2.w0" "Thumb2_JNT_parentConstraint2.tg[0].tw"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT.ssc" "Thumb2_JNT_scaleConstraint2.tsc"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT.pim" "Thumb2_JNT_scaleConstraint2.cpim"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL|null8|Pinky_Finger_Base|null9|Pinky_Finger_Base1.s" "Thumb2_JNT_scaleConstraint2.tg[0].ts"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL|null8|Pinky_Finger_Base|null9|Pinky_Finger_Base1.pm" "Thumb2_JNT_scaleConstraint2.tg[0].tpm"
+		;
+connectAttr "Thumb2_JNT_scaleConstraint2.w0" "Thumb2_JNT_scaleConstraint2.tg[0].tw"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb1_JNT_parentConstraint1.do"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb1_JNT_scaleConstraint1.do"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT.ro" "Thumb1_JNT_parentConstraint2.cro"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT.pim" "Thumb1_JNT_parentConstraint2.cpim"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT.rp" "Thumb1_JNT_parentConstraint2.crp"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT.rpt" "Thumb1_JNT_parentConstraint2.crt"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT.jo" "Thumb1_JNT_parentConstraint2.cjo"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL|null8|Pinky_Finger_Base.t" "Thumb1_JNT_parentConstraint2.tg[0].tt"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL|null8|Pinky_Finger_Base.rp" "Thumb1_JNT_parentConstraint2.tg[0].trp"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL|null8|Pinky_Finger_Base.rpt" "Thumb1_JNT_parentConstraint2.tg[0].trt"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL|null8|Pinky_Finger_Base.r" "Thumb1_JNT_parentConstraint2.tg[0].tr"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL|null8|Pinky_Finger_Base.ro" "Thumb1_JNT_parentConstraint2.tg[0].tro"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL|null8|Pinky_Finger_Base.s" "Thumb1_JNT_parentConstraint2.tg[0].ts"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL|null8|Pinky_Finger_Base.pm" "Thumb1_JNT_parentConstraint2.tg[0].tpm"
+		;
+connectAttr "Thumb1_JNT_parentConstraint2.w0" "Thumb1_JNT_parentConstraint2.tg[0].tw"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT.ssc" "Thumb1_JNT_scaleConstraint2.tsc"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT.pim" "Thumb1_JNT_scaleConstraint2.cpim"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL|null8|Pinky_Finger_Base.s" "Thumb1_JNT_scaleConstraint2.tg[0].ts"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL|null8|Pinky_Finger_Base.pm" "Thumb1_JNT_scaleConstraint2.tg[0].tpm"
+		;
+connectAttr "Thumb1_JNT_scaleConstraint2.w0" "Thumb1_JNT_scaleConstraint2.tg[0].tw"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb_Base_JNT_parentConstraint1.do"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb_Base_JNT_scaleConstraint1.do"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT.ro" "Thumb_Base_JNT_parentConstraint2.cro"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT.pim" "Thumb_Base_JNT_parentConstraint2.cpim"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT.rp" "Thumb_Base_JNT_parentConstraint2.crp"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT.rpt" "Thumb_Base_JNT_parentConstraint2.crt"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT.jo" "Thumb_Base_JNT_parentConstraint2.cjo"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL.t" "Thumb_Base_JNT_parentConstraint2.tg[0].tt"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL.rp" "Thumb_Base_JNT_parentConstraint2.tg[0].trp"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL.rpt" "Thumb_Base_JNT_parentConstraint2.tg[0].trt"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL.r" "Thumb_Base_JNT_parentConstraint2.tg[0].tr"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL.ro" "Thumb_Base_JNT_parentConstraint2.tg[0].tro"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL.s" "Thumb_Base_JNT_parentConstraint2.tg[0].ts"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL.pm" "Thumb_Base_JNT_parentConstraint2.tg[0].tpm"
+		;
+connectAttr "Thumb_Base_JNT_parentConstraint2.w0" "Thumb_Base_JNT_parentConstraint2.tg[0].tw"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT.ssc" "Thumb_Base_JNT_scaleConstraint2.tsc"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT.pim" "Thumb_Base_JNT_scaleConstraint2.cpim"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL.s" "Thumb_Base_JNT_scaleConstraint2.tg[0].ts"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL.pm" "Thumb_Base_JNT_scaleConstraint2.tg[0].tpm"
+		;
+connectAttr "Thumb_Base_JNT_scaleConstraint2.w0" "Thumb_Base_JNT_scaleConstraint2.tg[0].tw"
+		;
+connectAttr "Pointer_Finger_Base_JNT_parentConstraint2.crx" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT.rx"
+		;
+connectAttr "Pointer_Finger_Base_JNT_parentConstraint2.cry" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT.ry"
+		;
+connectAttr "Pointer_Finger_Base_JNT_parentConstraint2.crz" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT.rz"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.s" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT.is"
+		;
+connectAttr "Pointer_Finger_Base_JNT_scaleConstraint2.csx" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT.sx"
+		;
+connectAttr "Pointer_Finger_Base_JNT_scaleConstraint2.csy" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT.sy"
+		;
+connectAttr "Pointer_Finger_Base_JNT_scaleConstraint2.csz" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT.sz"
+		;
+connectAttr "Pointer_Finger_Base_JNT_parentConstraint2.ctx" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT.tx"
+		;
+connectAttr "Pointer_Finger_Base_JNT_parentConstraint2.cty" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT.ty"
+		;
+connectAttr "Pointer_Finger_Base_JNT_parentConstraint2.ctz" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT.tz"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT.do"
+		;
+connectAttr "P_Finger1_JNT_parentConstraint2.crx" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT.rx"
+		;
+connectAttr "P_Finger1_JNT_parentConstraint2.cry" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT.ry"
+		;
+connectAttr "P_Finger1_JNT_parentConstraint2.crz" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT.rz"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT.s" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT.is"
+		;
+connectAttr "P_Finger1_JNT_scaleConstraint2.csx" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT.sx"
+		;
+connectAttr "P_Finger1_JNT_scaleConstraint2.csy" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT.sy"
+		;
+connectAttr "P_Finger1_JNT_scaleConstraint2.csz" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT.sz"
+		;
+connectAttr "P_Finger1_JNT_parentConstraint2.ctx" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT.tx"
+		;
+connectAttr "P_Finger1_JNT_parentConstraint2.cty" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT.ty"
+		;
+connectAttr "P_Finger1_JNT_parentConstraint2.ctz" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT.tz"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT.do"
+		;
+connectAttr "P_Finger2_JNT_parentConstraint2.crx" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT.rx"
+		;
+connectAttr "P_Finger2_JNT_parentConstraint2.cry" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT.ry"
+		;
+connectAttr "P_Finger2_JNT_parentConstraint2.crz" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT.rz"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT.s" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT.is"
+		;
+connectAttr "P_Finger2_JNT_scaleConstraint2.csx" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT.sx"
+		;
+connectAttr "P_Finger2_JNT_scaleConstraint2.csy" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT.sy"
+		;
+connectAttr "P_Finger2_JNT_scaleConstraint2.csz" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT.sz"
+		;
+connectAttr "P_Finger2_JNT_parentConstraint2.ctx" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT.tx"
+		;
+connectAttr "P_Finger2_JNT_parentConstraint2.cty" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT.ty"
+		;
+connectAttr "P_Finger2_JNT_parentConstraint2.ctz" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT.tz"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT.do"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT.s" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT|P_Finger3_JNT.is"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT|P_Finger3_JNT.do"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT|P_Finger2_JNT_parentConstraint1.do"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT|P_Finger2_JNT_scaleConstraint1.do"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT.ro" "P_Finger2_JNT_parentConstraint2.cro"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT.pim" "P_Finger2_JNT_parentConstraint2.cpim"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT.rp" "P_Finger2_JNT_parentConstraint2.crp"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT.rpt" "P_Finger2_JNT_parentConstraint2.crt"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT.jo" "P_Finger2_JNT_parentConstraint2.cjo"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL|null6|Ring_Finger_Base|null7|Ring_Finger_Base1.t" "P_Finger2_JNT_parentConstraint2.tg[0].tt"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL|null6|Ring_Finger_Base|null7|Ring_Finger_Base1.rp" "P_Finger2_JNT_parentConstraint2.tg[0].trp"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL|null6|Ring_Finger_Base|null7|Ring_Finger_Base1.rpt" "P_Finger2_JNT_parentConstraint2.tg[0].trt"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL|null6|Ring_Finger_Base|null7|Ring_Finger_Base1.r" "P_Finger2_JNT_parentConstraint2.tg[0].tr"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL|null6|Ring_Finger_Base|null7|Ring_Finger_Base1.ro" "P_Finger2_JNT_parentConstraint2.tg[0].tro"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL|null6|Ring_Finger_Base|null7|Ring_Finger_Base1.s" "P_Finger2_JNT_parentConstraint2.tg[0].ts"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL|null6|Ring_Finger_Base|null7|Ring_Finger_Base1.pm" "P_Finger2_JNT_parentConstraint2.tg[0].tpm"
+		;
+connectAttr "P_Finger2_JNT_parentConstraint2.w0" "P_Finger2_JNT_parentConstraint2.tg[0].tw"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT.ssc" "P_Finger2_JNT_scaleConstraint2.tsc"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT.pim" "P_Finger2_JNT_scaleConstraint2.cpim"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL|null6|Ring_Finger_Base|null7|Ring_Finger_Base1.s" "P_Finger2_JNT_scaleConstraint2.tg[0].ts"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL|null6|Ring_Finger_Base|null7|Ring_Finger_Base1.pm" "P_Finger2_JNT_scaleConstraint2.tg[0].tpm"
+		;
+connectAttr "P_Finger2_JNT_scaleConstraint2.w0" "P_Finger2_JNT_scaleConstraint2.tg[0].tw"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger1_JNT_parentConstraint1.do"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger1_JNT_scaleConstraint1.do"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT.ro" "P_Finger1_JNT_parentConstraint2.cro"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT.pim" "P_Finger1_JNT_parentConstraint2.cpim"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT.rp" "P_Finger1_JNT_parentConstraint2.crp"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT.rpt" "P_Finger1_JNT_parentConstraint2.crt"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT.jo" "P_Finger1_JNT_parentConstraint2.cjo"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL|null6|Ring_Finger_Base.t" "P_Finger1_JNT_parentConstraint2.tg[0].tt"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL|null6|Ring_Finger_Base.rp" "P_Finger1_JNT_parentConstraint2.tg[0].trp"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL|null6|Ring_Finger_Base.rpt" "P_Finger1_JNT_parentConstraint2.tg[0].trt"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL|null6|Ring_Finger_Base.r" "P_Finger1_JNT_parentConstraint2.tg[0].tr"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL|null6|Ring_Finger_Base.ro" "P_Finger1_JNT_parentConstraint2.tg[0].tro"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL|null6|Ring_Finger_Base.s" "P_Finger1_JNT_parentConstraint2.tg[0].ts"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL|null6|Ring_Finger_Base.pm" "P_Finger1_JNT_parentConstraint2.tg[0].tpm"
+		;
+connectAttr "P_Finger1_JNT_parentConstraint2.w0" "P_Finger1_JNT_parentConstraint2.tg[0].tw"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT.ssc" "P_Finger1_JNT_scaleConstraint2.tsc"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT.pim" "P_Finger1_JNT_scaleConstraint2.cpim"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL|null6|Ring_Finger_Base.s" "P_Finger1_JNT_scaleConstraint2.tg[0].ts"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL|null6|Ring_Finger_Base.pm" "P_Finger1_JNT_scaleConstraint2.tg[0].tpm"
+		;
+connectAttr "P_Finger1_JNT_scaleConstraint2.w0" "P_Finger1_JNT_scaleConstraint2.tg[0].tw"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|Pointer_Finger_Base_JNT_parentConstraint1.do"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|Pointer_Finger_Base_JNT_scaleConstraint1.do"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT.ro" "Pointer_Finger_Base_JNT_parentConstraint2.cro"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT.pim" "Pointer_Finger_Base_JNT_parentConstraint2.cpim"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT.rp" "Pointer_Finger_Base_JNT_parentConstraint2.crp"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT.rpt" "Pointer_Finger_Base_JNT_parentConstraint2.crt"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT.jo" "Pointer_Finger_Base_JNT_parentConstraint2.cjo"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL.t" "Pointer_Finger_Base_JNT_parentConstraint2.tg[0].tt"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL.rp" "Pointer_Finger_Base_JNT_parentConstraint2.tg[0].trp"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL.rpt" "Pointer_Finger_Base_JNT_parentConstraint2.tg[0].trt"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL.r" "Pointer_Finger_Base_JNT_parentConstraint2.tg[0].tr"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL.ro" "Pointer_Finger_Base_JNT_parentConstraint2.tg[0].tro"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL.s" "Pointer_Finger_Base_JNT_parentConstraint2.tg[0].ts"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL.pm" "Pointer_Finger_Base_JNT_parentConstraint2.tg[0].tpm"
+		;
+connectAttr "Pointer_Finger_Base_JNT_parentConstraint2.w0" "Pointer_Finger_Base_JNT_parentConstraint2.tg[0].tw"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT.ssc" "Pointer_Finger_Base_JNT_scaleConstraint2.tsc"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT.pim" "Pointer_Finger_Base_JNT_scaleConstraint2.cpim"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL.s" "Pointer_Finger_Base_JNT_scaleConstraint2.tg[0].ts"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL.pm" "Pointer_Finger_Base_JNT_scaleConstraint2.tg[0].tpm"
+		;
+connectAttr "Pointer_Finger_Base_JNT_scaleConstraint2.w0" "Pointer_Finger_Base_JNT_scaleConstraint2.tg[0].tw"
+		;
+connectAttr "Mid_Finger_JNT_parentConstraint2.crx" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT.rx"
+		;
+connectAttr "Mid_Finger_JNT_parentConstraint2.cry" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT.ry"
+		;
+connectAttr "Mid_Finger_JNT_parentConstraint2.crz" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT.rz"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.s" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT.is"
+		;
+connectAttr "Mid_Finger_JNT_scaleConstraint2.csx" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT.sx"
+		;
+connectAttr "Mid_Finger_JNT_scaleConstraint2.csy" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT.sy"
+		;
+connectAttr "Mid_Finger_JNT_scaleConstraint2.csz" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT.sz"
+		;
+connectAttr "Mid_Finger_JNT_parentConstraint2.ctx" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT.tx"
+		;
+connectAttr "Mid_Finger_JNT_parentConstraint2.cty" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT.ty"
+		;
+connectAttr "Mid_Finger_JNT_parentConstraint2.ctz" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT.tz"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT.do"
+		;
+connectAttr "Mid_Finger1_JNT_parentConstraint2.crx" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT.rx"
+		;
+connectAttr "Mid_Finger1_JNT_parentConstraint2.cry" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT.ry"
+		;
+connectAttr "Mid_Finger1_JNT_parentConstraint2.crz" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT.rz"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT.s" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT.is"
+		;
+connectAttr "Mid_Finger1_JNT_scaleConstraint2.csx" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT.sx"
+		;
+connectAttr "Mid_Finger1_JNT_scaleConstraint2.csy" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT.sy"
+		;
+connectAttr "Mid_Finger1_JNT_scaleConstraint2.csz" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT.sz"
+		;
+connectAttr "Mid_Finger1_JNT_parentConstraint2.ctx" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT.tx"
+		;
+connectAttr "Mid_Finger1_JNT_parentConstraint2.cty" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT.ty"
+		;
+connectAttr "Mid_Finger1_JNT_parentConstraint2.ctz" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT.tz"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT.do"
+		;
+connectAttr "Mid_Finger2_JNT_parentConstraint2.crx" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT.rx"
+		;
+connectAttr "Mid_Finger2_JNT_parentConstraint2.cry" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT.ry"
+		;
+connectAttr "Mid_Finger2_JNT_parentConstraint2.crz" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT.rz"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT.s" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT.is"
+		;
+connectAttr "Mid_Finger2_JNT_scaleConstraint2.csx" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT.sx"
+		;
+connectAttr "Mid_Finger2_JNT_scaleConstraint2.csy" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT.sy"
+		;
+connectAttr "Mid_Finger2_JNT_scaleConstraint2.csz" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT.sz"
+		;
+connectAttr "Mid_Finger2_JNT_parentConstraint2.ctx" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT.tx"
+		;
+connectAttr "Mid_Finger2_JNT_parentConstraint2.cty" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT.ty"
+		;
+connectAttr "Mid_Finger2_JNT_parentConstraint2.ctz" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT.tz"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT.do"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT.s" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT|Mid_Finger3_JNT.is"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT|Mid_Finger3_JNT.do"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT|Mid_Finger2_JNT_parentConstraint1.do"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT|Mid_Finger2_JNT_scaleConstraint1.do"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT.ro" "Mid_Finger2_JNT_parentConstraint2.cro"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT.pim" "Mid_Finger2_JNT_parentConstraint2.cpim"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT.rp" "Mid_Finger2_JNT_parentConstraint2.crp"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT.rpt" "Mid_Finger2_JNT_parentConstraint2.crt"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT.jo" "Mid_Finger2_JNT_parentConstraint2.cjo"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL|group3|M_Finger_Base|null5|M_Finger_Base1.t" "Mid_Finger2_JNT_parentConstraint2.tg[0].tt"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL|group3|M_Finger_Base|null5|M_Finger_Base1.rp" "Mid_Finger2_JNT_parentConstraint2.tg[0].trp"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL|group3|M_Finger_Base|null5|M_Finger_Base1.rpt" "Mid_Finger2_JNT_parentConstraint2.tg[0].trt"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL|group3|M_Finger_Base|null5|M_Finger_Base1.r" "Mid_Finger2_JNT_parentConstraint2.tg[0].tr"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL|group3|M_Finger_Base|null5|M_Finger_Base1.ro" "Mid_Finger2_JNT_parentConstraint2.tg[0].tro"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL|group3|M_Finger_Base|null5|M_Finger_Base1.s" "Mid_Finger2_JNT_parentConstraint2.tg[0].ts"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL|group3|M_Finger_Base|null5|M_Finger_Base1.pm" "Mid_Finger2_JNT_parentConstraint2.tg[0].tpm"
+		;
+connectAttr "Mid_Finger2_JNT_parentConstraint2.w0" "Mid_Finger2_JNT_parentConstraint2.tg[0].tw"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT.ssc" "Mid_Finger2_JNT_scaleConstraint2.tsc"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT.pim" "Mid_Finger2_JNT_scaleConstraint2.cpim"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL|group3|M_Finger_Base|null5|M_Finger_Base1.s" "Mid_Finger2_JNT_scaleConstraint2.tg[0].ts"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL|group3|M_Finger_Base|null5|M_Finger_Base1.pm" "Mid_Finger2_JNT_scaleConstraint2.tg[0].tpm"
+		;
+connectAttr "Mid_Finger2_JNT_scaleConstraint2.w0" "Mid_Finger2_JNT_scaleConstraint2.tg[0].tw"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger1_JNT_parentConstraint1.do"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger1_JNT_scaleConstraint1.do"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT.ro" "Mid_Finger1_JNT_parentConstraint2.cro"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT.pim" "Mid_Finger1_JNT_parentConstraint2.cpim"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT.rp" "Mid_Finger1_JNT_parentConstraint2.crp"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT.rpt" "Mid_Finger1_JNT_parentConstraint2.crt"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT.jo" "Mid_Finger1_JNT_parentConstraint2.cjo"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL|group3|M_Finger_Base.t" "Mid_Finger1_JNT_parentConstraint2.tg[0].tt"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL|group3|M_Finger_Base.rp" "Mid_Finger1_JNT_parentConstraint2.tg[0].trp"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL|group3|M_Finger_Base.rpt" "Mid_Finger1_JNT_parentConstraint2.tg[0].trt"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL|group3|M_Finger_Base.r" "Mid_Finger1_JNT_parentConstraint2.tg[0].tr"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL|group3|M_Finger_Base.ro" "Mid_Finger1_JNT_parentConstraint2.tg[0].tro"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL|group3|M_Finger_Base.s" "Mid_Finger1_JNT_parentConstraint2.tg[0].ts"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL|group3|M_Finger_Base.pm" "Mid_Finger1_JNT_parentConstraint2.tg[0].tpm"
+		;
+connectAttr "Mid_Finger1_JNT_parentConstraint2.w0" "Mid_Finger1_JNT_parentConstraint2.tg[0].tw"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT.ssc" "Mid_Finger1_JNT_scaleConstraint2.tsc"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT.pim" "Mid_Finger1_JNT_scaleConstraint2.cpim"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL|group3|M_Finger_Base.s" "Mid_Finger1_JNT_scaleConstraint2.tg[0].ts"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL|group3|M_Finger_Base.pm" "Mid_Finger1_JNT_scaleConstraint2.tg[0].tpm"
+		;
+connectAttr "Mid_Finger1_JNT_scaleConstraint2.w0" "Mid_Finger1_JNT_scaleConstraint2.tg[0].tw"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger_JNT_parentConstraint1.do"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger_JNT_scaleConstraint1.do"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT.ro" "Mid_Finger_JNT_parentConstraint2.cro"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT.pim" "Mid_Finger_JNT_parentConstraint2.cpim"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT.rp" "Mid_Finger_JNT_parentConstraint2.crp"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT.rpt" "Mid_Finger_JNT_parentConstraint2.crt"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT.jo" "Mid_Finger_JNT_parentConstraint2.cjo"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL.t" "Mid_Finger_JNT_parentConstraint2.tg[0].tt"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL.rp" "Mid_Finger_JNT_parentConstraint2.tg[0].trp"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL.rpt" "Mid_Finger_JNT_parentConstraint2.tg[0].trt"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL.r" "Mid_Finger_JNT_parentConstraint2.tg[0].tr"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL.ro" "Mid_Finger_JNT_parentConstraint2.tg[0].tro"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL.s" "Mid_Finger_JNT_parentConstraint2.tg[0].ts"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL.pm" "Mid_Finger_JNT_parentConstraint2.tg[0].tpm"
+		;
+connectAttr "Mid_Finger_JNT_parentConstraint2.w0" "Mid_Finger_JNT_parentConstraint2.tg[0].tw"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT.ssc" "Mid_Finger_JNT_scaleConstraint2.tsc"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT.pim" "Mid_Finger_JNT_scaleConstraint2.cpim"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL.s" "Mid_Finger_JNT_scaleConstraint2.tg[0].ts"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL.pm" "Mid_Finger_JNT_scaleConstraint2.tg[0].tpm"
+		;
+connectAttr "Mid_Finger_JNT_scaleConstraint2.w0" "Mid_Finger_JNT_scaleConstraint2.tg[0].tw"
+		;
+connectAttr "Ring_Finger_JNT_parentConstraint2.crx" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT.rx"
+		;
+connectAttr "Ring_Finger_JNT_parentConstraint2.cry" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT.ry"
+		;
+connectAttr "Ring_Finger_JNT_parentConstraint2.crz" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT.rz"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.s" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT.is"
+		;
+connectAttr "Ring_Finger_JNT_scaleConstraint2.csx" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT.sx"
+		;
+connectAttr "Ring_Finger_JNT_scaleConstraint2.csy" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT.sy"
+		;
+connectAttr "Ring_Finger_JNT_scaleConstraint2.csz" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT.sz"
+		;
+connectAttr "Ring_Finger_JNT_parentConstraint2.ctx" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT.tx"
+		;
+connectAttr "Ring_Finger_JNT_parentConstraint2.cty" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT.ty"
+		;
+connectAttr "Ring_Finger_JNT_parentConstraint2.ctz" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT.tz"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT.do"
+		;
+connectAttr "Ring_FInger1_JNT_parentConstraint2.crx" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT.rx"
+		;
+connectAttr "Ring_FInger1_JNT_parentConstraint2.cry" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT.ry"
+		;
+connectAttr "Ring_FInger1_JNT_parentConstraint2.crz" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT.rz"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT.s" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT.is"
+		;
+connectAttr "Ring_FInger1_JNT_scaleConstraint2.csx" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT.sx"
+		;
+connectAttr "Ring_FInger1_JNT_scaleConstraint2.csy" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT.sy"
+		;
+connectAttr "Ring_FInger1_JNT_scaleConstraint2.csz" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT.sz"
+		;
+connectAttr "Ring_FInger1_JNT_parentConstraint2.ctx" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT.tx"
+		;
+connectAttr "Ring_FInger1_JNT_parentConstraint2.cty" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT.ty"
+		;
+connectAttr "Ring_FInger1_JNT_parentConstraint2.ctz" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT.tz"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT.do"
+		;
+connectAttr "Ring_FInger2_JNT_parentConstraint2.crx" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT.rx"
+		;
+connectAttr "Ring_FInger2_JNT_parentConstraint2.cry" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT.ry"
+		;
+connectAttr "Ring_FInger2_JNT_parentConstraint2.crz" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT.rz"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT.s" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT.is"
+		;
+connectAttr "Ring_FInger2_JNT_scaleConstraint2.csx" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT.sx"
+		;
+connectAttr "Ring_FInger2_JNT_scaleConstraint2.csy" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT.sy"
+		;
+connectAttr "Ring_FInger2_JNT_scaleConstraint2.csz" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT.sz"
+		;
+connectAttr "Ring_FInger2_JNT_parentConstraint2.ctx" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT.tx"
+		;
+connectAttr "Ring_FInger2_JNT_parentConstraint2.cty" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT.ty"
+		;
+connectAttr "Ring_FInger2_JNT_parentConstraint2.ctz" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT.tz"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT.do"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT.s" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT|Ring_FInger3_JNT.is"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT|Ring_FInger3_JNT.do"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT|Ring_FInger2_JNT_parentConstraint1.do"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT|Ring_FInger2_JNT_scaleConstraint1.do"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT.ro" "Ring_FInger2_JNT_parentConstraint2.cro"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT.pim" "Ring_FInger2_JNT_parentConstraint2.cpim"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT.rp" "Ring_FInger2_JNT_parentConstraint2.crp"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT.rpt" "Ring_FInger2_JNT_parentConstraint2.crt"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT.jo" "Ring_FInger2_JNT_parentConstraint2.cjo"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL|null3|P_Finger_Base|null4|P_Finger_Base1.t" "Ring_FInger2_JNT_parentConstraint2.tg[0].tt"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL|null3|P_Finger_Base|null4|P_Finger_Base1.rp" "Ring_FInger2_JNT_parentConstraint2.tg[0].trp"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL|null3|P_Finger_Base|null4|P_Finger_Base1.rpt" "Ring_FInger2_JNT_parentConstraint2.tg[0].trt"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL|null3|P_Finger_Base|null4|P_Finger_Base1.r" "Ring_FInger2_JNT_parentConstraint2.tg[0].tr"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL|null3|P_Finger_Base|null4|P_Finger_Base1.ro" "Ring_FInger2_JNT_parentConstraint2.tg[0].tro"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL|null3|P_Finger_Base|null4|P_Finger_Base1.s" "Ring_FInger2_JNT_parentConstraint2.tg[0].ts"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL|null3|P_Finger_Base|null4|P_Finger_Base1.pm" "Ring_FInger2_JNT_parentConstraint2.tg[0].tpm"
+		;
+connectAttr "Ring_FInger2_JNT_parentConstraint2.w0" "Ring_FInger2_JNT_parentConstraint2.tg[0].tw"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT.ssc" "Ring_FInger2_JNT_scaleConstraint2.tsc"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT.pim" "Ring_FInger2_JNT_scaleConstraint2.cpim"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL|null3|P_Finger_Base|null4|P_Finger_Base1.s" "Ring_FInger2_JNT_scaleConstraint2.tg[0].ts"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL|null3|P_Finger_Base|null4|P_Finger_Base1.pm" "Ring_FInger2_JNT_scaleConstraint2.tg[0].tpm"
+		;
+connectAttr "Ring_FInger2_JNT_scaleConstraint2.w0" "Ring_FInger2_JNT_scaleConstraint2.tg[0].tw"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger1_JNT_parentConstraint1.do"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger1_JNT_scaleConstraint1.do"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT.ro" "Ring_FInger1_JNT_parentConstraint2.cro"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT.pim" "Ring_FInger1_JNT_parentConstraint2.cpim"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT.rp" "Ring_FInger1_JNT_parentConstraint2.crp"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT.rpt" "Ring_FInger1_JNT_parentConstraint2.crt"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT.jo" "Ring_FInger1_JNT_parentConstraint2.cjo"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL|null3|P_Finger_Base.t" "Ring_FInger1_JNT_parentConstraint2.tg[0].tt"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL|null3|P_Finger_Base.rp" "Ring_FInger1_JNT_parentConstraint2.tg[0].trp"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL|null3|P_Finger_Base.rpt" "Ring_FInger1_JNT_parentConstraint2.tg[0].trt"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL|null3|P_Finger_Base.r" "Ring_FInger1_JNT_parentConstraint2.tg[0].tr"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL|null3|P_Finger_Base.ro" "Ring_FInger1_JNT_parentConstraint2.tg[0].tro"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL|null3|P_Finger_Base.s" "Ring_FInger1_JNT_parentConstraint2.tg[0].ts"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL|null3|P_Finger_Base.pm" "Ring_FInger1_JNT_parentConstraint2.tg[0].tpm"
+		;
+connectAttr "Ring_FInger1_JNT_parentConstraint2.w0" "Ring_FInger1_JNT_parentConstraint2.tg[0].tw"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT.ssc" "Ring_FInger1_JNT_scaleConstraint2.tsc"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT.pim" "Ring_FInger1_JNT_scaleConstraint2.cpim"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL|null3|P_Finger_Base.s" "Ring_FInger1_JNT_scaleConstraint2.tg[0].ts"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL|null3|P_Finger_Base.pm" "Ring_FInger1_JNT_scaleConstraint2.tg[0].tpm"
+		;
+connectAttr "Ring_FInger1_JNT_scaleConstraint2.w0" "Ring_FInger1_JNT_scaleConstraint2.tg[0].tw"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_Finger_JNT_parentConstraint1.do"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_Finger_JNT_scaleConstraint1.do"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT.ro" "Ring_Finger_JNT_parentConstraint2.cro"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT.pim" "Ring_Finger_JNT_parentConstraint2.cpim"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT.rp" "Ring_Finger_JNT_parentConstraint2.crp"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT.rpt" "Ring_Finger_JNT_parentConstraint2.crt"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT.jo" "Ring_Finger_JNT_parentConstraint2.cjo"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL.t" "Ring_Finger_JNT_parentConstraint2.tg[0].tt"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL.rp" "Ring_Finger_JNT_parentConstraint2.tg[0].trp"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL.rpt" "Ring_Finger_JNT_parentConstraint2.tg[0].trt"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL.r" "Ring_Finger_JNT_parentConstraint2.tg[0].tr"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL.ro" "Ring_Finger_JNT_parentConstraint2.tg[0].tro"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL.s" "Ring_Finger_JNT_parentConstraint2.tg[0].ts"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL.pm" "Ring_Finger_JNT_parentConstraint2.tg[0].tpm"
+		;
+connectAttr "Ring_Finger_JNT_parentConstraint2.w0" "Ring_Finger_JNT_parentConstraint2.tg[0].tw"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT.ssc" "Ring_Finger_JNT_scaleConstraint2.tsc"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT.pim" "Ring_Finger_JNT_scaleConstraint2.cpim"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL.s" "Ring_Finger_JNT_scaleConstraint2.tg[0].ts"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL.pm" "Ring_Finger_JNT_scaleConstraint2.tg[0].tpm"
+		;
+connectAttr "Ring_Finger_JNT_scaleConstraint2.w0" "Ring_Finger_JNT_scaleConstraint2.tg[0].tw"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.s" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT.is"
+		;
+connectAttr "Pinky_Finger_JNT_scaleConstraint2.csx" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT.sx"
+		;
+connectAttr "Pinky_Finger_JNT_scaleConstraint2.csy" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT.sy"
+		;
+connectAttr "Pinky_Finger_JNT_scaleConstraint2.csz" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT.sz"
+		;
+connectAttr "Pinky_Finger_JNT_parentConstraint2.crx" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT.rx"
+		;
+connectAttr "Pinky_Finger_JNT_parentConstraint2.cry" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT.ry"
+		;
+connectAttr "Pinky_Finger_JNT_parentConstraint2.crz" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT.rz"
+		;
+connectAttr "Pinky_Finger_JNT_parentConstraint2.ctx" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT.tx"
+		;
+connectAttr "Pinky_Finger_JNT_parentConstraint2.cty" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT.ty"
+		;
+connectAttr "Pinky_Finger_JNT_parentConstraint2.ctz" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT.tz"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT.do"
+		;
+connectAttr "Pinky_Finger1_JNT_parentConstraint2.ctx" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT.tx"
+		;
+connectAttr "Pinky_Finger1_JNT_parentConstraint2.cty" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT.ty"
+		;
+connectAttr "Pinky_Finger1_JNT_parentConstraint2.ctz" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT.tz"
+		;
+connectAttr "Pinky_Finger1_JNT_parentConstraint2.crx" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT.rx"
+		;
+connectAttr "Pinky_Finger1_JNT_parentConstraint2.cry" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT.ry"
+		;
+connectAttr "Pinky_Finger1_JNT_parentConstraint2.crz" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT.rz"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT.s" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT.is"
+		;
+connectAttr "Pinky_Finger1_JNT_scaleConstraint2.csx" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT.sx"
+		;
+connectAttr "Pinky_Finger1_JNT_scaleConstraint2.csy" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT.sy"
+		;
+connectAttr "Pinky_Finger1_JNT_scaleConstraint2.csz" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT.sz"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT.do"
+		;
+connectAttr "Pinky_Finger2_JNT_parentConstraint2.crx" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT.rx"
+		;
+connectAttr "Pinky_Finger2_JNT_parentConstraint2.cry" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT.ry"
+		;
+connectAttr "Pinky_Finger2_JNT_parentConstraint2.crz" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT.rz"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT.s" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT.is"
+		;
+connectAttr "Pinky_Finger2_JNT_scaleConstraint2.csx" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT.sx"
+		;
+connectAttr "Pinky_Finger2_JNT_scaleConstraint2.csy" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT.sy"
+		;
+connectAttr "Pinky_Finger2_JNT_scaleConstraint2.csz" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT.sz"
+		;
+connectAttr "Pinky_Finger2_JNT_parentConstraint2.ctx" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT.tx"
+		;
+connectAttr "Pinky_Finger2_JNT_parentConstraint2.cty" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT.ty"
+		;
+connectAttr "Pinky_Finger2_JNT_parentConstraint2.ctz" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT.tz"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT.do"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT.s" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT|Pinky_Finger3_JNT.is"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT|Pinky_Finger3_JNT.do"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT|Pinky_Finger2_JNT_parentConstraint1.do"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT|Pinky_Finger2_JNT_scaleConstraint1.do"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT.ro" "Pinky_Finger2_JNT_parentConstraint2.cro"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT.pim" "Pinky_Finger2_JNT_parentConstraint2.cpim"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT.rp" "Pinky_Finger2_JNT_parentConstraint2.crp"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT.rpt" "Pinky_Finger2_JNT_parentConstraint2.crt"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT.jo" "Pinky_Finger2_JNT_parentConstraint2.cjo"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL|null1|Thumb_Finger_Base|null2|Thumb_Finger_Base1.t" "Pinky_Finger2_JNT_parentConstraint2.tg[0].tt"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL|null1|Thumb_Finger_Base|null2|Thumb_Finger_Base1.rp" "Pinky_Finger2_JNT_parentConstraint2.tg[0].trp"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL|null1|Thumb_Finger_Base|null2|Thumb_Finger_Base1.rpt" "Pinky_Finger2_JNT_parentConstraint2.tg[0].trt"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL|null1|Thumb_Finger_Base|null2|Thumb_Finger_Base1.r" "Pinky_Finger2_JNT_parentConstraint2.tg[0].tr"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL|null1|Thumb_Finger_Base|null2|Thumb_Finger_Base1.ro" "Pinky_Finger2_JNT_parentConstraint2.tg[0].tro"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL|null1|Thumb_Finger_Base|null2|Thumb_Finger_Base1.s" "Pinky_Finger2_JNT_parentConstraint2.tg[0].ts"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL|null1|Thumb_Finger_Base|null2|Thumb_Finger_Base1.pm" "Pinky_Finger2_JNT_parentConstraint2.tg[0].tpm"
+		;
+connectAttr "Pinky_Finger2_JNT_parentConstraint2.w0" "Pinky_Finger2_JNT_parentConstraint2.tg[0].tw"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT.ssc" "Pinky_Finger2_JNT_scaleConstraint2.tsc"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT.pim" "Pinky_Finger2_JNT_scaleConstraint2.cpim"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL|null1|Thumb_Finger_Base|null2|Thumb_Finger_Base1.s" "Pinky_Finger2_JNT_scaleConstraint2.tg[0].ts"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL|null1|Thumb_Finger_Base|null2|Thumb_Finger_Base1.pm" "Pinky_Finger2_JNT_scaleConstraint2.tg[0].tpm"
+		;
+connectAttr "Pinky_Finger2_JNT_scaleConstraint2.w0" "Pinky_Finger2_JNT_scaleConstraint2.tg[0].tw"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger1_JNT_parentConstraint1.do"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger1_JNT_scaleConstraint1.do"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT.ro" "Pinky_Finger1_JNT_parentConstraint2.cro"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT.pim" "Pinky_Finger1_JNT_parentConstraint2.cpim"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT.rp" "Pinky_Finger1_JNT_parentConstraint2.crp"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT.rpt" "Pinky_Finger1_JNT_parentConstraint2.crt"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT.jo" "Pinky_Finger1_JNT_parentConstraint2.cjo"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL|null1|Thumb_Finger_Base.t" "Pinky_Finger1_JNT_parentConstraint2.tg[0].tt"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL|null1|Thumb_Finger_Base.rp" "Pinky_Finger1_JNT_parentConstraint2.tg[0].trp"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL|null1|Thumb_Finger_Base.rpt" "Pinky_Finger1_JNT_parentConstraint2.tg[0].trt"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL|null1|Thumb_Finger_Base.r" "Pinky_Finger1_JNT_parentConstraint2.tg[0].tr"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL|null1|Thumb_Finger_Base.ro" "Pinky_Finger1_JNT_parentConstraint2.tg[0].tro"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL|null1|Thumb_Finger_Base.s" "Pinky_Finger1_JNT_parentConstraint2.tg[0].ts"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL|null1|Thumb_Finger_Base.pm" "Pinky_Finger1_JNT_parentConstraint2.tg[0].tpm"
+		;
+connectAttr "Pinky_Finger1_JNT_parentConstraint2.w0" "Pinky_Finger1_JNT_parentConstraint2.tg[0].tw"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT.ssc" "Pinky_Finger1_JNT_scaleConstraint2.tsc"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT.pim" "Pinky_Finger1_JNT_scaleConstraint2.cpim"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL|null1|Thumb_Finger_Base.s" "Pinky_Finger1_JNT_scaleConstraint2.tg[0].ts"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL|null1|Thumb_Finger_Base.pm" "Pinky_Finger1_JNT_scaleConstraint2.tg[0].tpm"
+		;
+connectAttr "Pinky_Finger1_JNT_scaleConstraint2.w0" "Pinky_Finger1_JNT_scaleConstraint2.tg[0].tw"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger_JNT_parentConstraint1.do"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger_JNT_scaleConstraint1.do"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT.ro" "Pinky_Finger_JNT_parentConstraint2.cro"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT.pim" "Pinky_Finger_JNT_parentConstraint2.cpim"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT.rp" "Pinky_Finger_JNT_parentConstraint2.crp"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT.rpt" "Pinky_Finger_JNT_parentConstraint2.crt"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT.jo" "Pinky_Finger_JNT_parentConstraint2.cjo"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL.t" "Pinky_Finger_JNT_parentConstraint2.tg[0].tt"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL.rp" "Pinky_Finger_JNT_parentConstraint2.tg[0].trp"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL.rpt" "Pinky_Finger_JNT_parentConstraint2.tg[0].trt"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL.r" "Pinky_Finger_JNT_parentConstraint2.tg[0].tr"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL.ro" "Pinky_Finger_JNT_parentConstraint2.tg[0].tro"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL.s" "Pinky_Finger_JNT_parentConstraint2.tg[0].ts"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL.pm" "Pinky_Finger_JNT_parentConstraint2.tg[0].tpm"
+		;
+connectAttr "Pinky_Finger_JNT_parentConstraint2.w0" "Pinky_Finger_JNT_parentConstraint2.tg[0].tw"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT.ssc" "Pinky_Finger_JNT_scaleConstraint2.tsc"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT.pim" "Pinky_Finger_JNT_scaleConstraint2.cpim"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL.s" "Pinky_Finger_JNT_scaleConstraint2.tg[0].ts"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL.pm" "Pinky_Finger_JNT_scaleConstraint2.tg[0].tpm"
+		;
+connectAttr "Pinky_Finger_JNT_scaleConstraint2.w0" "Pinky_Finger_JNT_scaleConstraint2.tg[0].tw"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Wrist_JNT_parentConstraint1.do"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Wrist_JNT_scaleConstraint1.do"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.ro" "Wrist_JNT_parentConstraint2.cro"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.pim" "Wrist_JNT_parentConstraint2.cpim"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.rp" "Wrist_JNT_parentConstraint2.crp"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.rpt" "Wrist_JNT_parentConstraint2.crt"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.jo" "Wrist_JNT_parentConstraint2.cjo"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL.t" "Wrist_JNT_parentConstraint2.tg[0].tt"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL.rp" "Wrist_JNT_parentConstraint2.tg[0].trp"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL.rpt" "Wrist_JNT_parentConstraint2.tg[0].trt"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL.r" "Wrist_JNT_parentConstraint2.tg[0].tr"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL.ro" "Wrist_JNT_parentConstraint2.tg[0].tro"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL.s" "Wrist_JNT_parentConstraint2.tg[0].ts"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL.pm" "Wrist_JNT_parentConstraint2.tg[0].tpm"
+		;
+connectAttr "Wrist_JNT_parentConstraint2.w0" "Wrist_JNT_parentConstraint2.tg[0].tw"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.ssc" "Wrist_JNT_scaleConstraint2.tsc"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.pim" "Wrist_JNT_scaleConstraint2.cpim"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL.s" "Wrist_JNT_scaleConstraint2.tg[0].ts"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL.pm" "Wrist_JNT_scaleConstraint2.tg[0].tpm"
+		;
+connectAttr "Wrist_JNT_scaleConstraint2.w0" "Wrist_JNT_scaleConstraint2.tg[0].tw"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|Elbow_JNT_parentConstraint1.do"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|Elbow_JNT_scaleConstraint1.do"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT.ro" "Elbow_JNT_parentConstraint2.cro"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT.pim" "Elbow_JNT_parentConstraint2.cpim"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT.rp" "Elbow_JNT_parentConstraint2.crp"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT.rpt" "Elbow_JNT_parentConstraint2.crt"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT.jo" "Elbow_JNT_parentConstraint2.cjo"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL.t" "Elbow_JNT_parentConstraint2.tg[0].tt"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL.rp" "Elbow_JNT_parentConstraint2.tg[0].trp"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL.rpt" "Elbow_JNT_parentConstraint2.tg[0].trt"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL.r" "Elbow_JNT_parentConstraint2.tg[0].tr"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL.ro" "Elbow_JNT_parentConstraint2.tg[0].tro"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL.s" "Elbow_JNT_parentConstraint2.tg[0].ts"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL.pm" "Elbow_JNT_parentConstraint2.tg[0].tpm"
+		;
+connectAttr "Elbow_JNT_parentConstraint2.w0" "Elbow_JNT_parentConstraint2.tg[0].tw"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT.ssc" "Elbow_JNT_scaleConstraint2.tsc"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT.pim" "Elbow_JNT_scaleConstraint2.cpim"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL.s" "Elbow_JNT_scaleConstraint2.tg[0].ts"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL.pm" "Elbow_JNT_scaleConstraint2.tg[0].tpm"
+		;
+connectAttr "Elbow_JNT_scaleConstraint2.w0" "Elbow_JNT_scaleConstraint2.tg[0].tw"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Shoulder_JNT_parentConstraint1.do"
+		;
+connectAttr "FK_TEST.di" "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Shoulder_JNT_scaleConstraint1.do"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT.ro" "Shoulder_JNT_parentConstraint2.cro"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT.pim" "Shoulder_JNT_parentConstraint2.cpim"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT.rp" "Shoulder_JNT_parentConstraint2.crp"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT.rpt" "Shoulder_JNT_parentConstraint2.crt"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT.jo" "Shoulder_JNT_parentConstraint2.cjo"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL.t" "Shoulder_JNT_parentConstraint2.tg[0].tt"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL.rp" "Shoulder_JNT_parentConstraint2.tg[0].trp"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL.rpt" "Shoulder_JNT_parentConstraint2.tg[0].trt"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL.r" "Shoulder_JNT_parentConstraint2.tg[0].tr"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL.ro" "Shoulder_JNT_parentConstraint2.tg[0].tro"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL.s" "Shoulder_JNT_parentConstraint2.tg[0].ts"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL.pm" "Shoulder_JNT_parentConstraint2.tg[0].tpm"
+		;
+connectAttr "Shoulder_JNT_parentConstraint2.w0" "Shoulder_JNT_parentConstraint2.tg[0].tw"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT.pim" "Shoulder_JNT_scaleConstraint2.cpim"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL.s" "Shoulder_JNT_scaleConstraint2.tg[0].ts"
+		;
+connectAttr "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL.pm" "Shoulder_JNT_scaleConstraint2.tg[0].tpm"
+		;
+connectAttr "Shoulder_JNT_scaleConstraint2.w0" "Shoulder_JNT_scaleConstraint2.tg[0].tw"
+		;
+connectAttr "IK_TEST.di" "Shoulder_IK_JNT2.do";
+connectAttr "Shoulder_IK_JNT2_scaleConstraint1.csx" "Shoulder_IK_JNT2.sx";
+connectAttr "Shoulder_IK_JNT2_scaleConstraint1.csy" "Shoulder_IK_JNT2.sy";
+connectAttr "Shoulder_IK_JNT2_scaleConstraint1.csz" "Shoulder_IK_JNT2.sz";
+connectAttr "Shoulder_IK_JNT2_parentConstraint1.crx" "Shoulder_IK_JNT2.rx";
+connectAttr "Shoulder_IK_JNT2_parentConstraint1.cry" "Shoulder_IK_JNT2.ry";
+connectAttr "Shoulder_IK_JNT2_parentConstraint1.crz" "Shoulder_IK_JNT2.rz";
+connectAttr "Shoulder_IK_JNT2_parentConstraint1.ctx" "Shoulder_IK_JNT2.tx";
+connectAttr "Shoulder_IK_JNT2_parentConstraint1.cty" "Shoulder_IK_JNT2.ty";
+connectAttr "Shoulder_IK_JNT2_parentConstraint1.ctz" "Shoulder_IK_JNT2.tz";
+connectAttr "Shoulder_IK_JNT2.s" "Elbow_IK_JNT2.is";
+connectAttr "Elbow_IK_JNT2.s" "Arm_IK_JNT2.is";
+connectAttr "Arm_IK_JNT2.tx" "effector2.tx";
+connectAttr "Arm_IK_JNT2.ty" "effector2.ty";
+connectAttr "Arm_IK_JNT2.tz" "effector2.tz";
+connectAttr "Shoulder_IK_JNT2.ro" "Shoulder_IK_JNT2_parentConstraint1.cro";
+connectAttr "Shoulder_IK_JNT2.pim" "Shoulder_IK_JNT2_parentConstraint1.cpim";
+connectAttr "Shoulder_IK_JNT2.rp" "Shoulder_IK_JNT2_parentConstraint1.crp";
+connectAttr "Shoulder_IK_JNT2.rpt" "Shoulder_IK_JNT2_parentConstraint1.crt";
+connectAttr "Shoulder_IK_JNT2.jo" "Shoulder_IK_JNT2_parentConstraint1.cjo";
+connectAttr "IK_Shoulder_CNTL_TEST.t" "Shoulder_IK_JNT2_parentConstraint1.tg[0].tt"
+		;
+connectAttr "IK_Shoulder_CNTL_TEST.rp" "Shoulder_IK_JNT2_parentConstraint1.tg[0].trp"
+		;
+connectAttr "IK_Shoulder_CNTL_TEST.rpt" "Shoulder_IK_JNT2_parentConstraint1.tg[0].trt"
+		;
+connectAttr "IK_Shoulder_CNTL_TEST.r" "Shoulder_IK_JNT2_parentConstraint1.tg[0].tr"
+		;
+connectAttr "IK_Shoulder_CNTL_TEST.ro" "Shoulder_IK_JNT2_parentConstraint1.tg[0].tro"
+		;
+connectAttr "IK_Shoulder_CNTL_TEST.s" "Shoulder_IK_JNT2_parentConstraint1.tg[0].ts"
+		;
+connectAttr "IK_Shoulder_CNTL_TEST.pm" "Shoulder_IK_JNT2_parentConstraint1.tg[0].tpm"
+		;
+connectAttr "Shoulder_IK_JNT2_parentConstraint1.w0" "Shoulder_IK_JNT2_parentConstraint1.tg[0].tw"
+		;
+connectAttr "Shoulder_IK_JNT2.pim" "Shoulder_IK_JNT2_scaleConstraint1.cpim";
+connectAttr "IK_Shoulder_CNTL_TEST.s" "Shoulder_IK_JNT2_scaleConstraint1.tg[0].ts"
+		;
+connectAttr "IK_Shoulder_CNTL_TEST.pm" "Shoulder_IK_JNT2_scaleConstraint1.tg[0].tpm"
+		;
+connectAttr "Shoulder_IK_JNT2_scaleConstraint1.w0" "Shoulder_IK_JNT2_scaleConstraint1.tg[0].tw"
+		;
+connectAttr "FK_CNTL_TEST.di" "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL.do"
+		;
+connectAttr "FK_CNTL_TEST.di" "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL.do"
+		;
+connectAttr "FK_CNTL_TEST.di" "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL.do"
+		;
+connectAttr "FK_CNTL_TEST.di" "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL.do"
+		;
+connectAttr "FK_CNTL_TEST.di" "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL|null1|Thumb_Finger_Base.do"
+		;
+connectAttr "FK_CNTL_TEST.di" "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Thumb_GP|Thumb_Base_CNTL|null1|Thumb_Finger_Base|null2|Thumb_Finger_Base1.do"
+		;
+connectAttr "FK_CNTL_TEST.di" "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL.do"
+		;
+connectAttr "FK_CNTL_TEST.di" "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL|null3|P_Finger_Base.do"
+		;
+connectAttr "FK_CNTL_TEST.di" "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|P_Finger_GP|P_Finger_Base_CNTL|null3|P_Finger_Base|null4|P_Finger_Base1.do"
+		;
+connectAttr "FK_CNTL_TEST.di" "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL.do"
+		;
+connectAttr "FK_CNTL_TEST.di" "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL|group3|M_Finger_Base.do"
+		;
+connectAttr "FK_CNTL_TEST.di" "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|MID_Finger_GP|M_Finger_Base_CNTL|group3|M_Finger_Base|null5|M_Finger_Base1.do"
+		;
+connectAttr "FK_CNTL_TEST.di" "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL.do"
+		;
+connectAttr "FK_CNTL_TEST.di" "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL|null6|Ring_Finger_Base.do"
+		;
+connectAttr "FK_CNTL_TEST.di" "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Ring_Finger_GP|Ring_Finger_Base_CNTL|null6|Ring_Finger_Base|null7|Ring_Finger_Base1.do"
+		;
+connectAttr "FK_CNTL_TEST.di" "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL.do"
+		;
+connectAttr "FK_CNTL_TEST.di" "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL|null8|Pinky_Finger_Base.do"
+		;
+connectAttr "FK_CNTL_TEST.di" "|FK_IK_TEST|CNTL1|FK|Shoulder_GP|Shoulder_CNTL|Elbow_GP|Elbow_CNTL|Wrist_GP|Wrist_CNTL|Pinky_Finger_GP|Pinky_Finger_Base_CNTL|null8|Pinky_Finger_Base|null9|Pinky_Finger_Base1.do"
+		;
+connectAttr "IK_CNTL_TEST_LYER.di" "|FK_IK_TEST|CNTL1|IK.do";
+connectAttr "Shoulder_IK_JNT2.msg" "ikHandle2.hsj";
+connectAttr "effector2.hp" "ikHandle2.hee";
+connectAttr "ikRPsolver.msg" "ikHandle2.hsv";
+connectAttr "ikHandle2_poleVectorConstraint1.ctx" "ikHandle2.pvx";
+connectAttr "ikHandle2_poleVectorConstraint1.cty" "ikHandle2.pvy";
+connectAttr "ikHandle2_poleVectorConstraint1.ctz" "ikHandle2.pvz";
+connectAttr "ikHandle2.pim" "ikHandle2_poleVectorConstraint1.cpim";
+connectAttr "Shoulder_IK_JNT2.pm" "ikHandle2_poleVectorConstraint1.ps";
+connectAttr "Shoulder_IK_JNT2.t" "ikHandle2_poleVectorConstraint1.crp";
+connectAttr "PV_CNTL_TEST.t" "ikHandle2_poleVectorConstraint1.tg[0].tt";
+connectAttr "PV_CNTL_TEST.rp" "ikHandle2_poleVectorConstraint1.tg[0].trp";
+connectAttr "PV_CNTL_TEST.rpt" "ikHandle2_poleVectorConstraint1.tg[0].trt";
+connectAttr "PV_CNTL_TEST.pm" "ikHandle2_poleVectorConstraint1.tg[0].tpm";
+connectAttr "ikHandle2_poleVectorConstraint1.w0" "ikHandle2_poleVectorConstraint1.tg[0].tw"
+		;
+connectAttr "transformGeometry3.og" "PV_CNTL_TESTShape.cr";
+connectAttr "transformGeometry5.og" "IK_Shoulder_CNTL_TESTShape.cr";
+connectAttr "layer1.di" "joint2.do";
+connectAttr "joint2_orientConstraint1.crx" "joint2.rx";
+connectAttr "joint2_orientConstraint1.cry" "joint2.ry";
+connectAttr "joint2_orientConstraint1.crz" "joint2.rz";
+connectAttr "joint2.s" "joint3.is";
+connectAttr "layer1.di" "joint3.do";
+connectAttr "joint3_orientConstraint1.crx" "joint3.rx";
+connectAttr "joint3_orientConstraint1.cry" "joint3.ry";
+connectAttr "joint3_orientConstraint1.crz" "joint3.rz";
+connectAttr "joint3.s" "joint4.is";
+connectAttr "layer1.di" "joint4.do";
+connectAttr "joint4_orientConstraint1.crx" "joint4.rx";
+connectAttr "joint4_orientConstraint1.cry" "joint4.ry";
+connectAttr "joint4_orientConstraint1.crz" "joint4.rz";
+connectAttr "joint4.ro" "joint4_orientConstraint1.cro";
+connectAttr "joint4.pim" "joint4_orientConstraint1.cpim";
+connectAttr "joint4.jo" "joint4_orientConstraint1.cjo";
+connectAttr "joint4.is" "joint4_orientConstraint1.is";
+connectAttr "Arm_IK_JNT2.r" "joint4_orientConstraint1.tg[0].tr";
+connectAttr "Arm_IK_JNT2.ro" "joint4_orientConstraint1.tg[0].tro";
+connectAttr "Arm_IK_JNT2.pm" "joint4_orientConstraint1.tg[0].tpm";
+connectAttr "Arm_IK_JNT2.jo" "joint4_orientConstraint1.tg[0].tjo";
+connectAttr "joint4_orientConstraint1.w0" "joint4_orientConstraint1.tg[0].tw";
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.r" "joint4_orientConstraint1.tg[1].tr"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.ro" "joint4_orientConstraint1.tg[1].tro"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.pm" "joint4_orientConstraint1.tg[1].tpm"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.jo" "joint4_orientConstraint1.tg[1].tjo"
+		;
+connectAttr "joint4_orientConstraint1.w1" "joint4_orientConstraint1.tg[1].tw";
+connectAttr "FK_IK.ik" "joint4_orientConstraint1.w0";
+connectAttr "FK_IK.fk" "joint4_orientConstraint1.w1";
+connectAttr "joint3.ro" "joint3_orientConstraint1.cro";
+connectAttr "joint3.pim" "joint3_orientConstraint1.cpim";
+connectAttr "joint3.jo" "joint3_orientConstraint1.cjo";
+connectAttr "joint3.is" "joint3_orientConstraint1.is";
+connectAttr "Elbow_IK_JNT2.r" "joint3_orientConstraint1.tg[0].tr";
+connectAttr "Elbow_IK_JNT2.ro" "joint3_orientConstraint1.tg[0].tro";
+connectAttr "Elbow_IK_JNT2.pm" "joint3_orientConstraint1.tg[0].tpm";
+connectAttr "Elbow_IK_JNT2.jo" "joint3_orientConstraint1.tg[0].tjo";
+connectAttr "joint3_orientConstraint1.w0" "joint3_orientConstraint1.tg[0].tw";
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT.r" "joint3_orientConstraint1.tg[1].tr"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT.ro" "joint3_orientConstraint1.tg[1].tro"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT.pm" "joint3_orientConstraint1.tg[1].tpm"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT|Elbow_JNT.jo" "joint3_orientConstraint1.tg[1].tjo"
+		;
+connectAttr "joint3_orientConstraint1.w1" "joint3_orientConstraint1.tg[1].tw";
+connectAttr "FK_IK.ik" "joint3_orientConstraint1.w0";
+connectAttr "FK_IK.fk" "joint3_orientConstraint1.w1";
+connectAttr "joint2.ro" "joint2_orientConstraint1.cro";
+connectAttr "joint2.pim" "joint2_orientConstraint1.cpim";
+connectAttr "joint2.jo" "joint2_orientConstraint1.cjo";
+connectAttr "joint2.is" "joint2_orientConstraint1.is";
+connectAttr "Shoulder_IK_JNT2.r" "joint2_orientConstraint1.tg[0].tr";
+connectAttr "Shoulder_IK_JNT2.ro" "joint2_orientConstraint1.tg[0].tro";
+connectAttr "Shoulder_IK_JNT2.pm" "joint2_orientConstraint1.tg[0].tpm";
+connectAttr "Shoulder_IK_JNT2.jo" "joint2_orientConstraint1.tg[0].tjo";
+connectAttr "joint2_orientConstraint1.w0" "joint2_orientConstraint1.tg[0].tw";
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT.r" "joint2_orientConstraint1.tg[1].tr"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT.ro" "joint2_orientConstraint1.tg[1].tro"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT.pm" "joint2_orientConstraint1.tg[1].tpm"
+		;
+connectAttr "|FK_IK_TEST|JNT1|FK|Shoulder_JNT.jo" "joint2_orientConstraint1.tg[1].tjo"
+		;
+connectAttr "joint2_orientConstraint1.w1" "joint2_orientConstraint1.tg[1].tw";
+connectAttr "FK_IK.ik" "joint2_orientConstraint1.w0";
+connectAttr "FK_IK.fk" "joint2_orientConstraint1.w1";
+connectAttr "FK_IK_switch_1_0.out[0]" "FK_IK.fk";
+connectAttr "groupId53.id" "FK_IKShape.iog.og[0].gid";
+connectAttr "typeBlinnSG.mwc" "FK_IKShape.iog.og[0].gco";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" "GenericMesh_V10_1:AR__GenericMeshv3a_lambert3SG.message" ":defaultLightSet.message";
@@ -18021,6 +22841,7 @@ relationship "link" ":lightLinker1" "GenericMesh_V10_1:AR__GenericMeshv3a_lamber
 relationship "link" ":lightLinker1" "GenericMesh_V10_1:AR__GenericMeshv3a_GenaricMesh2_lambert5SG.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" "GenericMesh_V10_1:AR__GenericMeshv3a_lambert8SG.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" "GenericMesh_V10_1:AR__GenericMeshv3a_lambert6SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "typeBlinnSG.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" "GenericMesh_V10_1:AR__GenericMeshv3a_lambert3SG.message" ":defaultLightSet.message";
@@ -18031,6 +22852,7 @@ relationship "shadowLink" ":lightLinker1" "GenericMesh_V10_1:AR__GenericMeshv3a_
 relationship "shadowLink" ":lightLinker1" "GenericMesh_V10_1:AR__GenericMeshv3a_GenaricMesh2_lambert5SG.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" "GenericMesh_V10_1:AR__GenericMeshv3a_lambert8SG.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" "GenericMesh_V10_1:AR__GenericMeshv3a_lambert6SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "typeBlinnSG.message" ":defaultLightSet.message";
 connectAttr "layerManager.dli[0]" "defaultLayer.id";
 connectAttr "renderLayerManager.rlmi[0]" "defaultRenderLayer.rlid";
 connectAttr "LtBlue.oc" "GenericMesh_V10_1:AR__GenericMeshv3a_lambert4SG.ss";
@@ -18157,33 +22979,58 @@ connectAttr "layerManager.dli[7]" "FK_CNTL_Layer.id";
 connectAttr "Arm_Main.msg" "bindPose1.m[0]";
 connectAttr "JNT.msg" "bindPose1.m[1]";
 connectAttr "|Arm_Main|JNT|FK.msg" "bindPose1.m[2]";
-connectAttr "Shoulder_JNT.msg" "bindPose1.m[3]";
-connectAttr "Elbow_JNT.msg" "bindPose1.m[4]";
-connectAttr "ForArm_1_JNT.msg" "bindPose1.m[5]";
-connectAttr "ForArm_2_JNT.msg" "bindPose1.m[6]";
-connectAttr "ForArm_3_JNT.msg" "bindPose1.m[7]";
-connectAttr "ForArm_4_JNT.msg" "bindPose1.m[8]";
-connectAttr "Wrist_JNT.msg" "bindPose1.m[9]";
-connectAttr "Thumb_Base_JNT.msg" "bindPose1.m[10]";
-connectAttr "Thumb1_JNT.msg" "bindPose1.m[11]";
-connectAttr "Thumb2_JNT.msg" "bindPose1.m[12]";
-connectAttr "Thumb3_JNT.msg" "bindPose1.m[13]";
-connectAttr "Pointer_Finger_Base_JNT.msg" "bindPose1.m[14]";
-connectAttr "P_Finger1_JNT.msg" "bindPose1.m[15]";
-connectAttr "P_Finger2_JNT.msg" "bindPose1.m[16]";
-connectAttr "P_Finger3_JNT.msg" "bindPose1.m[17]";
-connectAttr "Mid_Finger_JNT.msg" "bindPose1.m[18]";
-connectAttr "Mid_Finger1_JNT.msg" "bindPose1.m[19]";
-connectAttr "Mid_Finger2_JNT.msg" "bindPose1.m[20]";
-connectAttr "Mid_Finger3_JNT.msg" "bindPose1.m[21]";
-connectAttr "Ring_Finger_JNT.msg" "bindPose1.m[22]";
-connectAttr "Ring_FInger1_JNT.msg" "bindPose1.m[23]";
-connectAttr "Ring_FInger2_JNT.msg" "bindPose1.m[24]";
-connectAttr "Ring_FInger3_JNT.msg" "bindPose1.m[25]";
-connectAttr "Pinky_Finger_JNT.msg" "bindPose1.m[26]";
-connectAttr "Pinky_Finger1_JNT.msg" "bindPose1.m[27]";
-connectAttr "Pinky_Finger2_JNT.msg" "bindPose1.m[28]";
-connectAttr "Pinky_Finger3_JNT.msg" "bindPose1.m[29]";
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT.msg" "bindPose1.m[3]";
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT.msg" "bindPose1.m[4]";
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT.msg" "bindPose1.m[5]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT.msg" "bindPose1.m[6]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT.msg" "bindPose1.m[7]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT.msg" "bindPose1.m[8]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.msg" "bindPose1.m[9]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT.msg" "bindPose1.m[10]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT.msg" "bindPose1.m[11]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT.msg" "bindPose1.m[12]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT|Thumb3_JNT.msg" "bindPose1.m[13]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT.msg" "bindPose1.m[14]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT.msg" "bindPose1.m[15]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT.msg" "bindPose1.m[16]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT|P_Finger3_JNT.msg" "bindPose1.m[17]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT.msg" "bindPose1.m[18]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT.msg" "bindPose1.m[19]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT.msg" "bindPose1.m[20]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT|Mid_Finger3_JNT.msg" "bindPose1.m[21]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT.msg" "bindPose1.m[22]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT.msg" "bindPose1.m[23]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT.msg" "bindPose1.m[24]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT|Ring_FInger3_JNT.msg" "bindPose1.m[25]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT.msg" "bindPose1.m[26]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT.msg" "bindPose1.m[27]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT.msg" "bindPose1.m[28]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT|Pinky_Finger3_JNT.msg" "bindPose1.m[29]"
+		;
 connectAttr "bindPose1.w" "bindPose1.p[0]";
 connectAttr "bindPose1.m[0]" "bindPose1.p[1]";
 connectAttr "bindPose1.m[1]" "bindPose1.p[2]";
@@ -18214,118 +23061,220 @@ connectAttr "bindPose1.m[9]" "bindPose1.p[26]";
 connectAttr "bindPose1.m[26]" "bindPose1.p[27]";
 connectAttr "bindPose1.m[27]" "bindPose1.p[28]";
 connectAttr "bindPose1.m[28]" "bindPose1.p[29]";
-connectAttr "Shoulder_JNT.bps" "bindPose1.wm[3]";
-connectAttr "Elbow_JNT.bps" "bindPose1.wm[4]";
-connectAttr "ForArm_1_JNT.bps" "bindPose1.wm[5]";
-connectAttr "ForArm_2_JNT.bps" "bindPose1.wm[6]";
-connectAttr "ForArm_3_JNT.bps" "bindPose1.wm[7]";
-connectAttr "ForArm_4_JNT.bps" "bindPose1.wm[8]";
-connectAttr "Wrist_JNT.bps" "bindPose1.wm[9]";
-connectAttr "Thumb_Base_JNT.bps" "bindPose1.wm[10]";
-connectAttr "Thumb1_JNT.bps" "bindPose1.wm[11]";
-connectAttr "Thumb2_JNT.bps" "bindPose1.wm[12]";
-connectAttr "Thumb3_JNT.bps" "bindPose1.wm[13]";
-connectAttr "Pointer_Finger_Base_JNT.bps" "bindPose1.wm[14]";
-connectAttr "P_Finger1_JNT.bps" "bindPose1.wm[15]";
-connectAttr "P_Finger2_JNT.bps" "bindPose1.wm[16]";
-connectAttr "P_Finger3_JNT.bps" "bindPose1.wm[17]";
-connectAttr "Mid_Finger_JNT.bps" "bindPose1.wm[18]";
-connectAttr "Mid_Finger1_JNT.bps" "bindPose1.wm[19]";
-connectAttr "Mid_Finger2_JNT.bps" "bindPose1.wm[20]";
-connectAttr "Mid_Finger3_JNT.bps" "bindPose1.wm[21]";
-connectAttr "Ring_Finger_JNT.bps" "bindPose1.wm[22]";
-connectAttr "Ring_FInger1_JNT.bps" "bindPose1.wm[23]";
-connectAttr "Ring_FInger2_JNT.bps" "bindPose1.wm[24]";
-connectAttr "Ring_FInger3_JNT.bps" "bindPose1.wm[25]";
-connectAttr "Pinky_Finger_JNT.bps" "bindPose1.wm[26]";
-connectAttr "Pinky_Finger1_JNT.bps" "bindPose1.wm[27]";
-connectAttr "Pinky_Finger2_JNT.bps" "bindPose1.wm[28]";
-connectAttr "Pinky_Finger3_JNT.bps" "bindPose1.wm[29]";
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT.bps" "bindPose1.wm[3]";
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT.bps" "bindPose1.wm[4]";
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT.bps" "bindPose1.wm[5]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT.bps" "bindPose1.wm[6]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT.bps" "bindPose1.wm[7]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT.bps" "bindPose1.wm[8]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.bps" "bindPose1.wm[9]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT.bps" "bindPose1.wm[10]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT.bps" "bindPose1.wm[11]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT.bps" "bindPose1.wm[12]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT|Thumb3_JNT.bps" "bindPose1.wm[13]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT.bps" "bindPose1.wm[14]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT.bps" "bindPose1.wm[15]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT.bps" "bindPose1.wm[16]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT|P_Finger3_JNT.bps" "bindPose1.wm[17]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT.bps" "bindPose1.wm[18]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT.bps" "bindPose1.wm[19]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT.bps" "bindPose1.wm[20]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT|Mid_Finger3_JNT.bps" "bindPose1.wm[21]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT.bps" "bindPose1.wm[22]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT.bps" "bindPose1.wm[23]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT.bps" "bindPose1.wm[24]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT|Ring_FInger3_JNT.bps" "bindPose1.wm[25]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT.bps" "bindPose1.wm[26]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT.bps" "bindPose1.wm[27]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT.bps" "bindPose1.wm[28]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT|Pinky_Finger3_JNT.bps" "bindPose1.wm[29]"
+		;
 connectAttr "skinCluster1GroupParts.og" "skinCluster1.ip[0].ig";
 connectAttr "skinCluster1GroupId.id" "skinCluster1.ip[0].gi";
 connectAttr "bindPose1.msg" "skinCluster1.bp";
-connectAttr "Shoulder_JNT.wm" "skinCluster1.ma[0]";
-connectAttr "Elbow_JNT.wm" "skinCluster1.ma[1]";
-connectAttr "ForArm_1_JNT.wm" "skinCluster1.ma[2]";
-connectAttr "ForArm_2_JNT.wm" "skinCluster1.ma[3]";
-connectAttr "ForArm_3_JNT.wm" "skinCluster1.ma[4]";
-connectAttr "ForArm_4_JNT.wm" "skinCluster1.ma[5]";
-connectAttr "Wrist_JNT.wm" "skinCluster1.ma[6]";
-connectAttr "Thumb_Base_JNT.wm" "skinCluster1.ma[7]";
-connectAttr "Thumb1_JNT.wm" "skinCluster1.ma[8]";
-connectAttr "Thumb2_JNT.wm" "skinCluster1.ma[9]";
-connectAttr "Thumb3_JNT.wm" "skinCluster1.ma[10]";
-connectAttr "Pointer_Finger_Base_JNT.wm" "skinCluster1.ma[11]";
-connectAttr "P_Finger1_JNT.wm" "skinCluster1.ma[12]";
-connectAttr "P_Finger2_JNT.wm" "skinCluster1.ma[13]";
-connectAttr "P_Finger3_JNT.wm" "skinCluster1.ma[14]";
-connectAttr "Mid_Finger_JNT.wm" "skinCluster1.ma[15]";
-connectAttr "Mid_Finger1_JNT.wm" "skinCluster1.ma[16]";
-connectAttr "Mid_Finger2_JNT.wm" "skinCluster1.ma[17]";
-connectAttr "Mid_Finger3_JNT.wm" "skinCluster1.ma[18]";
-connectAttr "Ring_Finger_JNT.wm" "skinCluster1.ma[19]";
-connectAttr "Ring_FInger1_JNT.wm" "skinCluster1.ma[20]";
-connectAttr "Ring_FInger2_JNT.wm" "skinCluster1.ma[21]";
-connectAttr "Ring_FInger3_JNT.wm" "skinCluster1.ma[22]";
-connectAttr "Pinky_Finger_JNT.wm" "skinCluster1.ma[23]";
-connectAttr "Pinky_Finger1_JNT.wm" "skinCluster1.ma[24]";
-connectAttr "Pinky_Finger2_JNT.wm" "skinCluster1.ma[25]";
-connectAttr "Pinky_Finger3_JNT.wm" "skinCluster1.ma[26]";
-connectAttr "Shoulder_JNT.liw" "skinCluster1.lw[0]";
-connectAttr "Elbow_JNT.liw" "skinCluster1.lw[1]";
-connectAttr "ForArm_1_JNT.liw" "skinCluster1.lw[2]";
-connectAttr "ForArm_2_JNT.liw" "skinCluster1.lw[3]";
-connectAttr "ForArm_3_JNT.liw" "skinCluster1.lw[4]";
-connectAttr "ForArm_4_JNT.liw" "skinCluster1.lw[5]";
-connectAttr "Wrist_JNT.liw" "skinCluster1.lw[6]";
-connectAttr "Thumb_Base_JNT.liw" "skinCluster1.lw[7]";
-connectAttr "Thumb1_JNT.liw" "skinCluster1.lw[8]";
-connectAttr "Thumb2_JNT.liw" "skinCluster1.lw[9]";
-connectAttr "Thumb3_JNT.liw" "skinCluster1.lw[10]";
-connectAttr "Pointer_Finger_Base_JNT.liw" "skinCluster1.lw[11]";
-connectAttr "P_Finger1_JNT.liw" "skinCluster1.lw[12]";
-connectAttr "P_Finger2_JNT.liw" "skinCluster1.lw[13]";
-connectAttr "P_Finger3_JNT.liw" "skinCluster1.lw[14]";
-connectAttr "Mid_Finger_JNT.liw" "skinCluster1.lw[15]";
-connectAttr "Mid_Finger1_JNT.liw" "skinCluster1.lw[16]";
-connectAttr "Mid_Finger2_JNT.liw" "skinCluster1.lw[17]";
-connectAttr "Mid_Finger3_JNT.liw" "skinCluster1.lw[18]";
-connectAttr "Ring_Finger_JNT.liw" "skinCluster1.lw[19]";
-connectAttr "Ring_FInger1_JNT.liw" "skinCluster1.lw[20]";
-connectAttr "Ring_FInger2_JNT.liw" "skinCluster1.lw[21]";
-connectAttr "Ring_FInger3_JNT.liw" "skinCluster1.lw[22]";
-connectAttr "Pinky_Finger_JNT.liw" "skinCluster1.lw[23]";
-connectAttr "Pinky_Finger1_JNT.liw" "skinCluster1.lw[24]";
-connectAttr "Pinky_Finger2_JNT.liw" "skinCluster1.lw[25]";
-connectAttr "Pinky_Finger3_JNT.liw" "skinCluster1.lw[26]";
-connectAttr "Shoulder_JNT.obcc" "skinCluster1.ifcl[0]";
-connectAttr "Elbow_JNT.obcc" "skinCluster1.ifcl[1]";
-connectAttr "ForArm_1_JNT.obcc" "skinCluster1.ifcl[2]";
-connectAttr "ForArm_2_JNT.obcc" "skinCluster1.ifcl[3]";
-connectAttr "ForArm_3_JNT.obcc" "skinCluster1.ifcl[4]";
-connectAttr "ForArm_4_JNT.obcc" "skinCluster1.ifcl[5]";
-connectAttr "Wrist_JNT.obcc" "skinCluster1.ifcl[6]";
-connectAttr "Thumb_Base_JNT.obcc" "skinCluster1.ifcl[7]";
-connectAttr "Thumb1_JNT.obcc" "skinCluster1.ifcl[8]";
-connectAttr "Thumb2_JNT.obcc" "skinCluster1.ifcl[9]";
-connectAttr "Thumb3_JNT.obcc" "skinCluster1.ifcl[10]";
-connectAttr "Pointer_Finger_Base_JNT.obcc" "skinCluster1.ifcl[11]";
-connectAttr "P_Finger1_JNT.obcc" "skinCluster1.ifcl[12]";
-connectAttr "P_Finger2_JNT.obcc" "skinCluster1.ifcl[13]";
-connectAttr "P_Finger3_JNT.obcc" "skinCluster1.ifcl[14]";
-connectAttr "Mid_Finger_JNT.obcc" "skinCluster1.ifcl[15]";
-connectAttr "Mid_Finger1_JNT.obcc" "skinCluster1.ifcl[16]";
-connectAttr "Mid_Finger2_JNT.obcc" "skinCluster1.ifcl[17]";
-connectAttr "Mid_Finger3_JNT.obcc" "skinCluster1.ifcl[18]";
-connectAttr "Ring_Finger_JNT.obcc" "skinCluster1.ifcl[19]";
-connectAttr "Ring_FInger1_JNT.obcc" "skinCluster1.ifcl[20]";
-connectAttr "Ring_FInger2_JNT.obcc" "skinCluster1.ifcl[21]";
-connectAttr "Ring_FInger3_JNT.obcc" "skinCluster1.ifcl[22]";
-connectAttr "Pinky_Finger_JNT.obcc" "skinCluster1.ifcl[23]";
-connectAttr "Pinky_Finger1_JNT.obcc" "skinCluster1.ifcl[24]";
-connectAttr "Pinky_Finger2_JNT.obcc" "skinCluster1.ifcl[25]";
-connectAttr "Pinky_Finger3_JNT.obcc" "skinCluster1.ifcl[26]";
-connectAttr "Wrist_JNT.msg" "skinCluster1.ptt";
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT.wm" "skinCluster1.ma[0]";
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT.wm" "skinCluster1.ma[1]";
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT.wm" "skinCluster1.ma[2]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT.wm" "skinCluster1.ma[3]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT.wm" "skinCluster1.ma[4]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT.wm" "skinCluster1.ma[5]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.wm" "skinCluster1.ma[6]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT.wm" "skinCluster1.ma[7]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT.wm" "skinCluster1.ma[8]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT.wm" "skinCluster1.ma[9]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT|Thumb3_JNT.wm" "skinCluster1.ma[10]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT.wm" "skinCluster1.ma[11]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT.wm" "skinCluster1.ma[12]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT.wm" "skinCluster1.ma[13]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT|P_Finger3_JNT.wm" "skinCluster1.ma[14]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT.wm" "skinCluster1.ma[15]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT.wm" "skinCluster1.ma[16]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT.wm" "skinCluster1.ma[17]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT|Mid_Finger3_JNT.wm" "skinCluster1.ma[18]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT.wm" "skinCluster1.ma[19]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT.wm" "skinCluster1.ma[20]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT.wm" "skinCluster1.ma[21]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT|Ring_FInger3_JNT.wm" "skinCluster1.ma[22]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT.wm" "skinCluster1.ma[23]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT.wm" "skinCluster1.ma[24]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT.wm" "skinCluster1.ma[25]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT|Pinky_Finger3_JNT.wm" "skinCluster1.ma[26]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT.liw" "skinCluster1.lw[0]";
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT.liw" "skinCluster1.lw[1]";
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT.liw" "skinCluster1.lw[2]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT.liw" "skinCluster1.lw[3]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT.liw" "skinCluster1.lw[4]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT.liw" "skinCluster1.lw[5]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.liw" "skinCluster1.lw[6]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT.liw" "skinCluster1.lw[7]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT.liw" "skinCluster1.lw[8]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT.liw" "skinCluster1.lw[9]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT|Thumb3_JNT.liw" "skinCluster1.lw[10]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT.liw" "skinCluster1.lw[11]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT.liw" "skinCluster1.lw[12]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT.liw" "skinCluster1.lw[13]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT|P_Finger3_JNT.liw" "skinCluster1.lw[14]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT.liw" "skinCluster1.lw[15]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT.liw" "skinCluster1.lw[16]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT.liw" "skinCluster1.lw[17]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT|Mid_Finger3_JNT.liw" "skinCluster1.lw[18]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT.liw" "skinCluster1.lw[19]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT.liw" "skinCluster1.lw[20]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT.liw" "skinCluster1.lw[21]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT|Ring_FInger3_JNT.liw" "skinCluster1.lw[22]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT.liw" "skinCluster1.lw[23]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT.liw" "skinCluster1.lw[24]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT.liw" "skinCluster1.lw[25]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT|Pinky_Finger3_JNT.liw" "skinCluster1.lw[26]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT.obcc" "skinCluster1.ifcl[0]";
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT.obcc" "skinCluster1.ifcl[1]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT.obcc" "skinCluster1.ifcl[2]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT.obcc" "skinCluster1.ifcl[3]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT.obcc" "skinCluster1.ifcl[4]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT.obcc" "skinCluster1.ifcl[5]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.obcc" "skinCluster1.ifcl[6]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT.obcc" "skinCluster1.ifcl[7]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT.obcc" "skinCluster1.ifcl[8]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT.obcc" "skinCluster1.ifcl[9]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Thumb_Base_JNT|Thumb1_JNT|Thumb2_JNT|Thumb3_JNT.obcc" "skinCluster1.ifcl[10]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT.obcc" "skinCluster1.ifcl[11]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT.obcc" "skinCluster1.ifcl[12]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT.obcc" "skinCluster1.ifcl[13]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pointer_Finger_Base_JNT|P_Finger1_JNT|P_Finger2_JNT|P_Finger3_JNT.obcc" "skinCluster1.ifcl[14]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT.obcc" "skinCluster1.ifcl[15]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT.obcc" "skinCluster1.ifcl[16]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT.obcc" "skinCluster1.ifcl[17]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Mid_Finger_JNT|Mid_Finger1_JNT|Mid_Finger2_JNT|Mid_Finger3_JNT.obcc" "skinCluster1.ifcl[18]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT.obcc" "skinCluster1.ifcl[19]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT.obcc" "skinCluster1.ifcl[20]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT.obcc" "skinCluster1.ifcl[21]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Ring_Finger_JNT|Ring_FInger1_JNT|Ring_FInger2_JNT|Ring_FInger3_JNT.obcc" "skinCluster1.ifcl[22]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT.obcc" "skinCluster1.ifcl[23]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT.obcc" "skinCluster1.ifcl[24]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT.obcc" "skinCluster1.ifcl[25]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT|Pinky_Finger_JNT|Pinky_Finger1_JNT|Pinky_Finger2_JNT|Pinky_Finger3_JNT.obcc" "skinCluster1.ifcl[26]"
+		;
+connectAttr "|Arm_Main|JNT|FK|Shoulder_JNT|Elbow_JNT|ForArm_1_JNT|ForArm_2_JNT|ForArm_3_JNT|ForArm_4_JNT|Wrist_JNT.msg" "skinCluster1.ptt"
+		;
 connectAttr "tweak1.og[0]" "skinCluster1GroupParts.ig";
 connectAttr "skinCluster1GroupId.id" "skinCluster1GroupParts.gi";
 connectAttr "skinCluster1GroupId.msg" "skinCluster1Set.gn" -na;
@@ -18348,6 +23297,24 @@ connectAttr "groupParts1.og" "groupParts2.ig";
 connectAttr "groupId47.id" "groupParts2.gi";
 connectAttr "polySurfaceShape12Orig.w" "groupParts1.ig";
 connectAttr "groupId46.id" "groupParts1.gi";
+connectAttr "layerManager.dli[1]" "IK_TEST.id";
+connectAttr "layerManager.dli[8]" "FK_TEST.id";
+connectAttr "layerManager.dli[9]" "FK_CNTL_TEST.id";
+connectAttr "makeNurbCircle1.oc" "transformGeometry1.ig";
+connectAttr "transformGeometry1.og" "transformGeometry2.ig";
+connectAttr "transformGeometry2.og" "transformGeometry3.ig";
+connectAttr "makeNurbCircle2.oc" "transformGeometry4.ig";
+connectAttr "transformGeometry4.og" "transformGeometry5.ig";
+connectAttr "layerManager.dli[10]" "IK_CNTL_TEST_LYER.id";
+connectAttr "layerManager.dli[11]" "layer1.id";
+connectAttr "typeBlinn.oc" "typeBlinnSG.ss";
+connectAttr "FK_IKShape.iog.og[0]" "typeBlinnSG.dsm" -na;
+connectAttr "groupId53.msg" "typeBlinnSG.gn" -na;
+connectAttr "typeBlinnSG.msg" "materialInfo1.sg";
+connectAttr "typeBlinn.msg" "materialInfo1.m";
+connectAttr "FK_IK.ik" "FK_IK_switch_1_0.in[0]";
+connectAttr ":time1.o" "FK_IK_switch_1_0.tim";
+connectAttr "FK_IK.msg" "FK_IK_switch_1_0.obm";
 connectAttr "GenericMesh_V10_1:AR__GenericMeshv3a_lambert4SG.pa" ":renderPartition.st"
 		 -na;
 connectAttr "GenericMesh_V10_1:AR__GenericMeshv3a_GenaricMesh2_lambert5SG.pa" ":renderPartition.st"
@@ -18364,6 +23331,7 @@ connectAttr "GenericMesh_V10_1:AR__GenericMeshv3a_yellowDKSG.pa" ":renderPartiti
 		 -na;
 connectAttr "GenericMesh_V10_1:PS_1:Quadra_defaultMat.pa" ":renderPartition.st" 
 		-na;
+connectAttr "typeBlinnSG.pa" ":renderPartition.st" -na;
 connectAttr "LtBlue.msg" ":defaultShaderList1.s" -na;
 connectAttr "Orange.msg" ":defaultShaderList1.s" -na;
 connectAttr "Blue.msg" ":defaultShaderList1.s" -na;
@@ -18372,6 +23340,7 @@ connectAttr "Red.msg" ":defaultShaderList1.s" -na;
 connectAttr "Green.msg" ":defaultShaderList1.s" -na;
 connectAttr "Yellow.msg" ":defaultShaderList1.s" -na;
 connectAttr "White.msg" ":defaultShaderList1.s" -na;
+connectAttr "typeBlinn.msg" ":defaultShaderList1.s" -na;
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr "GenericMesh_V10_1:GenMeshDemistified2:pCubeShape1.iog" ":initialShadingGroup.dsm"
 		 -na;
